@@ -2,16 +2,27 @@ import numpy as np
 from PIL import Image
 import SimpleITK as sitk
 
-class ImagenCalibracion:
-	def __init__(self,rutaImagen,nombre,numeroPuntos):
-		self.ruta=ruta
-		self.nombre=nombre
-		self.numeroPuntos=numeroPuntos
-		self.imOriginal=Image.open(ruta)
-		self.imArreglo=np.array(self.imOriginal)
+class Calibracion:
+	def __init__(self,dosis,tipoCanal,tipoCurva):
+		self.dosis=dosis
+		self.tipoCanal=tipoCanal
+		self.tipoCurva=tipoCurva
+		self.parametros=[]
 
-	
 
-class FuncionCalibracion:
-	def __init__(self,tipo)		
+class CalibracionImagen:
+	def __init__(self,imagen,esquinasSecciones,dosis,tipoCanal,tipoCurva,filtrar,corrLateral,corrBackground):
+		self.imagen=imagen
+		self.esquinasSecciones=esquinasSecciones
+		self.dosis=dosis
+		self.tipoCanal=tipoCanal
+		self.tipoCurva=tipoCurva
+		self.filtrar=filtrar
+		self.corrLateral=corrLateral
+		self.corrBackground=self.corrBackground
+		
+	def generar_calibracion(nombreArchivo):
+		
+		
+
 
