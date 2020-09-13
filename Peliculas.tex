@@ -1,0 +1,118 @@
+\documentclass[12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english, spanish]{babel}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{calligra}
+\usepackage{verbatim}
+\usepackage{ragged2e}
+\usepackage{simpsons}
+\usepackage{float}
+
+\newenvironment{dedication}
+  {\clearpage           % we want a new page
+   \thispagestyle{empty}% no header and footer
+   \vspace*{\stretch{1}}% some space at the top 
+   \raggedleft          % flush to the right margin
+  }
+  {\par % end the paragraph
+   \vspace{\stretch{3}} % space at bottom is three times that at the top
+   \clearpage           % finish off the page
+  }
+
+\graphicspath{ {images/} }
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[example]{Definition}
+\newtheorem{theorem}[example]{Theorem}
+\newtheorem{corollary}[example]{Corollary}
+\newtheorem{notation}[example]{Notation}
+
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\ev}{ev}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\id}{id}
+
+\allowdisplaybreaks
+
+\interfootnotelinepenalty=10000
+
+\title 
+{
+	{Desarrollo de un programa de lectura y análisis de películas radiocrómicas para control de calidad dosimétrico en radioterapia}\\
+	{\large Universidad de los Andes}\\
+	\vspace{1.5cm}
+	{\includegraphics[width = 0.6\textwidth]{logo.png}}	
+}
+\author{Carlos Daniel Contreras Quiroz\\[1cm]{\small Director: Carlos \'Avila}\\[1cm]{\small Coodirector: Juliana Sandoval}\\[1cm]{\small Coodirector: Jaider Vazquez}}
+
+\begin{document}
+
+\pagenumbering{Roman}
+
+\maketitle
+
+%\begin{dedication}
+%{\LARGE\calligra A mi familia}
+%\end{dedication}
+
+\begin{abstract}
+
+Perros
+
+\end{abstract}
+
+\begin{otherlanguage}{spanish}
+\begin{abstract}
+
+Dogs
+
+\end{abstract}
+\end{otherlanguage}
+
+\newpage
+
+\chapter*{Agradecimientos}
+
+\section*{English}
+
+Yo quiero mucho a lulu
+
+\section*{Español}
+
+Y lulu me quiere mucho a mi
+
+\tableofcontents
+
+\listoffigures
+
+\chapter{Introducción}
+\pagenumbering{arabic}
+\input{chapters/introduccion}
+
+\chapter{Marco Teórico}\label{chp:teorico}
+\input{chapters/teorico}
+
+\chapter{Calibración}\label{chp:Calibracion}
+\input{chapters/calibracion}
+
+\chapter{Comparaciones}\label{chp:comparaciones}
+\input{chapters/comparaciones}
+
+
+\chapter{Conclusiones}
+\input{chapters/conclusiones}
+
+\bibliography{references}
+\bibliographystyle{ieeetr}
+
+\end{document}
