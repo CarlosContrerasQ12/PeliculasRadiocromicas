@@ -20,7 +20,7 @@ class DialogoCalibracion(wx.Dialog):
         self.SetSize((900, 438))
         self.SelectorImagen = wx.FilePickerCtrl(self,message="Seleccione archivo",style=wx.FLP_USE_TEXTCTRL)
         self.window_1 = wx.FilePickerCtrl(self,message="Seleccione archivo",style=wx.FLP_USE_TEXTCTRL)
-        self.combo_box_canal = wx.ComboBox(self, wx.ID_ANY, choices=["Multicanal", "Canales individuales(RGB)"], style=wx.CB_DROPDOWN)
+        self.combo_box_canal = wx.ComboBox(self, wx.ID_ANY, choices=["Multicanal", "Canal rojo","Canal verde","Canal azul","Promedio RGB"], style=wx.CB_DROPDOWN)
         self.combo_box_curva = wx.ComboBox(self, wx.ID_ANY, choices=["Reciproca lineal", "Racional lineal", "Racional cuadratica", "Racional cubica", "Exponencial polinomica", "Lineal (Dosis bajas)"], style=wx.CB_DROPDOWN)
         self.checkboxFiltrar = wx.CheckBox(self, wx.ID_ANY, "Filtrar")
         self.checkboxLateral = wx.CheckBox(self, wx.ID_ANY, "Correccion lateral")
@@ -95,7 +95,7 @@ class DialogoCalibracion(wx.Dialog):
 
 class MyApp(wx.App):
     def OnInit(self):
-        self.dialog = MyDialog(None, wx.ID_ANY, "")
+        self.dialog = DialogoCalibracion(None, wx.ID_ANY, "")
         self.SetTopWindow(self.dialog)
         self.dialog.ShowModal()
         self.dialog.Destroy()

@@ -9,8 +9,12 @@ import wx
 import wx.lib.agw.aui as aui
 import wx.lib.mixins.inspection as wit
 from PIL import Image
+from scipy.misc import face
+from scipy.signal.signaltools import wiener
 
 from dialogoCalibracionAlternativo import DialogoCalibracion
+import claseCalibracion
+import claseDialogoBackground
 
 import matplotlib as mpl
 from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg as FigureCanvas
@@ -146,14 +150,72 @@ class MyFrame(wx.Frame):
     		figActual=self.paginas[-1].figure
     		a1=figActual.gca()
     		aray=tiff.imread(dialogoCalibracion.resultado[0])
-    		escalado=(aray/65535.0)*255
+    		araySinIrra=0*aray
+    		araySinLuz=0*aray
     		a1.imshow(escalado.astype(int))	
+    		
+			if(dialogoCalibracion.resultado[6]):
+				dialogoBackground=claseDialogoBackground(self)
+				dialogoBackground.ShowModal()
+			if dialogoBackground.resultado[0]!='cancelar' and dialogoBackground.resultado[0]!='':
+				araySinIrra=tiff.imread(dialogoCalibracion.resultado[0])
+				if(dialogoBackground.resultado[1]!=''):
+					araySinLuz=tiff.imread(dialogoCalibracion.resultado[1])
+				
+			if(dialogoCalibracion.resultado[4]):
+				aray=wiener(aray,(40, 40))
+				araySinIrra=wiener(araySinIrra,(40, 40))
+				araySinLuz=wiener(araySinLuz,(40, 40))
+					
+			escalado=(aray/65535.0)*255
     		dosisReal=leerDosis(dialogoCalibracion.resultado[1])
+    		#dosisReal.sort()
     		n=len(dosisReal)
     		k=figActual.ginput(n=2*n)
     		print(dosisReal)
-        #print("Event handler 'calibracionManual' not implemented!")
-        #event.Skip()
+    		x=[]
+			y=[]
+			
+			promedioRojo=[]
+			promedioVerde=[]
+			promedioAzul=[]
+			
+			promedioRojoSinIrra=[]
+			promedioVerdeSinIrra=[]
+			promedioAzulSinIrra=[]
+			
+			promedioRojoSinLuz=[]
+			promedioVerdeSinLuz=[]
+			promedioAzulSinLuz=[]
+			
+			for i in range(2*n):
+				x.append(k[i][0])
+				y.append(k[i][1])
+			for i in range(1,2*n,2):
+				prom=655535-np.mean(aray[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
+				promSinIrra=655535-np.mean(araySinIrra[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
+				promSinLuz=655535-np.mean(araySinLuz[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
+				
+				promedioRojo.append(prom[0])
+				promedioVerde.append(prom[1])
+				promedioAzul.append(prom[2])
+				
+				promedioRojoSinIrra.append(promSinIrra[0])
+				promedioVerdeSinIrra.append(promSinIrra[1])
+				promedioAzulSinIrra.append(promSinIrra[2])
+				
+				promedioRojoSinLuz.append(promSinLuz[0])
+				promedioVerdeSinLuz.append(promSinLuz[1])
+				promedioAzulSinLuz.append(promSinLuz[2])
+			fdlg = wx.FileDialog(self, "Guardar calibracion", "", "", "CSV files(*.csv)|*.*", wx.FD_SAVE)
+			fdlg.SetFilename("calibracion-")
+			fdlg.ShowModal()
+			nombreArchivo=''
+
+			if fdlg.ShowModal() == wx.ID_OK:
+				nombreArchivo = fdlg.GetPath() + ".txt"
+			calibr=claseCalibracion()	
+        
 
     def calibracionAutomatica(self, event):  # wxGlade: MyFrame.<event_handler>
         print("Event handler 'calibracionAutomatica' not implemented!")
