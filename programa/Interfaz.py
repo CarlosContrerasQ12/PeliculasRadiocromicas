@@ -8,13 +8,14 @@ import numpy as np
 import wx
 import wx.lib.agw.aui as aui
 import wx.lib.mixins.inspection as wit
+from wxmplot import ImageFrame,ImagePanel
 from PIL import Image
 from scipy.misc import face
 from scipy.signal.signaltools import wiener
 
 from dialogoCalibracionAlternativo import DialogoCalibracion
-import claseCalibracion
-import claseDialogoBackground
+from claseCalibracion import *
+from claseDialogoBackground import *
 
 import matplotlib as mpl
 from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg as FigureCanvas
@@ -23,25 +24,29 @@ from matplotlib.backends.backend_wxagg import NavigationToolbar2WxAgg as Navigat
 import tifffile as tiff
 
 def leerDosis(nombre_archivo):
-	arch=open(nombre_archivo)
-	dosis=[]
-	for line in arch.readlines():
-		dosis.append(float(line))
-	return dosis
+    arch=open(nombre_archivo)
+    dosis=[]
+    for line in arch.readlines():
+        dosis.append(float(line))
+    arch.close()
+    return dosis
 
 
 class ImagenCuadernoMatplotlib(wx.Panel):
     def __init__(self, parent, id=-1, dpi=None, **kwargs):
         wx.Panel.__init__(self, parent, id=id, **kwargs)
-        self.figure = mpl.figure.Figure(dpi=dpi, figsize=(2, 2))
+        self.figure = mpl.figure.Figure(dpi=dpi)
+        self.figure.gca().axis('off')
         self.canvas = FigureCanvas(self, -1, self.figure)
-        self.toolbar = NavigationToolbar(self.canvas)
-        self.toolbar.Realize()
+        #self.toolbar = NavigationToolbar(self.canvas)
+        #self.toolbar.Realize()
 
         sizer = wx.BoxSizer(wx.VERTICAL)
-        sizer.Add(self.canvas, 1, wx.EXPAND)
-        sizer.Add(self.toolbar, 0, wx.LEFT | wx.EXPAND)
+        sizer.Add(self.canvas, 1, wx.EXPAND | wx.GROW)
+        #sizer.Add(self.toolbar, 0, wx.LEFT | wx.EXPAND)
         self.SetSizer(sizer)
+        self.Fit()
+
 
 class MyFrame(wx.Frame):
     def __init__(self, *args, **kwds):
@@ -52,6 +57,7 @@ class MyFrame(wx.Frame):
         self.notebookImagenes = aui.AuiNotebook(self, wx.ID_ANY)
         self.paginas=[]
         self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
+        #self.paginas.append(ImageFrame(self.notebookImagenes,size=(1024,576),mode='rgb'))
         self.PanelOpcionesImagen = wx.Panel(self, wx.ID_ANY)
         self.notebookControl = wx.Notebook(self, wx.ID_ANY)
         self.notebook_1_pane_2 = wx.Panel(self.notebookControl, wx.ID_ANY)
@@ -112,9 +118,11 @@ class MyFrame(wx.Frame):
         self.notebookImagenes.AddPage(self.paginas[0], "Bienvenido")
         figInicial=self.paginas[0].figure
         a1=figInicial.gca()
-        im = Image.open('54fb8810327dd.jpg')
+        #im = Image.open('54fb8810327dd.jpg')
+        im = Image.open('khb.jpg')
         araar=np.array(im)
-        a1.imshow(araar)
+        #self.paginas[0].display(araar)
+        a1.imshow(araar,aspect='auto',interpolation='spline36')
         
         self.notebook_1_pane_2.SetSizer(sizer_7)
         self.notebookControl.AddPage(self.notebook_1_pane_2, "notebook_1_pane_1")
@@ -139,82 +147,118 @@ class MyFrame(wx.Frame):
         event.Skip()
 
     def calibracionManual(self, event):  # wxGlade: MyFrame.<event_handler>
-    	dialogoCalibracion=DialogoCalibracion(self)
-    	dialogoCalibracion.ShowModal()
-    	if dialogoCalibracion.resultado[0]!='cancelar':
-    		print(dialogoCalibracion.resultado)
-    		self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
-    		self.notebookImagenes.AddPage(self.paginas[-1], "Calibracion")
-    		nuem=self.notebookImagenes.GetPageCount()-1
-    		self.notebookImagenes.SetSelection(nuem)
-    		figActual=self.paginas[-1].figure
-    		a1=figActual.gca()
-    		aray=tiff.imread(dialogoCalibracion.resultado[0])
-    		araySinIrra=0*aray
-    		araySinLuz=0*aray
-    		a1.imshow(escalado.astype(int))	
-    		
-			if(dialogoCalibracion.resultado[6]):
-				dialogoBackground=claseDialogoBackground(self)
-				dialogoBackground.ShowModal()
-			if dialogoBackground.resultado[0]!='cancelar' and dialogoBackground.resultado[0]!='':
-				araySinIrra=tiff.imread(dialogoCalibracion.resultado[0])
-				if(dialogoBackground.resultado[1]!=''):
-					araySinLuz=tiff.imread(dialogoCalibracion.resultado[1])
-				
-			if(dialogoCalibracion.resultado[4]):
-				aray=wiener(aray,(40, 40))
-				araySinIrra=wiener(araySinIrra,(40, 40))
-				araySinLuz=wiener(araySinLuz,(40, 40))
-					
-			escalado=(aray/65535.0)*255
-    		dosisReal=leerDosis(dialogoCalibracion.resultado[1])
-    		#dosisReal.sort()
-    		n=len(dosisReal)
-    		k=figActual.ginput(n=2*n)
-    		print(dosisReal)
-    		x=[]
-			y=[]
-			
-			promedioRojo=[]
-			promedioVerde=[]
-			promedioAzul=[]
-			
-			promedioRojoSinIrra=[]
-			promedioVerdeSinIrra=[]
-			promedioAzulSinIrra=[]
-			
-			promedioRojoSinLuz=[]
-			promedioVerdeSinLuz=[]
-			promedioAzulSinLuz=[]
-			
-			for i in range(2*n):
-				x.append(k[i][0])
-				y.append(k[i][1])
-			for i in range(1,2*n,2):
-				prom=655535-np.mean(aray[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
-				promSinIrra=655535-np.mean(araySinIrra[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
-				promSinLuz=655535-np.mean(araySinLuz[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
-				
-				promedioRojo.append(prom[0])
-				promedioVerde.append(prom[1])
-				promedioAzul.append(prom[2])
-				
-				promedioRojoSinIrra.append(promSinIrra[0])
-				promedioVerdeSinIrra.append(promSinIrra[1])
-				promedioAzulSinIrra.append(promSinIrra[2])
-				
-				promedioRojoSinLuz.append(promSinLuz[0])
-				promedioVerdeSinLuz.append(promSinLuz[1])
-				promedioAzulSinLuz.append(promSinLuz[2])
-			fdlg = wx.FileDialog(self, "Guardar calibracion", "", "", "CSV files(*.csv)|*.*", wx.FD_SAVE)
-			fdlg.SetFilename("calibracion-")
-			fdlg.ShowModal()
-			nombreArchivo=''
+        dialogoCalibracion=DialogoCalibracion(self)
+        dialogoCalibracion.ShowModal()
+        if dialogoCalibracion.resultado[0]!='cancelar':
+            print(dialogoCalibracion.resultado)
+            self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
+            self.notebookImagenes.AddPage(self.paginas[-1], "Calibracion")
+            nuem=self.notebookImagenes.GetPageCount()-1
+            self.notebookImagenes.SetSelection(nuem)
+            figActual=self.paginas[-1].figure
+            a1=figActual.gca()
+            aray=tiff.imread(dialogoCalibracion.resultado[0])
+            escalado=(aray/65535.0)*255
+            dosisReal=leerDosis(dialogoCalibracion.resultado[1])
+            araySinIrra=0*aray
+            araySinLuz=0*aray
+            a1.imshow(escalado.astype(int)) 
 
-			if fdlg.ShowModal() == wx.ID_OK:
-				nombreArchivo = fdlg.GetPath() + ".txt"
-			calibr=claseCalibracion()	
+            if(dialogoCalibracion.resultado[6]):
+                dialogoBackground=DialogoBackground(self)
+                dialogoBackground.ShowModal()
+                if dialogoBackground.resultado[0]!='cancelar' and dialogoBackground.resultado[0]!='':
+                    araySinIrra=tiff.imread(dialogoBackground.resultado[0])
+                    if(dialogoBackground.resultado[1]!=''):
+                        araySinLuz=tiff.imread(dialogoBackground.resultado[1])
+                
+            if(dialogoCalibracion.resultado[4]):
+                aray=wiener(aray,(40, 40))
+                araySinIrra=wiener(araySinIrra,(40, 40))
+                araySinLuz=wiener(araySinLuz,(40, 40))
+                    
+            
+            
+            #dosisReal.sort()
+            n=len(dosisReal)
+            print(n)
+            dosisReal=np.array(dosisReal)
+            k=figActual.ginput(n=2*n)
+            print(dosisReal)
+            x=[]
+            y=[]
+            
+            promedioRojo=[]
+            promedioVerde=[]
+            promedioAzul=[]
+            
+            promedioRojoSinIrra=[]
+            promedioVerdeSinIrra=[]
+            promedioAzulSinIrra=[]
+            
+            promedioRojoSinLuz=[]
+            promedioVerdeSinLuz=[]
+            promedioAzulSinLuz=[]
+            
+            for i in range(2*n):
+                x.append(k[i][0])
+                y.append(k[i][1])
+            for i in range(1,2*n,2):
+                prom=np.mean(aray[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
+                promSinIrra=np.mean(araySinIrra[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
+                promSinLuz=np.mean(araySinLuz[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
+                
+                promedioRojo.append(prom[0])
+                promedioVerde.append(prom[1])
+                promedioAzul.append(prom[2])
+                
+                promedioRojoSinIrra.append(promSinIrra[0])
+                promedioVerdeSinIrra.append(promSinIrra[1])
+                promedioAzulSinIrra.append(promSinIrra[2])
+                
+                promedioRojoSinLuz.append(promSinLuz[0])
+                promedioVerdeSinLuz.append(promSinLuz[1])
+                promedioAzulSinLuz.append(promSinLuz[2])
+                
+            promedioRojo=np.array(promedioRojo)
+            promedioVerde=np.array(promedioVerde)
+            promedioAzul=np.array(promedioAzul)
+            
+            promedioRojoSinIrra=np.array(promedioRojoSinIrra)
+            promedioVerdeSinIrra=np.array(promedioVerdeSinIrra)
+            promedioAzulSinIrra=np.array(promedioAzulSinIrra)
+            
+            promedioRojoSinLuz=np.array(promedioRojoSinLuz)
+            promedioVerdeSinLuz=np.array(promedioVerdeSinLuz)
+            promedioAzulSinLuz=np.array(promedioAzulSinLuz)
+            
+            fdlg = wx.FileDialog(self, "Guardar calibracion",wildcard="calibraciones (*.txt)|*.txt", style=wx.FD_SAVE)
+            fdlg.SetFilename("calibracion-")
+            nombreArchivo=''
+
+            if fdlg.ShowModal() == wx.ID_OK:
+                nombreArchivo = fdlg.GetPath() + ".txt"
+            print(dialogoCalibracion.resultado[2])
+            print(dialogoCalibracion.resultado[3])
+            
+            calibr=CalibracionImagen(promedioRojo,promedioVerde,promedioAzul,dosisReal,dialogoCalibracion.resultado[2],dialogoCalibracion.resultado[3],dialogoCalibracion.resultado[5])  
+            calibr.generar_calibracion(nombreArchivo)
+            
+            self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))    
+            self.notebookImagenes.AddPage(self.paginas[-1], "Curva Calibracion")    
+            nuem=self.notebookImagenes.GetPageCount()-1
+            self.notebookImagenes.SetSelection(nuem)
+            figActual=self.paginas[-1].figure
+            a1=figActual.gca()
+            
+            a1.scatter(dosisReal,promedioRojo,marker='x',color='r')
+            a1.scatter(dosisReal,promedioVerde,marker='x',color='g')
+            a1.scatter(dosisReal,promedioAzul,marker='x',color='b')
+            
+            xGra=np.linspace(dosisReal[0],dosisReal[-1],100)
+            yGra=calibr.funcionCali(xGra)
+            
+            a1.plot(xGra,yGra,'--')
         
 
     def calibracionAutomatica(self, event):  # wxGlade: MyFrame.<event_handler>

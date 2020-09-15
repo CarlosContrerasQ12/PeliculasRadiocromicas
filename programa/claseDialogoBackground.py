@@ -13,7 +13,7 @@ import wx
 # end wxGlade
 
 
-class MyDialog(wx.Dialog):
+class DialogoBackground(wx.Dialog):
     def __init__(self, *args, **kwds):
         # begin wxGlade: MyDialog.__init__
         kwds["style"] = kwds.get("style", 0) | wx.DEFAULT_DIALOG_STYLE
@@ -70,7 +70,7 @@ class MyDialog(wx.Dialog):
 
 class MyApp(wx.App):
     def OnInit(self):
-        self.dialog = MyDialog(None, wx.ID_ANY, "")
+        self.dialog = DialogoBackground(None, wx.ID_ANY, "")
         self.SetTopWindow(self.dialog)
         self.dialog.ShowModal()
         self.dialog.Destroy()
