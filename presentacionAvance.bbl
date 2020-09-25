@@ -1,0 +1,37 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{CMvdHdH13}
+
+\bibitem[CMvdHdH13]{Crijns2013}
+W.~Crijns, F.~Maes, U.~A. van~der Heide, and F.~Van den Heuvel,
+  \emph{Calibrating page sized gafchromic {EBT}3 films}, Medical Physics
+  \textbf{40} (2013), no.~1, 012102.
+
+\bibitem[DSS{\etalchar{+}}05]{Devic2005}
+Slobodan Devic, Jan Seuntjens, Edwin Sham, Ervin~B. Podgorsak, C.~Ross
+  Schmidtlein, Assen~S. Kirov, and Christopher~G. Soares, \emph{Precise
+  radiochromic film dosimetry using a flat-bed document scanner}, Medical
+  Physics \textbf{32} (2005), no.~7Part1, 2245--2253.
+
+\bibitem[DTL16]{Devic2016}
+Slobodan Devic, Nada Tomic, and David Lewis, \emph{Reference radiochromic film
+  dosimetry: Review of technical aspects}, Physica Medica \textbf{32} (2016),
+  no.~4, 541--556.
+
+\bibitem[LCZL17]{Li2017}
+Yinghui Li, Lixin Chen, Jinhan Zhu, and Xiaowei Liu, \emph{The combination of
+  the error correction methods of {GAFCHROMIC} {EBT}3 film}, {PLOS} {ONE}
+  \textbf{12} (2017), no.~7, e0181958.
+
+\bibitem[MLY11]{Micke2011}
+Andre Micke, David~F. Lewis, and Xiang Yu, \emph{Multichannel film dosimetry
+  with nonuniformity correction}, Medical Physics \textbf{38} (2011), no.~5,
+  2523--2534.
+
+\end{thebibliography}

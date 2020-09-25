@@ -8,7 +8,6 @@ import numpy as np
 import wx
 import wx.lib.agw.aui as aui
 import wx.lib.mixins.inspection as wit
-from wxmplot import ImageFrame,ImagePanel
 from PIL import Image
 from scipy.misc import face
 from scipy.signal.signaltools import wiener
@@ -31,21 +30,32 @@ def leerDosis(nombre_archivo):
     arch.close()
     return dosis
 
+class ImagenWx(wx.Panel):
+    def __init__(self, parent, id=-1, dpi=None, **kwargs):
+        wx.Panel.__init__(self, parent, id=id, **kwargs)
+        self.sbm=wx.StaticBitmap(self)
+        
+        sizer = wx.BoxSizer(wx.VERTICAL)
+        sizer.Add(self.sbm, 1, wx.EXPAND | wx.GROW)
+        self.SetSizer(sizer)
+        self.Fit()
+
 
 class ImagenCuadernoMatplotlib(wx.Panel):
     def __init__(self, parent, id=-1, dpi=None, **kwargs):
         wx.Panel.__init__(self, parent, id=id, **kwargs)
         self.figure = mpl.figure.Figure(dpi=dpi)
-        self.figure.gca().axis('off')
+        #self.figure.gca().axis('off')
         self.canvas = FigureCanvas(self, -1, self.figure)
         #self.toolbar = NavigationToolbar(self.canvas)
         #self.toolbar.Realize()
-
+        
         sizer = wx.BoxSizer(wx.VERTICAL)
-        sizer.Add(self.canvas, 1, wx.EXPAND | wx.GROW)
+        sizer.Add(self.canvas, 1, wx.EXPAND)
         #sizer.Add(self.toolbar, 0, wx.LEFT | wx.EXPAND)
         self.SetSizer(sizer)
         self.Fit()
+
 
 
 class MyFrame(wx.Frame):
@@ -58,6 +68,7 @@ class MyFrame(wx.Frame):
         self.paginas=[]
         self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
         #self.paginas.append(ImageFrame(self.notebookImagenes,size=(1024,576),mode='rgb'))
+        #self.paginas.append(ImagenWx(self.notebookImagenes))
         self.PanelOpcionesImagen = wx.Panel(self, wx.ID_ANY)
         self.notebookControl = wx.Notebook(self, wx.ID_ANY)
         self.notebook_1_pane_2 = wx.Panel(self.notebookControl, wx.ID_ANY)
@@ -118,10 +129,9 @@ class MyFrame(wx.Frame):
         self.notebookImagenes.AddPage(self.paginas[0], "Bienvenido")
         figInicial=self.paginas[0].figure
         a1=figInicial.gca()
-        #im = Image.open('54fb8810327dd.jpg')
-        im = Image.open('khb.jpg')
+        im = Image.open('54fb8810327dd.jpg')
         araar=np.array(im)
-        #self.paginas[0].display(araar)
+        #self.paginas[0].sbm.SetBitmap(wx.Bitmap('54fb8810327dd.jpg'))
         a1.imshow(araar,aspect='auto',interpolation='spline36')
         
         self.notebook_1_pane_2.SetSizer(sizer_7)
@@ -204,9 +214,9 @@ class MyFrame(wx.Frame):
                 x.append(k[i][0])
                 y.append(k[i][1])
             for i in range(1,2*n,2):
-                prom=np.mean(aray[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
-                promSinIrra=np.mean(araySinIrra[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
-                promSinLuz=np.mean(araySinLuz[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
+                prom=65535-np.mean(aray[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
+                promSinIrra=65535-np.mean(araySinIrra[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
+                promSinLuz=65535-np.mean(araySinLuz[min(int(y[i-1]),int(y[i])):max(int(y[i-1]),int(y[i])),min(int(x[i-1]),int(x[i])):max(int(x[i-1]),int(x[i])),:],axis=(0,1))
                 
                 promedioRojo.append(prom[0])
                 promedioVerde.append(prom[1])
@@ -235,6 +245,11 @@ class MyFrame(wx.Frame):
             fdlg = wx.FileDialog(self, "Guardar calibracion",wildcard="calibraciones (*.txt)|*.txt", style=wx.FD_SAVE)
             fdlg.SetFilename("calibracion-")
             nombreArchivo=''
+            
+            promedioRojo=promedioRojo-promedioRojoSinIrra
+            promedioAzul=promedioAzul-promedioAzulSinIrra
+            promedioVerde=promedioVerde-promedioVerdeSinIrra
+            
 
             if fdlg.ShowModal() == wx.ID_OK:
                 nombreArchivo = fdlg.GetPath() + ".txt"
