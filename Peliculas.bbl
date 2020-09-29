@@ -60,6 +60,11 @@ W.~Crijns, F.~Maes, U.~A. van~der Heide, and F.~V. den Heuvel, ``Calibrating
   page sized gafchromic {EBT}3 films,'' {\em Medical Physics}, vol.~40,
   p.~012102, Jan. 2013.
 
+\bibitem{Micke2011}
+A.~Micke, D.~F. Lewis, and X.~Yu, ``Multichannel film dosimetry with
+  nonuniformity correction,'' {\em Medical Physics}, vol.~38, pp.~2523--2534,
+  May 2011.
+
 \bibitem{Li2017}
 Y.~Li, L.~Chen, J.~Zhu, and X.~Liu, ``The combination of the error correction
   methods of {GAFCHROMIC} {EBT}3 film,'' {\em {PLOS} {ONE}}, vol.~12,
@@ -70,11 +75,6 @@ S.~Devic, J.~Seuntjens, E.~Sham, E.~B. Podgorsak, C.~R. Schmidtlein, A.~S.
   Kirov, and C.~G. Soares, ``Precise radiochromic film dosimetry using a
   flat-bed document scanner,'' {\em Medical Physics}, vol.~32, pp.~2245--2253,
   June 2005.
-
-\bibitem{Micke2011}
-A.~Micke, D.~F. Lewis, and X.~Yu, ``Multichannel film dosimetry with
-  nonuniformity correction,'' {\em Medical Physics}, vol.~38, pp.~2523--2534,
-  May 2011.
 
 \bibitem{Howard2020}
 M.~E. Howard, M.~G. Herman, and M.~P. Grams, ``Methodology for radiochromic
@@ -95,5 +95,11 @@ F.~H. Attix, {\em Introduction to Radiological Physics and Radiation
 \bibitem{khan2014the}
 F.~Khan, {\em The physics of radiation therapy}.
 \newblock Philadelphia: Lippincott Williams \& Wilkins, 2014.
+
+\bibitem{Yoo2006}
+S.~Yoo, G.-Y. Kim, R.~Hammoud, E.~Elder, T.~Pawlicki, H.~Guan, T.~Fox,
+  G.~Luxton, F.-F. Yin, and P.~Munro, ``A quality assurance program for the
+  on-board imager{\textregistered},'' {\em Medical Physics}, vol.~33,
+  pp.~4431--4447, Oct. 2006.
 
 \end{thebibliography}

@@ -8,6 +8,8 @@
 \usepackage{mathrsfs} 
 \usepackage{outlines}
 \usetheme{Goettingen}
+%\usepackage{subfig,graphicx,showframe}
+\setbeamertemplate{bibliography item}[text]
 \DeclareMathOperator{\re}{Re}
 \begin{document}
 	\author{Carlos Daniel Contreras Quiroz}
@@ -41,46 +43,68 @@
 \begin{frame}{Motivación}
 Los planes de tratamiento con radioterapia requieren de una alta precisión en las dosis entregadas, desviaciones menores al $5\%$.  \\~\\
 
-Es conveniente implementar sistemas que permitan verificar que los planes de tratamiento se cumplan con suficiente veracidad.
-
-\end{frame}
-
-\begin{frame}{Motivación}
-	Existen diversos mecanismos para realizar el monitoreo de geometrías y dosis entregadas.\\
-	\begin{itemize}
-		\item Detectores de silicio
-		\item Detectores con cámaras de ionización 
-	\end{itemize}
-	Sin embargo, a veces son muy costosos o no proporcionan la resolución suficiente para ciertas aplicaciones.
-\end{frame}
-
-\begin{frame}{Motivación}
-	Una posible solución es el uso de películas radiocrómicas 
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.7\linewidth]{images/fondoblancoLandscape-1.png}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Motivación}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.7\linewidth]{images/radiographic-film.jpg}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Motivación}
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{images/diacetileno.png}
+	\includegraphics[width=0.7\linewidth]{images/paciente.png}
+	\caption{Maquina Varian Trylogy \cite{khan2014the}}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Motivación}
+	Existen diversos mecanismos para realizar el monitoreo de distribuciones y dosis entregadas.\\
+\end{frame}
+
+\begin{frame}{Motivación}
+	Cámaras de ionización 
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/camara.jpg}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Motivación}
+Paneles de silicio
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/silicio.png}
+	\caption{\cite{Yoo2006}}
 \end{figure}
 \end{frame}
+
+\begin{frame}
+	Sin embargo, no sirven en todos los casos
+	\begin{itemize}
+		\item No tiene la resolución espacial suficiente para procedimientos como radiocirugia
+		\item Son demasiado costos y poco asequibles 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Motivación}
+	Una posible solución es el uso de películas radiocrómicas
+\begin{figure}[htp]% [H] is so declass\'e!
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{images/fondoblancoLandscape-1.png}
+		\caption{Película EBT2}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{images/reaccion.png}
+		\caption{Reacción de diacetileno\cite{Williams2011}}
+	\end{minipage}\par
+	\vskip\floatsep% normal separation between figures
+	\includegraphics[width=0.45\textwidth]{images/estructuraEBT.png}
+	\caption{Estructura de películas EBT\cite{Devic2016}}
+\end{figure}
+\end{frame}
+
 
 \begin{frame}{Motivación}
 	El uso de estas presenta varias ventajas
 	\begin{itemize}
-		\item Alta sensibilidad a la dosis y resolución espacial
-		\item Bajo costo (relativamente)
+		\item Alta sensibilidad a la dosis(0.1 Gy-10Gy)
+		\item Sin dependencia energética(50keV-10 MeV)
+		\item Bajo costo y amplia variedad
 		\item Practicas de usar
 	\end{itemize}
 \end{frame}
@@ -102,8 +126,8 @@ Para usar la películas hay que tener en cuenta ciertos factores ambientales que
 	\begin{outline}
 		\1 Temperatura
 		\1 Humedad
-		\1 Orientación de escaneo
-		\1 \textbf{Tiempo post-irradiación}
+		\1 Orientación y posición de escaneo
+		\1 Tiempo post-irradiación
 	\end{outline}
 Mantenerlos controlados basta para una medida precisa
 \end{frame}
@@ -112,20 +136,19 @@ Mantenerlos controlados basta para una medida precisa
 	Irradiamos la película con diferentes dosis conocidas, obtenemos cierta coloración por cada dosis
 	\begin{figure}
 		\centering
-		\includegraphics[width=\linewidth]{images/calibracionSimpleLandscape.png}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{Método general}
-	Promediamos los colores en los tres canales y los asociamos a cada dosis
-	\begin{figure}
-		\centering
-		\includegraphics[width=\linewidth]{images/respses.png}
+		\begin{minipage}{0.45\textwidth}
+			\includegraphics[width=\textwidth]{images/calibracionSimpleLandscape.png}
+			\caption{Película de calibración}
+		\end{minipage}\hfill
+		\begin{minipage}{0.45\textwidth}
+			\includegraphics[width=\textwidth]{images/respses.png}
+			\caption{Curva de respuesta\cite{Rink2008}}
+		\end{minipage}
 	\end{figure}
 \end{frame}
 
 \begin{frame}
-	Se correlacionan los datos mediante un ajuste a algún tipo de curva.\\
+	Se correlacionan los datos mediante un ajuste a algún tipo de curva.\\~\\
 	Estos son los tipo de funciones más usadas
 	\begin{itemize}
 		\item Racionales 
@@ -136,8 +159,7 @@ Mantenerlos controlados basta para una medida precisa
 \end{frame}
 
 \begin{frame}
-	Con esta curva podemos relacionar dosis con colores en una película irradiada.\\~\\
-	Con esta podemos generar mapas de dosis
+	Con esta curva podemos relacionar dosis con colores en una película irradiada y generar mapas de dosis.\\~\\
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.7\linewidth]{images/dosemap.png}
@@ -166,50 +188,48 @@ Podemos sofisticar un poco con correcciones como
 
 \subsection{Toma de imágenes}
 
-\begin{frame}{Toma de imágenes}
-Hemos tomado imágenes de prueba para la programación
-\begin{figure}
+\begin{frame}{Montaje}
+\begin{figure}[htp]% [H] is so declass\'e!
 	\centering
-	\includegraphics[width=\linewidth]{images/20200826_153715.jpg}
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{images/20200826_153715.jpg}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{images/20200826_205548.jpg}
+	\end{minipage}\par
+	\vskip\floatsep% normal separation between figures
+	\includegraphics[width=0.45\textwidth]{images/20200826_215214.jpg}
 \end{figure}
 \end{frame}
 
-\begin{frame}
-\begin{figure}
-	\centering
-	\includegraphics[width=\linewidth]{images/20200826_205548.jpg}
-\end{figure}
-\end{frame}
 
-\begin{frame}
-\begin{figure}
-	\centering
-	\includegraphics[width=\linewidth]{images/20200826_215214.jpg}
-\end{figure}
-\end{frame}
 
 \subsection{Desarrollo del software}
 
-\begin{frame}{Programación}
-	\begin{figure}
-		\centering
-		\includegraphics[width=\linewidth]{images/programa1.png}
-	\end{figure}
-\end{frame}
-
-\begin{frame}
-\begin{figure}
+\begin{frame}{Montaje}
+\begin{figure}[htp]% [H] is so declass\'e!
 	\centering
-	\includegraphics[width=\linewidth]{images/programa2.png}
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{images/programa1.png}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\includegraphics[width=\textwidth]{images/programa2.png}
+	\end{minipage}\par
+	\vskip\floatsep% normal separation between figures
+	\includegraphics[width=0.45\textwidth]{images/programa3.png}
 \end{figure}
 \end{frame}
 
 \begin{frame}
 \begin{figure}
 	\centering
-	\includegraphics[width=\linewidth]{images/programa3.png}
+	\includegraphics[width=\linewidth]{images/daigramaFlujo.png}
 \end{figure}
 \end{frame}
+
+
+
+
 
 
 \section{Objetivos a cumplir}
@@ -223,21 +243,23 @@ Hemos tomado imágenes de prueba para la programación
 \end{frame}
 
 \begin{frame}
+Porcentaje avance documento 40\% \\
+Porcentaje cumplimiento objetivos 50\%\\~\\
 Faltaría lo siguiente
 \begin{itemize}
-	\item Mejorar la usabilidad del programa
-	\item Generar curvas de isodosis
-	\item Entender e implementar el cálculo de $\gamma$ para la comparación cuantitativa con los planes de tratamiento
+	\item Mejorar la usabilidad del programa (hasta el final)
+	\item Generar mapas y curvas de isodosis (próximas 3 semanas)
+	\item Entender e implementar el cálculo de $\gamma$ para la comparación cuantitativa con los planes de tratamiento(3 semanas)
 \end{itemize}
 \end{frame}
 
 
 
-\section{Bibliografia}
+\section{Bibliografía}
 \begin{frame}[allowframebreaks]
 \frametitle{Referencias}
 \nocite{*}
-\bibliographystyle{amsalpha}
+\bibliographystyle{ieeetr}
 \bibliography{references}
 \end{frame}
 

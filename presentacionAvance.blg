@@ -5,44 +5,57 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: amsalpha.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
-You've used 5 entries,
+Repeated entry---line 108 of file references.bib
+ : @inproceedings{Williams2011
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "mayers" isn't style-file defined
+--line 215 of file references.bib
+I was expecting a `,' or a `}'---line 219 of file references.bib
+ :  
+ :  publisher={University of Wollongong}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--missing booktitle in Williams2011
+You've used 19 entries,
             2624 wiz_defined-function locations,
-            601 strings with 5321 characters,
-and the built_in function-call counts, 2506 in all, are:
-= -- 229
-> -- 157
-< -- 0
-+ -- 60
-- -- 59
-* -- 251
-:= -- 431
-add.period$ -- 5
-call.type$ -- 5
-change.case$ -- 41
-chr.to.int$ -- 5
-cite$ -- 5
-duplicate$ -- 70
-empty$ -- 160
-format.name$ -- 63
-if$ -- 477
+            697 strings with 8504 characters,
+and the built_in function-call counts, 9118 in all, are:
+= -- 811
+> -- 611
+< -- 3
++ -- 229
+- -- 226
+* -- 901
+:= -- 1554
+add.period$ -- 19
+call.type$ -- 19
+change.case$ -- 164
+chr.to.int$ -- 19
+cite$ -- 20
+duplicate$ -- 274
+empty$ -- 581
+format.name$ -- 240
+if$ -- 1745
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 26
-num.names$ -- 15
-pop$ -- 36
+missing$ -- 39
+newline$ -- 68
+num.names$ -- 57
+pop$ -- 166
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 183
 quote$ -- 0
-skip$ -- 46
+skip$ -- 185
 stack$ -- 0
-substring$ -- 165
-swap$ -- 5
-text.length$ -- 0
-text.prefix$ -- 0
+substring$ -- 513
+swap$ -- 20
+text.length$ -- 3
+text.prefix$ -- 3
 top$ -- 0
-type$ -- 40
-warning$ -- 0
-while$ -- 23
-width$ -- 9
-write$ -- 65
+type$ -- 144
+warning$ -- 1
+while$ -- 80
+width$ -- 23
+write$ -- 215
+(There were 2 error messages)

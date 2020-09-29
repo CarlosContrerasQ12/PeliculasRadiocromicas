@@ -6,7 +6,23 @@
   \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
 }
 \providecommand{\href}[2]{#2}
-\begin{thebibliography}{CMvdHdH13}
+\begin{thebibliography}{LMLGHG{\etalchar{+}}18}
+
+\bibitem[Att86]{Attix1986}
+Frank~Herbert Attix, \emph{Introduction to radiological physics and radiation
+  dosimetry}, Wiley, November 1986.
+
+\bibitem[BKNY17]{Beni2017}
+Mehrdad~Shahmohammadi Beni, D.~Krstic, D.~Nikezic, and K.N. Yu, \emph{Modeling
+  coloration of a radiochromic film with molecular dynamics-coupled finite
+  element method}, Applied Sciences \textbf{7} (2017), no.~10, 1031.
+
+\bibitem[CBG{\etalchar{+}}10]{Chemiski2010}
+Krzysztof Che{\l}mi{\'{n}}ski, Wojciech Bulski, Dietmar Georg, Dominika Bodzak,
+  Zbigniew Maniakowski, Dominika Oborska, Joanna Rostkowska, and Ma{\l}gorzata
+  Kania, \emph{Energy dependence of radiochromic dosimetry films for use in
+  radiotherapy verification}, Reports of Practical Oncology {\&} Radiotherapy
+  \textbf{15} (2010), no.~2, 40--46.
 
 \bibitem[CMvdHdH13]{Crijns2013}
 W.~Crijns, F.~Maes, U.~A. van~der Heide, and F.~Van den Heuvel,
@@ -24,14 +40,75 @@ Slobodan Devic, Nada Tomic, and David Lewis, \emph{Reference radiochromic film
   dosimetry: Review of technical aspects}, Physica Medica \textbf{32} (2016),
   no.~4, 541--556.
 
+\bibitem[HHG20]{Howard2020}
+Michelle~E. Howard, Michael~G. Herman, and Michael~P. Grams, \emph{Methodology
+  for radiochromic film analysis using {FilmQA} pro and {ImageJ}}, {PLOS} {ONE}
+  \textbf{15} (2020), no.~5, e0233562.
+
+\bibitem[Kha14]{khan2014the}
+Faiz Khan, \emph{The physics of radiation therapy}, Lippincott Williams \&
+  Wilkins, Philadelphia, 2014.
+
 \bibitem[LCZL17]{Li2017}
 Yinghui Li, Lixin Chen, Jinhan Zhu, and Xiaowei Liu, \emph{The combination of
   the error correction methods of {GAFCHROMIC} {EBT}3 film}, {PLOS} {ONE}
   \textbf{12} (2017), no.~7, e0181958.
 
+\bibitem[LMLGHG{\etalchar{+}}18]{LenMarroqun2018}
+Elsa~Y. Le{\'{o}}n-Marroqu{\'{\i}}n, Jos{\'{e}}~M.
+  L{\'{a}}rraga-Guti{\'{e}}rrez, J.~Alfredo Herrera-Gonz{\'{a}}lez, Miguel~A.
+  Camacho-L{\'{o}}pez, Jos{\'{e}} E.~Villarreal Barajas, and Olivia~A.
+  Garc{\'{\i}}a-Gardu{\~{n}}o, \emph{Investigation of {EBT}3 radiochromic
+  film{\textquotesingle}s response to humidity}, Journal of Applied Clinical
+  Medical Physics \textbf{19} (2018), no.~3, 283--290.
+
+\bibitem[May11]{mayers}
+S.~Mayers, \emph{Characterisation of gafchromic ebt2 film for use in radiation
+  therapy dosimetry}, 2011.
+
+\bibitem[MC65]{McLaughlin1965}
+William~L. McLaughlin and Lyman Chalkley, \emph{Measurement of radiation dose
+  distributions with photochromic materials}, Radiology \textbf{84} (1965),
+  no.~1, 124--125.
+
 \bibitem[MLY11]{Micke2011}
 Andre Micke, David~F. Lewis, and Xiang Yu, \emph{Multichannel film dosimetry
   with nonuniformity correction}, Medical Physics \textbf{38} (2011), no.~5,
   2523--2534.
+
+\bibitem[NRBC{\etalchar{+}}98]{NiroomandRad1998}
+Azam Niroomand-Rad, Charles~Robert Blackwell, Bert~M. Coursey, Kenneth~P. Gall,
+  James~M. Galvin, William~L. McLaughlin, Ali~S. Meigooni, Ravinder Nath,
+  James~E. Rodgers, and Christopher~G. Soares, \emph{Radiochromic film
+  dosimetry: Recommendations of {AAPM} radiation therapy committee task group
+  55}, Medical Physics \textbf{25} (1998), no.~11, 2093--2115.
+
+\bibitem[RLV{\etalchar{+}}08]{Rink2008}
+Alexandra Rink, David~F. Lewis, Sangya Varma, I.~Alex Vitkin, and David~A.
+  Jaffray, \emph{Temperature and hydration effects on absorbance spectra and
+  radiation sensitivity of a radiochromic medium}, Medical Physics \textbf{35}
+  (2008), no.~10, 4545--4555.
+
+\bibitem[SAM{\etalchar{+}}15]{Shimohigashi2015}
+Yoshinobu Shimohigashi, Fujio Araki, Masato Maruyama, Yuji Nakaguchi, Satoshi
+  Kuwahara, Nozomu Nagasue, and Yudai Kai, \emph{Evaluation of a single-scan
+  protocol for radiochromic film dosimetry}, Journal of Applied Clinical
+  Medical Physics \textbf{16} (2015), no.~2, 412--424.
+
+\bibitem[WMR{\etalchar{+}}11]{Williams2011}
+Matthew Williams, Peter Metcalfe, Anatoly Rosenfeld, Tomas Kron, Francesco
+  d'Errico, and Marko Moscovitch, \emph{Radiochromic film dosimetry and its
+  applications in radiotherapy}, {AIP}, 2011.
+
+\bibitem[YBC06]{Yu2006}
+P.~Yu, M.~Butson, and T.~Cheung, \emph{Does mechanical pressure on radiochromic
+  film affect optical absorption and dosimetry?}, Australasian Physics {\&}
+  Engineering Sciences in Medicine \textbf{29} (2006), no.~3, 285--287.
+
+\bibitem[YKH{\etalchar{+}}06]{Yoo2006}
+Sua Yoo, Gwe-Ya Kim, Rabih Hammoud, Eric Elder, Todd Pawlicki, Huaiqun Guan,
+  Timothy Fox, Gary Luxton, Fang-Fang Yin, and Peter Munro, \emph{A quality
+  assurance program for the on-board imager{\textregistered}}, Medical Physics
+  \textbf{33} (2006), no.~11, 4431--4447.
 
 \end{thebibliography}

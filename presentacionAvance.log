@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  22 SEP 2020 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  29 SEP 2020 11:30
 entering extended mode
 **./presentacionAvance.tex
 (presentacionAvance.tex
@@ -730,22 +730,22 @@ LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `presentacionAvance.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -800,7 +800,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box75
-Package hyperref Info: Link coloring OFF on input line 12.
+Package hyperref Info: Link coloring OFF on input line 14.
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -814,65 +814,65 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count320
 )
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
+LaTeX Info: Redefining \ref on input line 14.
+LaTeX Info: Redefining \pageref on input line 14.
+LaTeX Info: Redefining \nameref on input line 14.
  (presentacionAvance.out) (presentacionAvance.out)
 \@outlinefile=\write5
 \openout5 = `presentacionAvance.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 12.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 14.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 12.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 14.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 12.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 12.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 12.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 12.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 14.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 12.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 12.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 12.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 14.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 12.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 12.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 12.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 14.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 12.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 12.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 14.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 12.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 14.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 12.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 12.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 12.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 12.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 12.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 14.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 12.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 12.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 14.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 14.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
-2.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 1
-2.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 12.
+ut line 14.
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/translator/translator-basic-dict
 ionary-English.dict
@@ -898,12 +898,12 @@ Dictionary: translator-numbers-dictionary, Language: English
 ctionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
  (presentacionAvance.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 13.
+(hyperref)                setting the option has no effect on input line 15.
 
 [1
 
@@ -916,95 +916,110 @@ LaTeX Info: Redefining \% on input line 1.
 ] [3
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
 
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
 
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 46
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 52
 .
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 46.
+ut line 52.
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/sansmathaccent/ot1mathkerncmss.f
 d
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [4
+)
+<images/paciente.png, id=161, 832.10875pt x 555.07375pt>
+File: images/paciente.png Graphic file (type png)
+<use images/paciente.png>
+Package pdftex.def Info: images/paciente.png  used on input line 52.
+(pdftex.def)             Requested size: 195.18513pt x 130.19672pt.
+ [4
 
-] [5
+ <./images/paciente.png>] [5
 
 ]
-<images/fondoblancoLandscape-1.png, id=231, 718.3638pt x 576.2328pt>
+<images/camara.jpg, id=236, 4047.12pt x 3035.34pt>
+File: images/camara.jpg Graphic file (type jpg)
+<use images/camara.jpg>
+Package pdftex.def Info: images/camara.jpg  used on input line 64.
+(pdftex.def)             Requested size: 195.18513pt x 146.35698pt.
+ [6
+
+ <./images/camara.jpg>]
+<images/silicio.png, id=271, 700.6175pt x 527.9725pt>
+File: images/silicio.png Graphic file (type png)
+<use images/silicio.png>
+Package pdftex.def Info: images/silicio.png  used on input line 73.
+(pdftex.def)             Requested size: 195.18513pt x 147.08206pt.
+ [7
+
+ <./images/silicio.png>] [8
+
+]
+<images/fondoblancoLandscape-1.png, id=345, 1496.59125pt x 1200.485pt>
 File: images/fondoblancoLandscape-1.png Graphic file (type png)
 <use images/fondoblancoLandscape-1.png>
 Package pdftex.def Info: images/fondoblancoLandscape-1.png  used on input line 
-63.
-(pdftex.def)             Requested size: 195.18513pt x 156.56091pt.
- [6
+99.
+(pdftex.def)             Requested size: 125.47585pt x 100.63855pt.
+<images/reaccion.png, id=346, 677.53125pt x 442.65375pt>
+File: images/reaccion.png Graphic file (type png)
+<use images/reaccion.png>
+Package pdftex.def Info: images/reaccion.png  used on input line 99.
+(pdftex.def)             Requested size: 125.47585pt x 81.97746pt.
+<images/estructuraEBT.png, id=349, 505.89pt x 245.91875pt>
+File: images/estructuraEBT.png Graphic file (type png)
+<use images/estructuraEBT.png>
+Package pdftex.def Info: images/estructuraEBT.png  used on input line 99.
+(pdftex.def)             Requested size: 125.47585pt x 60.99547pt.
 
- <./images/fondoblancoLandscape-1.png>]
-<images/radiographic-film.jpg, id=267, 191.2746pt x 91.0602pt>
-File: images/radiographic-film.jpg Graphic file (type jpg)
-<use images/radiographic-film.jpg>
-Package pdftex.def Info: images/radiographic-film.jpg  used on input line 70.
-(pdftex.def)             Requested size: 195.18513pt x 92.92462pt.
- [7
+Overfull \vbox (15.38303pt too high) detected at line 99
+ []
 
- <./images/radiographic-film.jpg>]
-<images/diacetileno.png, id=303, 645.41125pt x 280.04625pt>
-File: images/diacetileno.png Graphic file (type png)
-<use images/diacetileno.png>
-Package pdftex.def Info: images/diacetileno.png  used on input line 77.
-(pdftex.def)             Requested size: 278.83713pt x 120.98586pt.
- [8
+[9
 
- <./images/diacetileno.png>] [9
-
-] [10
+ <./images/fondoblancoLandscape-1.png> <./images/reaccion.png> <./images/estruc
+turaEBT.png>] [10
 
 ] [11
 
+] [12
+
 ]
-<images/calibracionSimpleLandscape.png, id=442, 718.3638pt x 576.2328pt>
+<images/calibracionSimpleLandscape.png, id=490, 718.3638pt x 576.2328pt>
 File: images/calibracionSimpleLandscape.png Graphic file (type png)
 <use images/calibracionSimpleLandscape.png>
 Package pdftex.def Info: images/calibracionSimpleLandscape.png  used on input l
-ine 117.
-(pdftex.def)             Requested size: 278.83713pt x 223.66597pt.
-
-Overfull \vbox (21.04832pt too high) detected at line 117
- []
-
-[12
-
- <./images/calibracionSimpleLandscape.png>]
-<images/respses.png, id=478, 808.01875pt x 538.01pt>
+ine 148.
+(pdftex.def)             Requested size: 125.47585pt x 100.6488pt.
+<images/respses.png, id=491, 808.01875pt x 538.01pt>
 File: images/respses.png Graphic file (type png)
 <use images/respses.png>
-Package pdftex.def Info: images/respses.png  used on input line 125.
-(pdftex.def)             Requested size: 278.83713pt x 185.6629pt.
+Package pdftex.def Info: images/respses.png  used on input line 148.
+(pdftex.def)             Requested size: 125.47585pt x 83.54666pt.
  [13
 
- <./images/respses.png>]
-[14
+ <./images/calibracionSimpleLandscape.png> <./images/respses.png>] [14
 
 ]
-<images/dosemap.png, id=549, 653.44125pt x 417.56pt>
+<images/dosemap.png, id=566, 653.44125pt x 417.56pt>
 File: images/dosemap.png Graphic file (type png)
 <use images/dosemap.png>
-Package pdftex.def Info: images/dosemap.png  used on input line 145.
+Package pdftex.def Info: images/dosemap.png  used on input line 167.
 (pdftex.def)             Requested size: 195.18513pt x 124.72101pt.
  [15
 
@@ -1013,63 +1028,85 @@ Package pdftex.def Info: images/dosemap.png  used on input line 145.
 ] [17
 
 ]
-<images/20200826_153715.jpg, id=652, 4047.12pt x 3035.34pt>
+<images/20200826_153715.jpg, id=669, 4047.12pt x 3035.34pt>
 File: images/20200826_153715.jpg Graphic file (type jpg)
 <use images/20200826_153715.jpg>
-Package pdftex.def Info: images/20200826_153715.jpg  used on input line 175.
-(pdftex.def)             Requested size: 278.83713pt x 209.11447pt.
- [18
-
- <./images/20200826_153715.jpg>]
-<images/20200826_205548.jpg, id=688, 4047.12pt x 3035.34pt>
+Package pdftex.def Info: images/20200826_153715.jpg  used on input line 203.
+(pdftex.def)             Requested size: 125.47585pt x 94.06677pt.
+<images/20200826_205548.jpg, id=670, 4047.12pt x 3035.34pt>
 File: images/20200826_205548.jpg Graphic file (type jpg)
 <use images/20200826_205548.jpg>
-Package pdftex.def Info: images/20200826_205548.jpg  used on input line 182.
-(pdftex.def)             Requested size: 278.83713pt x 209.11447pt.
-
-[19
-
- <./images/20200826_205548.jpg>]
-<images/20200826_215214.jpg, id=723, 4047.12pt x 3035.34pt>
+Package pdftex.def Info: images/20200826_205548.jpg  used on input line 203.
+(pdftex.def)             Requested size: 125.47585pt x 94.06677pt.
+<images/20200826_215214.jpg, id=671, 4047.12pt x 3035.34pt>
 File: images/20200826_215214.jpg Graphic file (type jpg)
 <use images/20200826_215214.jpg>
-Package pdftex.def Info: images/20200826_215214.jpg  used on input line 189.
-(pdftex.def)             Requested size: 278.83713pt x 209.11447pt.
- [20
+Package pdftex.def Info: images/20200826_215214.jpg  used on input line 203.
+(pdftex.def)             Requested size: 125.47585pt x 94.06677pt.
+ [18
 
- <./images/20200826_215214.jpg>]
-<images/programa1.png, id=757, 1168.365pt x 625.33624pt>
+ <./images/20200826_153715.jpg> <./images/20200826_205548.jpg> <./images/202008
+26_215214.jpg>]
+<images/programa1.png, id=705, 1168.365pt x 625.33624pt>
 File: images/programa1.png Graphic file (type png)
 <use images/programa1.png>
-Package pdftex.def Info: images/programa1.png  used on input line 198.
-(pdftex.def)             Requested size: 278.83713pt x 149.23453pt.
-
-[21
-
- <./images/programa1.png>]
-<images/programa2.png, id=793, 905.3825pt x 442.65375pt>
+Package pdftex.def Info: images/programa1.png  used on input line 221.
+(pdftex.def)             Requested size: 125.47585pt x 67.15553pt.
+<images/programa2.png, id=706, 905.3825pt x 442.65375pt>
 File: images/programa2.png Graphic file (type png)
 <use images/programa2.png>
-Package pdftex.def Info: images/programa2.png  used on input line 205.
-(pdftex.def)             Requested size: 278.83713pt x 136.3229pt.
- [22
-
- <./images/programa2.png>]
-<images/programa3.png, id=828, 1176.395pt x 630.355pt>
+Package pdftex.def Info: images/programa2.png  used on input line 221.
+(pdftex.def)             Requested size: 125.47585pt x 61.34294pt.
+<images/programa3.png, id=707, 1176.395pt x 630.355pt>
 File: images/programa3.png Graphic file (type png)
 <use images/programa3.png>
-Package pdftex.def Info: images/programa3.png  used on input line 212.
-(pdftex.def)             Requested size: 278.83713pt x 149.41269pt.
- [23
+Package pdftex.def Info: images/programa3.png  used on input line 221.
+(pdftex.def)             Requested size: 125.47585pt x 67.23282pt.
+ [19
 
- <./images/programa3.png>] [24
+ <./images/programa1.png> <./images/programa2.png> <./images/programa3.png>]
+<images/daigramaFlujo.png, id=745, 804.00375pt x 322.20375pt>
+File: images/daigramaFlujo.png Graphic file (type png)
+<use images/daigramaFlujo.png>
+Package pdftex.def Info: images/daigramaFlujo.png  used on input line 228.
+(pdftex.def)             Requested size: 278.83713pt x 111.74054pt.
+ [20
 
-] [25
+ <./images/daigramaFlujo.png>] [21
 
-] (presentacionAvance.bbl) [26
+] [22
 
- </home/carlos/.miktex/texmfs/install/tex/latex/beamer/beamericonarticle.pdf>] 
-[27
+] (presentacionAvance.bbl
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+62.
+
+(/home/carlos/.miktex/texmfs/install/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)) [23
+
+] [24
+
+
+]
+[25
+
+
+] [26
+
+
+] [27
+
+
+] [28
+
+
+] [29
+
+
+] [30
+
+
+] [31
 
 
 ]
@@ -1082,37 +1119,38 @@ Package pdftex.def Info: images/programa3.png  used on input line 212.
 \tf@snm=\write8
 \openout8 = `presentacionAvance.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 268.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 268.
  (presentacionAvance.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 268.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 268.
 Package rerunfilecheck Info: File `presentacionAvance.out' has not changed.
-(rerunfilecheck)             Checksum: D98F93296476994B142374D228A6049B;487.
+(rerunfilecheck)             Checksum: DA304AC65664B19FC6E3DCF5B4BBACDA;490.
  ) 
 Here is how much of TeX's memory you used:
- 19318 strings out of 480897
- 368052 string characters out of 2904517
- 627173 words of memory out of 3000000
- 34639 multiletter control sequences out of 15000+200000
- 542354 words of font info for 61 fonts, out of 3000000 for 9000
+ 19451 strings out of 480897
+ 370844 string characters out of 2904517
+ 634643 words of memory out of 3000000
+ 34742 multiletter control sequences out of 15000+200000
+ 542735 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,16n,67p,814b,560s stack positions out of 5000i,500n,10000p,200000b,50000s
-</home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pf
-b></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.pf
-b></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss17.pf
-b></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.pfb
-></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.p
-fb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12.
-pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/ms
-am10.pfb>
-Output written on presentacionAvance.pdf (27 pages, 13141139 bytes).
+ </home/carlos/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcsi120
+0.pk></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12
+.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10
+.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12
+.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss17
+.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.
+pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx1
+0.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi
+12.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols
+/msam10.pfb>
+Output written on presentacionAvance.pdf (31 pages, 17420122 bytes).
 PDF statistics:
- 1055 PDF objects out of 1200 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1224 PDF objects out of 1440 (max. 8388607)
+ 90 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

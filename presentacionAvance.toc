@@ -1,9 +1,9 @@
 \babel@toc {spanish}{}
 \beamer@sectionintoc {1}{Introducción}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Objetivos}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{Tratamiento de películas radiocrómicas}{11}{0}{1}
+\beamer@subsectionintoc {1}{2}{Tratamiento de películas radiocrómicas}{12}{0}{1}
 \beamer@sectionintoc {2}{Avances}{17}{0}{2}
 \beamer@subsectionintoc {2}{1}{Toma de imágenes}{18}{0}{2}
-\beamer@subsectionintoc {2}{2}{Desarrollo del software}{21}{0}{2}
-\beamer@sectionintoc {3}{Objetivos a cumplir}{24}{0}{3}
-\beamer@sectionintoc {4}{Bibliografia}{26}{0}{4}
+\beamer@subsectionintoc {2}{2}{Desarrollo del software}{19}{0}{2}
+\beamer@sectionintoc {3}{Objetivos a cumplir}{21}{0}{3}
+\beamer@sectionintoc {4}{Bibliografía}{23}{0}{4}

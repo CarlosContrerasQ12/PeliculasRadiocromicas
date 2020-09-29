@@ -229,9 +229,29 @@ Este poder de frenado puede separarse en dos componentes,
 \begin{equation}
 	\frac{dT}{\rho dx}=\left(\frac{dT}{\rho dx}\right)_c+\left(\frac{dT}{\rho dx}\right)_r,
 \end{equation}   
-en donde el primer término representa perdidas de energía de la partícula por colisiones en interacciones directas de los campos de coulomb y el segundo representa perdida de energía por procesos radiativos, como el \textit{bremsstrahlung}.
+en donde el primer término representa perdidas de energía de la partícula por colisiones en interacciones directas de los campos de coulomb y el segundo representa perdida de energía por procesos radiativos, como el \textit{bremsstrahlung}.\\
+
+El primer termino puede ser aproximado mediante la fórmula de Bethe-Bloch, que para partículas pesadas como los protones expresa
+\begin{equation}
+	\left(\frac{d T}{\rho d x}\right)_{c}=2 k\left[\ln \left(\frac{2 m_{0} c^{2} \beta^{2}}{\left(1-\beta^{2}\right) I}\right)-\beta^{2} -\frac{C}{Z}\right],
+\end{equation}
+donde $\beta=v/c$ es el parámetro relativista de la velocidad, $I$ es el potencial de excitación medio del átomo, y $k,C$ son constantes. Y para partículas ligeras como electrones
+\begin{equation}\left(\frac{d T}{\rho d x}\right)_{c}=k\left[\ln \left(\frac{\tau^{2}(\tau+2)}{2\left(I / m_{0} c^{2}\right)^{2}}\right)+F^{-}(\tau)-\delta-\frac{2 C}{Z}\right],\end{equation}
+donde $\tau=T/m_0c^2$ y 
+\begin{equation}F^{-}(\tau) \equiv 1-\beta^{2}+\frac{\tau^{2} / 8-(2 \tau+1) \ln 2}{(\tau+1)^{2}}.\end{equation}\\
+
+Y finalmente, en el caso de partículas ligeras el término radiativo del poder de frenado puede ser aproximado por 
+\begin{equation}\left(\frac{d T}{\rho d x}\right)_{r}=\sigma_{0} \frac{N_{A} Z^{2}}{A}\left(T+m_{0} c^{2}\right) \bar{B},\end{equation}
+donde $\sigma_0=\frac{1}{137}(e^2/m_0c^2)^2$ y $\bar{B}$ es una función que varía lentamente con $Z$ y $T-$.
+
 \section{Aceleradores lineales y radioterapia}
 Aquí va una descripción de la máquina y lo que se hace con la máquina
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{images/linalc.png}
+	\caption{Acelerador lineal usado en radioterapia}
+	\label{fig:acelerador}
+\end{figure}
 \section{Principios de dosimetría}
 \subsection{Cámaras de ionización}
 \section{Películas radiocrómicas(Estado del arte)}
