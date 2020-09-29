@@ -4,15 +4,13 @@
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Marco Teórico}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Medidas de radiación ionizante}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Interacción radiación materia}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Efecto Fotoeléctrico}{10}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Producción de pares}{10}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Interacción de partículas cargadas}{10}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Fundamentos de dosimetria}{10}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Teoría de la cavidad}{10}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Camaras de ionización}{10}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Aceleradores en radioterapia}{10}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Peliculas radiocrómicas}{10}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Calibración}{11}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Comparaciones}{12}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{13}{chapter.5}%
+\contentsline {section}{\numberline {2.2}Interacción radiación y partículas cargadas con materia}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Interacción radiación materia}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Interacción de partículas cargadas}{13}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Aceleradores lineales y radioterapia}{14}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Principios de dosimetría}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Cámaras de ionización}{14}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Películas radiocrómicas(Estado del arte)}{14}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Procedimiento de calibración}{28}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Mapas de dosis y comparaciones}{29}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{30}{chapter.5}%

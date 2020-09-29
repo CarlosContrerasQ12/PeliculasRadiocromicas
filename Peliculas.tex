@@ -13,6 +13,9 @@
 \usepackage{ragged2e}
 \usepackage{simpsons}
 \usepackage{float}
+\usepackage{subfig}
+\decimalpoint
+\setlength\parindent{0pt}
 
 \newenvironment{dedication}
   {\clearpage           % we want a new page
@@ -53,7 +56,7 @@
 	\vspace{1.5cm}
 	{\includegraphics[width = 0.6\textwidth]{logo.png}}	
 }
-\author{Carlos Daniel Contreras Quiroz\\[1cm]{\small Director: Carlos \'Avila}\\[1cm]{\small Coodirector: Juliana Sandoval}\\[1cm]{\small Coodirector: Jaider Vazquez}}
+\author{Carlos Daniel Contreras Quiroz\\[1cm]{\small Director: Carlos \'Avila}\\[1cm]{\small Coodirectora: Juliana Sandoval}\\[1cm]{\small Coodirector: Jaider Vasquez}}
 
 \begin{document}
 
@@ -67,14 +70,13 @@
 
 \begin{abstract}
 
-Perros
+
 
 \end{abstract}
 
 \begin{otherlanguage}{spanish}
 \begin{abstract}
 
-Dogs
 
 \end{abstract}
 \end{otherlanguage}
@@ -83,13 +85,6 @@ Dogs
 
 \chapter*{Agradecimientos}
 
-\section*{English}
-
-Yo quiero mucho a lulu
-
-\section*{Español}
-
-Y lulu me quiere mucho a mi
 
 \tableofcontents
 
@@ -102,16 +97,17 @@ Y lulu me quiere mucho a mi
 \chapter{Marco Teórico}\label{chp:teorico}
 \input{chapters/teorico}
 
-\chapter{Calibración}\label{chp:Calibracion}
+\chapter{Procedimiento de calibración}\label{chp:Calibracion}
 \input{chapters/calibracion}
 
-\chapter{Comparaciones}\label{chp:comparaciones}
+\chapter{Mapas de dosis y comparaciones}\label{chp:comparaciones}
 \input{chapters/comparaciones}
 
 
 \chapter{Conclusiones}
 \input{chapters/conclusiones}
 
+\nocite{*}
 \bibliography{references}
 \bibliographystyle{ieeetr}
 

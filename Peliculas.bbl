@@ -1,3 +1,99 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{Devic2016}
+S.~Devic, N.~Tomic, and D.~Lewis, ``Reference radiochromic film dosimetry:
+  Review of technical aspects,'' {\em Physica Medica}, vol.~32, pp.~541--556,
+  Apr. 2016.
+
+\bibitem{McLaughlin1965}
+W.~L. McLaughlin and L.~Chalkley, ``Measurement of radiation dose distributions
+  with photochromic materials,'' {\em Radiology}, vol.~84, pp.~124--125, Jan.
+  1965.
+
+\bibitem{Williams2011}
+M.~Williams, P.~Metcalfe, A.~Rosenfeld, T.~Kron, F.~d'Errico, and
+  M.~Moscovitch, ``Radiochromic film dosimetry and its applications in
+  radiotherapy,'' {AIP}, 2011.
+
+\bibitem{Beni2017}
+M.~S. Beni, D.~Krstic, D.~Nikezic, and K.~Yu, ``Modeling coloration of a
+  radiochromic film with molecular dynamics-coupled finite element method,''
+  {\em Applied Sciences}, vol.~7, p.~1031, Oct. 2017.
+
+\bibitem{LenMarroqun2018}
+E.~Y. Le{\'{o}}n-Marroqu{\'{\i}}n, J.~M. L{\'{a}}rraga-Guti{\'{e}}rrez, J.~A.
+  Herrera-Gonz{\'{a}}lez, M.~A. Camacho-L{\'{o}}pez, J.~E.~V. Barajas, and
+  O.~A. Garc{\'{\i}}a-Gardu{\~{n}}o, ``Investigation of {EBT}3 radiochromic
+  film{\textquotesingle}s response to humidity,'' {\em Journal of Applied
+  Clinical Medical Physics}, vol.~19, pp.~283--290, Apr. 2018.
+
+\bibitem{Rink2008}
+A.~Rink, D.~F. Lewis, S.~Varma, I.~A. Vitkin, and D.~A. Jaffray, ``Temperature
+  and hydration effects on absorbance spectra and radiation sensitivity of a
+  radiochromic medium,'' {\em Medical Physics}, vol.~35, pp.~4545--4555, Sept.
+  2008.
+
+\bibitem{NiroomandRad1998}
+A.~Niroomand-Rad, C.~R. Blackwell, B.~M. Coursey, K.~P. Gall, J.~M. Galvin,
+  W.~L. McLaughlin, A.~S. Meigooni, R.~Nath, J.~E. Rodgers, and C.~G. Soares,
+  ``Radiochromic film dosimetry: Recommendations of {AAPM} radiation therapy
+  committee task group 55,'' {\em Medical Physics}, vol.~25, pp.~2093--2115,
+  Oct. 1998.
+
+\bibitem{Chemiski2010}
+K.~Che{\l}mi{\'{n}}ski, W.~Bulski, D.~Georg, D.~Bodzak, Z.~Maniakowski,
+  D.~Oborska, J.~Rostkowska, and M.~Kania, ``Energy dependence of radiochromic
+  dosimetry films for use in radiotherapy verification,'' {\em Reports of
+  Practical Oncology {\&} Radiotherapy}, vol.~15, pp.~40--46, Mar. 2010.
+
+\bibitem{mayers}
+S.~Mayers, ``Characterisation of gafchromic ebt2 film for use in radiation
+  therapy dosimetry,'' 2011.
+
+\bibitem{Yu2006}
+P.~Yu, M.~Butson, and T.~Cheung, ``Does mechanical pressure on radiochromic
+  film affect optical absorption and dosimetry?,'' {\em Australasian Physics
+  {\&} Engineering Sciences in Medicine}, vol.~29, pp.~285--287, Sept. 2006.
+
+\bibitem{Crijns2013}
+W.~Crijns, F.~Maes, U.~A. van~der Heide, and F.~V. den Heuvel, ``Calibrating
+  page sized gafchromic {EBT}3 films,'' {\em Medical Physics}, vol.~40,
+  p.~012102, Jan. 2013.
+
+\bibitem{Li2017}
+Y.~Li, L.~Chen, J.~Zhu, and X.~Liu, ``The combination of the error correction
+  methods of {GAFCHROMIC} {EBT}3 film,'' {\em {PLOS} {ONE}}, vol.~12,
+  p.~e0181958, July 2017.
+
+\bibitem{Devic2005}
+S.~Devic, J.~Seuntjens, E.~Sham, E.~B. Podgorsak, C.~R. Schmidtlein, A.~S.
+  Kirov, and C.~G. Soares, ``Precise radiochromic film dosimetry using a
+  flat-bed document scanner,'' {\em Medical Physics}, vol.~32, pp.~2245--2253,
+  June 2005.
+
+\bibitem{Micke2011}
+A.~Micke, D.~F. Lewis, and X.~Yu, ``Multichannel film dosimetry with
+  nonuniformity correction,'' {\em Medical Physics}, vol.~38, pp.~2523--2534,
+  May 2011.
+
+\bibitem{Howard2020}
+M.~E. Howard, M.~G. Herman, and M.~P. Grams, ``Methodology for radiochromic
+  film analysis using {FilmQA} pro and {ImageJ},'' {\em {PLOS} {ONE}}, vol.~15,
+  p.~e0233562, May 2020.
+
+\bibitem{Shimohigashi2015}
+Y.~Shimohigashi, F.~Araki, M.~Maruyama, Y.~Nakaguchi, S.~Kuwahara, N.~Nagasue,
+  and Y.~Kai, ``Evaluation of a single-scan protocol for radiochromic film
+  dosimetry,'' {\em Journal of Applied Clinical Medical Physics}, vol.~16,
+  pp.~412--424, Mar. 2015.
+
+\bibitem{Attix1986}
+F.~H. Attix, {\em Introduction to Radiological Physics and Radiation
+  Dosimetry}.
+\newblock Wiley, Nov. 1986.
+
+\bibitem{khan2014the}
+F.~Khan, {\em The physics of radiation therapy}.
+\newblock Philadelphia: Lippincott Williams \& Wilkins, 2014.
 
 \end{thebibliography}
