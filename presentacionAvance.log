@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  1 OCT 2020 14:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  1 OCT 2020 15:30
 entering extended mode
 **./presentacionAvance.tex
 (presentacionAvance.tex
@@ -955,39 +955,49 @@ Package pdftex.def Info: images/paciente.png  used on input line 53.
 <images/camara.jpg, id=236, 4047.12pt x 3035.34pt>
 File: images/camara.jpg Graphic file (type jpg)
 <use images/camara.jpg>
-Package pdftex.def Info: images/camara.jpg  used on input line 65.
-(pdftex.def)             Requested size: 195.18513pt x 146.35698pt.
- [6
+Package pdftex.def Info: images/camara.jpg  used on input line 70.
+(pdftex.def)             Requested size: 139.41856pt x 104.53407pt.
+<images/camaraIoni.png, id=237, 725.71124pt x 298.11375pt>
+File: images/camaraIoni.png Graphic file (type png)
+<use images/camaraIoni.png>
+Package pdftex.def Info: images/camaraIoni.png  used on input line 70.
+(pdftex.def)             Requested size: 139.41856pt x 57.26993pt.
 
- <./images/camara.jpg>]
-<images/silicio.png, id=271, 700.6175pt x 527.9725pt>
+Overfull \vbox (21.2197pt too high) detected at line 70
+ []
+
+[6
+
+ <./images/camara.jpg> <./images/camaraIoni.png>]
+<images/silicio.png, id=274, 700.6175pt x 527.9725pt>
 File: images/silicio.png Graphic file (type png)
 <use images/silicio.png>
-Package pdftex.def Info: images/silicio.png  used on input line 74.
+Package pdftex.def Info: images/silicio.png  used on input line 79.
 (pdftex.def)             Requested size: 195.18513pt x 147.08206pt.
  [7
 
- <./images/silicio.png>] [8
+ <./images/silicio.png>]
+[8
 
 ]
-<images/fondoblancoLandscape-1.png, id=345, 1496.59125pt x 1200.485pt>
+<images/fondoblancoLandscape-1.png, id=348, 1496.59125pt x 1200.485pt>
 File: images/fondoblancoLandscape-1.png Graphic file (type png)
 <use images/fondoblancoLandscape-1.png>
 Package pdftex.def Info: images/fondoblancoLandscape-1.png  used on input line 
-100.
+105.
 (pdftex.def)             Requested size: 125.47585pt x 100.63855pt.
-<images/reaccion.png, id=346, 677.53125pt x 442.65375pt>
+<images/reaccion.png, id=349, 677.53125pt x 442.65375pt>
 File: images/reaccion.png Graphic file (type png)
 <use images/reaccion.png>
-Package pdftex.def Info: images/reaccion.png  used on input line 100.
+Package pdftex.def Info: images/reaccion.png  used on input line 105.
 (pdftex.def)             Requested size: 125.47585pt x 81.97746pt.
-<images/estructuraEBT.png, id=349, 505.89pt x 245.91875pt>
+<images/estructuraEBT.png, id=352, 505.89pt x 245.91875pt>
 File: images/estructuraEBT.png Graphic file (type png)
 <use images/estructuraEBT.png>
-Package pdftex.def Info: images/estructuraEBT.png  used on input line 100.
+Package pdftex.def Info: images/estructuraEBT.png  used on input line 105.
 (pdftex.def)             Requested size: 125.47585pt x 60.99547pt.
 
-Overfull \vbox (23.38303pt too high) detected at line 100
+Overfull \vbox (23.38303pt too high) detected at line 105
  []
 
 [9
@@ -1000,26 +1010,26 @@ turaEBT.png>] [10
 ] [12
 
 ]
-<images/calibracionSimpleLandscape.png, id=490, 718.3638pt x 576.2328pt>
+<images/calibracionSimpleLandscape.png, id=493, 718.3638pt x 576.2328pt>
 File: images/calibracionSimpleLandscape.png Graphic file (type png)
 <use images/calibracionSimpleLandscape.png>
 Package pdftex.def Info: images/calibracionSimpleLandscape.png  used on input l
-ine 149.
+ine 154.
 (pdftex.def)             Requested size: 125.47585pt x 100.6488pt.
-<images/respses.png, id=491, 808.01875pt x 538.01pt>
+<images/respses.png, id=494, 808.01875pt x 538.01pt>
 File: images/respses.png Graphic file (type png)
 <use images/respses.png>
-Package pdftex.def Info: images/respses.png  used on input line 149.
+Package pdftex.def Info: images/respses.png  used on input line 154.
 (pdftex.def)             Requested size: 125.47585pt x 83.54666pt.
  [13
 
  <./images/calibracionSimpleLandscape.png> <./images/respses.png>] [14
 
 ]
-<images/dosemap.png, id=566, 653.44125pt x 417.56pt>
+<images/dosemap.png, id=569, 653.44125pt x 417.56pt>
 File: images/dosemap.png Graphic file (type png)
 <use images/dosemap.png>
-Package pdftex.def Info: images/dosemap.png  used on input line 169.
+Package pdftex.def Info: images/dosemap.png  used on input line 174.
 (pdftex.def)             Requested size: 195.18513pt x 124.72101pt.
  [15
 
@@ -1028,47 +1038,47 @@ Package pdftex.def Info: images/dosemap.png  used on input line 169.
 ] [17
 
 ]
-<images/20200826_153715.jpg, id=670, 4047.12pt x 3035.34pt>
+<images/20200826_153715.jpg, id=673, 4047.12pt x 3035.34pt>
 File: images/20200826_153715.jpg Graphic file (type jpg)
 <use images/20200826_153715.jpg>
-Package pdftex.def Info: images/20200826_153715.jpg  used on input line 205.
+Package pdftex.def Info: images/20200826_153715.jpg  used on input line 210.
 (pdftex.def)             Requested size: 125.47585pt x 94.06677pt.
-<images/20200826_205548.jpg, id=671, 4047.12pt x 3035.34pt>
+<images/20200826_205548.jpg, id=674, 4047.12pt x 3035.34pt>
 File: images/20200826_205548.jpg Graphic file (type jpg)
 <use images/20200826_205548.jpg>
-Package pdftex.def Info: images/20200826_205548.jpg  used on input line 205.
+Package pdftex.def Info: images/20200826_205548.jpg  used on input line 210.
 (pdftex.def)             Requested size: 125.47585pt x 94.06677pt.
-<images/20200826_215214.jpg, id=672, 4047.12pt x 3035.34pt>
+<images/20200826_215214.jpg, id=675, 4047.12pt x 3035.34pt>
 File: images/20200826_215214.jpg Graphic file (type jpg)
 <use images/20200826_215214.jpg>
-Package pdftex.def Info: images/20200826_215214.jpg  used on input line 205.
+Package pdftex.def Info: images/20200826_215214.jpg  used on input line 210.
 (pdftex.def)             Requested size: 125.47585pt x 94.06677pt.
  [18
 
  <./images/20200826_153715.jpg> <./images/20200826_205548.jpg> <./images/202008
 26_215214.jpg>]
-<images/programa1.png, id=706, 1168.365pt x 625.33624pt>
+<images/programa1.png, id=709, 1168.365pt x 625.33624pt>
 File: images/programa1.png Graphic file (type png)
 <use images/programa1.png>
-Package pdftex.def Info: images/programa1.png  used on input line 223.
+Package pdftex.def Info: images/programa1.png  used on input line 228.
 (pdftex.def)             Requested size: 125.47585pt x 67.15553pt.
-<images/programa2.png, id=707, 905.3825pt x 442.65375pt>
+<images/programa2.png, id=710, 905.3825pt x 442.65375pt>
 File: images/programa2.png Graphic file (type png)
 <use images/programa2.png>
-Package pdftex.def Info: images/programa2.png  used on input line 223.
+Package pdftex.def Info: images/programa2.png  used on input line 228.
 (pdftex.def)             Requested size: 125.47585pt x 61.34294pt.
-<images/programa3.png, id=708, 1176.395pt x 630.355pt>
-File: images/programa3.png Graphic file (type png)
-<use images/programa3.png>
-Package pdftex.def Info: images/programa3.png  used on input line 223.
-(pdftex.def)             Requested size: 125.47585pt x 67.23282pt.
+<images/programa3k.png, id=711, 841.1425pt x 434.62375pt>
+File: images/programa3k.png Graphic file (type png)
+<use images/programa3k.png>
+Package pdftex.def Info: images/programa3k.png  used on input line 228.
+(pdftex.def)             Requested size: 125.47585pt x 64.83263pt.
  [19
 
- <./images/programa1.png> <./images/programa2.png> <./images/programa3.png>]
-<images/daigramaFlujo.png, id=746, 804.00375pt x 322.20375pt>
+ <./images/programa1.png> <./images/programa2.png> <./images/programa3k.png>]
+<images/daigramaFlujo.png, id=749, 804.00375pt x 322.20375pt>
 File: images/daigramaFlujo.png Graphic file (type png)
 <use images/daigramaFlujo.png>
-Package pdftex.def Info: images/daigramaFlujo.png  used on input line 230.
+Package pdftex.def Info: images/daigramaFlujo.png  used on input line 235.
 (pdftex.def)             Requested size: 278.83713pt x 111.74054pt.
  [20
 
@@ -1122,22 +1132,22 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 \tf@snm=\write8
 \openout8 = `presentacionAvance.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
  (presentacionAvance.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 276.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
 Package rerunfilecheck Info: File `presentacionAvance.out' has not changed.
 (rerunfilecheck)             Checksum: DA304AC65664B19FC6E3DCF5B4BBACDA;490.
  ) 
 Here is how much of TeX's memory you used:
- 19502 strings out of 480897
- 372200 string characters out of 2904517
+ 19508 strings out of 480897
+ 372344 string characters out of 2904517
  636889 words of memory out of 3000000
- 34784 multiletter control sequences out of 15000+200000
+ 34789 multiletter control sequences out of 15000+200000
  542403 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,16n,67p,814b,560s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1150,9 +1160,9 @@ Here is how much of TeX's memory you used:
 pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12
 .pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb>
-Output written on presentacionAvance.pdf (32 pages, 17420620 bytes).
+Output written on presentacionAvance.pdf (32 pages, 17471229 bytes).
 PDF statistics:
- 1265 PDF objects out of 1440 (max. 8388607)
+ 1268 PDF objects out of 1440 (max. 8388607)
  100 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
