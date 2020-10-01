@@ -1,5 +1,5 @@
 \babel@toc {spanish}{}
-\babel@toc {spanish}{}
+\babel@toc {english}{}
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Marco Teórico}{2}{chapter.2}%
@@ -12,5 +12,10 @@
 \contentsline {subsection}{\numberline {2.4.1}Cámaras de ionización}{16}{subsection.2.4.1}%
 \contentsline {section}{\numberline {2.5}Películas radiocrómicas(Estado del arte)}{16}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Procedimiento de calibración}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Montaje Experimental}{29}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Protocolo de irraadiación y escaneo}{29}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Calibraciones}{29}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Mapas de dosis y comparaciones}{30}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Analisis $\Gamma $}{30}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Mapas de dosis para planes comunes}{30}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Conclusiones}{31}{chapter.5}%

@@ -1,61 +1,72 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: presentacionAvance.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-The style file: amsalpha.bst
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: references.bib
 Repeated entry---line 108 of file references.bib
  : @inproceedings{Williams2011
  :                            ,
 I'm skipping whatever remains of this entry
-Warning--entry type for "mayers" isn't style-file defined
---line 215 of file references.bib
 I was expecting a `,' or a `}'---line 219 of file references.bib
  :  
  :  publisher={University of Wollongong}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--missing booktitle in Williams2011
-You've used 19 entries,
-            2624 wiz_defined-function locations,
-            697 strings with 8504 characters,
-and the built_in function-call counts, 9118 in all, are:
-= -- 811
-> -- 611
-< -- 3
-+ -- 229
-- -- 226
-* -- 901
-:= -- 1554
-add.period$ -- 19
-call.type$ -- 19
-change.case$ -- 164
-chr.to.int$ -- 19
-cite$ -- 20
-duplicate$ -- 274
-empty$ -- 581
-format.name$ -- 240
-if$ -- 1745
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 39
-newline$ -- 68
-num.names$ -- 57
-pop$ -- 166
+Warning--entry type for "maya" isn't style-file defined
+--line 222 of file references.bib
+I was expecting a `,' or a `}'---line 226 of file references.bib
+ :  
+ :  publisher={Universidad Nacional de Colombia}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 307 of file references.bib
+ :  
+ :  url="http://www.gafchromic.com/documents/EBT3_Specifications.pdf",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty booktitle in Williams2011
+Warning--empty journal in mayers
+You've used 27 entries,
+            1876 wiz_defined-function locations,
+            666 strings with 8923 characters,
+and the built_in function-call counts, 8591 in all, are:
+= -- 866
+> -- 379
+< -- 0
++ -- 137
+- -- 110
+* -- 640
+:= -- 1189
+add.period$ -- 29
+call.type$ -- 27
+change.case$ -- 24
+chr.to.int$ -- 0
+cite$ -- 29
+duplicate$ -- 426
+empty$ -- 697
+format.name$ -- 110
+if$ -- 2072
+int.to.chr$ -- 0
+int.to.str$ -- 27
+missing$ -- 27
+newline$ -- 86
+num.names$ -- 27
+pop$ -- 64
 preamble$ -- 1
-purify$ -- 183
+purify$ -- 0
 quote$ -- 0
-skip$ -- 185
+skip$ -- 382
 stack$ -- 0
-substring$ -- 513
-swap$ -- 20
-text.length$ -- 3
-text.prefix$ -- 3
+substring$ -- 640
+swap$ -- 233
+text.length$ -- 0
+text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
-warning$ -- 1
+type$ -- 0
+warning$ -- 2
 while$ -- 80
-width$ -- 23
-write$ -- 215
-(There were 2 error messages)
+width$ -- 29
+write$ -- 258
+(There were 4 error messages)

@@ -11,6 +11,7 @@
 %\usepackage{subfig,graphicx,showframe}
 \setbeamertemplate{bibliography item}[text]
 \DeclareMathOperator{\re}{Re}
+\setbeamertemplate{footline}[frame number]
 \begin{document}
 	\author{Carlos Daniel Contreras Quiroz}
 	\title{Desarrollo de un programa de lectura y análisis de películas radiocrómicas para verificación dosimétrica}
@@ -147,7 +148,7 @@ Mantenerlos controlados basta para una medida precisa
 	\end{figure}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Tipo de curvas}
 	Se correlacionan los datos mediante un ajuste a algún tipo de curva.\\~\\
 	Estos son los tipo de funciones más usadas
 	\begin{itemize}
@@ -158,11 +159,12 @@ Mantenerlos controlados basta para una medida precisa
 	\end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Mapas de dosis}
 	Con esta curva podemos relacionar dosis con colores en una película irradiada y generar mapas de dosis.\\~\\
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.7\linewidth]{images/dosemap.png}
+		\caption{Mapa de dosis \cite{Rink2008}}
 	\end{figure}
 \end{frame}
 
@@ -206,7 +208,7 @@ Podemos sofisticar un poco con correcciones como
 
 \subsection{Desarrollo del software}
 
-\begin{frame}{Montaje}
+\begin{frame}{Programa}
 \begin{figure}[htp]% [H] is so declass\'e!
 	\centering
 	\begin{minipage}{0.45\textwidth}
@@ -220,7 +222,7 @@ Podemos sofisticar un poco con correcciones como
 \end{figure}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Diagrama de flujo}
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{images/daigramaFlujo.png}
@@ -242,7 +244,7 @@ Podemos sofisticar un poco con correcciones como
 \vfill
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Por cumplir}
 Porcentaje avance documento 40\% \\
 Porcentaje cumplimiento objetivos 50\%\\~\\
 Faltaría lo siguiente
@@ -250,6 +252,7 @@ Faltaría lo siguiente
 	\item Mejorar la usabilidad del programa (hasta el final)
 	\item Generar mapas y curvas de isodosis (próximas 3 semanas)
 	\item Entender e implementar el cálculo de $\gamma$ para la comparación cuantitativa con los planes de tratamiento(3 semanas)
+	\item Culminar documento(6 semanas)
 \end{itemize}
 \end{frame}
 

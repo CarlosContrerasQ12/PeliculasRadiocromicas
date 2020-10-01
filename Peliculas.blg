@@ -2,60 +2,81 @@ This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Peliculas.aux
 Reallocating 'name_of_file' (item size: 1) to 11 items.
-Reallocating 'name_of_file' (item size: 1) to 7 items.
-The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
 Repeated entry---line 108 of file references.bib
  : @inproceedings{Williams2011
  :                            ,
 I'm skipping whatever remains of this entry
-Warning--entry type for "mayers" isn't style-file defined
---line 215 of file references.bib
 I was expecting a `,' or a `}'---line 219 of file references.bib
  :  
  :  publisher={University of Wollongong}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--entry type for "maya" isn't style-file defined
+--line 222 of file references.bib
+I was expecting a `,' or a `}'---line 226 of file references.bib
+ :  
+ :  publisher={Universidad Nacional de Colombia}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 307 of file references.bib
+ :  
+ :  url="http://www.gafchromic.com/documents/EBT3_Specifications.pdf",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty booktitle in Williams2011
-You've used 19 entries,
-            1876 wiz_defined-function locations,
-            616 strings with 7593 characters,
-and the built_in function-call counts, 6193 in all, are:
-= -- 611
-> -- 299
-< -- 0
-+ -- 107
-- -- 88
-* -- 471
-:= -- 872
-add.period$ -- 21
-call.type$ -- 19
-change.case$ -- 17
-chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 302
-empty$ -- 491
-format.name$ -- 88
-if$ -- 1486
+Warning--empty journal in mayers
+
+Done.
+You've used 27 entries,
+            4087 wiz_defined-function locations,
+            1030 strings with 13551 characters,
+and the built_in function-call counts, 23762 in all, are:
+= -- 2032
+> -- 606
+< -- 207
++ -- 334
+- -- 116
+* -- 1242
+:= -- 3643
+add.period$ -- 54
+call.type$ -- 27
+change.case$ -- 24
+chr.to.int$ -- 432
+cite$ -- 29
+duplicate$ -- 1647
+empty$ -- 1661
+format.name$ -- 132
+if$ -- 5469
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 20
-newline$ -- 62
-num.names$ -- 19
-pop$ -- 46
+int.to.str$ -- 27
+missing$ -- 288
+newline$ -- 150
+num.names$ -- 27
+pop$ -- 578
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 0
-skip$ -- 270
+quote$ -- 2
+skip$ -- 1827
 stack$ -- 0
-substring$ -- 436
-swap$ -- 165
-text.length$ -- 0
+substring$ -- 1112
+swap$ -- 1510
+text.length$ -- 63
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 1
-while$ -- 56
-width$ -- 21
-write$ -- 185
-(There were 2 error messages)
+top$ -- 5
+type$ -- 27
+warning$ -- 2
+while$ -- 96
+width$ -- 29
+write$ -- 363
+(There were 4 error messages)

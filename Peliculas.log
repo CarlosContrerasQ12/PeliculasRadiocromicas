@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  29 SEP 2020 14:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  1 OCT 2020 14:44
 entering extended mode
 **./Peliculas.tex
 (Peliculas.tex
@@ -388,31 +388,29 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 ) (Peliculas.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
 \openout1 = `Peliculas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
 
 (/home/carlos/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -433,7 +431,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
 \AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring OFF on input line 61.
+Package hyperref Info: Link coloring OFF on input line 62.
  (/home/carlos/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -446,30 +444,30 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count285
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
  (Peliculas.out) (Peliculas.out)
 \@outlinefile=\write3
 \openout3 = `Peliculas.out'.
 
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 61.
+LaTeX Info: Redefining \selectfont on input line 62.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-<images/logo.png, id=55, 803.0pt x 240.9pt>
+<images/logo.png, id=75, 803.0pt x 240.9pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 66.
+Package pdftex.def Info: images/logo.png  used on input line 67.
 (pdftex.def)             Requested size: 234.00238pt x 70.20105pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
 
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 66.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
 
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
@@ -481,30 +479,25 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.75 \end{abstract}
+l.76 \end{abstract}
+                    [1]pdfTeX warning (ext4): destination with the same identif
+ier (name{page.I}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 \end{abstract}
                     [1]
-LaTeX Info: Redefining \. on input line 77.
-LaTeX Info: Redefining \% on input line 77.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 \end{abstract}
-                    [1]
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
-pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.89 \tableofcontents
+l.90 \tableofcontents
                       [1
 
 ] (Peliculas.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
 )
@@ -516,8 +509,6 @@ LaTeX Info: Redefining \% on input line 3.
 ] (Peliculas.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
 LaTeX Info: Redefining \. on input line 3.
 LaTeX Info: Redefining \% on input line 3.
 )
@@ -528,18 +519,7 @@ LaTeX Info: Redefining \% on input line 3.
 
 ]
 Cap\'{\i }tulo 1.
-(chapters/introduccion.tex)
-Overfull \hbox (117.00307pt too wide) in paragraph at lines 1--96
-[]\OT1/cmr/m/n/12 Aqu va una mo-ti-va-cion del tra-ba-jo https://www.nytimes
-.com/2010/01/24/health/24radiation.html
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1--96
-
- []
-
-[1
+(chapters/introduccion.tex) [1
 
 ]
 Cap\'{\i }tulo 2.
@@ -665,7 +645,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--106
 
  []
 
-<images/rayleigh.png, id=173, 372.39125pt x 335.2525pt>
+<images/rayleigh.png, id=200, 372.39125pt x 335.2525pt>
 File: images/rayleigh.png Graphic file (type png)
 <use images/rayleigh.png>
 Package pdftex.def Info: images/rayleigh.png  used on input line 110.
@@ -680,7 +660,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-<images/compton.png, id=182, 584.1825pt x 367.3725pt>
+<images/compton.png, id=209, 584.1825pt x 367.3725pt>
 File: images/compton.png Graphic file (type png)
 <use images/compton.png>
 Package pdftex.def Info: images/compton.png  used on input line 119.
@@ -726,7 +706,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
  []
 
 [10]
-<images/fotoelectrico.png, id=207, 693.59125pt x 516.93124pt>
+<images/fotoelectrico.png, id=234, 693.59125pt x 516.93124pt>
 File: images/fotoelectrico.png Graphic file (type png)
 <use images/fotoelectrico.png>
 Package pdftex.def Info: images/fotoelectrico.png  used on input line 174.
@@ -751,7 +731,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
-<images/produccionPares.png, id=214, 698.61pt x 318.18875pt>
+<images/produccionPares.png, id=241, 698.61pt x 318.18875pt>
 File: images/produccionPares.png Graphic file (type png)
 <use images/produccionPares.png>
 Package pdftex.def Info: images/produccionPares.png  used on input line 196.
@@ -792,7 +772,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--242
  []
 
 [14]
-<images/linalc.png, id=239, 641.39626pt x 460.72125pt>
+<images/linalc.png, id=266, 641.39626pt x 460.72125pt>
 File: images/linalc.png Graphic file (type png)
 <use images/linalc.png>
 Package pdftex.def Info: images/linalc.png  used on input line 251.
@@ -827,7 +807,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
 
-<images/modelos.png, id=256, 780.9175pt x 595.22375pt>
+<images/modelos.png, id=283, 780.9175pt x 595.22375pt>
 File: images/modelos.png Graphic file (type png)
 <use images/modelos.png>
 Package pdftex.def Info: images/modelos.png  used on input line 299.
@@ -842,12 +822,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-<images/diacetileno.png, id=267, 645.41125pt x 280.04625pt>
+<images/diacetileno.png, id=294, 645.41125pt x 280.04625pt>
 File: images/diacetileno.png Graphic file (type png)
 <use images/diacetileno.png>
 Package pdftex.def Info: images/diacetileno.png  used on input line 308.
 (pdftex.def)             Requested size: 195.0pt x 84.60847pt.
-<images/reaccion.png, id=270, 677.53125pt x 442.65375pt>
+<images/reaccion.png, id=297, 677.53125pt x 442.65375pt>
 File: images/reaccion.png Graphic file (type png)
 <use images/reaccion.png>
 Package pdftex.def Info: images/reaccion.png  used on input line 310.
@@ -862,7 +842,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
-<images/absorbancia.png, id=285, 742.775pt x 555.07375pt>
+<images/absorbancia.png, id=312, 742.775pt x 555.07375pt>
 File: images/absorbancia.png Graphic file (type png)
 <use images/absorbancia.png>
 Package pdftex.def Info: images/absorbancia.png  used on input line 321.
@@ -877,7 +857,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--327
 
  []
 
-<images/escaner.png, id=302, 864.22874pt x 536.0025pt>
+<images/escaner.png, id=329, 864.22874pt x 536.0025pt>
 File: images/escaner.png Graphic file (type png)
 <use images/escaner.png>
 Package pdftex.def Info: images/escaner.png  used on input line 331.
@@ -933,13 +913,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 359--360
  []
 
 [22]
-<images/fondoblancoLandscape-1.png, id=327, 1496.59125pt x 1200.485pt>
+<images/fondoblancoLandscape-1.png, id=354, 1496.59125pt x 1200.485pt>
 File: images/fondoblancoLandscape-1.png Graphic file (type png)
 <use images/fondoblancoLandscape-1.png>
 Package pdftex.def Info: images/fondoblancoLandscape-1.png  used on input line 
 363.
 (pdftex.def)             Requested size: 195.0pt x 156.41656pt.
-<images/calibracionSimpleLandscape.png, id=328, 718.3638pt x 576.2328pt>
+<images/calibracionSimpleLandscape.png, id=355, 718.3638pt x 576.2328pt>
 File: images/calibracionSimpleLandscape.png Graphic file (type png)
 <use images/calibracionSimpleLandscape.png>
 Package pdftex.def Info: images/calibracionSimpleLandscape.png  used on input l
@@ -950,7 +930,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 369--370
 
  []
 
-<images/respses.png, id=330, 808.01875pt x 538.01pt>
+<images/respses.png, id=357, 808.01875pt x 538.01pt>
 File: images/respses.png Graphic file (type png)
 <use images/respses.png>
 Package pdftex.def Info: images/respses.png  used on input line 373.
@@ -961,12 +941,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 385--387
 
  []
 
-<images/curva1.png, id=340, 400.49625pt x 283.0575pt>
+<images/curva1.png, id=367, 400.49625pt x 283.0575pt>
 File: images/curva1.png Graphic file (type png)
 <use images/curva1.png>
 Package pdftex.def Info: images/curva1.png  used on input line 392.
 (pdftex.def)             Requested size: 195.0pt x 137.8226pt.
-<images/curva2.png, id=343, 390.45876pt x 283.0575pt>
+<images/curva2.png, id=370, 390.45876pt x 283.0575pt>
 File: images/curva2.png Graphic file (type png)
 <use images/curva2.png>
 Package pdftex.def Info: images/curva2.png  used on input line 394.
@@ -1037,7 +1017,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 441--442
  []
 
 [26]
-<images/efectoLateral.png, id=375, 640.3925pt x 507.8975pt>
+<images/efectoLateral.png, id=402, 640.3925pt x 507.8975pt>
 File: images/efectoLateral.png Graphic file (type png)
 <use images/efectoLateral.png>
 Package pdftex.def Info: images/efectoLateral.png  used on input line 445.
@@ -1063,7 +1043,20 @@ Cap\'{\i }tulo 3.
 
 ]
 Cap\'{\i }tulo 4.
-(chapters/comparaciones.tex) [30
+(chapters/comparaciones.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Gamma' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2.
+
+) [30
 
 ]
 Cap\'{\i }tulo 5.
@@ -1071,32 +1064,31 @@ Cap\'{\i }tulo 5.
 
 ] [32
 
-] [33])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 114.
- [34]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 114.
- (Peliculas.aux
+] [33] [34])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 115.
+ [35]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 115.
+
+(Peliculas.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 114.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 114.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 115.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 115.
 Package rerunfilecheck Info: File `Peliculas.out' has not changed.
-(rerunfilecheck)             Checksum: D7FE67EF5889234DB05D76DCF4F826B4;982.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 114.
+(rerunfilecheck)             Checksum: C9903711DD37F205E8921FF5CF18838C;1331.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 115.
  ) 
 Here is how much of TeX's memory you used:
- 9255 strings out of 480897
- 141679 string characters out of 2904517
- 416120 words of memory out of 3000000
- 24791 multiletter control sequences out of 15000+200000
- 542750 words of font info for 64 fonts, out of 3000000 for 9000
+ 9303 strings out of 480897
+ 142431 string characters out of 2904517
+ 416388 words of memory out of 3000000
+ 24824 multiletter control sequences out of 15000+200000
+ 544166 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,18n,54p,862b,655s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,18n,54p,862b,536s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/carlos/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm120
 0.pk></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10
@@ -1109,10 +1101,11 @@ b></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb
 /home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></h
 ome/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></h
 ome/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></ho
-me/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Peliculas.pdf (40 pages, 3592626 bytes).
+me/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></ho
+me/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Peliculas.pdf (41 pages, 3613482 bytes).
 PDF statistics:
- 505 PDF objects out of 1000 (max. 8388607)
- 139 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 578 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
+ 230 words of extra memory for PDF output out of 10000 (max. 10000000)
 
