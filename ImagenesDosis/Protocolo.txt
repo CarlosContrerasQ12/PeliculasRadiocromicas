@@ -1,0 +1,3 @@
+1.Escanear las peliculas irradiadas(incluyendo la pelicula no irradiada) para obtener el tamano de la ventana en el escaner
+2.Usar ese mismo tamano de ventana para escanear una pelicula negra para obtener los pixeles defectuosos del escaner
+3. Estoy trabajndo con 100 ppi y todos los filtros y correcciones del escaner  apagados, RGB, D-range=Full Range.

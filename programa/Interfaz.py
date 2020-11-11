@@ -39,16 +39,15 @@ class ImagenWx(wx.Panel):
         sizer.Add(self.sbm, 1, wx.EXPAND | wx.GROW)
         self.SetSizer(sizer)
         self.Fit()
-
-
+        
 class ImagenCuadernoMatplotlib(wx.Panel):
     def __init__(self, parent, id=-1, dpi=None, **kwargs):
         wx.Panel.__init__(self, parent, id=id, **kwargs)
         self.figure = mpl.figure.Figure(dpi=dpi)
         #self.figure.gca().axis('off')
         self.canvas = FigureCanvas(self, -1, self.figure)
-        #self.toolbar = NavigationToolbar(self.canvas)
-        #self.toolbar.Realize()
+        self.toolbar = NavigationToolbar(self.canvas)
+        self.toolbar.Realize()
         
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.canvas, 1, wx.EXPAND)
@@ -194,6 +193,7 @@ class MyFrame(wx.Frame):
             print(n)
             dosisReal=np.array(dosisReal)
             k=figActual.ginput(n=2*n)
+            print(k)
             print(dosisReal)
             x=[]
             y=[]
