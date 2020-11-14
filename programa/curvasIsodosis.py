@@ -24,6 +24,7 @@ ax = fig.gca(projection='3d')
 ax.set_zlim(zmin = 0)
 ax.plot_surface(X, Y, z,cmap='viridis', edgecolor='none')
 ax.contour(x, y, f(x,y) - 0.4, levels = [0])
+ax.contour(x, y, z - 0.4, levels = [0])
 plt.show()
 
 # Normal mode:
@@ -45,10 +46,12 @@ plt.show()
 #print(f"Slice location...: {ds.get('SliceLocation', '(missing)')}")
 
 # plot the image using matplotlib
+print(ds.pixel_array)
 plt.imshow(ds.pixel_array, cmap=plt.cm.gray)
 plt.figure()
 plt.contour(x, y, f(x,y) - 0.4, levels = [0],colors=['red'])
 plt.contour(x, y, f(x,y) - 0.1, levels = [0],colors=['green'])
 plt.contour(x, y, f(x,y) - 0.8, levels = [0],colors=['blue'])
 plt.contour(x, y, f(x,y) - 0.9, levels = [0],colors=['yellow'])
+plt.contour(x, y, z - 0.9, levels = [0],colors=['black'])
 plt.show()

@@ -1,7 +1,0 @@
-Calibracion
-Nombre: /home/carlos/Documentos/PeliculasRadiocromicas/programa/calibracion-3.txt
-Tipo Canal: Canal rojo
-Tipo Curva: Racional lineal
-parametros: 
-Dosis Usadas: 11.1,19.8,22.9,27.6,37.1,74.9,102.4,129.6,151.9,222.6
-Transmitancias: 623971.2559590109,624602.404710145,625132.3614965987,627243.8181673052,629045.8122117401,631978.3432186234,633929.0969836917,635637.8531578947,636520.9785405071,637998.7921012997

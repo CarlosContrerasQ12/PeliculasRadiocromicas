@@ -7,7 +7,9 @@
 import wx
 import wx.grid
 import numpy as np
+from claseCalibracion import *
 import matplotlib.pyplot as plt
+
 # begin wxGlade: dependencies
 # end wxGlade
 
@@ -20,14 +22,22 @@ class PanelSeleccionDosis(wx.Panel):
         # begin wxGlade: MyDialog.__init__
         print(kwds)
         self.dosis=kwds["dosis"]
+        self.tipoCanal=kwds["canal"]
+        self.tipoCurva=kwds["curva"]
+        self.corrLateral=kwds["lateral"]
         del kwds["dosis"]
-        kwds["style"] = wx.TAB_TRAVERSAL
-        wx.Panel.__init__(self, *args, **kwds)
+        del kwds["canal"]
+        del kwds["curva"]
+        del kwds["lateral"]
+        #kwds["style"] = wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER 
+        self.parent=args[0]
+        super(PanelSeleccionDosis, self).__init__(self.parent)
         self.button_3 = wx.Button(self, wx.ID_ANY, "Nueva ROI")
         self.button_4 = wx.Button(self, wx.ID_ANY, "Nueva Dosis")
         self.button_5 = wx.Button(self, wx.ID_ANY, "Nueva medida")
         self.button_6 = wx.Button(self, wx.ID_ANY, "Calibrar")
         self.grid_1 = wx.grid.Grid(self, wx.ID_ANY, size=(1, 1))
+        self.grid_1.SetDefaultCellFitMode(wx.grid.GridFitMode.Ellipsize())
         self.Bind(wx.grid.EVT_GRID_SELECT_CELL, self.onSelectCell, self.grid_1)
         self.parent=args[0]
         self.filaActual=0
@@ -62,6 +72,17 @@ class PanelSeleccionDosis(wx.Panel):
         for i in range(n):
             self.grid_1.SetCellValue(i,0,str(self.dosis[i]))
         # end wxGlade
+        
+    def repintar(self):
+        n=len(self.dosis)
+        for i in range(n):
+            self.grid_1.SetCellValue(i,0,str(self.dosis[i]))
+        for i in range(1,len(self.R)+1):
+            for k in range(n):
+                if self.R[i-1][k]!=None:
+                    self.grid_1.SetCellValue(k,i,"{:.3f}".format(self.R[i-1][k])+';'+"{:.3f}".format(self.G[i-1][k])+';'+"{:.3f}".format(self.B[i-1][k]))
+                else:
+                    self.grid_1.SetCellValue(k,i,"")
 
     def __do_layout(self):
         # begin wxGlade: MyDialog.__do_layout
@@ -96,10 +117,10 @@ class PanelSeleccionDosis(wx.Panel):
         print(self.R)
         print(self.filaActual)
         print(self.colActual)
-        self.R[self.colActual-1][self.filaActual]=1-prom[0]/2**16
-        self.G[self.colActual-1][self.filaActual]=1-prom[1]/2**16
-        self.B[self.colActual-1][self.filaActual]=1-prom[2]/2**16
-        self.grid_1.SetCellValue(self.filaActual,self.colActual,str(prom[0]/2**16)+';'+str(prom[1]/2**16)+';'+str(prom[2]/2**16))
+        self.R[self.colActual-1][self.filaActual]=1-prom[0]/2**self.parent.configuracion["BitCanal"]
+        self.G[self.colActual-1][self.filaActual]=1-prom[1]/2**self.parent.configuracion["BitCanal"]
+        self.B[self.colActual-1][self.filaActual]=1-prom[2]/2**self.parent.configuracion["BitCanal"]
+        self.grid_1.SetCellValue(self.filaActual,self.colActual,"{:.3f}".format(1-prom[0]/2**self.parent.configuracion["BitCanal"])+';'+"{:.3f}".format(1-prom[1]/2**self.parent.configuracion["BitCanal"])+';'+"{:.3f}".format(1-prom[2]/2**self.parent.configuracion["BitCanal"]))
         event.Skip()
 
     def NuevaDosis(self, event):  # wxGlade: MyDialog.<event_handler>
@@ -127,9 +148,44 @@ class PanelSeleccionDosis(wx.Panel):
         self.Btotal=np.mean(self.B,axis=0)
         for i in range(self.grid_1.GetNumberRows()):
             self.dosis[i]=float(self.grid_1.GetCellValue(i,0))
-        Rar=np.array(self.Rtotal)
-        Rar=Rar-Rar[0]
-        plt.scatter(self.dosis,Rar)
+        np.savetxt('dosishp.txt',self.dosis)
+        np.savetxt('Rhp.txt',self.Rtotal)
+        np.savetxt('Ghp.txt',self.Gtotal)
+        np.savetxt('Bhp.txt',self.Btotal)
+        
+        #Rar=np.array(self.Rtotal)
+        #Rar=Rar-Rar[0]
+        #plt.scatter(self.dosis,Rar)
+        #plt.show()
+        fdlg = wx.FileDialog(self, "Guardar calibracion",wildcard="calibraciones (*.txt)|*.txt", style=wx.FD_SAVE)
+        fdlg.SetFilename("calibracion-")
+        nombreArchivo=''
+        if fdlg.ShowModal() == wx.ID_OK:
+                nombreArchivo = fdlg.GetPath() + ".txt"
+        calibr=CalibracionImagen(self.Rtotal,self.Gtotal,self.Btotal,self.dosis,self.tipoCanal,self.tipoCurva,self.corrLateral)
+        calibr.generar_calibracion(nombreArchivo)
+        netOD=np.log10(np.array(self.Rtotal)/self.Rtotal[0])
+        xGra=np.linspace(netOD[0],netOD[-1],100)
+        yGra=calibr.funcionCali(xGra)
+        plt.scatter(netOD,self.dosis)
+        plt.plot(xGra,yGra,'--')
         plt.show()
+        self.Close()
         event.Skip()
         
+
+# end of class MyDialog
+
+class MyApp(wx.App):
+    def OnInit(self):
+        self.dialog = DialogoSeleccionDosis(None,[10,20], wx.ID_ANY, "")
+        self.SetTopWindow(self.dialog)
+        self.dialog.ShowModal()
+        self.dialog.Destroy()
+        return True
+
+# end of class MyApp
+
+if __name__ == "__main__":
+    app = MyApp(0)
+    app.MainLoop()

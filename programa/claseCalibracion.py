@@ -3,23 +3,23 @@ from PIL import Image
 import SimpleITK as sitk
 from scipy.optimize import curve_fit
 
-def funcionReciprocaLineal(D,p0,p1,p2):
-	return p0+(p1/(D-p1))
+def funcionReciprocaLineal(x,p0,p1,p2):
+	return p0+(p1/(x-p1))
 
-def funcionRacionalLineal(D,p0,p1,p2):
-	return (p0+p1*D)/(D+p2)
+def funcionRacionalLineal(x,p0,p1,p2):
+	return (p0+p1*x)/(x+p2)
 	
-def funcionRacionalCuadratica(D,p0,p1,p2,p3):
-	return (p0+p1*D+p2*D*D)/(D+p3)	
+def funcionRacionalCuadratica(x,p0,p1,p2,p3):
+	return (p0+p1*x+p2*x*x)/(x+p3)	
 
-def funcionRacionalCubica(D,p0,p1,p2,p3,p4):
-	return (p0+p1*D+p2*D*D+p3*D*D*D)/(D+p4)	
+def funcionRacionalCubica(x,p0,p1,p2,p3,p4):
+	return (p0+p1*x+p2*x*x+p3*x*x*x)/(x+p4)	
 	
-def funcionExponencialPolinomica(D,p0,p1,p2):
-	return  p0+p1*(D**p2)
+def funcionExponencialPolinomica(x,p0,p1,p2):
+	return  p0+p1*(x**p2)
 	
-def funcionLinealDB(D,p0,p1):
-	return  p0+p1*(D)	
+def funcionLinealDB(x,p0,p1):
+	return  p0+p1*(x)	
 	
 
 def guardar_calibracion(tipoCanal,tipoCurva,parametros,dosis,transmitancias,nombreArchivo):
@@ -67,7 +67,9 @@ class CalibracionImagen:
 				self.T=self.promsB
 			elif self.tipoCanal=="Promedio RGB":
 				for k in range(len(self.promsR)):
-					self.T.append((self.promsR+self.promsG+self.promsB)/3.0)
+					self.T.append((self.promsR[k]+self.promsG[k]+self.promsB[k])/3.0)
+			netT=np.array(self.T)-np.array(self.T)[0]		
+			netOD=np.log10(np.array(self.T)/self.T[0])
 					
 			if not self.corrLateral:
 				print("aca2")
@@ -94,7 +96,7 @@ class CalibracionImagen:
 						return funcionRacionalCubica(D,*self.parametrosOptimos)
 					self.funcionCali=faux
 				elif self.tipoCurva=="Exponencial polinomica":
-					self.parametrosOptimos,self.pCovarianza=curve_fit(funcionExponencialPolinomica, self.dosis, self.T)
+					self.parametrosOptimos,self.pCovarianza=curve_fit(funcionExponencialPolinomica, netOD, self.dosis)
 					def faux(D):
 						return funcionExponencialPolinomica(D,*self.parametrosOptimos)
 					self.funcionCali=faux

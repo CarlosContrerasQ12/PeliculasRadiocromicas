@@ -1,0 +1,7 @@
+Calibracion
+Nombre: /home/carlos/Documentos/PeliculasRadiocromicas/programa/calibracion-gsdf.txt
+Tipo Canal: Multicanal
+Tipo Curva: Reciproca lineal
+parametros: 
+Dosis Usadas: 0.0,0.201472,0.504137,1.00825,2.01783,4.03748571428571,6.0583,8.08168,10.1056
+Transmitancias: 

@@ -25,15 +25,6 @@ from matplotlib.backends.backend_wxagg import NavigationToolbar2WxAgg as Navigat
 import tifffile as tiff
 
 def leerDosis(nombre_archivo):
-	"""
-	arch=open(nombre_archivo)
-	dosis=[]
-	print(arch.readlines())
-	for line in arch.readlines():
-		dosis.append(float(line.split('\n')[0]))
-	arch.close()
-	dosis=[0.0,0.201472,0.504137,1.00825,2.01783]
-	"""
 	dosis=np.genfromtxt(nombre_archivo)
 	return dosis.tolist()
 
@@ -178,8 +169,9 @@ class MyFrame(wx.Frame):
 			self.paginaActual=self.paginas[-1].figure
 			a1=figActual.gca()
 			aray=tiff.imread(dialogoCalibracion.resultado[0])
+			print(aray)
 			self.arayActual=aray
-			escalado=(aray/65535.0)*255
+			escalado=(aray/255.0)*255
 			dosisReal=leerDosis(dialogoCalibracion.resultado[1])
 			araySinIrra=0*aray
 			araySinLuz=0*aray
@@ -197,21 +189,18 @@ class MyFrame(wx.Frame):
 				aray=wiener(aray,(40, 40))
 				araySinIrra=wiener(araySinIrra,(40, 40))
 				araySinLuz=wiener(araySinLuz,(40, 40))
-			"""
-			dial=DialogoSeleccionDosis(self,dosis=dosisReal)
+			
+			dial=DialogoSeleccionDosis(self,dosis=dosisReal,canal=dialogoCalibracion.resultado[2],curva=dialogoCalibracion.resultado[3],lateral=dialogoCalibracion.resultado[5])
 			dial.Show()
-			print(R)
-			R=np.array(dial.Rtotal)
-			doss=dial.dosis
-			R=R-R[0]
-			plt.plot(doss,R)
-			plt.show()
+
+			
+			
 			"""
 			self.panel_2=PanelSeleccionDosis(self,dosis=dosisReal)
 			self.sizer_6.Remove(0)
 			self.sizer_6.Add(self.panel_2, 1, wx.EXPAND, 0)
 			self.Layout()
-					
+			"""		
 		
 
 	def calibracionAutomatica(self, event):  # wxGlade: MyFrame.<event_handler>

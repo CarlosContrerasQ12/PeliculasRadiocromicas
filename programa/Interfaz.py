@@ -167,6 +167,7 @@ class MyFrame(wx.Frame):
             figActual=self.paginas[-1].figure
             a1=figActual.gca()
             aray=tiff.imread(dialogoCalibracion.resultado[0])
+       
             escalado=(aray/65535.0)*255
             dosisReal=leerDosis(dialogoCalibracion.resultado[1])
             araySinIrra=0*aray

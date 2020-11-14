@@ -1,0 +1,7 @@
+Calibracion
+Nombre: /home/carlos/Documentos/PeliculasRadiocromicas/programa/calibracion-ca.txt
+Tipo Canal: Canal rojo
+Tipo Curva: Exponencial polinomica
+parametros: nan,nan,nan
+Dosis Usadas: 0.0,0.201472,0.504137,1.00825,2.01783,4.037486,6.0583,8.08168,10.1056
+Transmitancias: 0.29524621766077047,0.3569678969135271,0.40927539006515345,0.4740434246659893,0.5689914048951916,0.6649700488357027,0.7163756239018156,0.7557825795728408,0.7651999829349769
