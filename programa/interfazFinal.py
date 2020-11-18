@@ -14,6 +14,8 @@ from dialogoSeleccionDosis import *
 from claseCalibracion import *
 from claseDialogoBackground import *
 from panelSeleccionDosis import *
+from dialogoMapaDosis import *
+from filtradoImagenes import filtrar_imagen
 
 import matplotlib as mpl
 from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg as FigureCanvas
@@ -36,9 +38,14 @@ class Calibracion():
         self.panelesMatplot=figuras
         self.nombresArchivos=nombresArchivos
         self.panelDosis=panelDosis
+        
         self.fondoCero=[]
         self.fondoNegro=[]
 
+class MapaDeDosis():
+	def __init__(self,imagenOriginal,mapaCalculado):
+		self.imagenOriginal=imagenOriginal
+		self.mapaCalculado=mapaCalculado
 
 class ImagenCuadernoMatplotlib(wx.Panel):
     def __init__(self, parent, id=-1, dpi=None, **kwargs):
@@ -51,6 +58,7 @@ class ImagenCuadernoMatplotlib(wx.Panel):
         self.identificador=0
         self.tipo=''
         self.rutaImagen=''
+        self.arrayIma=''
         
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.canvas, 1, wx.EXPAND)
@@ -74,12 +82,13 @@ class MyFrame(wx.Frame):
         self.araySinIrra=[]
         self.araySinLuz=[]
         
-        self.configuracion={"BitCanal":16}
+        self.configuracion={"BitCanal":16,"Filtros":['mediana']}
         
         
         self.arbolArchivos = wx.TreeCtrl(self, wx.ID_ANY,style=wx.TR_LINES_AT_ROOT)
         self.panelVariable = wx.Panel(self, wx.ID_ANY)
         self.calibraciones=[]
+        self.mapasDeDosis=[]
         self.numeroPags=0
         
         # Menu Bar
@@ -162,11 +171,28 @@ class MyFrame(wx.Frame):
         dialogoCalibracion=DialogoCalibracion(self)
         dialogoCalibracion.ShowModal()
         if dialogoCalibracion.resultado[0]!='cancelar':
-            print(dialogoCalibracion.resultado)
+            self.arayActual=tiff.imread((dialogoCalibracion.resultado[0])[0])
+            self.araySinIrra=0*self.arayActual
+            self.araySinLuz=0*self.arayActual
+            
+            if(dialogoCalibracion.resultado[6]):
+                dialogoBackground=DialogoBackground(self)
+                dialogoBackground.ShowModal()
+                fon=False
+                if dialogoBackground.resultado[0]!='cancelar' and dialogoBackground.resultado[0]!='':
+                    self.araySinIrra=tiff.imread(dialogoBackground.resultado[0])
+                    fon=True
+                if(dialogoBackground.resultado[0]!='cancelar' and dialogoBackground.resultado[1]!=''):
+                    self.araySinLuz=tiff.imread(dialogoBackground.resultado[1])
+                    if fon:
+                        self.araySinIrra=self.araySinIrra-self.araySinLuz
+                        
+            if(dialogoCalibracion.resultado[4]):
+                self.araySinIrra=filtrar_imagen(self.araySinIrra,self.configuracion["Filtros"])
+            
             calibracionActual=Calibracion([],[],[])
             rez=self.arbolArchivos.AppendItem(self.raiz,"Calibracion "+str(len(self.calibraciones)+1))
-            for nombreImagen in dialogoCalibracion.resultado[0]:
-                
+            for nombreImagen in dialogoCalibracion.resultado[0]:    
                 self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
                 self.notebookImagenes.AddPage(self.paginas[-1], "Calibracion "+str(len(self.calibraciones)+1))
                 self.numeroPags=self.numeroPags+1
@@ -179,6 +205,10 @@ class MyFrame(wx.Frame):
                 self.paginaActual=self.paginas[-1].figure
                 a1=figActual.gca()
                 self.arayActual=tiff.imread(nombreImagen)
+                self.paginas[-1].arrayIma=self.arayActual
+                self.arayActual=self.arayActual-self.araySinLuz
+                if(dialogoCalibracion.resultado[4]):
+                    self.paginas[-1].arrayIma=filtrar_imagen(self.arayActual,self.configuracion["Filtros"])
                 escalado=(self.arayActual/2**self.configuracion["BitCanal"])*255
                 a1.imshow(escalado.astype(int)) 
                 calibracionActual.panelesMatplot.append(self.paginas[-1])
@@ -187,21 +217,7 @@ class MyFrame(wx.Frame):
                 
                 
             dosisReal=leerDosis(dialogoCalibracion.resultado[1])
-            self.araySinIrra=0*self.arayActual
-            self.araySinLuz=0*self.arayActual
-
-            if(dialogoCalibracion.resultado[6]):
-                dialogoBackground=DialogoBackground(self)
-                dialogoBackground.ShowModal()
-                if dialogoBackground.resultado[0]!='cancelar' and dialogoBackground.resultado[0]!='':
-                    self.araySinIrra=tiff.imread(dialogoBackground.resultado[0])
-                    if(dialogoBackground.resultado[1]!=''):
-                       self.araySinLuz=tiff.imread(dialogoBackground.resultado[1])
-                
-            if(dialogoCalibracion.resultado[4]):
-                aray=wiener(aray,(40, 40))
-                araySinIrra=wiener(araySinIrra,(40, 40))
-                araySinLuz=wiener(araySinLuz,(40, 40))
+            
             
             self.panelVariable=PanelSeleccionDosis(self,dosis=dosisReal,canal=dialogoCalibracion.resultado[2],curva=dialogoCalibracion.resultado[3],lateral=dialogoCalibracion.resultado[5])
             calibracionActual.panelDosis=self.panelVariable
@@ -228,7 +244,89 @@ class MyFrame(wx.Frame):
         event.Skip()
 
     def mapaNuevo(self, event):  # wxGlade: MyFrame.<event_handler>
-        print("Event handler 'mapaNuevo' not implemented!")
+        dialMapa=DialogoMapaDosis(self)
+        dialMapa.ShowModal()
+        print(dialMapa.resultado)
+        if dialMapa.resultado=='cancelar':
+            return 
+        datosCalib=leer_Calibracion(dialMapa.rutaCalibracion)
+        trans=datosCalib["funcionTaD"]
+        image=tiff.imread(dialMapa.rutaImagen)
+        araySinIrra=0*image
+        araySinLuz=0*image
+        if dialMapa.corrBackground:
+            dialogoBackground=DialogoBackground(self)
+            dialogoBackground.ShowModal()
+            fon=False
+            
+            if dialogoBackground.resultado[0]!='cancelar' and dialogoBackground.resultado[0]!='':
+                araySinIrra=tiff.imread(dialogoBackground.resultado[0])
+                fon=True
+            if(dialogoBackground.resultado[0]!='cancelar' and dialogoBackground.resultado[1]!=''):
+                araySinLuz=tiff.imread(dialogoBackground.resultado[1])
+                image=image-araySinLuz
+                if fon:
+                    araySinIrra=araySinIrra-araySinLuz
+            
+        if dialMapa.filtrar:
+            image=filtrar_imagen(image,self.configuracion["Filtros"])
+            araySinIrra=filtrar_imagen(araySinIrra,self.configuracion["Filtros"])
+        
+        mapaNe=MapaDeDosis([],[])    
+        #image= (-image+araySinIrra)/2**self.configuracion["BitCanal"]
+        rez=self.arbolArchivos.AppendItem(self.raiz,"Mapa de dosis "+str(len(self.mapasDeDosis)+1))
+        
+        self.arayActual=image
+        self.arayActual=self.arayActual-araySinLuz
+        self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
+        self.notebookImagenes.AddPage(self.paginas[-1], "Mapa de dosis "+str(len(self.mapasDeDosis)+1))
+        self.numeroPags=self.numeroPags+1
+        self.paginas[-1].identificador=self.numeroPags
+        self.paginas[-1].tipo='md1'
+        self.paginas[-1].rutaImagen=dialMapa.rutaImagen
+        nuem=self.notebookImagenes.GetPageCount()-1
+        self.notebookImagenes.SetSelection(nuem)
+        figActual=self.paginas[-1].figure
+        self.paginaActual=self.paginas[-1].figure
+        a1=figActual.gca()
+        self.paginas[-1].arrayIma=self.arayActual
+        escalado=(self.arayActual/2**self.configuracion["BitCanal"])*255
+        image=image/2**self.configuracion["BitCanal"]
+        a1.imshow(escalado.astype(int))
+        self.arbolArchivos.AppendItem(rez,"Imagen")
+        mapaNe.imagenOriginal=figActual
+        
+        rojo=image[:,:,0]
+        mapaDosis=trans(rojo)
+        print(mapaDosis)
+        ins=np.where(mapaDosis<0)
+        mapaDosis[ins]=0
+        ins=np.where(mapaDosis>7.3)
+        mapaDosis[ins]=0
+        
+        self.arayActual=mapaDosis
+        self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
+        self.notebookImagenes.AddPage(self.paginas[-1], "Mapa de dosis "+str(len(self.mapasDeDosis)+1))
+        self.numeroPags=self.numeroPags+1
+        self.paginas[-1].identificador=self.numeroPags
+        self.paginas[-1].tipo='md2'
+        nuem=self.notebookImagenes.GetPageCount()-1
+        self.notebookImagenes.SetSelection(nuem)
+        figActual=self.paginas[-1].figure
+        self.paginaActual=self.paginas[-1].figure
+        a1=figActual.gca()
+        self.paginas[-1].arrayIma=self.arayActual
+        
+        a1.imshow(mapaDosis,cmap=plt.cm.gray)
+        self.arbolArchivos.AppendItem(rez,"Mapa de dosis")
+        mapaNe.mapaCalculado=mapaDosis
+        np.save('PiramideDosis.npy',mapaDosis)
+        self.mapasDeDosis.append(mapaNe)
+        
+        
+
+        
+        
         event.Skip()
 
     def compararMapas(self, event):  # wxGlade: MyFrame.<event_handler>
@@ -257,15 +355,15 @@ class MyFrame(wx.Frame):
             for cals in self.calibraciones:
                 for fisa in cals.panelesMatplot:
                     if fisa.identificador==pestana.identificador:
-                        self.arayActual=tiff.imread(fisa.rutaImagen)
+                        self.arayActual=fisa.arrayIma
                         self.araySinIrra=cals.fondoCero
                         self.araySinLuz=cals.fondoNegro
                         self.paginaActual=fisa.figure
                         self.panelVariable=cals.panelDosis
                         print(self.panelVariable.R)
                         break
-        self.panelVariable.repintar()
-        self.panelVariable.grid_1.ForceRefresh()                
+        
+                      
         self.sizer_2.Remove(1)
         self.sizer_2.Add(self.panelVariable, 1, wx.EXPAND, 0)
         self.Layout()

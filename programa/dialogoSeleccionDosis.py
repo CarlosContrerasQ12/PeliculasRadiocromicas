@@ -151,12 +151,6 @@ class DialogoSeleccionDosis(wx.Dialog):
                 nombreArchivo = fdlg.GetPath() + ".txt"
         calibr=CalibracionImagen(self.Rtotal,self.Gtotal,self.Btotal,self.dosis,self.tipoCanal,self.tipoCurva,self.corrLateral)
         calibr.generar_calibracion(nombreArchivo)
-        netOD=np.log10(np.array(self.Rtotal)/self.Rtotal[0])
-        xGra=np.linspace(netOD[0],netOD[-1],100)
-        yGra=calibr.funcionCali(xGra)
-        plt.scatter(netOD,self.dosis)
-        plt.plot(xGra,yGra,'--')
-        plt.show()
         self.Close()
         event.Skip()
         

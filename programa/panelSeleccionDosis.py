@@ -45,10 +45,17 @@ class PanelSeleccionDosis(wx.Panel):
         self.R=[[None]*len(self.dosis)]
         self.G=[[None]*len(self.dosis)]
         self.B=[[None]*len(self.dosis)]
+        self.RCero=[[None]*len(self.dosis)]
+        self.GCero=[[None]*len(self.dosis)]
+        self.BCero=[[None]*len(self.dosis)]
+        
         
         self.Rtotal=[]
         self.Gtotal=[]
         self.Btotal=[]
+        self.RCeroTotal=[]
+        self.GCeroTotal=[]
+        self.BCeroTotal=[]
         
         
 
@@ -112,14 +119,20 @@ class PanelSeleccionDosis(wx.Panel):
         x2=k[1][0]
         y2=k[1][1]
         prom=np.mean(self.parent.arayActual[min(int(y1),int(y2)):max(int(y1),int(y2)),min(int(x1),int(x2)):max(int(x1),int(x2)),:],axis=(0,1))
+        promCero=np.mean(self.parent.araySinLuz[min(int(y1),int(y2)):max(int(y1),int(y2)),min(int(x1),int(x2)):max(int(x1),int(x2)),:],axis=(0,1))
         print(k)
         print(prom)
         print(self.R)
         print(self.filaActual)
         print(self.colActual)
-        self.R[self.colActual-1][self.filaActual]=1-prom[0]/2**self.parent.configuracion["BitCanal"]
-        self.G[self.colActual-1][self.filaActual]=1-prom[1]/2**self.parent.configuracion["BitCanal"]
-        self.B[self.colActual-1][self.filaActual]=1-prom[2]/2**self.parent.configuracion["BitCanal"]
+        self.R[self.colActual-1][self.filaActual]=prom[0]/2**self.parent.configuracion["BitCanal"]
+        self.G[self.colActual-1][self.filaActual]=prom[1]/2**self.parent.configuracion["BitCanal"]
+        self.B[self.colActual-1][self.filaActual]=prom[2]/2**self.parent.configuracion["BitCanal"]
+        
+        self.RCero[self.colActual-1][self.filaActual]=promCero[0]/2**self.parent.configuracion["BitCanal"]
+        self.GCero[self.colActual-1][self.filaActual]=promCero[1]/2**self.parent.configuracion["BitCanal"]
+        self.BCero[self.colActual-1][self.filaActual]=promCero[2]/2**self.parent.configuracion["BitCanal"]
+        
         self.grid_1.SetCellValue(self.filaActual,self.colActual,"{:.3f}".format(1-prom[0]/2**self.parent.configuracion["BitCanal"])+';'+"{:.3f}".format(1-prom[1]/2**self.parent.configuracion["BitCanal"])+';'+"{:.3f}".format(1-prom[2]/2**self.parent.configuracion["BitCanal"]))
         event.Skip()
 
@@ -130,6 +143,9 @@ class PanelSeleccionDosis(wx.Panel):
             self.R[i].append(0)
             self.G[i].append(0)
             self.B[i].append(0)
+            self.RCero[i].append(0)
+            self.GCero[i].append(0)
+            self.BCero[i].append(0)
         self.grid_1.SetCellValue(self.grid_1.GetNumberRows()-1,0,'0')
         event.Skip()
 
@@ -140,35 +156,38 @@ class PanelSeleccionDosis(wx.Panel):
         self.R.append([None]*len(self.dosis))
         self.G.append([None]*len(self.dosis))
         self.B.append([None]*len(self.dosis))
+        self.RCero.append([None]*len(self.dosis))
+        self.GCero.append([None]*len(self.dosis))
+        self.BCero.append([None]*len(self.dosis))
         event.Skip()
 
     def GenerarCalibracion(self, event):  # wxGlade: MyDialog.<event_handler>
         self.Rtotal=np.mean(self.R,axis=0)
         self.Gtotal=np.mean(self.G,axis=0)
         self.Btotal=np.mean(self.B,axis=0)
+        self.RCeroTotal=np.mean(self.RCero,axis=0)
+        self.GCeroTotal=np.mean(self.GCero,axis=0)
+        self.BCeroTotal=np.mean(self.BCero,axis=0)
+        
         for i in range(self.grid_1.GetNumberRows()):
             self.dosis[i]=float(self.grid_1.GetCellValue(i,0))
+            
         np.savetxt('dosishp.txt',self.dosis)
         np.savetxt('Rhp.txt',self.Rtotal)
         np.savetxt('Ghp.txt',self.Gtotal)
         np.savetxt('Bhp.txt',self.Btotal)
         
-        #Rar=np.array(self.Rtotal)
-        #Rar=Rar-Rar[0]
-        #plt.scatter(self.dosis,Rar)
-        #plt.show()
-        fdlg = wx.FileDialog(self, "Guardar calibracion",wildcard="calibraciones (*.txt)|*.txt", style=wx.FD_SAVE)
+        fdlg = wx.FileDialog(self, "Guardar calibracion",wildcard="calibraciones (*.calibr)|*.calibr", style=wx.FD_SAVE)
         fdlg.SetFilename("calibracion-")
         nombreArchivo=''
         if fdlg.ShowModal() == wx.ID_OK:
-                nombreArchivo = fdlg.GetPath() + ".txt"
-        calibr=CalibracionImagen(self.Rtotal,self.Gtotal,self.Btotal,self.dosis,self.tipoCanal,self.tipoCurva,self.corrLateral)
+                nombreArchivo = fdlg.GetPath() + ".calibr"
+        calibr=CalibracionImagen([self.Rtotal,self.RCeroTotal],[self.Gtotal,self.GCeroTotal],[self.Btotal,self.BCeroTotal],self.dosis,self.tipoCanal,self.tipoCurva,self.corrLateral)
         calibr.generar_calibracion(nombreArchivo)
-        netOD=np.log10(np.array(self.Rtotal)/self.Rtotal[0])
-        xGra=np.linspace(netOD[0],netOD[-1],100)
-        yGra=calibr.funcionCali(xGra)
-        plt.scatter(netOD,self.dosis)
-        plt.plot(xGra,yGra,'--')
+        xGra=np.linspace(self.dosis[0],self.dosis[-1],100)
+        yGra=calibr.funcionDaT(xGra)
+        plt.plot(xGra,yGra)
+        plt.scatter(np.array(self.dosis),calibr.T)
         plt.show()
         self.Close()
         event.Skip()

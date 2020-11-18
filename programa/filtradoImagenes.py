@@ -18,24 +18,37 @@ def wiener_filter(img, kernel, K):
 	dummy = np.abs(ifft2(dummy))
 	return dummy
 	
+def filtrar_imagen(img,tipoFiltro):
+	result=img
+	
+	if 'mediana' in tipoFiltro:
+		result=cv2.medianBlur(img.astype('float32'),5)
+	if 'promedio' in tipoFiltro:
+		kernel = np.ones((5,5),np.float64)/25
+		result = cv2.filter2D(result,-1,kernel)
+		
+	return result
+
+
+	
 	
 #img=tiff.imread('Dosis0a10.tif')
-img=tiff.imread('FondoNegro-1.tif')
-img2=tiff.imread('Dosis0a10.tif')
-img=img2-img
-img=(img/2**16)
-plt.imshow(img)
-plt.figure()
+#img=tiff.imread('FondoNegro-1.tif')
+#img2=tiff.imread('Dosis0a10.tif')
+#img=img2-img
+#img=(img/2**16)
+#plt.imshow(img)
+#plt.figure()
 
-kernel = np.ones((5,5),np.float64)/25
-dst = cv2.filter2D(img,-1,kernel)
-tiff.imsave('dosis0-10Filtradas.tif',dst)
-plt.imshow(dst)
+#kernel = np.ones((5,5),np.float64)/25
+#dst = cv2.filter2D(img,-1,kernel)
+#tiff.imsave('dosis0-10Filtradas.tif',dst)
+#plt.imshow(dst)
 
-plt.figure()
-median = cv2.medianBlur(img.astype('float32'),5)
-median=median*2**16
+#plt.figure()
 
-plt.imshow(median)
+#median=median*2**16
 
-plt.show()
+#plt.imshow(median)
+
+#plt.show()
