@@ -16,6 +16,7 @@ from claseDialogoBackground import *
 from panelSeleccionDosis import *
 from dialogoMapaDosis import *
 from filtradoImagenes import filtrar_imagen
+from panelMapaDosis2 import *
 
 import matplotlib as mpl
 from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg as FigureCanvas
@@ -202,7 +203,7 @@ class MyFrame(wx.Frame):
                 nuem=self.notebookImagenes.GetPageCount()-1
                 self.notebookImagenes.SetSelection(nuem)
                 figActual=self.paginas[-1].figure
-                self.paginaActual=self.paginas[-1].figure
+                self.paginaActual=self.paginas[-1]
                 a1=figActual.gca()
                 self.arayActual=tiff.imread(nombreImagen)
                 self.paginas[-1].arrayIma=self.arayActual
@@ -287,7 +288,7 @@ class MyFrame(wx.Frame):
         nuem=self.notebookImagenes.GetPageCount()-1
         self.notebookImagenes.SetSelection(nuem)
         figActual=self.paginas[-1].figure
-        self.paginaActual=self.paginas[-1].figure
+        self.paginaActual=self.paginas[-1]
         a1=figActual.gca()
         self.paginas[-1].arrayIma=self.arayActual
         escalado=(self.arayActual/2**self.configuracion["BitCanal"])*255
@@ -313,7 +314,7 @@ class MyFrame(wx.Frame):
         nuem=self.notebookImagenes.GetPageCount()-1
         self.notebookImagenes.SetSelection(nuem)
         figActual=self.paginas[-1].figure
-        self.paginaActual=self.paginas[-1].figure
+        self.paginaActual=self.paginas[-1]
         a1=figActual.gca()
         self.paginas[-1].arrayIma=self.arayActual
         
@@ -322,6 +323,10 @@ class MyFrame(wx.Frame):
         mapaNe.mapaCalculado=mapaDosis
         np.save('PiramideDosis.npy',mapaDosis)
         self.mapasDeDosis.append(mapaNe)
+        self.panelVariable=PanelMapaDosis2(self)
+        self.sizer_2.Remove(1)
+        self.sizer_2.Add(self.panelVariable, 1, wx.EXPAND, 0)
+        self.Layout()
         
         
 
@@ -358,7 +363,7 @@ class MyFrame(wx.Frame):
                         self.arayActual=fisa.arrayIma
                         self.araySinIrra=cals.fondoCero
                         self.araySinLuz=cals.fondoNegro
-                        self.paginaActual=fisa.figure
+                        self.paginaActual=fisa
                         self.panelVariable=cals.panelDosis
                         print(self.panelVariable.R)
                         break
