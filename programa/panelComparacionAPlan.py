@@ -9,6 +9,7 @@ from scipy import interpolate as interp
 from imagenMatplotlibLibre import *
 from matplotlib.widgets import Slider
 import numpy as np
+import pymedphys
 # begin wxGlade: dependencies
 # end wxGlade
 
@@ -136,7 +137,35 @@ class PanelComparacionAPlan(wx.Panel):
         event.Skip()
 
     def generar_estadisticas(self, event):  # wxGlade: MyDialog.<event_handler>
-        print("Event handler 'generar_estadisticas' not implemented!")
+        gamma_options = {
+        'dose_percent_threshold': 5,
+        'distance_mm_threshold': 5,
+        'lower_percent_dose_cutoff': 20,
+        'interp_fraction': 10,  # Should be 10 or more for more accurate results
+        'max_gamma': 2,
+        'random_subset': None,
+        'local_gamma': True,
+        'ram_available': 2*(2**29)  # 1/2 GB
+        }
+        x=np.linspace(0,self.parent.paginaActual.arrayIma[0].shape[1],self.parent.paginaActual.arrayIma[0].shape[1])
+        y=np.linspace(0,self.parent.paginaActual.arrayIma[0].shape[0],self.parent.paginaActual.arrayIma[0].shape[0])
+        axes_reference=(y,x)
+        gamma = pymedphys.gamma(
+        axes_reference, self.parent.paginaActual.arrayIma[0],
+        axes_reference, self.parent.paginaActual.arrayIma[1],
+        **gamma_options)
+        
+        valid_gamma = gamma[~np.isnan(gamma)]
+        num_bins = (gamma_options['interp_fraction'] * gamma_options['max_gamma'])
+        bins = np.linspace(0, gamma_options['max_gamma'], num_bins + 1)
+        
+        ima=ImagenMatplotlibLibre(self.parent)
+        ima.ax.hist(valid_gamma, bins, density=True)
+        ima.ax.set_xlim([0, gamma_options['max_gamma']])
+        pass_ratio = np.sum(valid_gamma <= 1) / len(valid_gamma)
+        print(pass_ratio)
+        ima.Show()
+        #ima.ax.title("Local Gamma (0.5%/0.5mm) | Percent Pass: {0:.2f} %".format(pass_ratio*100))
         event.Skip()
 
     def nuevo_perfil(self, event):  # wxGlade: MyDialog.<event_handler>
