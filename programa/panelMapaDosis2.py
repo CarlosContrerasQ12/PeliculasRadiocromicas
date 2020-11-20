@@ -13,9 +13,9 @@ from dialogoNormalizacion import *
 import numpy as np
 import pydicom 
 import tempfile
-import time
+import datetime
 from pydicom.dataset import Dataset, FileDataset, FileMetaDataset
-import SimpleITK as sitk
+
 
 #matplotlib.interactive(True)
 #matplotlib.use('WXAgg')
@@ -189,25 +189,47 @@ class PanelMapaDosis2(wx.Panel):
         fdlg.SetFilename("Mapa de dosis-")
         nombreArchivo=''
         if fdlg.ShowModal() == wx.ID_OK:
-                nombreArchivo = fdlg.GetPath()
+                nombreArchivo = fdlg.GetPath()+suffix
         else:
             return   
         fact=np.max(self.parent.paginaActual.arrayIma)
-        arr=(self.parent.paginaActual.arrayIma/ fact)*2**16
-        image_slice=sitk.GetImageFromArray(arr.astype('int64'))
-        #castFilter = sitk.CastImageFilter()
-        #castFilter.SetOutputPixelType(sitk.sitkInt16)
-        #image_slice = castFilter.Execute(image_slice)
-        writer = sitk.ImageFileWriter()
-        writer.KeepOriginalImageUIDOn()
-        modification_time = time.strftime("%H%M%S")
-        modification_date = time.strftime("%Y%m%d")
-        image_slice.SetMetaData("0008|0031", modification_time)
-        image_slice.SetMetaData("0008|0021", modification_date)
-        image_slice.SetMetaData("3004|000e", str(fact/2**16))
-        writer.SetFileName(nombreArchivo)
-        writer.Execute(image_slice)
+        arr=((self.parent.paginaActual.arrayIma/ fact)*((2**16)-1)).astype('uint32')
+        """
+        ds = pydicom.dcmread('piramide4.dcm')
+        """
+        file_meta = FileMetaDataset()
+        file_meta.MediaStorageSOPClassUID = '1.2.840.10008.5.1.4.1.1.2'
+        file_meta.MediaStorageSOPInstanceUID = "1.2.246.352.71.7.593947511628.1265684.20201029130910"
+        file_meta.ImplementationClassUID = "1.2.246.352.70.2.1.7"
+        ds = FileDataset(nombreArchivo, {},
+                 file_meta=file_meta, preamble=b"\0" * 128)
+        ds.PatientName = "PeliculasRadicromicas"
+        ds.Allergies='A la ensalada roja'
+        ds.PatientID = "57"
+        ds.file_meta.TransferSyntaxUID = pydicom.uid.ImplicitVRLittleEndian
+        ds.is_little_endian = True
+        ds.is_implicit_VR = True
+        ds.SamplesPerPixel=1
+        ds.PhotometricInterpretation='MONOCHROME2'
+        ds.PixelSpacing=[25.4/self.parent.configuracion["ppi"],25.4/self.parent.configuracion["ppi"]]
+        ds.BitsAllocated=32
+        ds.BitsStored=32
+        ds.HighBit=31
+        ds.PixelRepresentation=0
+        ds.DoseUnits='GY'
+        ds.DoseGridScaling="{:.7E}".format(fact/(2**16-1))
         
+        ds.PixelData=arr.tobytes()
+        ds.Rows,ds.Columns=arr.shape
+        
+        dt = datetime.datetime.now()
+        ds.ContentDate = dt.strftime('%Y%m%d')
+        timeStr = dt.strftime('%H%M%S.%f')  # long format with micro seconds
+        ds.ContentTime = timeStr
+        
+        ds.save_as(nombreArchivo)
+        
+
         
         event.Skip()
 

@@ -17,12 +17,15 @@ from panelSeleccionDosis import *
 from dialogoMapaDosis import *
 from filtradoImagenes import filtrar_imagen
 from panelMapaDosis2 import *
+from dialogoComparacionPlan import *
+from panelComparacionAPlan import *
 
 import matplotlib as mpl
 from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg as FigureCanvas
 from matplotlib.backends.backend_wxagg import NavigationToolbar2WxAgg as NavigationToolbar
 
 import tifffile as tiff
+from skimage.transform import rescale
 
 # begin wxGlade: dependencies
 # end wxGlade
@@ -33,6 +36,13 @@ import tifffile as tiff
 def leerDosis(nombre_archivo):
     dosis=np.genfromtxt(nombre_archivo)
     return dosis.tolist()
+
+def poner_imagen_en_punto(imgPoner,tamanoGrande,puntoEnGrande,puntoEnPoner):
+    resp=np.zeros(tamanoGrande)
+    x=imgPoner.shape[0]
+    y=imgPoner.shape[1]
+    resp[puntoEnGrande[0]-int(x/2):puntoEnGrande[0]+int(x/2),puntoEnGrande[1]-int(y/2)+10:puntoEnGrande[1]+int(y/2)+10]=imgPoner
+    return resp
     
 class Calibracion():
     def __init__(self,figuras,nombresArchivos,panelDosis):
@@ -44,15 +54,22 @@ class Calibracion():
         self.fondoNegro=[]
 
 class MapaDeDosis():
-	def __init__(self,imagenOriginal,mapaCalculado):
-		self.imagenOriginal=imagenOriginal
-		self.mapaCalculado=mapaCalculado
+    def __init__(self,imagenOriginal,mapaCalculado):
+        self.imagenOriginal=imagenOriginal
+        self.mapaCalculado=mapaCalculado
 
+class ComparacionAPlan():
+    def __init__(self,imagenEscan,imagenCalculada):
+        self.imScan=imagenEscan
+        self.imCalc=imagenCalculada
+        
+        
 class ImagenCuadernoMatplotlib(wx.Panel):
     def __init__(self, parent, id=-1, dpi=None, **kwargs):
         wx.Panel.__init__(self, parent, id=id, **kwargs)
         self.figure = mpl.figure.Figure(dpi=dpi)
         #self.figure.gca().axis('off')
+        self.axA=self.figure.gca()
         self.canvas = FigureCanvas(self, -1, self.figure)
         self.toolbar = NavigationToolbar(self.canvas)
         self.toolbar.Realize()
@@ -83,13 +100,14 @@ class MyFrame(wx.Frame):
         self.araySinIrra=[]
         self.araySinLuz=[]
         
-        self.configuracion={"BitCanal":16,"Filtros":['mediana']}
+        self.configuracion={"BitCanal":16,"Filtros":['mediana'],"ppi":100}
         
         
         self.arbolArchivos = wx.TreeCtrl(self, wx.ID_ANY,style=wx.TR_LINES_AT_ROOT)
         self.panelVariable = wx.Panel(self, wx.ID_ANY)
         self.calibraciones=[]
         self.mapasDeDosis=[]
+        self.comparacionesAPlan=[]
         self.numeroPags=0
         
         # Menu Bar
@@ -247,7 +265,6 @@ class MyFrame(wx.Frame):
     def mapaNuevo(self, event):  # wxGlade: MyFrame.<event_handler>
         dialMapa=DialogoMapaDosis(self)
         dialMapa.ShowModal()
-        print(dialMapa.resultado)
         if dialMapa.resultado=='cancelar':
             return 
         datosCalib=leer_Calibracion(dialMapa.rutaCalibracion)
@@ -327,15 +344,59 @@ class MyFrame(wx.Frame):
         self.sizer_2.Remove(1)
         self.sizer_2.Add(self.panelVariable, 1, wx.EXPAND, 0)
         self.Layout()
-        
-        
-
-        
-        
         event.Skip()
 
     def compararMapas(self, event):  # wxGlade: MyFrame.<event_handler>
-        print("Event handler 'compararMapas' not implemented!")
+        dialComparar=DialogoComparacionPlan(self)
+        dialComparar.ShowModal()
+        if dialComparar.resultado=='cancelar':
+            return
+        dicomPlan=pydicom.dcmread(dialComparar.rutaPlan)
+        dicomEscan=pydicom.dcmread(dialComparar.rutaEscan)
+        reescaldo=np.array(dicomPlan.PixelSpacing)/np.array(dicomEscan.PixelSpacing)
+        arrayPlan=rescale(dicomPlan.pixel_array,reescaldo,anti_aliasing=False)
+        print(arrayPlan.shape)
+        centroEscan=int(dicomEscan.pixel_array.shape[0]/2),int(dicomEscan.pixel_array.shape[1]/2)
+        arrayPlanAjus=poner_imagen_en_punto(arrayPlan,dicomEscan.pixel_array.shape,centroEscan,(0,0))
+        
+        
+        rez=self.arbolArchivos.AppendItem(self.raiz,"Comparacion a plan  "+str(len(self.comparacionesAPlan)+1))
+        self.arayActual=[arrayPlanAjus,dicomEscan.pixel_array]
+        self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
+        self.notebookImagenes.AddPage(self.paginas[-1], "Comparacion a plan "+str(len(self.comparacionesAPlan)+1))
+        self.numeroPags=self.numeroPags+1
+        self.paginas[-1].identificador=self.numeroPags
+        self.paginas[-1].tipo='compa'
+        self.paginaActual=self.paginas[-1]
+        nuem=self.notebookImagenes.GetPageCount()-1
+        self.notebookImagenes.SetSelection(nuem)
+        figActual=self.paginas[-1].figure
+        self.paginaActual=self.paginas[-1]
+        a1=figActual.gca()
+        
+        
+        arrayPlan=arrayPlanAjus/np.max(arrayPlanAjus)
+        arrayEscan=dicomEscan.pixel_array*dicomEscan.DoseGridScaling/6.49
+        self.arayActual=[arrayPlan,arrayEscan]
+        self.paginas[-1].arrayIma=[arrayPlan,arrayEscan]
+        
+        self.alpha=0.5
+        
+        
+        a1.imshow((1.0-self.alpha)*arrayPlan+self.alpha*arrayEscan,cmap=plt.cm.gray)
+        self.axR=self.paginaActual.figure.add_axes([0.25, .03, 0.50, 0.02])
+        self.alp = Slider(self.axR, 'Alpha', 0, 1, valinit=0.5, valstep=0.01)
+        def update(val):
+            iv=self.alp.val
+            self.paginaActual.axA.clear()
+            self.paginaActual.axA.imshow((1.0-iv)*arrayPlan+iv*arrayEscan,cmap=plt.cm.gray)
+            self.paginaActual.figure.canvas.draw_idle()
+        self.alp.on_changed(update) 
+        
+        self.panelVariable=PanelComparacionAPlan(self)
+        self.sizer_2.Remove(1)
+        self.sizer_2.Add(self.panelVariable, 1, wx.EXPAND, 0)
+        self.Layout()
         event.Skip()
 
     def promediarImagenes(self, event):  # wxGlade: MyFrame.<event_handler>

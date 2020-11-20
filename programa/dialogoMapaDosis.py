@@ -88,7 +88,6 @@ class DialogoMapaDosis(wx.Dialog):
             self.CajaTextoImagen.SetValue(self.rutaImagen)
         
     def aceptar(self,event):
-        print("da acepat")
         self.filtrar=self.checkbox_2.GetValue()
         self.corrBackground=self.checkbox_1.GetValue()
         self.resultado='aceptar'
