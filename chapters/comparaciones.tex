@@ -1,3 +1,77 @@
-Aquí van las comparaciones con los planes de tratamiento que hagamos, así como una descripcion del método $\Gamma$ de comparación.
-\section{Analisis $\Gamma$}
-\section{Mapas de dosis para planes comunes}
+En esta sección se exhibirán mapas de dosis calculados con la curva anteriormente propuesta para un plan de tratamiento piramidal de prueba y para un plan de tratamiento de mama, haciendo una comparación cualitativa y cuantitativa con respecto al mapa de dosis calculado por el sistema de planeación eclipse.
+\section{Mapas de dosis}
+Como primer plan de tratamiento y a modo de prueba se irradió un plan de tratamiento piramidal, que produjo un patrón en la película que se observa en la figura \ref{fig:piramideEscaneada}.\\
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento}
+	
+	\caption{Pelicula EBT3 irradiada con plan de piramide }
+	\label{fig:piramideEscaneada}
+\end{figure}
+
+En la figura \ref{fig:mapaPiramide} se muestra el mapa de dosis calculado con la digitalización anterior, junto al mapa de dosis que calculó el sistema de planeación en el mismo plano. Para alinear estos planes se usaron cuatro puntos fiduciales y un proceso de registro usando la librería SimpleITK de python.\\
+
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada}
+	
+	\caption{Mapa de dosis calculado experimental y computacionalmente }
+	\label{fig:mapaPiramide}
+\end{figure}
+
+Se pueden obtener diversas estadísticas para comparar estos planes, por ejemplo, en la figura \ref{fig:perfilesDosisPiramide} se muestran perfiles de dosis a diferentes niveles que muestran una concordancia relativa entre las dosis calculadas de ambas maneras.\\
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada}
+	
+	\caption{Perfiles de dosis en diferentes planos }
+	\label{fig:perfilesDosisPiramide}
+\end{figure}
+Igualmente, en la figura \ref{fig:histogramasDosisPiramide} se muestran comparaciones de los histogramas de dosis obtenidos.\\
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada histograma}
+	
+	\caption{Histogramas de dosis para plan piramide }
+	\label{fig:histogramasDosisPiramide}
+\end{figure}
+
+Finalmente, en la figura \ref{fig:isodosisPiramide}  se presentan curvas de isodosis de estos mapas.\\ 
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada isodosis}
+	
+	\caption{Curvas de isodosis para plan piramide }
+	\label{fig:isodosisPiramide}
+\end{figure}
+
+Similarmente, se realiza un análisis comparativo del plan de tratamiento de mama 
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento mama}
+	
+	\caption{Plan de tratamiento de mama escaneado }
+	\label{fig:mamaEscaneada}
+\end{figure}
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Mapas de dosis mama}
+	
+	\caption{Mapa de dosis para plan de mama }
+	\label{fig:mapaMama}
+\end{figure}
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada isodosis}
+	
+	\caption{Curvas de isodosis para plan piramide }
+	\label{fig:histogramaMama}
+\end{figure}
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada isodosis}
+	
+	\caption{Curvas de isodosis para plan piramide }
+	\label{fig:isodosisMama}
+\end{figure}
+\section{Análisis $\Gamma$}
