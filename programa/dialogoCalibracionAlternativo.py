@@ -25,16 +25,20 @@ class DialogoCalibracion(wx.Dialog):
         self.SelectorDosis = wx.Button(self, wx.ID_ANY, "Navegar")
         self.CajaTextoDosis=wx.TextCtrl(self,value="",style=wx.TE_READONLY)
         self.combo_box_canal = wx.ComboBox(self, wx.ID_ANY, choices=["Multicanal", "Canal rojo","Canal verde","Canal azul","Promedio RGB"], style=wx.CB_DROPDOWN)
-        self.combo_box_curva = wx.ComboBox(self, wx.ID_ANY, choices=["Reciproca lineal", "Racional lineal", "Racional cuadratica", "Racional cubica", "Exponencial polinomica", "Lineal (Dosis bajas)"], style=wx.CB_DROPDOWN)
+        self.combo_box_curva = wx.ComboBox(self, wx.ID_ANY, choices=["Racional lineal", "Cubica", "Exponencial polinomica", "Lineal"], style=wx.CB_DROPDOWN)
         self.checkboxFiltrar = wx.CheckBox(self, wx.ID_ANY, "Filtrar")
-        self.checkboxLateral = wx.CheckBox(self, wx.ID_ANY, "Correccion lateral")
         self.checkboxBackground = wx.CheckBox(self, wx.ID_ANY, "Background")
         self.Aceptar = wx.Button(self, wx.ID_ANY, "Aceptar")
         self.button_1 = wx.Button(self, wx.ID_ANY, "Cancelar")
-        self.nombreArchivosImag=[]
+        self.nombreArchivos=[]
         self.nombreArchivoDos=''
         
-        self.resultado=['cancelar']
+        self.resultado='cancelar'
+        self.filtrar=False
+        self.background=False
+        self.tipoCanal=''
+        self.tipoCurva=''
+        
 
         self.__set_properties()
         self.__do_layout()
@@ -84,7 +88,6 @@ class DialogoCalibracion(wx.Dialog):
         labelCorecciones = wx.StaticText(self, wx.ID_ANY, "Correcciones")
         grid_sizer_1.Add(labelCorecciones, 0, wx.ALIGN_CENTER, 0)
         sizer_1.Add(self.checkboxFiltrar, 0, 0, 0)
-        sizer_1.Add(self.checkboxLateral, 0, wx.ALL | wx.EXPAND, 0)
         sizer_1.Add(self.checkboxBackground, 0, wx.EXPAND, 0)
         grid_sizer_1.Add(sizer_1, 0, wx.ALIGN_CENTER | wx.ALL | wx.FIXED_MINSIZE | wx.SHAPED, 0)
         grid_sizer_1.Add(self.Aceptar, 0, wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_RIGHT | wx.ALL, 1)
@@ -94,17 +97,14 @@ class DialogoCalibracion(wx.Dialog):
         # end wxGlade
 
     def aceptar(self, event):  # wxGlade: MyDialog.<event_handler>
-        self.resultado=[]
-        self.resultado.append(self.nombreArchivos)
-        self.resultado.append(self.nombreArchivoDos)
-        self.resultado.append(self.combo_box_canal.GetStringSelection())
-        self.resultado.append(self.combo_box_curva.GetStringSelection())
-        self.resultado.append(self.checkboxFiltrar.GetValue())
-        self.resultado.append(self.checkboxLateral.GetValue())
-        self.resultado.append(self.checkboxBackground.GetValue())
-        #event.Skip()
-        print(self.resultado)
+        self.resultado='aceptar'
+        self.tipoCanal=self.combo_box_canal.GetStringSelection()
+        self.tipoCurva=self.combo_box_curva.GetStringSelection()
+        self.filtrar=self.checkboxFiltrar.GetValue()
+        self.background=self.checkboxBackground.GetValue()
         self.Close()
+        event.Skip()
+        
         
     def buscarIm(self,event):
         dial=wx.FileDialog(self,name="Seleccione archivo",style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST | wx.FD_MULTIPLE)

@@ -75,3 +75,45 @@ Similarmente, se realiza un análisis comparativo del plan de tratamiento de mam
 	\label{fig:isodosisMama}
 \end{figure}
 \section{Análisis $\Gamma$}
+Dada la complejidad que suponen ciertos tratamientos y la necesidad de asegurar que las dosis prescritas correspondan con gran precisión con las dosis entregadas en estos, se deben proponer formas cuantitativas para evaluar que tanto corresponden entre sí dos mapas de dosis asociados a los planes. Esto se requiere, por ejemplo, cuando por diversas razones es necesario cambiar el algoritmo de calculo de dosis que usa el sistema de planeación para calcular los planes. En tal caso, es necesario validar el reajuste con los planes previamente calculados, para asegurar que correspondan con las dosis prescritas.\cite{Winiecki2009}\cite{Li2011}\\
+
+En este caso, se quiere validar que los planes calculados con el sistema de planeación correspondan con los que se ejecutan en tiempo real en la maquina. Esto dado que, en algunos casos, para planes complejos, las limitaciones de la maquina que no tiene en cuenta el sistema podrían generar distribuciones inciertas que afectan la efectividad del tratamiento.\\
+
+En consecuencia, para propósitos de comparación de planes, se ha desarrollado una nueva cantidad denominada $\Gamma$. Si se desea comparar una distribución de dosis de referencia $D(\vec{r}_{c})$ con una distribución de dosis medida $D(\vec{r}_{m})$ entonces se define $\Gamma(\vec{r}_c,\vec{r}_m)$ para cada punto de referencia con respecto a cada punto de medida como 
+\begin{equation}
+\label{eqn:gamma}
+	\Gamma(\vec{r}_c,\vec{r}_m)=\sqrt{\frac{\abs{\vec{r}_c-\vec{r}_m}^2}{DTA^2}+\frac{\abs{D(\vec{r}_c)-D(\vec{r}_m)}^2}{DD^2\cdot D(\vec{r}_c)^2}},
+\end{equation}
+donde $\abs{\vec{r}_c-\vec{r}_m}$ es la distancia entre los puntos analizados en milímetros, ${\abs{D(\vec{r}_c)-D(\vec{r}_m)}}$ es la diferencia de dosis entre los puntos y $DTA$(Distance to Agreement) y $DD$(Dose diference) son parámetros para ajustar la calidad de la comparación. Teniendo estos valores, se define el valor de $\Gamma$ en cada punto de la distribución de referencia como el mínimo de estas cantidades evaluadas sobre los puntos en la distribución de mediada, es decir $\Gamma(\vec{r}_c)=\min_{m} \Gamma(\vec{r}_c,\vec{r}_m)$.\\
+
+De esta manera, para $DTA$ y $DD$ fijos, se está buscando en la distribución medida el punto que está más cercano en una distancia de hasta $DTA$ y difiere en dosis hasta $DD$ con respecto a algún punto en la distribución de referencia. Parámetros usuales para realizar este análisis son $DTA=3 mm$ y $DD=3.3\%$, aunque para planes más complejos, con gradientes de dosis altos, se pueden usar parámetros menores, como $DTA=1 mm$ y $DD=1\%$.\\
+
+Cada punto en la distribución de referencia pasa el test de comparación con la distribución medida si su $\Gamma(\vec{r}_c)<1$, lo que quiere decir que, bajo la definición de comparación de distribuciones, estás coinciden en un valor aceptable. Gráficamente, el significado de este test de ajuste entre distribuciones es representado en la figura \ref{fig:elipseGamma}, donde un punto en la distribución de referencia pasa el test si reside en la elipse  definida por la ecuación \eqref{eqn:gamma}.\\
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Ellipse Gamma}
+	\caption{Sigificado geométrico del test gamma }
+	\label{fig:elipseGamma}
+\end{figure}
+
+Con estas definición de $\Gamma$, realizamos las comparaciones correspondientes entre los planes calculados por el sistema de planeación y los obtenidos mediante la película para el plan piramide y el plan de tratamiento de mama.\\
+
+En el caso del plan pirámide, se obtiene la matriz $\Gamma$ mostrada en la figura \ref{fig:gammaPiramide}, así como el histograma de $\Gamma$ que evalúa la correspondencia general de los pixeles en ambas distribuciones.\\
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Gamma Piramide}
+	\caption{Análisis $\Gamma$ para plan piramide }
+	\label{fig:gammaPiramide}
+\end{figure}
+
+Finalmente, en el caso del plan de tratamiento se mama, se muestra el mismo análisis en la figura \ref{fig:gammaMama}
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Gamma mama}
+	\caption{Análisis $\Gamma$ para plan de tratamiento de mama}
+	\label{fig:gammaMama}
+\end{figure}
+
+
+
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  24 NOV 2020 00:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  24 NOV 2020 15:15
 entering extended mode
 **./Peliculas.tex
 (Peliculas.tex
@@ -734,6 +734,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \c@@todonotes@numberoftodonotes=\count302
 )
+(/home/carlos/.miktex/texmfs/install/tex/latex/commath/commath.sty)
 \c@example=\count303
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdfmode.def
@@ -748,24 +749,24 @@ LaTeX Info: Redefining \% on input line 26.
 )
 \openout1 = `Peliculas.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Info: Redefining \. on input line 63.
-LaTeX Info: Redefining \% on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
 
 (/home/carlos/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -786,7 +787,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 63.
+Package hyperref Info: Link coloring OFF on input line 64.
  (/home/carlos/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -799,15 +800,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count311
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 64.
+LaTeX Info: Redefining \pageref on input line 64.
+LaTeX Info: Redefining \nameref on input line 64.
  (Peliculas.out) (Peliculas.out)
 \@outlinefile=\write4
 \openout4 = `Peliculas.out'.
 
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 63.
+LaTeX Info: Redefining \selectfont on input line 64.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -817,19 +818,19 @@ ABD: EveryShipout initializing macros
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 63.
+loading the todonotes package. on input line 64.
 
-<images/logo.png, id=106, 803.0pt x 240.9pt>
+<images/logo.png, id=114, 803.0pt x 240.9pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 68.
+Package pdftex.def Info: images/logo.png  used on input line 69.
 (pdftex.def)             Requested size: 234.00238pt x 70.20105pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
 
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
@@ -841,20 +842,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 \end{abstract}
+l.78 \end{abstract}
                     [1]pdfTeX warning (ext4): destination with the same identif
 ier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 \end{abstract}
+l.84 \end{abstract}
                     [1]
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 \tableofcontents
+l.92 \tableofcontents
                       [1
 
 ] (Peliculas.toc
@@ -1007,7 +1008,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--106
 
  []
 
-<images/rayleigh.png, id=276, 372.39125pt x 335.2525pt>
+<images/rayleigh.png, id=294, 372.39125pt x 335.2525pt>
 File: images/rayleigh.png Graphic file (type png)
 <use images/rayleigh.png>
 Package pdftex.def Info: images/rayleigh.png  used on input line 110.
@@ -1022,7 +1023,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-<images/compton.png, id=284, 584.1825pt x 367.3725pt>
+<images/compton.png, id=302, 584.1825pt x 367.3725pt>
 File: images/compton.png Graphic file (type png)
 <use images/compton.png>
 Package pdftex.def Info: images/compton.png  used on input line 119.
@@ -1068,7 +1069,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
  []
 
 [10]
-<images/fotoelectrico.png, id=309, 693.59125pt x 516.93124pt>
+<images/fotoelectrico.png, id=327, 693.59125pt x 516.93124pt>
 File: images/fotoelectrico.png Graphic file (type png)
 <use images/fotoelectrico.png>
 Package pdftex.def Info: images/fotoelectrico.png  used on input line 174.
@@ -1093,7 +1094,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
-<images/produccionPares.png, id=316, 698.61pt x 318.18875pt>
+<images/produccionPares.png, id=334, 698.61pt x 318.18875pt>
 File: images/produccionPares.png Graphic file (type png)
 <use images/produccionPares.png>
 Package pdftex.def Info: images/produccionPares.png  used on input line 196.
@@ -1134,28 +1135,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--242
  []
 
 [14]
-<images/linalc.png, id=341, 641.39626pt x 460.72125pt>
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+[15]
+<images/linalc.png, id=365, 641.39626pt x 460.72125pt>
 File: images/linalc.png Graphic file (type png)
 <use images/linalc.png>
-Package pdftex.def Info: images/linalc.png  used on input line 251.
+Package pdftex.def Info: images/linalc.png  used on input line 259.
 (pdftex.def)             Requested size: 350.99762pt x 252.13206pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
-
- []
-
-[15 <./images/linalc.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+Underfull \hbox (badness 10000) in paragraph at lines 256--262
 
  []
 
@@ -1164,88 +1165,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
-[16]
+
 Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
-<images/modelos.png, id=358, 780.9175pt x 595.22375pt>
-File: images/modelos.png Graphic file (type png)
-<use images/modelos.png>
-Package pdftex.def Info: images/modelos.png  used on input line 300.
-(pdftex.def)             Requested size: 390.0pt x 297.25693pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--303
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+[16 <./images/linalc.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
-<images/diacetileno.png, id=369, 645.41125pt x 280.04625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/modelos.png, id=382, 780.9175pt x 595.22375pt>
+File: images/modelos.png Graphic file (type png)
+<use images/modelos.png>
+Package pdftex.def Info: images/modelos.png  used on input line 325.
+(pdftex.def)             Requested size: 390.0pt x 297.25693pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--328
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
+
+ []
+
+[19 <./images/modelos.png>]
+<images/diacetileno.png, id=400, 645.41125pt x 280.04625pt>
 File: images/diacetileno.png Graphic file (type png)
 <use images/diacetileno.png>
-Package pdftex.def Info: images/diacetileno.png  used on input line 309.
+Package pdftex.def Info: images/diacetileno.png  used on input line 334.
 (pdftex.def)             Requested size: 195.0pt x 84.60847pt.
-<images/reaccion.png, id=372, 677.53125pt x 442.65375pt>
+<images/reaccion.png, id=403, 677.53125pt x 442.65375pt>
 File: images/reaccion.png Graphic file (type png)
 <use images/reaccion.png>
-Package pdftex.def Info: images/reaccion.png  used on input line 311.
+Package pdftex.def Info: images/reaccion.png  used on input line 336.
 (pdftex.def)             Requested size: 195.0pt x 127.40042pt.
-[18 <./images/modelos.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
-<images/absorbancia.png, id=388, 742.775pt x 555.07375pt>
+[20 <./images/diacetileno.png> <./images/reaccion.png>]
+<images/absorbancia.png, id=425, 742.775pt x 555.07375pt>
 File: images/absorbancia.png Graphic file (type png)
 <use images/absorbancia.png>
-Package pdftex.def Info: images/absorbancia.png  used on input line 322.
+Package pdftex.def Info: images/absorbancia.png  used on input line 347.
 (pdftex.def)             Requested size: 272.99881pt x 204.01044pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--325
-
- []
-
-[19 <./images/diacetileno.png> <./images/reaccion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
-
- []
-
-<images/escaner.png, id=404, 864.22874pt x 536.0025pt>
-File: images/escaner.png Graphic file (type png)
-<use images/escaner.png>
-Package pdftex.def Info: images/escaner.png  used on input line 332.
-(pdftex.def)             Requested size: 272.99881pt x 169.31604pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--335
-
- []
-
-[20 <./images/absorbancia.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
-
- []
-
-[21 <./images/escaner.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 344--350
 
  []
 
@@ -1254,107 +1275,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
+<images/escaner.png, id=429, 864.22874pt x 536.0025pt>
+File: images/escaner.png Graphic file (type png)
+<use images/escaner.png>
+Package pdftex.def Info: images/escaner.png  used on input line 357.
+(pdftex.def)             Requested size: 272.99881pt x 169.31604pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
+Underfull \hbox (badness 10000) in paragraph at lines 354--360
+
+ []
+
+[21 <./images/absorbancia.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
+
+ []
+
+[22 <./images/escaner.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
 
  []
 
-[22]
-<images/fondoblancoLandscape-1.png, id=429, 1496.59125pt x 1200.485pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+[23]
+<images/fondoblancoLandscape-1.png, id=454, 1496.59125pt x 1200.485pt>
 File: images/fondoblancoLandscape-1.png Graphic file (type png)
 <use images/fondoblancoLandscape-1.png>
 Package pdftex.def Info: images/fondoblancoLandscape-1.png  used on input line 
-364.
+389.
 (pdftex.def)             Requested size: 195.0pt x 156.41656pt.
-<images/calibracionSimpleLandscape.png, id=430, 718.3638pt x 576.2328pt>
+<images/calibracionSimpleLandscape.png, id=455, 718.3638pt x 576.2328pt>
 File: images/calibracionSimpleLandscape.png Graphic file (type png)
 <use images/calibracionSimpleLandscape.png>
 Package pdftex.def Info: images/calibracionSimpleLandscape.png  used on input l
-ine 366.
+ine 391.
 (pdftex.def)             Requested size: 195.0pt x 156.41144pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
-<images/respses.png, id=432, 808.01875pt x 538.01pt>
+<images/respses.png, id=457, 808.01875pt x 538.01pt>
 File: images/respses.png Graphic file (type png)
 <use images/respses.png>
-Package pdftex.def Info: images/respses.png  used on input line 374.
+Package pdftex.def Info: images/respses.png  used on input line 399.
 (pdftex.def)             Requested size: 195.0pt x 129.83104pt.
-[23 <./images/fondoblancoLandscape-1.png> <./images/calibracionSimpleLandscape.
+[24 <./images/fondoblancoLandscape-1.png> <./images/calibracionSimpleLandscape.
 png>]
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
+Underfull \hbox (badness 10000) in paragraph at lines 411--413
 
  []
 
-<images/curva1.png, id=442, 400.49625pt x 283.0575pt>
+<images/curva1.png, id=468, 400.49625pt x 283.0575pt>
 File: images/curva1.png Graphic file (type png)
 <use images/curva1.png>
-Package pdftex.def Info: images/curva1.png  used on input line 393.
+Package pdftex.def Info: images/curva1.png  used on input line 418.
 (pdftex.def)             Requested size: 195.0pt x 137.8226pt.
-<images/curva2.png, id=445, 390.45876pt x 283.0575pt>
+<images/curva2.png, id=471, 390.45876pt x 283.0575pt>
 File: images/curva2.png Graphic file (type png)
 <use images/curva2.png>
-Package pdftex.def Info: images/curva2.png  used on input line 395.
+Package pdftex.def Info: images/curva2.png  used on input line 420.
 (pdftex.def)             Requested size: 195.0pt x 141.35994pt.
-[24 <./images/respses.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
-
- []
-
-[25 <./images/curva1.png> <./images/curva2.png>]
+[25 <./images/respses.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 425--426
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--432
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 434--435
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
@@ -1364,42 +1390,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 436--437
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 438--439
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 440--441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--443
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
-[26]
-<images/efectoLateral.png, id=477, 640.3925pt x 507.8975pt>
+[26 <./images/curva1.png> <./images/curva2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
+
+ []
+
+[27]
+<images/efectoLateral.png, id=502, 640.3925pt x 507.8975pt>
 File: images/efectoLateral.png Graphic file (type png)
 <use images/efectoLateral.png>
-Package pdftex.def Info: images/efectoLateral.png  used on input line 446.
+Package pdftex.def Info: images/efectoLateral.png  used on input line 471.
 (pdftex.def)             Requested size: 350.99762pt x 278.3835pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 454--456
+Underfull \hbox (badness 10000) in paragraph at lines 479--481
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--461
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
-[27 <./images/efectoLateral.png>]) [28]
+[28 <./images/efectoLateral.png>]) [29]
 Cap\'{\i }tulo 3.
 (chapters/calibracion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1418,7 +1474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 13.
-[29
+[30
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
@@ -1429,7 +1485,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 21.
 
-[30]
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
@@ -1439,7 +1495,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-[31]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
@@ -1449,12 +1505,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-[32]
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-[33]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
@@ -1469,7 +1525,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[34]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
@@ -1484,7 +1540,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-[35]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
@@ -1510,7 +1566,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-[36]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
@@ -1520,7 +1576,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
-[37]
+[38]
 Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
@@ -1530,16 +1586,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-) [38]
+) [39]
 Cap\'{\i }tulo 4.
 (chapters/comparaciones.tex
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-[39
+[40
 
-] [40]
+] [41]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 77.
@@ -1552,15 +1608,40 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 77.
 
-) [41] [42] [43]
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+[42] [43]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+) [45] [46]
 Cap\'{\i }tulo 5.
-(chapters/conclusiones.tex) (Peliculas.bbl [44
+(chapters/conclusiones.tex) (Peliculas.bbl [47
 
-] [45
+] [48
 
-] [46] [47]) [48]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+] [49] [50]) [51]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
 
 (Peliculas.aux
 LaTeX Info: Redefining \. on input line 24.
@@ -1568,20 +1649,20 @@ LaTeX Info: Redefining \% on input line 24.
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
 Package rerunfilecheck Info: File `Peliculas.out' has not changed.
-(rerunfilecheck)             Checksum: EF923F75CF8383B54946D93996BA6793;1412.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
+(rerunfilecheck)             Checksum: 38D1F005A9DEB002E0AE490028BB9F4B;1556.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
  ) 
 Here is how much of TeX's memory you used:
- 20344 strings out of 480897
- 379054 string characters out of 2904517
- 632284 words of memory out of 3000000
- 35580 multiletter control sequences out of 15000+200000
+ 20431 strings out of 480897
+ 379874 string characters out of 2904517
+ 634814 words of memory out of 3000000
+ 35651 multiletter control sequences out of 15000+200000
  544166 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,18n,89p,934b,804s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,18n,89p,934b,805s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/carlos/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm120
 0.pk></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10
@@ -1596,9 +1677,9 @@ ome/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></h
 ome/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></ho
 me/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></ho
 me/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Peliculas.pdf (55 pages, 3662971 bytes).
+Output written on Peliculas.pdf (58 pages, 3680068 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 189 named destinations out of 1000 (max. 500000)
- 346 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 780 PDF objects out of 1000 (max. 8388607)
+ 201 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

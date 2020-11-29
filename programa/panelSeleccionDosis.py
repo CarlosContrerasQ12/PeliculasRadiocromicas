@@ -24,11 +24,9 @@ class PanelSeleccionDosis(wx.Panel):
         self.dosis=kwds["dosis"]
         self.tipoCanal=kwds["canal"]
         self.tipoCurva=kwds["curva"]
-        self.corrLateral=kwds["lateral"]
         del kwds["dosis"]
         del kwds["canal"]
         del kwds["curva"]
-        del kwds["lateral"]
         #kwds["style"] = wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER 
         self.parent=args[0]
         super(PanelSeleccionDosis, self).__init__(self.parent)
@@ -113,25 +111,21 @@ class PanelSeleccionDosis(wx.Panel):
         
 
     def nuevaRoi(self, event):  # wxGlade: MyDialog.<event_handler>
-        k=self.parent.paginaActual.ginput(2)
+        k=self.parent.paginaActual.figure.ginput(2)
         x1=k[0][0]
         y1=k[0][1]
         x2=k[1][0]
         y2=k[1][1]
         prom=np.mean(self.parent.arayActual[min(int(y1),int(y2)):max(int(y1),int(y2)),min(int(x1),int(x2)):max(int(x1),int(x2)),:],axis=(0,1))
-        promCero=np.mean(self.parent.araySinLuz[min(int(y1),int(y2)):max(int(y1),int(y2)),min(int(x1),int(x2)):max(int(x1),int(x2)),:],axis=(0,1))
-        print(k)
-        print(prom)
-        print(self.R)
-        print(self.filaActual)
-        print(self.colActual)
-        self.R[self.colActual-1][self.filaActual]=prom[0]/2**self.parent.configuracion["BitCanal"]
-        self.G[self.colActual-1][self.filaActual]=prom[1]/2**self.parent.configuracion["BitCanal"]
-        self.B[self.colActual-1][self.filaActual]=prom[2]/2**self.parent.configuracion["BitCanal"]
+        promCero=np.mean(self.parent.araySinIrra[min(int(y1),int(y2)):max(int(y1),int(y2)),min(int(x1),int(x2)):max(int(x1),int(x2)),:],axis=(0,1))
+
+        self.R[self.colActual-1][self.filaActual]=prom[0]/(2**self.parent.configuracion["BitCanal"]-1)
+        self.G[self.colActual-1][self.filaActual]=prom[1]/(2**self.parent.configuracion["BitCanal"]-1)
+        self.B[self.colActual-1][self.filaActual]=prom[2]/(2**self.parent.configuracion["BitCanal"]-1)
         
-        self.RCero[self.colActual-1][self.filaActual]=promCero[0]/2**self.parent.configuracion["BitCanal"]
-        self.GCero[self.colActual-1][self.filaActual]=promCero[1]/2**self.parent.configuracion["BitCanal"]
-        self.BCero[self.colActual-1][self.filaActual]=promCero[2]/2**self.parent.configuracion["BitCanal"]
+        self.RCero[self.colActual-1][self.filaActual]=promCero[0]/(2**self.parent.configuracion["BitCanal"]-1)
+        self.GCero[self.colActual-1][self.filaActual]=promCero[1]/(2**self.parent.configuracion["BitCanal"]-1)
+        self.BCero[self.colActual-1][self.filaActual]=promCero[2]/(2**self.parent.configuracion["BitCanal"]-1)
         
         self.grid_1.SetCellValue(self.filaActual,self.colActual,"{:.3f}".format(1-prom[0]/2**self.parent.configuracion["BitCanal"])+';'+"{:.3f}".format(1-prom[1]/2**self.parent.configuracion["BitCanal"])+';'+"{:.3f}".format(1-prom[2]/2**self.parent.configuracion["BitCanal"]))
         event.Skip()
@@ -182,13 +176,8 @@ class PanelSeleccionDosis(wx.Panel):
         nombreArchivo=''
         if fdlg.ShowModal() == wx.ID_OK:
                 nombreArchivo = fdlg.GetPath() + ".calibr"
-        calibr=CalibracionImagen([self.Rtotal,self.RCeroTotal],[self.Gtotal,self.GCeroTotal],[self.Btotal,self.BCeroTotal],self.dosis,self.tipoCanal,self.tipoCurva,self.corrLateral)
+        calibr=CalibracionImagen([self.Rtotal,self.RCeroTotal],[self.Gtotal,self.GCeroTotal],[self.Btotal,self.BCeroTotal],self.dosis,self.tipoCanal,self.tipoCurva)
         calibr.generar_calibracion(nombreArchivo)
-        xGra=np.linspace(self.dosis[0],self.dosis[-1],100)
-        yGra=calibr.funcionDaT(xGra)
-        plt.plot(xGra,yGra)
-        plt.scatter(np.array(self.dosis),calibr.T)
-        plt.show()
         self.Close()
         event.Skip()
         

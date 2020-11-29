@@ -21,6 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{podgorsak}
+E.~B. Podgorsak, \emph{Radiation physics for medical physicists}.\hskip 1em
+  plus 0.5em minus 0.4em\relax Heidelberg New York: Springer, 2010.
+
 \bibitem{Devic2016}
 \BIBentryALTinterwordspacing
 S.~Devic, N.~Tomic, and D.~Lewis, ``Reference radiochromic film dosimetry:
@@ -126,6 +130,17 @@ Y.~Li, L.~Chen, J.~Zhu, and X.~Liu, ``The combination of the error correction
   p. e0181958, Jul. 2017. [Online]. Available:
   \url{https://doi.org/10.1371/journal.pone.0181958}
 \BIBentrySTDinterwordspacing
+
+\bibitem{Winiecki2009}
+J.~Winiecki, T.~Morga{\'{s}}, K.~Majewska, and B.~Drzewiecka, ``{The gamma
+  evaluation method as a routine QA procedure of IMRT},'' \emph{Reports of
+  Practical Oncology and Radiotherapy}, vol.~14, no.~5, pp. 162--168, 2009.
+
+\bibitem{Li2011}
+H.~Li, L.~Dong, L.~Zhang, J.~N. Yang, M.~T. Gillin, and X.~R. Zhu, ``{Toward a
+  better understanding of the gamma index: Investigation of parameters with a
+  surface-based distance method},'' \emph{Medical Physics}, vol.~38, no.~12,
+  pp. 6730--6741, 2011.
 
 \bibitem{Devic2005}
 \BIBentryALTinterwordspacing

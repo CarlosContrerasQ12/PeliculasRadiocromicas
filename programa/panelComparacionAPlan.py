@@ -138,8 +138,8 @@ class PanelComparacionAPlan(wx.Panel):
 
     def generar_estadisticas(self, event):  # wxGlade: MyDialog.<event_handler>
         gamma_options = {
-        'dose_percent_threshold': 5,
-        'distance_mm_threshold': 5,
+        'dose_percent_threshold': 3,
+        'distance_mm_threshold': 3*512/200,
         'lower_percent_dose_cutoff': 20,
         'interp_fraction': 10,  # Should be 10 or more for more accurate results
         'max_gamma': 2,
