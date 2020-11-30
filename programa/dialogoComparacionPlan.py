@@ -24,14 +24,16 @@ class DialogoComparacionPlan(wx.Dialog):
         self.CajaTextoEscan=wx.TextCtrl(self,value="",style=wx.TE_READONLY)
         self.text_ctrl_1 = wx.TextCtrl(self, wx.ID_ANY, "")
         self.text_ctrl_2 = wx.TextCtrl(self, wx.ID_ANY, "")
+        self.text_ctrl_3 = wx.TextCtrl(self, wx.ID_ANY, "")
         self.button_1 = wx.Button(self, wx.ID_ANY, "Aceptar")
         self.button_2 = wx.Button(self, wx.ID_ANY, "Cancelar")
         
         self.resultado='cancelar'
         self.rutaPlan=''
         self.rutaEscan=''
-        self.tole=3
-        self.dist=3
+        self.tole=2
+        self.dist=2
+        self.thres=20
 
         self.__set_properties()
         self.__do_layout()
@@ -50,7 +52,7 @@ class DialogoComparacionPlan(wx.Dialog):
 
     def __do_layout(self):
         # begin wxGlade: MyDialog.__do_layout
-        grid_sizer_1 = wx.GridSizer(5, 2, 0, 0)
+        grid_sizer_1 = wx.GridSizer(6, 2, 0, 0)
         sizer_2 = wx.BoxSizer(wx.HORIZONTAL)
         sizer_1 = wx.BoxSizer(wx.HORIZONTAL)
         label_1 = wx.StaticText(self, wx.ID_ANY, "Ruta Plan Calculado")
@@ -71,6 +73,9 @@ class DialogoComparacionPlan(wx.Dialog):
         label_4 = wx.StaticText(self, wx.ID_ANY, "Distancia(mm)")
         grid_sizer_1.Add(label_4, 0, wx.ALIGN_CENTER, 0)
         grid_sizer_1.Add(self.text_ctrl_2, 0, wx.ALIGN_CENTER, 0)
+        label_5 = wx.StaticText(self, wx.ID_ANY, "Threshold(%)")
+        grid_sizer_1.Add(label_5, 0, wx.ALIGN_CENTER, 0)
+        grid_sizer_1.Add(self.text_ctrl_3, 0, wx.ALIGN_CENTER, 0)
         grid_sizer_1.Add(self.button_1, 1, wx.ALIGN_RIGHT, 0)
         grid_sizer_1.Add(self.button_2, 0, 0, 0)
         self.SetSizer(grid_sizer_1)
@@ -89,8 +94,12 @@ class DialogoComparacionPlan(wx.Dialog):
             self.CajaTextoEscan.SetValue(self.rutaEscan)
     def aceptar(self, event):  # wxGlade: MyDialog.<event_handler>
         self.resultado='aceptar'
-        self.tole=float(self.text_ctrl_1.GetValue())
-        self.dist=float(self.text_ctrl_2.GetValue())
+        if self.text_ctrl_1.GetValue()!='':
+            self.tole=float(self.text_ctrl_1.GetValue())
+        if self.text_ctrl_2.GetValue()!='':
+            self.dist=float(self.text_ctrl_2.GetValue())
+        if self.text_ctrl_3.GetValue()!='':
+            self.thres=float(self.text_ctrl_3.GetValue())
         self.Close()
         event.Skip()
 

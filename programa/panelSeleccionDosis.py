@@ -40,12 +40,22 @@ class PanelSeleccionDosis(wx.Panel):
         self.parent=args[0]
         self.filaActual=0
         self.colActual=0
+        
         self.R=[[None]*len(self.dosis)]
         self.G=[[None]*len(self.dosis)]
         self.B=[[None]*len(self.dosis)]
+        
+        self.Rstd=[[None]*len(self.dosis)]
+        self.Gstd=[[None]*len(self.dosis)]
+        self.Bstd=[[None]*len(self.dosis)]
+        
         self.RCero=[[None]*len(self.dosis)]
         self.GCero=[[None]*len(self.dosis)]
         self.BCero=[[None]*len(self.dosis)]
+        
+        self.RCerostd=[[None]*len(self.dosis)]
+        self.GCerostd=[[None]*len(self.dosis)]
+        self.BCerostd=[[None]*len(self.dosis)]
         
         
         self.Rtotal=[]
@@ -54,6 +64,12 @@ class PanelSeleccionDosis(wx.Panel):
         self.RCeroTotal=[]
         self.GCeroTotal=[]
         self.BCeroTotal=[]
+        self.Rtotalstd=[]
+        self.Gtotalstd=[]
+        self.Btotalstd=[]
+        self.RCeroTotalstd=[]
+        self.GCeroTotalstd=[]
+        self.BCeroTotalstd=[]
         
         
 
@@ -118,14 +134,25 @@ class PanelSeleccionDosis(wx.Panel):
         y2=k[1][1]
         prom=np.mean(self.parent.arayActual[min(int(y1),int(y2)):max(int(y1),int(y2)),min(int(x1),int(x2)):max(int(x1),int(x2)),:],axis=(0,1))
         promCero=np.mean(self.parent.araySinIrra[min(int(y1),int(y2)):max(int(y1),int(y2)),min(int(x1),int(x2)):max(int(x1),int(x2)),:],axis=(0,1))
+        
+        std=np.std(self.parent.arayActual[min(int(y1),int(y2)):max(int(y1),int(y2)),min(int(x1),int(x2)):max(int(x1),int(x2)),:]/(2**self.parent.configuracion["BitCanal"]-1),axis=(0,1),ddof=1)
+        stdCero=np.std(self.parent.araySinIrra[min(int(y1),int(y2)):max(int(y1),int(y2)),min(int(x1),int(x2)):max(int(x1),int(x2)),:]/(2**self.parent.configuracion["BitCanal"]-1),axis=(0,1),ddof=1)
 
         self.R[self.colActual-1][self.filaActual]=prom[0]/(2**self.parent.configuracion["BitCanal"]-1)
         self.G[self.colActual-1][self.filaActual]=prom[1]/(2**self.parent.configuracion["BitCanal"]-1)
         self.B[self.colActual-1][self.filaActual]=prom[2]/(2**self.parent.configuracion["BitCanal"]-1)
         
+        self.Rstd[self.colActual-1][self.filaActual]=std[0]
+        self.Gstd[self.colActual-1][self.filaActual]=std[1]
+        self.Bstd[self.colActual-1][self.filaActual]=std[2]
+        
         self.RCero[self.colActual-1][self.filaActual]=promCero[0]/(2**self.parent.configuracion["BitCanal"]-1)
         self.GCero[self.colActual-1][self.filaActual]=promCero[1]/(2**self.parent.configuracion["BitCanal"]-1)
         self.BCero[self.colActual-1][self.filaActual]=promCero[2]/(2**self.parent.configuracion["BitCanal"]-1)
+        
+        self.RCerostd[self.colActual-1][self.filaActual]=stdCero[0]
+        self.GCerostd[self.colActual-1][self.filaActual]=stdCero[1]
+        self.BCerostd[self.colActual-1][self.filaActual]=stdCero[2]
         
         self.grid_1.SetCellValue(self.filaActual,self.colActual,"{:.3f}".format(1-prom[0]/2**self.parent.configuracion["BitCanal"])+';'+"{:.3f}".format(1-prom[1]/2**self.parent.configuracion["BitCanal"])+';'+"{:.3f}".format(1-prom[2]/2**self.parent.configuracion["BitCanal"]))
         event.Skip()
@@ -140,6 +167,13 @@ class PanelSeleccionDosis(wx.Panel):
             self.RCero[i].append(0)
             self.GCero[i].append(0)
             self.BCero[i].append(0)
+            self.Rstd[i].append(0)
+            self.Gstd[i].append(0)
+            self.Bstd[i].append(0)
+            self.RCerostd[i].append(0)
+            self.GCerostd[i].append(0)
+            self.BCerostd[i].append(0)
+            
         self.grid_1.SetCellValue(self.grid_1.GetNumberRows()-1,0,'0')
         event.Skip()
 
@@ -153,15 +187,68 @@ class PanelSeleccionDosis(wx.Panel):
         self.RCero.append([None]*len(self.dosis))
         self.GCero.append([None]*len(self.dosis))
         self.BCero.append([None]*len(self.dosis))
+        self.Rstd.append([None]*len(self.dosis))
+        self.Gstd.append([None]*len(self.dosis))
+        self.Bstd.append([None]*len(self.dosis))
+        self.RCerostd.append([None]*len(self.dosis))
+        self.GCerostd.append([None]*len(self.dosis))
+        self.BCerostd.append([None]*len(self.dosis))
         event.Skip()
 
-    def GenerarCalibracion(self, event):  # wxGlade: MyDialog.<event_handler>
-        self.Rtotal=np.mean(self.R,axis=0)
-        self.Gtotal=np.mean(self.G,axis=0)
-        self.Btotal=np.mean(self.B,axis=0)
+    def GenerarCalibracion(self, event):  
+        
+        self.RCero=np.array(self.RCero)
+        self.GCero=np.array(self.GCero)
+        self.BCero=np.array(self.BCero)
+        
+        self.R=np.array(self.R)
+        self.G=np.array(self.G)
+        self.B=np.array(self.B)
+        
+        self.Rstd=np.array(self.Rstd)
+        self.Gstd=np.array(self.Gstd)
+        self.Bstd=np.array(self.Bstd)
+        
+        self.RCerostd=np.array(self.RCerostd)
+        self.GCerostd=np.array(self.GCerostd)
+        self.BCerostd=np.array(self.BCerostd)
+        
+        
+        if np.mean(self.RCero)<1e-5:
+            self.RCero=self.RCero+np.mean(self.R,axis=0)[0]
+
+        if np.mean(self.GCero)<1e-5:
+            self.GCero=self.GCero+np.mean(self.G,axis=0)[0]
+
+        if np.mean(self.BCero)<1e-5:
+            self.BCero=self.BCero+np.mean(self.B,axis=0)[0]
+        
+        desvTotalR=np.sqrt((self.Rstd/self.R)*(self.Rstd/self.R)+(self.RCerostd/self.RCero)*(self.RCerostd/self.RCero))/(np.log(10))
+        desvTotalG=np.sqrt((self.Gstd/self.G)*(self.Gstd/self.G)+(self.GCerostd/self.GCero)*(self.GCerostd/self.GCero))/(np.log(10))
+        desvTotalB=np.sqrt((self.Bstd/self.B)*(self.Bstd/self.B)+(self.BCerostd/self.BCero)*(self.BCerostd/self.BCero))/(np.log(10))
+        
+        pesosR=(1.0/desvTotalR**2)/(np.sum((1.0/desvTotalR**2),axis=0))
+        pesosG=(1.0/desvTotalG**2)/(np.sum((1.0/desvTotalG**2),axis=0))
+        pesosB=(1.0/desvTotalB**2)/(np.sum((1.0/desvTotalB**2),axis=0))
+           
+
+            
         self.RCeroTotal=np.mean(self.RCero,axis=0)
         self.GCeroTotal=np.mean(self.GCero,axis=0)
-        self.BCeroTotal=np.mean(self.BCero,axis=0)
+        self.BCeroTotal=np.mean(self.BCero,axis=0)    
+        
+        netOdR=np.log10(self.RCero/self.R)
+        netOdG=np.log10(self.GCero/self.G)
+        netOdB=np.log10(self.BCero/self.B)
+        
+        netOdRTotal=np.average(netOdR,axis=0,weights=pesosR)
+        netOdGTotal=np.average(netOdG,axis=0,weights=pesosG)
+        netOdBTotal=np.average(netOdB,axis=0,weights=pesosB)
+        
+        desvRFinal=np.sqrt(len(self.R)/np.sum((1.0/desvTotalR**2),axis=0))
+        desvGFinal=np.sqrt(len(self.G)/np.sum((1.0/desvTotalG**2),axis=0))
+        desvBFinal=np.sqrt(len(self.B)/np.sum((1.0/desvTotalB**2),axis=0))
+
         
         for i in range(self.grid_1.GetNumberRows()):
             self.dosis[i]=float(self.grid_1.GetCellValue(i,0))
@@ -176,7 +263,7 @@ class PanelSeleccionDosis(wx.Panel):
         nombreArchivo=''
         if fdlg.ShowModal() == wx.ID_OK:
                 nombreArchivo = fdlg.GetPath() + ".calibr"
-        calibr=CalibracionImagen([self.Rtotal,self.RCeroTotal],[self.Gtotal,self.GCeroTotal],[self.Btotal,self.BCeroTotal],self.dosis,self.tipoCanal,self.tipoCurva)
+        calibr=CalibracionImagen([netOdRTotal,self.RCeroTotal],[netOdGTotal,self.GCeroTotal],[netOdBTotal,self.BCeroTotal],[desvRFinal,desvGFinal,desvBFinal],self.dosis,self.tipoCanal,self.tipoCurva)
         calibr.generar_calibracion(nombreArchivo)
         self.Close()
         event.Skip()

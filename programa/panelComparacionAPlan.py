@@ -10,6 +10,7 @@ from imagenMatplotlibLibre import *
 from matplotlib.widgets import Slider
 import numpy as np
 import pymedphys
+import matplotlib as mpl
 # begin wxGlade: dependencies
 # end wxGlade
 
@@ -89,25 +90,44 @@ class PerfilDoble():
 class PanelComparacionAPlan(wx.Panel):
     def __init__(self, *args, **kwds):
         self.parent=args[0]
+        self.tole=args[1]
+        self.dta=args[2]
+        self.cutoff=args[3]
+        self.escala=args[4]
         super(PanelComparacionAPlan, self).__init__(self.parent)
         self.text_ctrl_1 = wx.TextCtrl(self, wx.ID_ANY, "",style=wx.TE_READONLY)
-        self.button_1 = wx.Button(self, wx.ID_ANY, "Optimizar Gamma")
+        self.button_1 = wx.Button(self, wx.ID_ANY, "Calcular Gamma")
         self.button_2 = wx.Button(self, wx.ID_ANY, "Estadisticas Gamma")
         self.button_3 = wx.Button(self, wx.ID_ANY, "Perfil de dosis")
         self.button_4 = wx.Button(self, wx.ID_ANY, "Curva de isodosis")
         self.button_5 = wx.Button(self, wx.ID_ANY, "Guardar comparacion")
+        self.button_6 = wx.Button(self, wx.ID_ANY, "Seleccionar ROI")
         
         self.normalizacion=np.max(self.parent.paginaActual.arrayIma[0])
+        self.gamma=0
+        self.yaCalculado=False
+        self.validgamma=0
+        self.gamma_options = {
+        'dose_percent_threshold': self.tole,
+        'distance_mm_threshold': self.dta,
+        'lower_percent_dose_cutoff': self.cutoff,
+        'interp_fraction': 15,  # Should be 10 or more for more accurate results
+        'max_gamma': 5,
+        'random_subset': None,
+        'local_gamma': False,
+        'ram_available': 5*(2**29)  # 1/2 GB
+        }
 
 
         self.__set_properties()
         self.__do_layout()
 
-        self.Bind(wx.EVT_BUTTON, self.registrar_imagen, self.button_1)
+        self.Bind(wx.EVT_BUTTON, self.calcular_gamma, self.button_1)
         self.Bind(wx.EVT_BUTTON, self.generar_estadisticas, self.button_2)
         self.Bind(wx.EVT_BUTTON, self.nuevo_perfil, self.button_3)
         self.Bind(wx.EVT_BUTTON, self.generar_isodosis, self.button_4)
         self.Bind(wx.EVT_BUTTON, self.guardar_comparacion, self.button_5)
+        self.Bind(wx.EVT_BUTTON, self.seleccionarROI, self.button_6)
         # end wxGlade
 
     def __set_properties(self):
@@ -122,6 +142,7 @@ class PanelComparacionAPlan(wx.Panel):
         sizer_2.Add(label_1, 0, wx.ALIGN_CENTER_VERTICAL, 0)
         sizer_2.Add(self.text_ctrl_1, 1, wx.ALIGN_CENTER_VERTICAL, 0)
         sizer_1.Add(sizer_2, 1, wx.EXPAND, 0)
+        sizer_1.Add(self.button_6, 1, wx.EXPAND, 0)
         sizer_1.Add(self.button_1, 1, wx.EXPAND, 0)
         sizer_1.Add(self.button_2, 1, wx.EXPAND, 0)
         sizer_1.Add(self.button_3, 1, wx.EXPAND, 0)
@@ -132,40 +153,35 @@ class PanelComparacionAPlan(wx.Panel):
         self.Layout()
         # end wxGlade
 
-    def registrar_imagen(self, event):  # wxGlade: MyDialog.<event_handler>
-        print("Event handler 'registrar_imagen' not implemented!")
+    def calcular_gamma(self, event):  # wxGlade: MyDialog.<event_handler>
+        ejsx=np.linspace(0,self.parent.arayActual[0].shape[0]*self.escala,self.parent.arayActual[0].shape[0])
+        ejsy=np.linspace(0,self.parent.arayActual[0].shape[1]*self.escala,self.parent.arayActual[0].shape[1])
+        ej=(ejsx,ejsy)
+
+        self.gamma = pymedphys.gamma(
+        ej, self.parent.arayActual[0],
+        ej, self.parent.arayActual[1],
+        **self.gamma_options)
+        self.valid_gamma = self.gamma[~np.isnan(self.gamma)]
+        pass_ratio = np.sum(self.valid_gamma <= 1) / len(self.valid_gamma)
+        self.text_ctrl_1.SetValue("{0:.2f} ".format(pass_ratio*100)+'%')
+        self.yaCalculado=True
         event.Skip()
 
     def generar_estadisticas(self, event):  # wxGlade: MyDialog.<event_handler>
-        gamma_options = {
-        'dose_percent_threshold': 3,
-        'distance_mm_threshold': 3*512/200,
-        'lower_percent_dose_cutoff': 20,
-        'interp_fraction': 10,  # Should be 10 or more for more accurate results
-        'max_gamma': 2,
-        'random_subset': None,
-        'local_gamma': True,
-        'ram_available': 2*(2**29)  # 1/2 GB
-        }
-        x=np.linspace(0,self.parent.paginaActual.arrayIma[0].shape[1],self.parent.paginaActual.arrayIma[0].shape[1])
-        y=np.linspace(0,self.parent.paginaActual.arrayIma[0].shape[0],self.parent.paginaActual.arrayIma[0].shape[0])
-        axes_reference=(y,x)
-        gamma = pymedphys.gamma(
-        axes_reference, self.parent.paginaActual.arrayIma[0],
-        axes_reference, self.parent.paginaActual.arrayIma[1],
-        **gamma_options)
-        
-        valid_gamma = gamma[~np.isnan(gamma)]
-        num_bins = (gamma_options['interp_fraction'] * gamma_options['max_gamma'])
-        bins = np.linspace(0, gamma_options['max_gamma'], num_bins + 1)
-        
-        ima=ImagenMatplotlibLibre(self.parent)
-        ima.ax.hist(valid_gamma, bins, density=True)
-        ima.ax.set_xlim([0, gamma_options['max_gamma']])
-        pass_ratio = np.sum(valid_gamma <= 1) / len(valid_gamma)
-        print(pass_ratio)
-        ima.Show()
-        #ima.ax.title("Local Gamma (0.5%/0.5mm) | Percent Pass: {0:.2f} %".format(pass_ratio*100))
+
+        if self.yaCalculado:
+            num_bins = (self.gamma_options['interp_fraction'] * self.gamma_options['max_gamma'])
+            bins = np.linspace(0, self.gamma_options['max_gamma'], num_bins + 1)
+            ima=ImagenMatplotlibLibre(self.parent)
+            ima.ax.hist(self.valid_gamma, bins, density=True)
+            ima.ax.set_xlim([0, self.gamma_options['max_gamma']])
+            ima.Show()
+            
+            imag2=ImagenMatplotlibLibre(self.parent)
+            imag2.ax.imshow(self.gamma)
+            imag2.arr=self.gamma
+            imag2.Show()
         event.Skip()
 
     def nuevo_perfil(self, event):  # wxGlade: MyDialog.<event_handler>
@@ -194,6 +210,22 @@ class PanelComparacionAPlan(wx.Panel):
         ima.Show()
         event.Skip()
         event.Skip()
+        
+    def seleccionarROI(self, event):
+        k=self.parent.paginaActual.figure.ginput(2)
+        x1=k[0][0]
+        y1=k[0][1]
+        x2=k[1][0]
+        y2=k[1][1]
+        
+        self.parent.arayActual[0]=(self.parent.arayActual[0])[min(int(y1),int(y2)):max(int(y1),int(y2)),min(int(x1),int(x2)):max(int(x1),int(x2))]
+        self.parent.arayActual[1]=(self.parent.arayActual[1])[min(int(y1),int(y2)):max(int(y1),int(y2)),min(int(x1),int(x2)):max(int(x1),int(x2))]
+
+        
+        self.parent.paginaActual.axA.clear()
+        self.parent.paginaActual.axA.imshow((1.0-self.parent.alpha)*self.parent.arayActual[0]+self.parent.alpha*self.parent.arayActual[1],cmap=mpl.cm.gray)
+        self.parent.paginaActual.figure.canvas.draw()
+        self.parent.paginaActual.figure.canvas.flush_events()  
 
     def guardar_comparacion(self, event):  # wxGlade: MyDialog.<event_handler>
         print("Event handler 'guardar_comparacion' not implemented!")

@@ -39,19 +39,16 @@ def leerDosis(nombre_archivo):
     dosis=np.genfromtxt(nombre_archivo)
     return dosis.tolist()
 
-def poner_imagen_en_punto(imgPoner,tamanoGrande,puntoEnGrande,puntoEnPoner):
+def poner_imagen_en_punto(imgPoner,tamanoGrande,centroImPoner,centroGrande):
     resp=np.zeros(tamanoGrande)
-    x=imgPoner.shape[0]
-    y=imgPoner.shape[1]
-    if x%2==0:
-        cor=0
-    else:
-        cor=1
-    if y%2==0:
-        cory=0
-    else:
-        cory=1 
-    resp[puntoEnGrande[0]-int(x/2)+0:puntoEnGrande[0]+int(x/2)+cor+0,puntoEnGrande[1]-int(y/2)+0:puntoEnGrande[1]+int(x/2)+cory+0]=imgPoner
+    xc=int(centroImPoner[0])
+    yc=int(centroImPoner[1])
+    corr=0
+    if xc%2!=0:
+        corr=1
+    x=centroGrande[0]
+    y=centroGrande[1]
+    resp[x-xc:x+(imgPoner.shape[0]-xc),y-yc:y+(imgPoner.shape[1]-yc)]=imgPoner
     return resp
     
 class Calibracion():
@@ -78,11 +75,11 @@ class ImagenCuadernoMatplotlib(wx.Panel):
     def __init__(self, parent, id=-1, dpi=None, **kwargs):
         wx.Panel.__init__(self, parent, id=id, **kwargs)
         self.figure = mpl.figure.Figure(dpi=dpi)
-        #self.figure.gca().axis('off')
         self.axA=self.figure.gca()
         self.canvas = FigureCanvas(self, -1, self.figure)
-        #self.toolbar = NavigationToolbar(self.canvas)
-        #self.toolbar.Realize()
+        self.Text = wx.StaticText( self, wx.ID_ANY, u"  Available Channels  ", wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.Text.Wrap( -1 )
+        mouseMoveID = self.canvas.mpl_connect('motion_notify_event',self.onMotion)
         self.identificador=0
         self.tipo=''
         self.rutaImagen=''
@@ -90,9 +87,25 @@ class ImagenCuadernoMatplotlib(wx.Panel):
         
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.canvas, 1, wx.EXPAND)
+        sizer.Add(self.Text,0, wx.LEFT | wx.EXPAND)
         #sizer.Add(self.toolbar, 0, wx.LEFT | wx.EXPAND)
         self.SetSizer(sizer)
         self.Fit()
+        
+    def onMotion(self, evt):
+        xdata = evt.xdata
+        ydata = evt.ydata
+        try:
+            x = round(xdata,4)
+            y = round(ydata,4)
+        except:
+            x = ""
+            y = ""
+        if self.arrayIma=='':    
+            self.Text.SetLabelText("%s , %s " % (x,y))
+        else:
+            if x!='' and y!='':
+                self.Text.SetLabelText(str(x)+' , '+str(y)+' , '+str(self.arrayIma[int(y),int(x)]))   
 
 
 class MyFrame(wx.Frame):
@@ -110,7 +123,7 @@ class MyFrame(wx.Frame):
         self.araySinIrra=[]
         self.araySinLuz=[]
         
-        self.configuracion={"BitCanal":16,"Filtros":['mediana'],"ppi":100}
+        self.configuracion={"BitCanal":16,"Filtros":['mediana','promedio'],"ppi":100}
         
         
         self.arbolArchivos = wx.TreeCtrl(self, wx.ID_ANY,style=wx.TR_LINES_AT_ROOT)
@@ -263,7 +276,50 @@ class MyFrame(wx.Frame):
         event.Skip()
 
     def abrir(self, event):  # wxGlade: MyFrame.<event_handler>
-        print("Event handler 'abrir' not implemented!")
+        dial=wx.FileDialog(self,name="Seleccione archivo",style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST)
+        nombreAr=''
+        if dial.ShowModal()==wx.ID_OK:
+            nombreAr=dial.GetPath()
+        sufix=nombreAr.split('.')[1]
+        if sufix=='calibr':
+            datosCalib=leer_Calibracion(nombreAr)
+            dosis=datosCalib["Dosis"]
+            netODR=datosCalib["Dopticas"][0]
+            netODG=datosCalib["Dopticas"][1]
+            netODB=datosCalib["Dopticas"][2]
+            varODR=datosCalib["Incertidumbres"][0]
+            varODG=datosCalib["Incertidumbres"][1]
+            varODB=datosCalib["Incertidumbres"][2]
+            fR=datosCalib["funcionesRGB"][0]
+            fG=datosCalib["funcionesRGB"][1]
+            fB=datosCalib["funcionesRGB"][2]
+            pOptimos=datosCalib["Parametros"]
+            grafica=ImagenMatplotlibLibre(self)
+            grafica.ax.errorbar(dosis,netODR,yerr=varODR,color='r',fmt='o',markersize=2)
+            grafica.ax.errorbar(dosis,netODG,yerr=varODG,color='g',fmt='o',markersize=2)
+            grafica.ax.errorbar(dosis,netODB,yerr=varODB,color='b',fmt='o',markersize=2)
+            xasR=np.linspace(netODR[0],netODR[-1]+0.005,100)
+            xasG=np.linspace(netODG[0],netODG[-1]+0.005,100)
+            xasB=np.linspace(netODB[0],netODB[-1]+0.005,100)
+            yasR=fR(xasR)
+            yasG=fG(xasG)
+            yasB=fB(xasB)
+            grafica.ax.plot(yasR,xasR,'r--')
+            grafica.ax.plot(yasG,xasG,'g--')
+            grafica.ax.plot(yasB,xasB,'b--')
+            print(varODR)
+            print(varODG)
+            print(varODB)
+            SR=np.sum(((dosis-fR(netODR)))**2)
+            SG=np.sum(((dosis-fG(netODG)))**2)
+            SB=np.sum(((dosis-fB(netODB)))**2)
+            print(SR)
+            print(SG)
+            print(SB)
+            print("La bondad de ajuste para el canal rojo es de ", chi2.sf(SR,len(dosis)-len(pOptimos[0])))
+            print("La bondad de ajuste para el canal rojo es de ", chi2.sf(SG,len(dosis)-len(pOptimos[1])))
+            print("La bondad de ajuste para el canal rojo es de ", chi2.sf(SB,len(dosis)-len(pOptimos[2])))
+            grafica.Show() 
         event.Skip()
 
     def cerrar(self, event):  # wxGlade: MyFrame.<event_handler>
@@ -335,22 +391,53 @@ class MyFrame(wx.Frame):
         self.Layout()
         event.Skip()
 
-    def compararMapas(self, event):  # wxGlade: MyFrame.<event_handler>
+    def compararMapas(self, event): 
+        
         dialComparar=DialogoComparacionPlan(self)
         dialComparar.ShowModal()
         if dialComparar.resultado=='cancelar':
             return
         dicomPlan=pydicom.dcmread(dialComparar.rutaPlan)
         dicomEscan=pydicom.dcmread(dialComparar.rutaEscan)
-        reescaldo=np.array(dicomPlan.PixelSpacing)/np.array(dicomEscan.PixelSpacing)
-        arrayPlan=rescale(dicomPlan.pixel_array,reescaldo,anti_aliasing=False)
-        print(arrayPlan.shape)
-        centroEscan=int(dicomEscan.pixel_array.shape[0]/2),int(dicomEscan.pixel_array.shape[1]/2)
-        arrayPlanAjus=poner_imagen_en_punto(arrayPlan,dicomEscan.pixel_array.shape,centroEscan,(0,0))
+        arrayPlan=dicomPlan.pixel_array
+        arrayEscan=dicomEscan.pixel_array
+        dicomPlan.IsocenterPosition=[int(arrayPlan.shape[0]/2),int(arrayPlan.shape[1]/2),0]
+        dmm=0
+        if dicomPlan.PixelSpacing[0]>=dicomEscan.PixelSpacing[0]:
+            reescaldo=np.array(dicomPlan.PixelSpacing)/np.array(dicomEscan.PixelSpacing)
+            reescaldo=1.0/reescaldo
+            arrayEscan=rescale(dicomEscan.pixel_array,reescaldo,anti_aliasing=False)
+            dicomEscan.IsocenterPosition[0]=int(dicomEscan.IsocenterPosition[0]*reescaldo[0])
+            dicomEscan.IsocenterPosition[1]=int(dicomEscan.IsocenterPosition[1]*reescaldo[1])
+            dmm=dicomPlan.PixelSpacing[0]
+        else:
+            reescaldo=np.array(dicomEscan.PixelSpacing)/np.array(dicomPlan.PixelSpacing)
+            reescaldo=1.0/reescaldo
+            arrayPlan=rescale(dicomPlan.pixel_array,reescaldo,anti_aliasing=False)
+            dicomPlan.IsocenterPosition[0]=int(dicomPlan.IsocenterPosition[0]*reescaldo[0])
+            dicomPlan.IsocenterPosition[1]=int(dicomPlan.IsocenterPosition[1]*reescaldo[1])
+            dmm=dicomEscan.PixelSpacing[0]
+            
+        txi=max(dicomPlan.IsocenterPosition[0],dicomEscan.IsocenterPosition[0])
+        txd=max(arrayEscan.shape[0]-dicomEscan.IsocenterPosition[0],arrayPlan.shape[0]-dicomPlan.IsocenterPosition[0])
+        tya=max(dicomPlan.IsocenterPosition[1],dicomEscan.IsocenterPosition[1])
+        tyb=max(arrayEscan.shape[1]-dicomEscan.IsocenterPosition[1],arrayPlan.shape[1]-dicomPlan.IsocenterPosition[1])
+        tmax=txi+txd
+        tamy=tya+tyb
+            
+        if int(tmax)%2!=0:
+            tmax+=1
+        if int(tamy)%2!=0:
+            tamy+=1
+
+
+
+        arrayPlanAjus=poner_imagen_en_punto(arrayPlan,(int(tmax),int(tamy)),dicomPlan.IsocenterPosition,(int(txi),int(tya)))
+        arrayEscanAjus=poner_imagen_en_punto(arrayEscan,(int(tmax),int(tamy)),(dicomEscan.IsocenterPosition[1],dicomEscan.IsocenterPosition[0]),(int(txi),int(tya)))
         
         
         rez=self.arbolArchivos.AppendItem(self.raiz,"Comparacion a plan  "+str(len(self.comparacionesAPlan)+1))
-        self.arayActual=[arrayPlanAjus,dicomEscan.pixel_array]
+        self.arayActual=[arrayPlanAjus,arrayEscanAjus]
         self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
         self.notebookImagenes.AddPage(self.paginas[-1], "Comparacion a plan "+str(len(self.comparacionesAPlan)+1))
         self.numeroPags=self.numeroPags+1
@@ -363,31 +450,33 @@ class MyFrame(wx.Frame):
         self.paginaActual=self.paginas[-1]
         a1=figActual.gca()
         
-        """
-        arrayPlan=arrayPlanAjus/np.max(arrayPlanAjus)
-        arrayEscan=dicomEscan.pixel_array*dicomEscan.DoseGridScaling/7.00
-        """
-        arraPlan=arrayPlanAjus*dicomPlan.DoseGridScaling
-        arrayEscan=dicomEscan.pixel_array*dicomEscan.DoseGridScaling
+
+        arrayPlanAjus=arrayPlanAjus*dicomPlan.DoseGridScaling
+        arrayEscanAjus=arrayEscanAjus*dicomEscan.DoseGridScaling
         
-        self.arayActual=[arrayPlan,arrayEscan]
-        self.paginas[-1].arrayIma=[arrayPlan,arrayEscan]
+        arrayPlanAjus=arrayPlanAjus/np.max(arrayPlanAjus)
+        arrayEscanAjus=arrayEscanAjus/np.max(arrayEscanAjus)
+        
+        self.arayActual=[arrayPlanAjus,arrayEscanAjus]
+        self.paginas[-1].arrayIma=[arrayPlanAjus,arrayEscanAjus]
         
         
         self.alpha=0.5
         
         
-        a1.imshow((1.0-self.alpha)*arrayPlan+self.alpha*arrayEscan,cmap=plt.cm.gray)
+        a1.imshow((1.0-self.alpha)*self.arayActual[0]+self.alpha*self.arayActual[1],cmap=plt.cm.gray)
         self.axR=self.paginaActual.figure.add_axes([0.25, .03, 0.50, 0.02])
         self.alp = Slider(self.axR, 'Alpha', 0, 1, valinit=0.5, valstep=0.01)
         def update(val):
             iv=self.alp.val
+            self.alpha=self.alp.val
             self.paginaActual.axA.clear()
-            self.paginaActual.axA.imshow((1.0-iv)*arrayPlan+iv*arrayEscan,cmap=plt.cm.gray)
+            self.paginaActual.axA.imshow((1.0-iv)*self.arayActual[0]+iv*self.arayActual[1],cmap=plt.cm.gray)
             self.paginaActual.figure.canvas.draw_idle()
         self.alp.on_changed(update) 
         
-        self.panelVariable=PanelComparacionAPlan(self)
+
+        self.panelVariable=PanelComparacionAPlan(self,int(dialComparar.tole),int(dialComparar.dist),int(dialComparar.thres),float(dmm))
         self.sizer_2.Remove(1)
         self.sizer_2.Add(self.panelVariable, 1, wx.EXPAND, 0)
         self.Layout()

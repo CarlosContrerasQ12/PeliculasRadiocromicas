@@ -97,6 +97,7 @@ class PanelMapaDosis2(wx.Panel):
     def __init__(self, *args, **kwds):
         # begin wxGlade: MyDialog.__init__
         self.parent=args[0]
+        self.centro=args[1]
         super(PanelMapaDosis2, self).__init__(self.parent)
         self.button_4 = wx.Button(self, wx.ID_ANY, "Histograma de dosis")
         self.button_5 = wx.Button(self, wx.ID_ANY, "Perfil de dosis")
@@ -180,7 +181,7 @@ class PanelMapaDosis2(wx.Panel):
             k=self.parent.paginaActual.figure.ginput(1)
             xp=int(k[0][0])
             yp=int(k[0][1])
-            self.normalizacion=np.mean(self.parent.paginaActual.arrayIma[xp-2:xp+2,yp-2:yp+2])   
+            self.normalizacion=np.mean(self.parent.paginaActual.arrayIma[yp-2:yp+2,xp-2:xp+2])   
         event.Skip()
 
     def guardar_mapa(self, event):  # wxGlade: MyDialog.<event_handler>
@@ -209,9 +210,11 @@ class PanelMapaDosis2(wx.Panel):
         ds.file_meta.TransferSyntaxUID = pydicom.uid.ImplicitVRLittleEndian
         ds.is_little_endian = True
         ds.is_implicit_VR = True
+        ds.IsocenterPosition=[self.centro[0],self.centro[1],0]
+        ds.NormalizationPoint=self.normalizacion
         ds.SamplesPerPixel=1
         ds.PhotometricInterpretation='MONOCHROME2'
-        ds.PixelSpacing=[25.4/self.parent.configuracion["ppi"],25.4/self.parent.configuracion["ppi"]]
+        ds.PixelSpacing=[25.4/(self.parent.configuracion["ppi"]-1),25.4/(self.parent.configuracion["ppi"]-1)]
         ds.BitsAllocated=32
         ds.BitsStored=32
         ds.HighBit=31

@@ -223,7 +223,8 @@ class PanelMapaDosis1(wx.Panel):
             deltas=datosCalib["funcionCalDel"](rojo,verde,azul)
             mapaDosis=trans(deltas,rojo,verde,azul)
             imaDelta=ImagenMatplotlibLibre(None)
-            imaDelta.ax.imshow(deltas)
+            imaDelta.arr=deltas
+            imaDelta.ax.imshow(deltas/np.mean(deltas),cmap=mpl.cm.gray)
             imaDelta.Show()
         
 
@@ -239,11 +240,13 @@ class PanelMapaDosis1(wx.Panel):
                 coefver = np.polyfit([self.puntoN[0],self.puntoS[0]],[self.puntoN[1],self.puntoS[1]], 1)
                 y=(coefhor[1]*coefver[0]-coefhor[0]*coefver[1])/(coefver[0]-coefhor[0])
                 x=(y-coefhor[1])/coefhor[0]
-                self.centro=(int(y),int(x))
+                print(x)
+                print(y)
+                self.centro=(int(x),int(y))
             else:
                 x=self.puntoN[0]
                 y=coefhor[0]*x+coefhor[1]
-                self.centro=(int(y),int(x))
+                self.centro=(int(x),int(y))
             if self.checkRotar.GetValue():    
                 angulo=np.arctan(coefhor[0])*180/np.pi
                 mapaDosis=rotate(mapaDosis,angulo,order=4,mode='nearest')
@@ -264,7 +267,7 @@ class PanelMapaDosis1(wx.Panel):
         
         a1.imshow(mapaDosis,cmap=mpl.cm.gray)
         self.parent.arbolArchivos.AppendItem(rez,"Mapa de dosis")
-        self.parent.panelVariable=PanelMapaDosis2(self.parent)
+        self.parent.panelVariable=PanelMapaDosis2(self.parent,self.centro)
         self.parent.sizer_2.Remove(1)
         self.parent.sizer_2.Add(self.parent.panelVariable, 1, wx.EXPAND, 0)
         self.parent.Layout()
