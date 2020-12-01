@@ -230,6 +230,10 @@ class PanelSeleccionDosis(wx.Panel):
         pesosR=(1.0/desvTotalR**2)/(np.sum((1.0/desvTotalR**2),axis=0))
         pesosG=(1.0/desvTotalG**2)/(np.sum((1.0/desvTotalG**2),axis=0))
         pesosB=(1.0/desvTotalB**2)/(np.sum((1.0/desvTotalB**2),axis=0))
+        
+        self.RTotal=np.mean(self.R,axis=0)
+        self.GTotal=np.mean(self.G,axis=0)
+        self.BTotal=np.mean(self.B,axis=0) 
            
 
             
@@ -253,17 +257,25 @@ class PanelSeleccionDosis(wx.Panel):
         for i in range(self.grid_1.GetNumberRows()):
             self.dosis[i]=float(self.grid_1.GetCellValue(i,0))
             
-        np.savetxt('dosishp.txt',self.dosis)
-        np.savetxt('Rhp.txt',self.Rtotal)
-        np.savetxt('Ghp.txt',self.Gtotal)
-        np.savetxt('Bhp.txt',self.Btotal)
+        np.save('dosisMulti.npy',self.dosis)
+        np.save('RMultiTrans.npy',[np.mean(self.R,axis=0),self.RCeroTotal])
+        np.save('GMultiTrans.npy',[np.mean(self.G,axis=0),self.GCeroTotal])
+        np.save('BMultiTrans.npy',[np.mean(self.B,axis=0),self.BCeroTotal])
+        np.save('IncerMulti.npy',[desvRFinal,desvGFinal,desvBFinal])
         
         fdlg = wx.FileDialog(self, "Guardar calibracion",wildcard="calibraciones (*.calibr)|*.calibr", style=wx.FD_SAVE)
         fdlg.SetFilename("calibracion-")
         nombreArchivo=''
         if fdlg.ShowModal() == wx.ID_OK:
                 nombreArchivo = fdlg.GetPath() + ".calibr"
-        calibr=CalibracionImagen([netOdRTotal,self.RCeroTotal],[netOdGTotal,self.GCeroTotal],[netOdBTotal,self.BCeroTotal],[desvRFinal,desvGFinal,desvBFinal],self.dosis,self.tipoCanal,self.tipoCurva)
+        calibr=CalibracionImagen(
+        [netOdRTotal,self.RCeroTotal,self.RTotal],
+        [netOdGTotal,self.GCeroTotal,self.GTotal],
+        [netOdBTotal,self.BCeroTotal,self.BTotal],
+        [[desvRFinal,desvGFinal,desvBFinal],[np.mean(self.Rstd,axis=0),np.mean(self.Gstd,axis=0),np.mean(self.Bstd,axis=0)],[np.mean(self.RCerostd,axis=0),np.mean(self.GCerostd,axis=0),np.mean(self.BCerostd,axis=0)]],
+        self.dosis,
+        self.tipoCanal,
+        self.tipoCurva)
         calibr.generar_calibracion(nombreArchivo)
         self.Close()
         event.Skip()

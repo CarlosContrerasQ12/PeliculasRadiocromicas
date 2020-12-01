@@ -24,7 +24,7 @@ class DialogoCalibracion(wx.Dialog):
         #self.window_1 = wx.FilePickerCtrl(self,message="Seleccione archivo",style=wx.FLP_USE_TEXTCTRL)
         self.SelectorDosis = wx.Button(self, wx.ID_ANY, "Navegar")
         self.CajaTextoDosis=wx.TextCtrl(self,value="",style=wx.TE_READONLY)
-        self.combo_box_canal = wx.ComboBox(self, wx.ID_ANY, choices=["Multicanal", "Canal rojo","Canal verde","Canal azul","Promedio RGB"], style=wx.CB_DROPDOWN)
+        self.combo_box_canal = wx.ComboBox(self, wx.ID_ANY, choices=["Multicanal", "Canal solo"], style=wx.CB_DROPDOWN)
         self.combo_box_curva = wx.ComboBox(self, wx.ID_ANY, choices=["Racional lineal", "Cubica", "Exponencial polinomica", "Lineal"], style=wx.CB_DROPDOWN)
         self.checkboxFiltrar = wx.CheckBox(self, wx.ID_ANY, "Filtrar")
         self.checkboxBackground = wx.CheckBox(self, wx.ID_ANY, "Background")

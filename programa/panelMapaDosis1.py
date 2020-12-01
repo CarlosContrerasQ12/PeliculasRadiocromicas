@@ -194,35 +194,39 @@ class PanelMapaDosis1(wx.Panel):
         
         datosCalib=leer_Calibracion(self.rutaCalibracion)
         trans=datosCalib["funcionTaD"]
+        
+        oDimage=0
+        if datosCalib["TipoCanal"]=="Canal solo":
+            oDimage= np.log10(self.parent.araySinIrra/self.parent.arayActual)
+        else:
+            oDimage=(self.parent.arayActual+self.parent.araySinIrra)/((2**self.parent.configuracion["BitCanal"])-1)
 
-        oDimage= np.log10(self.parent.araySinIrra/self.parent.arayActual)
+            
         rez=self.parent.arbolArchivos.AppendItem(self.parent.raiz,"Mapa de dosis "+str(len(self.parent.mapasDeDosis)+1))
         self.parent.arbolArchivos.AppendItem(rez,"Imagen")
         
 
         mapaDosis=0
         
-        if datosCalib["TipoCanal"]=="Canal rojo":
-            rojo=oDimage[:,:,0]
-            mapaDosis=trans(rojo)
-        elif datosCalib["TipoCanal"]=="Canal verde":
-            verde=oDimage[:,:,1]
-            mapaDosis=trans(verde)
-        elif datosCalib["TipoCanal"]=="Canal azul":
-            azul=oDimage[:,:,2]
-            mapaDosis=trans(azul)
-        elif datosCalib["TipoCanal"]=="Promedio RGB":
+        if datosCalib["TipoCanal"]=="Canal solo":
             rojo=oDimage[:,:,0]
             verde=oDimage[:,:,1]
             azul=oDimage[:,:,2]
             mapaDosis=trans(rojo,verde,azul)
-        elif datosCalib["TipoCanal"]=="Multicanal":
+
+        else:
             rojo=oDimage[:,:,0]
             verde=oDimage[:,:,1]
             azul=oDimage[:,:,2]
             deltas=datosCalib["funcionCalDel"](rojo,verde,azul)
             mapaDosis=trans(deltas,rojo,verde,azul)
             imaDelta=ImagenMatplotlibLibre(None)
+            ins=np.where(deltas<0.7)
+            deltas[ins]=1
+            ins=np.where(np.isnan(deltas))
+            deltas[ins]=1
+            ins=np.where(deltas>10)
+            deltas[ins]=1
             imaDelta.arr=deltas
             imaDelta.ax.imshow(deltas/np.mean(deltas),cmap=mpl.cm.gray)
             imaDelta.Show()
@@ -265,7 +269,7 @@ class PanelMapaDosis1(wx.Panel):
         a1=figActual.gca()
         self.parent.paginas[-1].arrayIma=self.parent.arayActual
         
-        a1.imshow(mapaDosis,cmap=mpl.cm.gray)
+        a1.imshow(mapaDosis[:,:,0],cmap=mpl.cm.gray)
         self.parent.arbolArchivos.AppendItem(rez,"Mapa de dosis")
         self.parent.panelVariable=PanelMapaDosis2(self.parent,self.centro)
         self.parent.sizer_2.Remove(1)

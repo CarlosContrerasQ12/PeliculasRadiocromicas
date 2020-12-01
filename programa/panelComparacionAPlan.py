@@ -37,6 +37,9 @@ class PerfilDoble():
         self.ventanaAparte=ImagenMatplotlibLibre(None)
         self.fig2=self.ventanaAparte.figure
         self.ax2 =self.ventanaAparte.ax
+        self.ax2.set_xlabel("Longitud(px)")
+        self.ax2.set_ylabel("Dosis(Gy)")
+        self.ax2.grid()
         self.line,=self.ax.plot([self.x1,self.x2],[self.y1,self.y2])
         
         
@@ -112,7 +115,7 @@ class PanelComparacionAPlan(wx.Panel):
         'distance_mm_threshold': self.dta,
         'lower_percent_dose_cutoff': self.cutoff,
         'interp_fraction': 15,  # Should be 10 or more for more accurate results
-        'max_gamma': 5,
+        'max_gamma': 3,
         'random_subset': None,
         'local_gamma': False,
         'ram_available': 5*(2**29)  # 1/2 GB
@@ -176,10 +179,13 @@ class PanelComparacionAPlan(wx.Panel):
             ima=ImagenMatplotlibLibre(self.parent)
             ima.ax.hist(self.valid_gamma, bins, density=True)
             ima.ax.set_xlim([0, self.gamma_options['max_gamma']])
+            ima.ax.set_xlabel(r"Gamma($\Gamma$)")
+            ima.ax.set_ylabel("Numero de pixeles")
             ima.Show()
             
             imag2=ImagenMatplotlibLibre(self.parent)
-            imag2.ax.imshow(self.gamma)
+            pos=imag2.ax.imshow(self.gamma,'gist_heat')
+            imag2.figure.colorbar(pos, ax=imag2.ax)
             imag2.arr=self.gamma
             imag2.Show()
         event.Skip()

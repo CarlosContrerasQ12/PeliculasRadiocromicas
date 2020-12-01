@@ -26,11 +26,12 @@ from pydicom.dataset import Dataset, FileDataset, FileMetaDataset
 # end wxGlade
 
 class Perfil():
-    def __init__(self,parent,mapIntesidad,imagen,figura,ax):
+    def __init__(self,parent,mapIntesidadR,mapIntesidadG,mapIntesidadB,figura,ax):
         self.fig=figura
         self.ax=ax
-        self.aray=imagen
-        self.mapeo=mapIntesidad
+        self.mapeoR=mapIntesidadR
+        self.mapeoG=mapIntesidadG
+        self.mapeoB=mapIntesidadB
         k=self.fig.ginput(2)
         self.x1=k[0][0]
         self.y1=k[0][1]
@@ -43,6 +44,9 @@ class Perfil():
         self.ventanaAparte=ImagenMatplotlibLibre(None)
         self.fig2=self.ventanaAparte.figure
         self.ax2 =self.ventanaAparte.ax
+        self.ax2.set_xlabel("Longitud(px)")
+        self.ax2.set_ylabel("Dosis(Gy)")
+        self.ax2.grid()
         
         
         
@@ -80,13 +84,22 @@ class Perfil():
         x=np.linspace(self.x1,self.x2,300)
         y=m*x+b
         self.line.set_data([x[0],x[-1]],[y[0],y[-1]])
-        ys=np.zeros(x.shape[0])
+        ysr=np.zeros(x.shape[0])
+        ysg=np.zeros(x.shape[0])
+        ysb=np.zeros(x.shape[0])
         for i in range(x.shape[0]):
-            ys[i]=self.mapeo(x[i],y[i])
-        xs=np.linspace(0,self.longes,ys.shape[0])
+            ysr[i]=self.mapeoR(x[i],y[i])
+            ysg[i]=self.mapeoG(x[i],y[i])
+            ysb[i]=self.mapeoB(x[i],y[i])
+        xs=np.linspace(0,self.longes,ysr.shape[0])
         self.ax2.clear()
+        self.ax2.set_xlabel("Longitud(px)")
+        self.ax2.set_ylabel("Dosis(Gy)")
+        self.ax2.grid()
         
-        self.ax2.plot(xs,ys)
+        self.ax2.plot(xs,ysr,color='r')
+        self.ax2.plot(xs,ysg,color='g')
+        self.ax2.plot(xs,ysb,color='b')
         self.fig.canvas.draw()
         self.fig.canvas.flush_events()
         self.fig2.canvas.draw()
@@ -105,7 +118,7 @@ class PanelMapaDosis2(wx.Panel):
         self.button_9 = wx.Button(self, wx.ID_ANY, "Punto de normalizacion")
         self.button_8 = wx.Button(self, wx.ID_ANY, "Guardar Mapa")
         
-        self.normalizacion=np.max(self.parent.paginaActual.arrayIma)
+        self.normalizacion=np.max(self.parent.paginaActual.arrayIma[:,:,0])
 
         self.__set_properties()
         self.__do_layout()
@@ -137,7 +150,7 @@ class PanelMapaDosis2(wx.Panel):
 
     def histograma(self, event):  # wxGlade: MyDialog.<event_handler>
         ima=ImagenMatplotlibLibre(self.parent)
-        ima.ax.hist(self.parent.paginaActual.arrayIma.flatten())
+        ima.ax.hist(self.parent.paginaActual.arrayIma[:,:,0].flatten())
         ima.Show()
     
         
@@ -145,17 +158,18 @@ class PanelMapaDosis2(wx.Panel):
         event.Skip()
 
     def generar_perfil(self, event):  # wxGlade: MyDialog.<event_handler>
-        ima=ImagenMatplotlibLibre(self.parent)
         x=np.linspace(0,self.parent.paginaActual.arrayIma.shape[1],self.parent.paginaActual.arrayIma.shape[1])
         y=np.linspace(0,self.parent.paginaActual.arrayIma.shape[0],self.parent.paginaActual.arrayIma.shape[0])
-        f=interp.interp2d(x,y,self.parent.paginaActual.arrayIma,fill_value=0)
-        self.per=Perfil(self.parent,f,self.parent.paginaActual.arrayIma,self.parent.paginaActual.figure,self.parent.paginaActual.figure.gca())
+        fr=interp.interp2d(x,y,self.parent.paginaActual.arrayIma[:,:,0],fill_value=0)
+        fg=interp.interp2d(x,y,self.parent.paginaActual.arrayIma[:,:,1],fill_value=0)
+        fb=interp.interp2d(x,y,self.parent.paginaActual.arrayIma[:,:,2],fill_value=0)
+        self.per=Perfil(self.parent,fr,fg,fb,self.parent.paginaActual.figure,self.parent.paginaActual.figure.gca())
         event.Skip()
 
     def generar_mapa_curvas(self, event):  # wxGlade: MyDialog.<event_handler>
         x=np.linspace(0,self.parent.paginaActual.arrayIma.shape[1],self.parent.paginaActual.arrayIma.shape[1])
         y=np.linspace(0,self.parent.paginaActual.arrayIma.shape[0],self.parent.paginaActual.arrayIma.shape[0])
-        arrnorm=self.parent.paginaActual.arrayIma/self.normalizacion
+        arrnorm=self.parent.paginaActual.arrayIma[:,:,0]/self.normalizacion
         ima=ImagenMatplotlibLibre(self.parent)
         self.axR=ima.figure.add_axes([0.25, .03, 0.50, 0.02])
         self.spor = Slider(self.axR, '%', 0, 100.0, valinit=50, valstep=1)
@@ -174,14 +188,14 @@ class PanelMapaDosis2(wx.Panel):
         if dial.resultado=='cancelar':
             return 
         elif dial.resultado=='maximo':
-            self.normalizacion=np.max(self.parent.paginaActual.arrayIma)
+            self.normalizacion=np.max(self.parent.paginaActual.arrayIma[:,:,0])
         elif dial.resultado=='valorFijo':
             self.normalizacion=dial.valor
         elif dial.resultado=='select':
             k=self.parent.paginaActual.figure.ginput(1)
             xp=int(k[0][0])
             yp=int(k[0][1])
-            self.normalizacion=np.mean(self.parent.paginaActual.arrayIma[yp-2:yp+2,xp-2:xp+2])   
+            self.normalizacion=np.mean(self.parent.paginaActual.arrayIma[yp-2:yp+2,xp-2:xp+2,0])   
         event.Skip()
 
     def guardar_mapa(self, event):  # wxGlade: MyDialog.<event_handler>
@@ -193,8 +207,9 @@ class PanelMapaDosis2(wx.Panel):
                 nombreArchivo = fdlg.GetPath()+suffix
         else:
             return   
-        fact=np.max(self.parent.paginaActual.arrayIma)
-        arr=((self.parent.paginaActual.arrayIma/ fact)*((2**16)-1)).astype('uint32')
+        dosisPl=(self.parent.paginaActual.arrayIma[:,:,0]+self.parent.paginaActual.arrayIma[:,:,1]+self.parent.paginaActual.arrayIma[:,:,2])/3
+        fact=np.max(dosisPl)
+        arr=((dosisPl/ fact)*((2**16)-1)).astype('uint32')
         """
         ds = pydicom.dcmread('piramide4.dcm')
         """

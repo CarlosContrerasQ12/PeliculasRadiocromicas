@@ -83,7 +83,7 @@ class ImagenCuadernoMatplotlib(wx.Panel):
         self.identificador=0
         self.tipo=''
         self.rutaImagen=''
-        self.arrayIma=''
+        self.arrayIma=np.zeros(5)
         
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.canvas, 1, wx.EXPAND)
@@ -101,7 +101,7 @@ class ImagenCuadernoMatplotlib(wx.Panel):
         except:
             x = ""
             y = ""
-        if self.arrayIma=='':    
+        if self.arrayIma.shape[0]<6:    
             self.Text.SetLabelText("%s , %s " % (x,y))
         else:
             if x!='' and y!='':
@@ -284,9 +284,26 @@ class MyFrame(wx.Frame):
         if sufix=='calibr':
             datosCalib=leer_Calibracion(nombreAr)
             dosis=datosCalib["Dosis"]
-            netODR=datosCalib["Dopticas"][0]
-            netODG=datosCalib["Dopticas"][1]
-            netODB=datosCalib["Dopticas"][2]
+            grafica=ImagenMatplotlibLibre(self,style=wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER)
+            grafica.ax.grid()
+            grafica.ax.set_xlabel("Dosis(Gy)")
+            labelss=datosCalib["labels"]
+            print(datosCalib["TipoCanal"])
+            if datosCalib["TipoCanal"]!="Multicanal":
+                grafica.ax.set_ylabel("Densidad Óptica")
+                grafica.ax.text(0, 0.4, labelss[0], color='black', 
+                     bbox=dict(facecolor='none', edgecolor='black', boxstyle='round,pad=1'))
+                netODR=datosCalib["Dopticas"][0][0]
+                netODG=datosCalib["Dopticas"][0][1]
+                netODB=datosCalib["Dopticas"][0][2]
+            else:
+                grafica.ax.set_ylabel("Transmitancia")
+                grafica.ax.text(8.2, 0.65, labelss[0], color='black', 
+                     bbox=dict(facecolor='none', edgecolor='black', boxstyle='round,pad=1'))
+                netODR=datosCalib["Dopticas"][1][0]
+                netODG=datosCalib["Dopticas"][1][1]
+                netODB=datosCalib["Dopticas"][1][2]
+                
             varODR=datosCalib["Incertidumbres"][0]
             varODG=datosCalib["Incertidumbres"][1]
             varODB=datosCalib["Incertidumbres"][2]
@@ -294,31 +311,27 @@ class MyFrame(wx.Frame):
             fG=datosCalib["funcionesRGB"][1]
             fB=datosCalib["funcionesRGB"][2]
             pOptimos=datosCalib["Parametros"]
-            grafica=ImagenMatplotlibLibre(self)
             grafica.ax.errorbar(dosis,netODR,yerr=varODR,color='r',fmt='o',markersize=2)
             grafica.ax.errorbar(dosis,netODG,yerr=varODG,color='g',fmt='o',markersize=2)
             grafica.ax.errorbar(dosis,netODB,yerr=varODB,color='b',fmt='o',markersize=2)
-            xasR=np.linspace(netODR[0],netODR[-1]+0.005,100)
-            xasG=np.linspace(netODG[0],netODG[-1]+0.005,100)
-            xasB=np.linspace(netODB[0],netODB[-1]+0.005,100)
+            xasR=np.linspace(netODR[0],netODR[-1]-0.005,100)
+            xasG=np.linspace(netODG[0],netODG[-1]-0.005,100)
+            xasB=np.linspace(netODB[0],netODB[-1]-0.005,100)
             yasR=fR(xasR)
             yasG=fG(xasG)
             yasB=fB(xasB)
-            grafica.ax.plot(yasR,xasR,'r--')
-            grafica.ax.plot(yasG,xasG,'g--')
-            grafica.ax.plot(yasB,xasB,'b--')
-            print(varODR)
-            print(varODG)
-            print(varODB)
+
+            grafica.ax.plot(yasR,xasR,'r--',label=labelss[1])
+            grafica.ax.plot(yasG,xasG,'g--',label=labelss[2])
+            grafica.ax.plot(yasB,xasB,'b--',label=labelss[3])
             SR=np.sum(((dosis-fR(netODR)))**2)
             SG=np.sum(((dosis-fG(netODG)))**2)
             SB=np.sum(((dosis-fB(netODB)))**2)
-            print(SR)
-            print(SG)
-            print(SB)
-            print("La bondad de ajuste para el canal rojo es de ", chi2.sf(SR,len(dosis)-len(pOptimos[0])))
-            print("La bondad de ajuste para el canal rojo es de ", chi2.sf(SG,len(dosis)-len(pOptimos[1])))
-            print("La bondad de ajuste para el canal rojo es de ", chi2.sf(SB,len(dosis)-len(pOptimos[2])))
+
+            grafica.figure.legend(loc=7)
+            grafica.figure.tight_layout()
+            grafica.figure.subplots_adjust(right=0.75)
+            
             grafica.Show() 
         event.Skip()
 
@@ -345,27 +358,35 @@ class MyFrame(wx.Frame):
         ceB=self.araySinIrra[:,:,2]+datosCalib["Ceros"][2][0]
         self.araySinIrra=np.dstack((ceR,ceG,ceB))*(2**self.configuracion["BitCanal"])
         self.araySinLuz=0*image
-        
-        
-        
-        
+
+                
         if dialMapa.corrBackground:
             dialogoBackground=DialogoBackground(self)
             dialogoBackground.ShowModal()
             fon=False
             
             if dialogoBackground.resultado[0]!='cancelar' and dialogoBackground.resultado[0]!='':
-                self.araySinIrra=tiff.imread(dialogoBackground.resultado[0])
+                
+                if datosCalib["TipoCanal"]=="Multicanal":
+                    self.araySinIrra=(self.araySinIrra-tiff.imread(dialogoBackground.resultado[0]))
+                else:
+                    self.araySinIrra=tiff.imread(dialogoBackground.resultado[0])
                 fon=True
+                
             if(dialogoBackground.resultado[0]!='cancelar' and dialogoBackground.resultado[1]!=''):
                 self.araySinLuz=tiff.imread(dialogoBackground.resultado[1])
                 image=image-self.araySinLuz
                 if fon:
                     self.araySinIrra=self.araySinIrra-self.araySinLuz
+        else:
+            if datosCalib["TipoCanal"]=="Multicanal":
+                self.araySinIrra=0*image
+            
             
         if dialMapa.filtrar:
             image=filtrar_imagen(image,self.configuracion["Filtros"])
-            self.araySinIrra=filtrar_imagen(self.araySinIrra,self.configuracion["Filtros"])
+            if datosCalib["TipoCanal"]!="Multicanal":
+                self.araySinIrra=filtrar_imagen(self.araySinIrra,self.configuracion["Filtros"])
             
         self.arayActual=image
         self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
