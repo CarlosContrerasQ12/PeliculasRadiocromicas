@@ -19,6 +19,9 @@
 \usepackage{commath}
 \decimalpoint
 \setlength\parindent{0pt}
+\usepackage[toc]{appendix}
+
+\renewcommand{\appendixtocname}{Apéndices}
 
 \newenvironment{dedication}
   {\clearpage           % we want a new page
@@ -97,19 +100,28 @@
 \pagenumbering{arabic}
 \input{chapters/introduccion}
 
+\chapter{Objetivos}\label{chp:objetivos}
+\input{chapters/objetivos}
+
 \chapter{Marco Teórico}\label{chp:teorico}
 \input{chapters/teorico}
 
-\chapter{Procedimiento de calibración}\label{chp:Calibracion}
-\input{chapters/calibracion}
+\chapter{Metodología}\label{chp:metodologia}
+\input{chapters/metodologia}
 
-\chapter{Mapas de dosis y comparaciones}\label{chp:comparaciones}
-\input{chapters/comparaciones}
+\chapter{Resultados y análisis}\label{chp:resultados}
+\input{chapters/resultados}
 
 
 \chapter{Conclusiones}
 \input{chapters/conclusiones}
 
+\begin{appendices}
+	\chapter{Diagramas de flujo}
+	\input{chapters/diagramasFlujo}
+	\chapter{Documentación del programa}
+	\input{chapters/docuPrograma}
+\end{appendices}
 \nocite{*}
 \bibliography{references}
 \bibliographystyle{IEEEtran}

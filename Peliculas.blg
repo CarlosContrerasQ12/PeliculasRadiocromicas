@@ -31,6 +31,11 @@ I was expecting a `,' or a `}'---line 307 of file references.bib
  :  url="http://www.gafchromic.com/documents/EBT3_Specifications.pdf",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 314 of file references.bib
+ :  
+ :  url="http://www.gafchromic.com/documents/EBT2_Specifications.pdf",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -38,45 +43,45 @@ Warning--empty booktitle in Williams2011
 Warning--empty journal in mayers
 
 Done.
-You've used 30 entries,
+You've used 31 entries,
             4087 wiz_defined-function locations,
-            1047 strings with 14114 characters,
-and the built_in function-call counts, 26198 in all, are:
-= -- 2229
-> -- 670
+            1050 strings with 14173 characters,
+and the built_in function-call counts, 26459 in all, are:
+= -- 2245
+> -- 674
 < -- 231
-+ -- 370
-- -- 127
-* -- 1358
-:= -- 3996
-add.period$ -- 60
-call.type$ -- 30
++ -- 372
+- -- 128
+* -- 1363
+:= -- 4042
+add.period$ -- 61
+call.type$ -- 31
 change.case$ -- 26
 chr.to.int$ -- 486
-cite$ -- 32
-duplicate$ -- 1815
-empty$ -- 1849
-format.name$ -- 145
-if$ -- 6042
+cite$ -- 33
+duplicate$ -- 1841
+empty$ -- 1876
+format.name$ -- 146
+if$ -- 6099
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 317
-newline$ -- 159
-num.names$ -- 30
-pop$ -- 642
+int.to.str$ -- 31
+missing$ -- 324
+newline$ -- 162
+num.names$ -- 31
+pop$ -- 660
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2016
+skip$ -- 2037
 stack$ -- 0
 substring$ -- 1240
-swap$ -- 1658
+swap$ -- 1671
 text.length$ -- 69
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 30
+type$ -- 31
 warning$ -- 2
-while$ -- 107
-width$ -- 32
-write$ -- 392
-(There were 4 error messages)
+while$ -- 108
+width$ -- 33
+write$ -- 398
+(There were 5 error messages)

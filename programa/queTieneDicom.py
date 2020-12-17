@@ -1,8 +1,8 @@
 from pydicom import dcmread
 import pydicom
 import matplotlib.pyplot as plt
-ds = dcmread('MapaPiramidePruebas.dcm')
-ds2 = dcmread('piramide2.dcm')
+ds = dcmread('MapaMama.dcm')
+ds2 = dcmread('piramide.dcm')
 print(ds)
 print(ds2)
 

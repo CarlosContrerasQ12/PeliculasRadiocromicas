@@ -1,0 +1,178 @@
+
+\section{Calibración}
+Como fue mencionado anteriormente, se irradiaron películas con dosis que se registran en la tabla \ref{tab:DosisIrra}, con su correspondiente incertidumbre, medidas con la cámara de ionización.
+
+\begin{table}[]
+	\centering
+	\begin{tabular}{|l|l|l|}
+		\hline
+		UM& Dosis(Gy)    & Incertidumbre($10^{-5}$) \\ \hline
+		21.6&0.201472 & 3.8           \\ \hline
+		54&0.504137 & 5.23          \\ \hline
+		108&1.00825  & 35            \\ \hline
+		216&2.01783  & 22            \\ \hline
+		432&4.037486 & 31            \\ \hline
+		648&6.0583   & 48            \\ \hline
+		864&8.08168  & 142           \\ \hline
+		1080&10.1056  & 140           \\ \hline
+		1296&12.132   & 0             \\ \hline
+		1620&15.168   & 0             \\ \hline
+		2160&20.229   & 0             \\ \hline
+	\end{tabular}
+	\caption{Dosis irradiadas}
+	\label{tab:DosisIrra}
+\end{table}
+
+Para relacionar determinados niveles de transmitancias medidas en una película con la dosis que produjo la coloración es necesario establecer una curva de calibración. En este caso se correlacionaron los promedios de transmitancia en regiones de interés de las tres películas irradiadas con la misma dosis con la dosis medida con la cámara de ionización que produjo dicha coloración.\\
+
+El efecto que más altera estas mediciones en este caso es la posición de la película en el escáner. Así, por ejemplo, en la figura \ref{fig:curvasDezplazadas} se evidencia como cambia la curva cuando se mide las mismas películas en diferentes posiciones.\\
+
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Efecto posición en curvas}
+	
+	\caption{Efecto de la posición de escaneo en las curvas }
+	\label{fig:curvasDezplazadas}
+\end{figure}
+
+Aplicando la corrección de background, un filtro de mediana y eliminando el sesgo que el escáner tiene dependiendo de la posición, se obtiene la curva presentada en la figura \ref{fig:curvaFinal}.\\
+
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Curva sin sesgo}
+	
+	\caption{Curva de calibración sin sesgo }
+	\label{fig:curvaFinal}
+\end{figure}
+
+Según el manual del fabricante, las películas EBT3 son aptas para un rango inferior a 10 Gy, por lo que se prefieren omitir los últimos dos puntos de dosis, puesto que la película está en la región de saturación en esta región.  Además, estos puntos no aportan información adicional a los propósitos del trabajo, puesto que los planes que serán examinados no conllevan dosis tan altas.\\
+
+En el caso donde se usan dosis inferiores a 10 Gy se realizó un ajuste de mínimos cuadrados con una curva de la forma
+\begin{equation}
+D=\frac{AT+D}{T-C},
+\end{equation}
+la cual se ajusta bien a los datos puesto que un test $\chi^2$ muestra que $p=0.02$. \\
+
+El programa también permite realizar ajustes con otro tipo de curvas dependiendo del rango de dosis trabajado.\\
+
+
+\section{Efectos de diversos parámetros}
+ En la figura \ref{fig:filtros} se evidencia el efecto suavizador de diversos filtros en una imagen de prueba. \\
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Filtros}
+	
+	\caption{Efecto de diversos filtros}
+	\label{fig:filtros}
+\end{figure}
+
+
+En la figura \ref{fig:efectoOrientacion} se evidencia la incidencia de este efecto en la  medición de algunas dosis cuando la película está orientada de forma paralela y perpendicular a la lampara del escáner. \\
+
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Efecto orientación}
+	
+	\caption{Efecto de la orientación de la película respecto al escáner }
+	\label{fig:efectoOrientacion}
+\end{figure}
+
+\section{Mapas de dosis}
+
+
+Como primer plan de tratamiento y a modo de prueba se irradió un plan de tratamiento piramidal, que produjo un patrón en la película que se observa en la figura \ref{fig:piramideEscaneada}.\\
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento}
+	
+	\caption{Pelicula EBT3 irradiada con plan de piramide }
+	\label{fig:piramideEscaneada}
+\end{figure}
+
+En la figura \ref{fig:mapaPiramide} se muestra el mapa de dosis calculado con la digitalización anterior, junto al mapa de dosis que calculó el sistema de planeación en el mismo plano. Para alinear estos planes se usaron cuatro puntos fiduciales y un proceso de registro usando la librería SimpleITK de python.\\
+
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada}
+	
+	\caption{Mapa de dosis calculado experimental y computacionalmente }
+	\label{fig:mapaPiramide}
+\end{figure}
+
+Se pueden obtener diversas estadísticas para comparar estos planes, por ejemplo, en la figura \ref{fig:perfilesDosisPiramide} se muestran perfiles de dosis a diferentes niveles que muestran una concordancia entre las dosis calculadas de ambas maneras.\\
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada}
+	
+	\caption{Perfiles de dosis en diferentes planos }
+	\label{fig:perfilesDosisPiramide}
+\end{figure}
+Igualmente, en la figura \ref{fig:histogramasDosisPiramide} se muestran comparaciones de los histogramas de dosis obtenidos.\\
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada histograma}
+	
+	\caption{Histogramas de dosis para plan pirámide }
+	\label{fig:histogramasDosisPiramide}
+\end{figure}
+
+Finalmente, en la figura \ref{fig:isodosisPiramide}  se presentan curvas de isodosis de estos mapas.\\ 
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada isodosis}
+	
+	\caption{Curvas de isodosis para plan pirámide }
+	\label{fig:isodosisPiramide}
+\end{figure}
+
+Similarmente, se realiza un análisis comparativo del plan de tratamiento de mama 
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento mama}
+	
+	\caption{Plan de tratamiento de mama escaneado }
+	\label{fig:mamaEscaneada}
+\end{figure}
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Mapas de dosis mama}
+	
+	\caption{Mapa de dosis para plan de mama }
+	\label{fig:mapaMama}
+\end{figure}
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada isodosis}
+	
+	\caption{Curvas de isodosis para plan pirámide }
+	\label{fig:histogramaMama}
+\end{figure}
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada isodosis}
+	
+	\caption{Curvas de isodosis para plan pirámide }
+	\label{fig:isodosisMama}
+\end{figure}
+
+\section{Comparaciones $\Gamma$}
+
+En el caso del plan pirámide, se obtiene la matriz $\Gamma$ mostrada en la figura \ref{fig:gammaPiramide}, así como el histograma de $\Gamma$ que evalúa la correspondencia general de los pixeles en ambas distribuciones.\\
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Gamma Piramide}
+	\caption{Análisis $\Gamma$ para plan piramide }
+	\label{fig:gammaPiramide}
+\end{figure}
+
+Finalmente, en el caso del plan de tratamiento se mama, se muestra el mismo análisis en la figura \ref{fig:gammaMama}
+\begin{figure}
+	\centering
+	\missingfigure[figwidth=\linewidth,figcolor=white]{Gamma mama}
+	\caption{Análisis $\Gamma$ para plan de tratamiento de mama}
+	\label{fig:gammaMama}
+\end{figure}
+
+
+
+

@@ -246,7 +246,7 @@ class PanelMapaDosis1(wx.Panel):
                 x=(y-coefhor[1])/coefhor[0]
                 print(x)
                 print(y)
-                self.centro=(int(x),int(y))
+                self.centro=(int(y),int(x))
             else:
                 x=self.puntoN[0]
                 y=coefhor[0]*x+coefhor[1]

@@ -25,12 +25,34 @@
 E.~B. Podgorsak, \emph{Radiation physics for medical physicists}.\hskip 1em
   plus 0.5em minus 0.4em\relax Heidelberg New York: Springer, 2010.
 
+\bibitem{khan2014the}
+F.~Khan, \emph{The physics of radiation therapy}.\hskip 1em plus 0.5em minus
+  0.4em\relax Philadelphia: Lippincott Williams \& Wilkins, 2014.
+
+\bibitem{Attix1986}
+\BIBentryALTinterwordspacing
+F.~H. Attix, \emph{Introduction to Radiological Physics and Radiation
+  Dosimetry}.\hskip 1em plus 0.5em minus 0.4em\relax Wiley, Nov. 1986.
+  [Online]. Available: \url{https://doi.org/10.1002/9783527617135}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Devic2016}
 \BIBentryALTinterwordspacing
 S.~Devic, N.~Tomic, and D.~Lewis, ``Reference radiochromic film dosimetry:
   Review of technical aspects,'' \emph{Physica Medica}, vol.~32, no.~4, pp.
   541--556, Apr. 2016. [Online]. Available:
   \url{https://doi.org/10.1016/j.ejmp.2016.02.008}
+\BIBentrySTDinterwordspacing
+
+\bibitem{manualEBT2}
+Gafchromic, \emph{Gafchromic dosimetry media, type {EBT}2}.
+
+\bibitem{Crijns2013}
+\BIBentryALTinterwordspacing
+W.~Crijns, F.~Maes, U.~A. van~der Heide, and F.~V. den Heuvel, ``Calibrating
+  page sized gafchromic {EBT}3 films,'' \emph{Medical Physics}, vol.~40, no.~1,
+  p. 012102, Jan. 2013. [Online]. Available:
+  \url{https://doi.org/10.1118/1.4771960}
 \BIBentrySTDinterwordspacing
 
 \bibitem{McLaughlin1965}
@@ -107,20 +129,13 @@ P.~Yu, M.~Butson, and T.~Cheung, ``Does mechanical pressure on radiochromic
   2006. [Online]. Available: \url{https://doi.org/10.1007/bf03178580}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Crijns2013}
+\bibitem{Devic2005}
 \BIBentryALTinterwordspacing
-W.~Crijns, F.~Maes, U.~A. van~der Heide, and F.~V. den Heuvel, ``Calibrating
-  page sized gafchromic {EBT}3 films,'' \emph{Medical Physics}, vol.~40, no.~1,
-  p. 012102, Jan. 2013. [Online]. Available:
-  \url{https://doi.org/10.1118/1.4771960}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Micke2011}
-\BIBentryALTinterwordspacing
-A.~Micke, D.~F. Lewis, and X.~Yu, ``Multichannel film dosimetry with
-  nonuniformity correction,'' \emph{Medical Physics}, vol.~38, no.~5, pp.
-  2523--2534, May 2011. [Online]. Available:
-  \url{https://doi.org/10.1118/1.3576105}
+S.~Devic, J.~Seuntjens, E.~Sham, E.~B. Podgorsak, C.~R. Schmidtlein, A.~S.
+  Kirov, and C.~G. Soares, ``Precise radiochromic film dosimetry using a
+  flat-bed document scanner,'' \emph{Medical Physics}, vol.~32, no. 7Part1, pp.
+  2245--2253, Jun. 2005. [Online]. Available:
+  \url{https://doi.org/10.1118/1.1929253}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Li2017}
@@ -129,6 +144,14 @@ Y.~Li, L.~Chen, J.~Zhu, and X.~Liu, ``The combination of the error correction
   methods of {GAFCHROMIC} {EBT}3 film,'' \emph{{PLOS} {ONE}}, vol.~12, no.~7,
   p. e0181958, Jul. 2017. [Online]. Available:
   \url{https://doi.org/10.1371/journal.pone.0181958}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Micke2011}
+\BIBentryALTinterwordspacing
+A.~Micke, D.~F. Lewis, and X.~Yu, ``Multichannel film dosimetry with
+  nonuniformity correction,'' \emph{Medical Physics}, vol.~38, no.~5, pp.
+  2523--2534, May 2011. [Online]. Available:
+  \url{https://doi.org/10.1118/1.3576105}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Winiecki2009}
@@ -141,15 +164,6 @@ H.~Li, L.~Dong, L.~Zhang, J.~N. Yang, M.~T. Gillin, and X.~R. Zhu, ``{Toward a
   better understanding of the gamma index: Investigation of parameters with a
   surface-based distance method},'' \emph{Medical Physics}, vol.~38, no.~12,
   pp. 6730--6741, 2011.
-
-\bibitem{Devic2005}
-\BIBentryALTinterwordspacing
-S.~Devic, J.~Seuntjens, E.~Sham, E.~B. Podgorsak, C.~R. Schmidtlein, A.~S.
-  Kirov, and C.~G. Soares, ``Precise radiochromic film dosimetry using a
-  flat-bed document scanner,'' \emph{Medical Physics}, vol.~32, no. 7Part1, pp.
-  2245--2253, Jun. 2005. [Online]. Available:
-  \url{https://doi.org/10.1118/1.1929253}
-\BIBentrySTDinterwordspacing
 
 \bibitem{Howard2020}
 \BIBentryALTinterwordspacing
@@ -171,17 +185,6 @@ Y.~Shimohigashi, F.~Araki, M.~Maruyama, Y.~Nakaguchi, S.~Kuwahara, N.~Nagasue,
 \bibitem{maya}
 L.~Maya, ``Caracterización de películas gafchromic ebt2 para uso en
   dosimetría del cyberknife,'' 2014.
-
-\bibitem{Attix1986}
-\BIBentryALTinterwordspacing
-F.~H. Attix, \emph{Introduction to Radiological Physics and Radiation
-  Dosimetry}.\hskip 1em plus 0.5em minus 0.4em\relax Wiley, Nov. 1986.
-  [Online]. Available: \url{https://doi.org/10.1002/9783527617135}
-\BIBentrySTDinterwordspacing
-
-\bibitem{khan2014the}
-F.~Khan, \emph{The physics of radiation therapy}.\hskip 1em plus 0.5em minus
-  0.4em\relax Philadelphia: Lippincott Williams \& Wilkins, 2014.
 
 \bibitem{Yoo2006}
 \BIBentryALTinterwordspacing

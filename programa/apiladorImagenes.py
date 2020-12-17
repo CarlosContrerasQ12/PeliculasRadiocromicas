@@ -1,18 +1,18 @@
 import numpy as np
 import tifffile as tiff
 import matplotlib.pyplot as plt
-nombres=["/home/carlos/Escritorio/Medidas Finales 2/0GyPos5-16lines.tif",
-"/home/carlos/Escritorio/Medidas Finales 2/02GyPos5-16lines.tif",
-"/home/carlos/Escritorio/Medidas Finales 2/05GyPos5-16lines.tif",
-"/home/carlos/Escritorio/Medidas Finales 2/1GyPos5-16lines.tif",
-"/home/carlos/Escritorio/Medidas Finales 2/2GyPos5-16lines.tif",
-"/home/carlos/Escritorio/Medidas Finales 2/4GyPos5-16lines.tif",
-"/home/carlos/Escritorio/Medidas Finales 2/6GyPos5-16lines.tif",
-"/home/carlos/Escritorio/Medidas Finales 2/8GyPos5-16lines.tif",
-"/home/carlos/Escritorio/Medidas Finales 2/10GyPos5-16lines.tif",
-"/home/carlos/Escritorio/Medidas Finales 2/12GyPos5-16lines.tif",
-"/home/carlos/Escritorio/Medidas Finales 2/15GyPos5-16lines.tif",
-"/home/carlos/Escritorio/Medidas Finales 2/20GyPos5-16lines.tif"]
+nombres=["/home/carlos/Escritorio/MedidasH100/0Gy.tif",
+"/home/carlos/Escritorio/MedidasH100/02GyVolteada.tif",
+"/home/carlos/Escritorio/MedidasH100/05Gy.tif",
+"/home/carlos/Escritorio/MedidasH100/1Gy.tif",
+"/home/carlos/Escritorio/MedidasH100/2Gy.tif",
+"/home/carlos/Escritorio/MedidasH100/4Gy.tif",
+"/home/carlos/Escritorio/MedidasH100/6GySegunda.tif",
+"/home/carlos/Escritorio/MedidasH100/8Gy.tif",
+"/home/carlos/Escritorio/MedidasH100/10Gy.tif",
+"/home/carlos/Escritorio/MedidasH100/12Gy.tif",
+"/home/carlos/Escritorio/MedidasH100/15Gy.tif",
+"/home/carlos/Escritorio/MedidasH100/20Gy.tif"]
 
 arreglos=[]
 forma=(3,4)
@@ -41,8 +41,8 @@ for arr in arreglos:
 esa=arrfinal/2**16		
 plt.imshow(esa)
 plt.show()		
-tiff.imsave("imagenTotal.tif",arrfinal)	
-leido=tiff.imread("imagenPromediada.tif")
+tiff.imsave("imagenPruebaaaaaaaaaa020SEfuashdas.tif",arrfinal)	
+leido=tiff.imread("imagenPruebaaaaaaaaaa.tif")
 plt.imshow(leido/2**16	)
 plt.show()		
 		

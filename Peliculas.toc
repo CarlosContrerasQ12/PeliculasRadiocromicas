@@ -2,23 +2,30 @@
 \babel@toc {english}{}
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Marco Teórico}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Medidas de radiación ionizante}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Interacción radiación y partículas cargadas con materia}{6}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Interacción radiación materia}{6}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Interacción de partículas cargadas}{13}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Aceleradores lineales y radioterapia}{15}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Linalc}{15}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Procedimientos en radioterapia}{17}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Principios de dosimetría}{17}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Cámaras de ionización}{17}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Dosimetría con películas}{17}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Películas radiocrómicas(Estado del arte)}{17}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Procedimiento de calibración}{30}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Procedimiento de Irradiación}{30}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Particularidades de escaneo y tratamiento}{32}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Calibraciones}{37}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Mapas de dosis y comparaciones}{40}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Mapas de dosis}{40}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Análisis $\Gamma $}{42}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Conclusiones}{47}{chapter.5}%
+\contentsline {chapter}{\numberline {2}Objetivos}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Marco Teórico}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Aceleradores lineales y radioterapia}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Linac}{5}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Procedimientos en radioterapia}{7}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Interacción radiación y partículas cargadas con materia}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Interacción de fotones con materia}{7}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Interacción de partículas cargadas}{15}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Medidas de radiación ionizante}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Principios de dosimetría}{19}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Equilibrio de partículas cargadas}{19}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Cámaras de ionización}{19}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Dosimetría con películas}{19}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Películas radiocrómicas}{19}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Análisis $\Gamma $}{31}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Metodología}{34}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Procedimiento de irradiación}{34}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Escaneo y tratamiento}{37}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Resultados y análisis}{42}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Calibración}{42}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Efectos de diversos parámetros}{44}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Mapas de dosis}{45}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Comparaciones $\Gamma $}{47}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{50}{chapter.6}%
+\contentsline {chapter}{Apéndices}{51}{section*.44}%
+\contentsline {chapter}{\numberline {A}Diagramas de flujo}{51}{appendix.1.Alph1}%
+\contentsline {chapter}{\numberline {B}Documentación del programa}{52}{appendix.1.Alph2}%

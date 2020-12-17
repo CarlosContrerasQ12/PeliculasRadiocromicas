@@ -101,7 +101,7 @@ class ImagenCuadernoMatplotlib(wx.Panel):
         except:
             x = ""
             y = ""
-        if self.arrayIma.shape[0]<6:    
+        if np.mean(self.arrayIma)<0.0001:    
             self.Text.SetLabelText("%s , %s " % (x,y))
         else:
             if x!='' and y!='':
@@ -428,6 +428,7 @@ class MyFrame(wx.Frame):
             reescaldo=np.array(dicomPlan.PixelSpacing)/np.array(dicomEscan.PixelSpacing)
             reescaldo=1.0/reescaldo
             arrayEscan=rescale(dicomEscan.pixel_array,reescaldo,anti_aliasing=False)
+            print(arrayEscan.shape)
             dicomEscan.IsocenterPosition[0]=int(dicomEscan.IsocenterPosition[0]*reescaldo[0])
             dicomEscan.IsocenterPosition[1]=int(dicomEscan.IsocenterPosition[1]*reescaldo[1])
             dmm=dicomPlan.PixelSpacing[0]
@@ -450,11 +451,20 @@ class MyFrame(wx.Frame):
             tmax+=1
         if int(tamy)%2!=0:
             tamy+=1
+            
+        print("Tamano plan ",arrayPlan.shape)
+        print("Tamano escan ",arrayEscan.shape)
+        print("Centro Plan ",dicomPlan.IsocenterPosition)
+        print("Centro Escan ",dicomEscan.IsocenterPosition)
+        print("Tamano maximo x ",tmax)
+        print("Tamano maximo y ",tamy)
+        print("txi ",txi)
+        print("tya ",tya)
 
 
 
         arrayPlanAjus=poner_imagen_en_punto(arrayPlan,(int(tmax),int(tamy)),dicomPlan.IsocenterPosition,(int(txi),int(tya)))
-        arrayEscanAjus=poner_imagen_en_punto(arrayEscan,(int(tmax),int(tamy)),(dicomEscan.IsocenterPosition[1],dicomEscan.IsocenterPosition[0]),(int(txi),int(tya)))
+        arrayEscanAjus=poner_imagen_en_punto(arrayEscan,(int(tmax),int(tamy)),(dicomEscan.IsocenterPosition[0],dicomEscan.IsocenterPosition[1]),(int(txi),int(tya)))
         
         
         rez=self.arbolArchivos.AppendItem(self.raiz,"Comparacion a plan  "+str(len(self.comparacionesAPlan)+1))
