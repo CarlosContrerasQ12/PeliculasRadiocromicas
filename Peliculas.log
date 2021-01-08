@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  12 DEC 2020 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  7 JAN 2021 23:44
 entering extended mode
 **./Peliculas.tex
 (Peliculas.tex
@@ -956,7 +956,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<images/linalc.png, id=330, 641.39626pt x 460.72125pt>
+<images/linalc.png, id=341, 641.39626pt x 460.72125pt>
 File: images/linalc.png Graphic file (type png)
 <use images/linalc.png>
 Package pdftex.def Info: images/linalc.png  used on input line 27.
@@ -967,62 +967,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--30
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 [6 <./images/linalc.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
+<images/magnetron.jpg, id=355, 451.6875pt x 340.27126pt>
+File: images/magnetron.jpg Graphic file (type jpg)
+<use images/magnetron.jpg>
+Package pdftex.def Info: images/magnetron.jpg  used on input line 48.
+(pdftex.def)             Requested size: 272.99881pt x 205.67003pt.
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
+ []
+
+<images/klystron.png, id=363, 508.90125pt x 400.49625pt>
+File: images/klystron.png Graphic file (type png)
+<use images/klystron.png>
+Package pdftex.def Info: images/klystron.png  used on input line 57.
+(pdftex.def)             Requested size: 272.99881pt x 214.85309pt.
+[8 <./images/magnetron.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
+
+[9 <./images/klystron.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
@@ -1031,369 +1056,362 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
+<images/distribucionAngular.png, id=376, 395.4775pt x 335.2525pt>
+File: images/distribucionAngular.png Graphic file (type png)
+<use images/distribucionAngular.png>
+Package pdftex.def Info: images/distribucionAngular.png  used on input line 80.
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
+(pdftex.def)             Requested size: 272.99881pt x 231.42677pt.
+[10]
+<images/filtros.png, id=382, 367.3725pt x 502.87875pt>
+File: images/filtros.png Graphic file (type png)
+<use images/filtros.png>
+Package pdftex.def Info: images/filtros.png  used on input line 88.
+(pdftex.def)             Requested size: 273.01735pt x 284.52603pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--91
 
  []
 
-<images/rayleigh.png, id=349, 372.39125pt x 335.2525pt>
+[11 <./images/distribucionAngular.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+[12 <./images/filtros.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
+
+ []
+
+<images/rayleigh.png, id=401, 372.39125pt x 335.2525pt>
 File: images/rayleigh.png Graphic file (type png)
 <use images/rayleigh.png>
-Package pdftex.def Info: images/rayleigh.png  used on input line 84.
+Package pdftex.def Info: images/rayleigh.png  used on input line 137.
 (pdftex.def)             Requested size: 272.99881pt x 245.78098pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--87
+Underfull \hbox (badness 10000) in paragraph at lines 134--140
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-<images/compton.png, id=362, 584.1825pt x 367.3725pt>
-File: images/compton.png Graphic file (type png)
-<use images/compton.png>
-Package pdftex.def Info: images/compton.png  used on input line 93.
-(pdftex.def)             Requested size: 272.99881pt x 171.6841pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--96
-
- []
-
-[9 <./images/rayleigh.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--110
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
-
- []
-
-[10 <./images/compton.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
-
- []
-
-
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
+<images/compton.png, id=412, 584.1825pt x 367.3725pt>
+File: images/compton.png Graphic file (type png)
+<use images/compton.png>
+Package pdftex.def Info: images/compton.png  used on input line 146.
+(pdftex.def)             Requested size: 272.99881pt x 171.6841pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 143--149
 
  []
 
-<images/fotoelectrico.png, id=382, 693.59125pt x 516.93124pt>
+[15 <./images/rayleigh.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--170
+
+ []
+
+[16 <./images/compton.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 177--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+<images/fotoelectrico.png, id=432, 693.59125pt x 516.93124pt>
 File: images/fotoelectrico.png Graphic file (type png)
 <use images/fotoelectrico.png>
-Package pdftex.def Info: images/fotoelectrico.png  used on input line 148.
+Package pdftex.def Info: images/fotoelectrico.png  used on input line 201.
 (pdftex.def)             Requested size: 272.99881pt x 203.47176pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--151
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 156--158
-
- []
-
-[12 <./images/fotoelectrico.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
-
- []
-
-<images/produccionPares.png, id=401, 698.61pt x 318.18875pt>
-File: images/produccionPares.png Graphic file (type png)
-<use images/produccionPares.png>
-Package pdftex.def Info: images/produccionPares.png  used on input line 169.
-(pdftex.def)             Requested size: 272.99881pt x 124.34071pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
-
- []
-
-[13 <./images/produccionPares.png>]
-<images/importanciaRelativa.png, id=413, 619.31375pt x 395.4775pt>
-File: images/importanciaRelativa.png Graphic file (type png)
-<use images/importanciaRelativa.png>
-Package pdftex.def Info: images/importanciaRelativa.png  used on input line 199
-.
-(pdftex.def)             Requested size: 272.99881pt x 174.3365pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
-
- []
-
-[14 <./images/importanciaRelativa.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--254
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--265
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--268
+Underfull \hbox (badness 10000) in paragraph at lines 198--204
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 272--274
+Underfull \hbox (badness 10000) in paragraph at lines 209--211
+
+ []
+
+[18 <./images/fotoelectrico.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--280
+Underfull \hbox (badness 10000) in paragraph at lines 217--219
+
+ []
+
+<images/produccionPares.png, id=451, 698.61pt x 318.18875pt>
+File: images/produccionPares.png Graphic file (type png)
+<use images/produccionPares.png>
+Package pdftex.def Info: images/produccionPares.png  used on input line 222.
+(pdftex.def)             Requested size: 272.99881pt x 124.34071pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
+
+ []
+
+[19 <./images/produccionPares.png>]
+<images/importanciaRelativa.png, id=463, 619.31375pt x 395.4775pt>
+File: images/importanciaRelativa.png Graphic file (type png)
+<use images/importanciaRelativa.png>
+Package pdftex.def Info: images/importanciaRelativa.png  used on input line 252
+.
+(pdftex.def)             Requested size: 272.99881pt x 174.3365pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+[20 <./images/importanciaRelativa.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--283
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--289
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--292
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 302--304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
+Underfull \hbox (badness 10000) in paragraph at lines 305--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
-
- []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
-
- []
-
-<images/modelos.png, id=465, 780.9175pt x 595.22375pt>
-File: images/modelos.png Graphic file (type png)
-<use images/modelos.png>
-Package pdftex.def Info: images/modelos.png  used on input line 344.
-(pdftex.def)             Requested size: 390.0pt x 297.25693pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--347
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
-
- []
-
-<images/diacetileno.png, id=476, 645.41125pt x 280.04625pt>
-File: images/diacetileno.png Graphic file (type png)
-<use images/diacetileno.png>
-Package pdftex.def Info: images/diacetileno.png  used on input line 353.
-(pdftex.def)             Requested size: 195.0pt x 84.60847pt.
-<images/reaccion.png, id=479, 677.53125pt x 442.65375pt>
-File: images/reaccion.png Graphic file (type png)
-<use images/reaccion.png>
-Package pdftex.def Info: images/reaccion.png  used on input line 355.
-(pdftex.def)             Requested size: 195.0pt x 127.40042pt.
-[21 <./images/modelos.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
-
- []
-
-<images/absorbancia.png, id=494, 742.775pt x 555.07375pt>
-File: images/absorbancia.png Graphic file (type png)
-<use images/absorbancia.png>
-Package pdftex.def Info: images/absorbancia.png  used on input line 366.
-(pdftex.def)             Requested size: 272.99881pt x 204.01044pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--369
-
- []
-
-[22 <./images/diacetileno.png> <./images/reaccion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 371--372
-
- []
-
-<images/escaner.png, id=510, 864.22874pt x 536.0025pt>
-File: images/escaner.png Graphic file (type png)
-<use images/escaner.png>
-Package pdftex.def Info: images/escaner.png  used on input line 376.
-(pdftex.def)             Requested size: 272.99881pt x 169.31604pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 373--379
-
- []
-
-[23 <./images/absorbancia.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 340--342
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--393
-
- []
-
-[24 <./images/escaner.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 343--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
 [25]
-<images/fondoblancoLandscape-1.png, id=536, 1496.59125pt x 1200.485pt>
-File: images/fondoblancoLandscape-1.png Graphic file (type png)
-<use images/fondoblancoLandscape-1.png>
-Package pdftex.def Info: images/fondoblancoLandscape-1.png  used on input line 
-408.
-(pdftex.def)             Requested size: 195.0pt x 156.41656pt.
-<images/calibracionSimpleLandscape.png, id=537, 718.3638pt x 576.2328pt>
-File: images/calibracionSimpleLandscape.png Graphic file (type png)
-<use images/calibracionSimpleLandscape.png>
-Package pdftex.def Info: images/calibracionSimpleLandscape.png  used on input l
-ine 410.
-(pdftex.def)             Requested size: 195.0pt x 156.41144pt.
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
+
+ []
+
+<images/modelos.png, id=515, 780.9175pt x 595.22375pt>
+File: images/modelos.png Graphic file (type png)
+<use images/modelos.png>
+Package pdftex.def Info: images/modelos.png  used on input line 397.
+(pdftex.def)             Requested size: 390.0pt x 297.25693pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--400
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 402--403
+
+ []
+
+<images/diacetileno.png, id=526, 645.41125pt x 280.04625pt>
+File: images/diacetileno.png Graphic file (type png)
+<use images/diacetileno.png>
+Package pdftex.def Info: images/diacetileno.png  used on input line 406.
+(pdftex.def)             Requested size: 195.0pt x 84.60847pt.
+<images/reaccion.png, id=529, 677.53125pt x 442.65375pt>
+File: images/reaccion.png Graphic file (type png)
+<use images/reaccion.png>
+Package pdftex.def Info: images/reaccion.png  used on input line 408.
+(pdftex.def)             Requested size: 195.0pt x 127.40042pt.
+[27 <./images/modelos.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
-<images/respses.png, id=539, 808.01875pt x 538.01pt>
-File: images/respses.png Graphic file (type png)
-<use images/respses.png>
-Package pdftex.def Info: images/respses.png  used on input line 418.
-(pdftex.def)             Requested size: 195.0pt x 129.83104pt.
-[26 <./images/fondoblancoLandscape-1.png> <./images/calibracionSimpleLandscape.
-png>]
-Underfull \hbox (badness 10000) in paragraph at lines 430--432
+<images/absorbancia.png, id=544, 742.775pt x 555.07375pt>
+File: images/absorbancia.png Graphic file (type png)
+<use images/absorbancia.png>
+Package pdftex.def Info: images/absorbancia.png  used on input line 419.
+(pdftex.def)             Requested size: 272.99881pt x 204.01044pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--422
 
  []
 
-<images/curva1.png, id=551, 400.49625pt x 283.0575pt>
-File: images/curva1.png Graphic file (type png)
-<use images/curva1.png>
-Package pdftex.def Info: images/curva1.png  used on input line 437.
-(pdftex.def)             Requested size: 195.0pt x 137.8226pt.
-<images/curva2.png, id=554, 390.45876pt x 283.0575pt>
-File: images/curva2.png Graphic file (type png)
-<use images/curva2.png>
-Package pdftex.def Info: images/curva2.png  used on input line 439.
-(pdftex.def)             Requested size: 195.0pt x 141.35994pt.
-[27 <./images/respses.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+[28 <./images/diacetileno.png> <./images/reaccion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
+
+ []
+
+<images/escaner.png, id=560, 864.22874pt x 536.0025pt>
+File: images/escaner.png Graphic file (type png)
+<use images/escaner.png>
+Package pdftex.def Info: images/escaner.png  used on input line 429.
+(pdftex.def)             Requested size: 272.99881pt x 169.31604pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--432
+
+ []
+
+[29 <./images/absorbancia.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
+
+ []
+
+[30 <./images/escaner.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
@@ -1403,68 +1421,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 451--452
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+
+ []
+
+[31]
+<images/fondoblancoLandscape-1.png, id=586, 1496.59125pt x 1200.485pt>
+File: images/fondoblancoLandscape-1.png Graphic file (type png)
+<use images/fondoblancoLandscape-1.png>
+Package pdftex.def Info: images/fondoblancoLandscape-1.png  used on input line 
+461.
+(pdftex.def)             Requested size: 195.0pt x 156.41656pt.
+<images/calibracionSimpleLandscape.png, id=587, 718.3638pt x 576.2328pt>
+File: images/calibracionSimpleLandscape.png Graphic file (type png)
+<use images/calibracionSimpleLandscape.png>
+Package pdftex.def Info: images/calibracionSimpleLandscape.png  used on input l
+ine 463.
+(pdftex.def)             Requested size: 195.0pt x 156.41144pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
+
+ []
+
+<images/respses.png, id=589, 808.01875pt x 538.01pt>
+File: images/respses.png Graphic file (type png)
+<use images/respses.png>
+Package pdftex.def Info: images/respses.png  used on input line 471.
+(pdftex.def)             Requested size: 195.0pt x 129.83104pt.
+[32 <./images/fondoblancoLandscape-1.png> <./images/calibracionSimpleLandscape.
+png>]
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
+
+ []
+
+<images/curva1.png, id=601, 400.49625pt x 283.0575pt>
+File: images/curva1.png Graphic file (type png)
+<use images/curva1.png>
+Package pdftex.def Info: images/curva1.png  used on input line 490.
+(pdftex.def)             Requested size: 195.0pt x 137.8226pt.
+<images/curva2.png, id=604, 390.45876pt x 283.0575pt>
+File: images/curva2.png Graphic file (type png)
+<use images/curva2.png>
+Package pdftex.def Info: images/curva2.png  used on input line 492.
+(pdftex.def)             Requested size: 195.0pt x 141.35994pt.
+[33 <./images/respses.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
-
- []
-
-[28 <./images/curva1.png> <./images/curva2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 475--476
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 482--483
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 486--487
-
- []
-
-[29]
-<images/efectoLateral.png, id=590, 640.3925pt x 507.8975pt>
-File: images/efectoLateral.png Graphic file (type png)
-<use images/efectoLateral.png>
-Package pdftex.def Info: images/efectoLateral.png  used on input line 490.
-(pdftex.def)             Requested size: 350.99762pt x 278.3835pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 498--500
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
 
  []
 
@@ -1473,42 +1489,113 @@ Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
-[30 <./images/efectoLateral.png>]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 526.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Gamma' on input line 526.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 526.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 527--528
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--530
-
- []
-
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 535--537
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--539
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
+
+ []
+
+[34 <./images/curva1.png> <./images/curva2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--532
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
+
+ []
+
+[35]
+<images/efectoLateral.png, id=640, 640.3925pt x 507.8975pt>
+File: images/efectoLateral.png Graphic file (type png)
+<use images/efectoLateral.png>
+Package pdftex.def Info: images/efectoLateral.png  used on input line 543.
+(pdftex.def)             Requested size: 350.99762pt x 278.3835pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+
+ []
+
+[36 <./images/efectoLateral.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 579.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Gamma' on input line 579.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 579.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
+
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 588--590
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
 
  []
 
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 543.
-) [32] [33]
+ine 596.
+) [38] [39]
 Cap\'{\i }tulo 4.
 (chapters/metodologia.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1525,7 +1612,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[34
+[40
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
@@ -1537,12 +1624,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--32
 
  []
 
-[35]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-[36]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
@@ -1552,7 +1639,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-[37]
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
@@ -1562,12 +1649,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-[38]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-[39]
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
@@ -1582,7 +1669,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-[40]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
@@ -1597,7 +1684,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-) [41]
+) [47]
 Cap\'{\i }tulo 5.
 (chapters/resultados.tex
 
@@ -1630,9 +1717,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-[42
+[48
 
-] [43]
+] [49]
 Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
  []
@@ -1647,12 +1734,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-[44]
+[50]
 Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-[45] [46]
+[51] [52]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 158.
@@ -1665,22 +1752,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 158.
 
-) [47] [48] [49]
+) [53] [54] [55]
 Cap\'{\i }tulo 6.
-(chapters/conclusiones.tex) [50
+(chapters/conclusiones.tex) [56
 
 ]
 Ap\'{e}ndice A.
-(chapters/diagramasFlujo.tex) [51
+(chapters/diagramasFlujo.tex) [57
 
 
 ]
 Ap\'{e}ndice B.
-(chapters/docuPrograma.tex) (Peliculas.bbl [52
+(chapters/docuPrograma.tex) (Peliculas.bbl [58
 
-] [53
+] [59
 
-] [54] [55]) [56]
+] [60] [61] [62]) [63]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
 
@@ -1693,14 +1780,14 @@ LaTeX Info: Redefining \% on input line 26.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 129.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 129.
 Package rerunfilecheck Info: File `Peliculas.out' has not changed.
-(rerunfilecheck)             Checksum: F10B0BF88F7C72039A2FC7662787F7FA;1955.
+(rerunfilecheck)             Checksum: 680DD7919E4C17E85164A86F0CF12D92;1955.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 129.
  ) 
 Here is how much of TeX's memory you used:
- 20600 strings out of 480897
- 382852 string characters out of 2904517
- 639495 words of memory out of 3000000
- 35785 multiletter control sequences out of 15000+200000
+ 20643 strings out of 480897
+ 383677 string characters out of 2904517
+ 640846 words of memory out of 3000000
+ 35811 multiletter control sequences out of 15000+200000
  544166 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,18n,89p,934b,801s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1718,9 +1805,9 @@ ome/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></h
 ome/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></ho
 me/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></ho
 me/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Peliculas.pdf (64 pages, 3739193 bytes).
+Output written on Peliculas.pdf (71 pages, 3931100 bytes).
 PDF statistics:
- 887 PDF objects out of 1000 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
- 423 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 943 PDF objects out of 1000 (max. 8388607)
+ 231 named destinations out of 1000 (max. 500000)
+ 443 words of extra memory for PDF output out of 10000 (max. 10000000)
 

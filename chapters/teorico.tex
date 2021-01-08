@@ -30,21 +30,80 @@ Los aceleradores lineales convencionales usados en radioterapia aceleran electro
 \end{figure}
 
 \textbf{Etapa de producción de electrones}\\
-La primera etapa en la generación del haz de electrones es su producción. El proceso de obtener electrones libres lo realiza 
+
+La primera etapa en la generación del haz de electrones es su producción. El proceso de obtener electrones libres se realiza en lo que se denomina una \textit{arma de electrones}. En esta se obtienen electrones libres por medio de emisión termoiónica, en la que un material se calienta a altas temperaturas que le dan suficiente energía a los electrones para sobrepasar la función de trabajo del material y ser emitidos de este. Estos electrones se liberan de lo que es denominado un cátodo, y luego son acelerados, alineados y colimados, mediante un campo eléctrico que se genera con una diferencia de potencial de aproximadamente 25 keV respecto a uno o varios ánodos.\\
+
+El material del cátodo y del cual se van a desprender electrones se elige dependiendo de las condiciones de operación de la maquina. Para aplicaciones de baja corriente, como en los tubos de rayos catódicos, se usan óxidos metálicos que se operan a 800°$C$ y a una densidad de corriente de 1 $A/cm^2$. Sin embargo, para aplicaciones donde se requiere más capacidad de producción se usan los denominados cátodos dispensivos, que son matrices de tungsteno dopado con óxidos de bario, calcio y aluminio y son operados a temperaturas de 1100°$C$.\\ 
+
+Para tener control sobre la corriente emitida por el cátodo, se incorpora una malla de control que limita el paso de electrones del cátodo al ánodo.\\
 
 \textbf{Etapa de generación de microondas}\\
 
-\textbf{Etapa de aceleración en guía de onda}\\
+Para acelerar los electrones producidos se usa un mecanismos de resonancia con microondas. Para generar las microondas con la suficiente intensidad es posible usar un \textit{magnetrón} o un \textit{klystron}.\\
 
-\textbf{Etapa de direccionamiento de haz}\\
+En un magnetrón se tiene un cátodo en la mitad de una cavidad que emite electrones por efecto termoionico. Por medio de un par de imanes en la parte superior e inferior de la cavidad, y a través de una diferencia de potencial, estos electrones se dirigen en una trayectoria helicoidal a un ánodo que rodea el emisor. En el ánodo hay cavidades más pequeñas que sirven como circuito resonante, cuando un electrón pasa cerca se amplifica el campo electromagnético oscilante que este produce a su alrededor. Este efecto, combinado con un modulador de pulsos para controlar la producción de electrones en el cátodo, genera ondas en el espectro de 2856 MHz a 2998 MHz, que son recolectadas y posteriormente emitidas por una antena. Un diagrama del funcionamiento del magnetrón se encuentra en la figura \ref{fig:magnetron}.\\
 
-\textbf{Etapa de producción de rayos X}\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/magnetron.jpg}
+	\caption{Magnetrón}
+	\label{fig:magnetron}
+\end{figure}
 
-\textbf{Etapa de colimación y filtrado}\\
+El magnetrón se usa para acelerar electrones a energía menores a 20 MeV, en caso de requerirse energías mayores se debe usar un klystron. En un klystron se tiene de igual manera un cátodo que emite un haz de electrones por efecto termoiónico que son acelerados y dirigidos hacia un ánodo mediante una diferencia de potencial. Estos electrones son separados en paquetes mediante un campo electromagnético oscilante en una primera cavidad. Estos paquetes viajan a través de diversas cavidades, empujado electrones en estas a la misma frecuencia que el campo magnético de entrada. Este movimiento genera una amplificación de la radiofrecuencia de entrada que se emite en forma de microondas. Un esquema de un klystron se muestra en la figura \ref{fig:klystron}.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/klystron.png}
+	\caption{Klystron\cite{karzmark1993medical}}
+	\label{fig:klystron}
+\end{figure}
+
+\textbf{Etapa de aceleración en guía de onda y redireccionamiento}\\
+
+Para acelerar los electrones a la energía deseada mediante la interacción con las microondas producidas en el magnetrón o en el klystron se usa el principio de onda estacionaria. \\
+
+Inicialmente se tiene una haz de electrones colimados provenientes del arma de electrones, este haz se subdivide en paquetes de tal manera que estén distanciados media longitud de onda entre ellos. \\
+ 
+Después, estos paquetes de electrones pasan por una guía de onda particionada en cavidades con dimensiones tales que una microonda entrante por un extremo viaje a través de esta y se refleje de tal manera que se cree una onda estacionaria.  Si el tamaño de cada cavidad de la guía de onda es el adecuado, exactamente un cuarto de la longitud de onda, entonces se tendrá  un efecto de aceleración de los paquetes de electrones puesto que se van a encontrar múltiples veces con la misma fase de la onda. Como resultado se tiene un haz de paquetes de electrones acelerados hasta cierta energía dependiente del diseño de la guía de onda.\\
+
+Después del proceso de aceleración, los electrones pueden o no ser redireccionados 270 grados según la estructura del acelerador. Este proceso se realiza en lo que se denomina el gantry de la maquina y se realiza mediante la aplicación de un campo magnético que desvía a trayectoria de los electrones acelerados. Además de cambiar la dirección del haz, este proceso también sirve como filtro para electrones de muy alta o muy baja  energía que no son deseados en el haz, puesto que se desvían de la trayectoria de los demás electrones y son apartados del haz. Finalmente, se obtiene un haz uniforme de alta energía de electrones. \\ 
+
+\textbf{Etapa de producción y adecuación de rayos X}\\
+
+Para producir rayos X con mayor poder de penetración que los electrones se requiere la colisión con un objetivo de tungsteno. En este proceso, la trayectoria de los electrones es modificada por la interacción columbiana con los núcleos de los átomos del material objetivo. Este cambio de trayectoria se traduce en una aceleración sobre una partícula cargada, que en consecuencia emite cierta parte de su energía en forma de radiación electromagnética. \\
+
+Teniendo en cuenta que los electrones pueden sufrir múltiples procesos de este estilo a lo largo de su trayectoria en el material, se tiene al final un haz de rayos X distribuido en múltiples direcciones en el espacio y además con un espectro de energía que puede alcanzar hasta la energía máxima que tenían los electrones incidentes. En la figura \ref{fig:distribucionAngular} se muestra un esquema de la distribución espacial que se obtiene después de la colisión dependiendo de la energía inicial del haz de electrones. \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/distribucionAngular.png}
+	\caption{Distribución angular de rayos X producidos por la colisión con un objetivo}
+	\label{fig:distribucionAngular}
+\end{figure}
+
+Para tener control sobre la calidad geométrica del haz es necesario implementar una serie de filtros y colimadores que ajustan la forma final del haz. En la figura \ref{fig:filtrosRayosX} se muestra un esquema de los filtros usados. En este se muestra un colimador primario inmediatamente después de la producción de la radiación en el objetivo, limitando la cantidad de radiación que se dispersa en direcciones no deseadas. Después se tiene un filtro aplanador móvil, que se usa para homogeneizar espacialmente la intensidad del haz resultante y a continuación se posiciona una cámara de ionización que mide la cantidad de radiación que se ha impartido hasta el momento, para luego finalmente ser colimado por una última vez, homogeneizando más el haz resultante.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth, height=10cm]{images/filtros.png}
+	\caption{Sistema de filtrado y colimado de rayos X\cite{khan2014the}}
+	\label{fig:filtrosRayosX}
+\end{figure}
+En aplicaciones modernas se incluye un ultimo colimador denominado MLC (Multileaf Collimator) que consiste en múltiples laminas móviles de plomo que permite moldear la forma del campo final de radiación para ajustarse a geometrías convenientes en el tratamiento.\\
+
 
 \textbf{Mecanismos de soporte al funcionamiento}\\
 
+Existen sistemas auxiliares que no participan en la etapa de aceleración de electrones ni producción de rayos X, pero son cruciales para los componentes que si intervienen. Entre los principales se encuentran el sistema de refrigeración con agua, que evita el recalentamiento de los componentes por disipación de energía, así como el sistema que crea el vacío requerido para que los electrones viajen libremente sin verse alterados por moléculas de aire.\\
+
+La maquina tiene además un sistema de frenado de radiación dispersa residual que evita que esta se libere en cantidades perjudiciales al ambiente y un sistema de alineación para ajustar la geometría del haz con respecto a la posición del paciente.
+
+
 \subsection{Procedimientos en radioterapia}
+
+El principal objetivo de un tratamiento con radioterapia es eliminar células cancerígenas localizadas generando la menor cantidad de daño posible a las células sanas al rededor de estas. Realizar esta tarea de manera segura y eficiente tanto para el paciente como para el personal operativo requiere de sistemas sofisticados que se han venido perfeccionando a lo largo de los años.
+
+
 
        
 
