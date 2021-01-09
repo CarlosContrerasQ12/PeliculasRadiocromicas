@@ -96,17 +96,29 @@ En aplicaciones modernas se incluye un ultimo colimador denominado MLC (Multilea
 
 Existen sistemas auxiliares que no participan en la etapa de aceleración de electrones ni producción de rayos X, pero son cruciales para los componentes que si intervienen. Entre los principales se encuentran el sistema de refrigeración con agua, que evita el recalentamiento de los componentes por disipación de energía, así como el sistema que crea el vacío requerido para que los electrones viajen libremente sin verse alterados por moléculas de aire.\\
 
-La maquina tiene además un sistema de frenado de radiación dispersa residual que evita que esta se libere en cantidades perjudiciales al ambiente y un sistema de alineación para ajustar la geometría del haz con respecto a la posición del paciente.
+La maquina tiene además un sistema de frenado de radiación dispersa residual que evita que esta se libere en cantidades perjudiciales al ambiente y un sistema de alineación para ajustar la geometría del haz con respecto a la posición del paciente.\\
+
 
 
 \subsection{Procedimientos en radioterapia}
 
-El principal objetivo de un tratamiento con radioterapia es eliminar células cancerígenas localizadas generando la menor cantidad de daño posible a las células sanas al rededor de estas. Realizar esta tarea de manera segura y eficiente tanto para el paciente como para el personal operativo requiere de sistemas sofisticados que se han venido perfeccionando a lo largo de los años.
+El principal objetivo de un tratamiento con radioterapia es eliminar células cancerígenas localizadas generando la menor cantidad de daño posible a las células sanas al rededor de estas. Realizar esta tarea de manera segura y eficiente tanto para el paciente como para el personal operativo requiere de sistemas sofisticados que se han venido perfeccionando a lo largo de los años\cite{radioterapia}\cite{cancer.net_2020}.\\
+
+Para destruir estas células de cáncer se usa radiación ionizante producida de diferentes maneras. Esta radiación puede usarse como tratamiento principal, o como apoyo a un procedimiento de cirugía o quimioterapia. El tratamiento puede usarse para eliminar por completo el cáncer, o, en los casos donde no es posible eliminarlo, reducir su extensión para minimizar síntomas y mejorar la calidad de vida del paciente.\\
+
+Un procedimiento en radioterapia puede dejar efectos secundarios dado que no se puede eliminar solamente el tejido dañado sin eliminar parte del bueno. Algunos efectos secundarios comunes pueden ser la fatiga o problemas cutáneos, o dependiendo de la localización del cáncer, podrían haber otro tipo de efectos, como la caída del cabello, dificultad para tragar o respirar, nauseas, vomito, diarrea, incontinencia o infertilidad. Por lo general, estos síntomas son pasajeros, pero dependiendo de qué tan agresivo es el tratamiento, pueden tener consecuencias a largo plazo. Un tratamiento de radioterapia mal planeado o mal ejecutado puede traer consecuencias catastróficas, pudiendo incluso causar la muerte de un paciente.\\
+
+La radiación usada para los tratamientos puede venir de diversas fuentes. Se denomina radioterapia interna o braquiterapia cuando la fuente de la radiación es introducido dentro del paciente cerca a su tejido dañado. Pueden ser pequeños fragmentos metálicos que contienen material radioactivo que liberan la mayor parte de la radiación en el tejido dañado, o también líquidos inyectados que cumplen la misma función. Este tipo de terapia se usa cuando el tejido es de fácil acceso, como en el caso de cáncer de próstata, cabeza o cuello.\\
+
+Cuando el tejido enfermo no es de fácil acceso se puede usar la radioterapia de haz externo, en la cual se usa un haz de radiación ionizante producido externamente al paciente. Este haz puede ser de fotones, electrones o protones, dependiendo del tipo de patología y los recursos disponibles en el centro médico. En la sección anterior se describió un dispositivo usado para tratamientos con fotones, que son lo comúnmente encontrados en centros de radioterapia por su versatilidad para tratar diversos tipos de cáncer. La terapias con protones y electrones se usan en ciertos casos específicos, donde el tejido enfermo es fácilmente accesible, proporcionando menor daño al tejido sano circundante debido al menor poder penetrativo de estas partículas, siendo útiles, por ejemplo en casos de cáncer de piel.\\
+
+La terapia con fotones es la más usada y desarrollada hasta el momento, por lo que existen actualmente múltiples técnicas que minimizan los riesgos asociados a los tratamientos con radiación y velan por la comodidad del tratamiento para el paciente. Dos de las técnicas más usadas son IMRT(radioterapia de intensidad modulada) y VMAT(arcoterapia volumétrica de intensidad modulada), en las cuales se administra radiación acomodada geométricamente a la forma de la lesión, administrando altas cantidades de dosis al tejido tumoral y reduciendo la dosis entregada al tejido sano. En radioterapia IMRT se administran un numero fijo de direcciones de irradiación y distribuciones producidas por el MLC de la maquina, mientras que en VMAT la radiación administrada se va ajustando a la forma del tumor conforme se varía continuamente la dirección de irradiación con la máquina. También existen procedimientos especiales como la radiocirugia, en donde se aplican haces finos de radiación desde diversos ángulos, enfocándolos a un determinado tumor.\\
 
 
 
-       
+La función de un físico médico consiste en diseñar el plan de tratamiento para administrar la dosis requerida por el médico de manera efectiva. Para diseñar el plan se requiere apoyo de un sistema de imágenes obtenidas por tomografía o resonancia magnética que dan información espacial tridimensional de la patología del paciente. Con esta información, el físico médico se apoya en un sistema de planeación(TPS) que permite determinar la mejor manera de suministrar la radiación procurando mantener bajo los niveles estipulados la dosis entregada al tejido sano y entregando la mayor cantidad de dosis al tejido enfermo.\\
 
+En general, un tratamiento para entregar cierta cantidad de dosis se realiza a lo largo de un mes, en donde el paciente asiste diariamente a sesiones de entrega de dosis y monitoreo de la evolución de su estado. \\    
 
 \section{Interacción radiación y partículas cargadas con materia}
 \subsection{Interacción de fotones con materia}
@@ -316,9 +328,16 @@ Se define como la cantidad de energía cinética inicial de las partículas carg
 K=\frac{dE_{tr}}{dm},
 \end{equation}
 el kerma tiene unidades de $J/Kg$, denominada también Gray (Gy), ($1J/kg=1Gy$).
-En el caso de un haz de fotones, es posible relacionar el kerma con la fluencia de energía mediante el \textit{coeficiente másico de transferencia de energía}, denotado por $(\mu_{tr}/\rho)_{E,Z}$, que es característico para cada material y la energía del haz, así
+
+
+En un material el kerma puede ser separado en dos componentes, el kerma de colisión $K_c$  asociado a las interacciones columbianas con los electrones del material que disipan energía y el kerma radiativo $K_r$, asociado a perdidas de energía por procesos de radiación de frenado. Teniendo finalmente 
 \begin{equation}
-K=\Psi \left(\frac{\mu_{tr}}{\rho}\right)_{E,Z},
+	K=K_c+K_r.
+\end{equation}\\
+
+En el caso de un haz de fotones, es posible relacionar el kerma de colisión con la fluencia de energía mediante el \textit{coeficiente másico de transferencia de energía}, denotado por $(\mu_{tr}/\rho)_{E,Z}$, que es característico para cada material y la energía del haz, así
+\begin{equation}
+K_c=\Psi \left(\frac{\mu_{tr}}{\rho}\right)_{E,Z},
 \end{equation} 
 donde $\mu_{tr}$ es el \textit{coeficiente lineal de transferencia de energía}, con unidades $m^{-1}$ y $\rho$ es la densidad del material.\\
 
@@ -355,9 +374,119 @@ X=\frac{dQ}{dm},
 \end{equation}
 y tiene unidades de $C/kg$.
 \section{Principios de dosimetría}
+El objetivo principal de la dosimetría es determinar la cantidad de dosis absorbida por cierto material de manera precisa, de tal manera que sea útil para cuantificar procesos de radioterapia.
 \subsection{Equilibrio de partículas cargadas}
+En general, dado el alto nivel de abstracción requerido para definir cantidades como el kerma y la dosis absorbida, no es posible medirlas directamente en ninguna circunstancia, por lo que es necesario medir cantidades indirectas y relacionarlas con las deseadas. En la práctica es posible medir directamente cargas acumuladas en un electrodo, pero no energía absorbida por determinada sección de material. Por lo tanto, es común en dosimetría realizar una medida de exposición($X$) y relacionarla de cierta manera con la dosis absorbida en el medio($D$).\\
+
+Para realizar la conversión de información de exposición a dosis absorbida es necesario la presencia de la condición de \textit{equilibrio de partículas cargadas}(CPE, charged particle equilibrium). Esta condición existe en un volumen $V$ cuando cada partícula cargada de cierto tipo y energía que deja este volumen es reemplazada por una partícula del mismo tipo con la misma energía.  Esto se cumple para un haz de radiación ionizante externo que atraviesa un materia cuya composición atómica y densidad es homogénea y no existen campos eléctricos y magnéticos incompatibles con la geometría del volumen.\\
+
+Es posible mostrar \cite{Attix1986} que bajo esta condición y las definiciones de dosis absorbida y kerma se cumple que, para un volumen fijo 
+\begin{equation}
+	D=K_c=\Psi \frac{\mu }{\rho},
+\end{equation}
+es decir, en condiciones de equilibrio de partículas cargadas, la dosis absorbida en un punto es igual que el kerma de colisión en dicho punto.\\
+
+Más aún, si por dos medios A y B atraviesa la misma fluencia de energía $\Psi$, entonces en condiciones de equilibrio de partículas cargadas se tiene que 
+\begin{equation}
+	\frac{D_A}{D_B}=\frac{(K_c)_A}{(K_c)_B}=\frac{(\mu/\rho)_A}{(\mu/\rho)_B},
+\end{equation}
+donde $D_{A,B}$ es la dosis absorbida en cada medio, $(K_c)_{A,B}$ es el kerma de colisión en cada medio y $(\mu/\rho)_{A,B}$ son sus coeficientes de absorción de energía.\\
+
+Finalmente, la cantidad más fácil de medir en la práctica es la exposición, que en condiciones de equilibrio de partículas cargadas se puede relacionar con las dosis absorbida en aire mediante la ecuación
+\begin{equation}
+\label{eqn:ExpoDosis}
+	D_{aire}=(K_c)_{aire}=X\cdot \left(\frac{W}{e}\right)_{aire},
+\end{equation}
+en donde $X$ es la exposición medida y  $\frac{W}{e}$ es la energía de radiación ionizante requerida para extraer una carga $e$ en aire.\\
+
+Existen múltiples situaciones en las que se puede romper este equilibrio y que deben ser evitadas para poder usar estas relaciones. Por ejemplo, se debe evitar realizar mediciones cerca a la fuente de radiación, puesto que en esta región el campo es menos uniforme. De la misma manera, no se tiene equilibrio cerca a fronteras de inhomegeneidad en medios, como las que ocurren en un cambio de material. Igualmente, el equilibrio de partículas cargadas es más difícil de alcanzar en haces de alta energía(>10 MeV), para los cuales hay técnicas menos restrictivas para obtener relaciones como las anteriormente mencionadas.  
 \subsection{Cámaras de ionización}
+Si se tiene el objetivo de medir la dosis absorbida en cierto punto de un material se puede recurrir a la medición directa de cantidades como la exposición. Modernamente existen dispositivos especialmente diseñados con este objetivo y protocolos estandarizados que hacen que garantizan la precisión de las mediciones. \\
+
+La cámara de ionización es el dispositivo más usado para realizar dosimetría con la precisión que se requiere en radioterapia. Estas existen en el mercado bajo diferentes modelos útiles en variadas condiciones de energía y calidad de haz.\\
+
+El modelo fundamental usado para dosimetría absoluta en los laboratorios primarios es el modelo libre de aire. Un esquema de este modelo se representa en la figura  \ref{fig:freeAir}. En estas un haz de rayos X pasa por el diafragma D y pasa por el medio de dos platos paralelos entre los cuales existe una diferencia de tensión. Esta diferencia de tensión sirve para recolectar los iones generados por la ionización de aire entre los platos producida por la radiación ionizante. Además se tienen platos guardas para asegurar la uniformidad del campo eléctrico generado.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/freeAirChamber.png}
+	\caption{Cámara de ionización libre de aire\cite{khan2014the}}
+	\label{fig:freeAir}
+\end{figure}
+
+La carga colectada ($\Delta Q$) en los platos se puede medir precisamente mediante un electrómetro. Con esta medida se puede calcular la exposición en el punto P mediante la formula \\
+ \begin{equation}
+X=\frac{\Delta Q}{\rho \cdot A_{p}\cdot L}.
+\end{equation}
+donde $\rho$ es la densidad del aire dentro de la cámara, $A_{p}$ es el área de la sección transversal del haz en el punto P y L es la longitud del volumen de colección. Así, se tiene una medida de exposición que se puede relacionar con la dosis absorbida en el punto P mediante la formula \eqref{eqn:ExpoDosis}.
+
+Este diseño de cámara es difícil de mantener en operación de tal manera que se obtengan siempre medidas precisas, puesto que se requieren mantener condiciones muy especificas para su funcionamiento, por lo tanto su uso está confinado a laboratorios estandarizados especializados.\\
+ 
+En la practica en centros médicos comunes se deben usar otro tipo de cámaras calibradas respecto a las proporcionadas por estos laboratorios. En particular, el tipo más común es la cámara dedal, cuya estructura se presenta en la figura \ref{fig:farmer}.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/camaraIoni.png}
+	\caption{Cámara de ionización farmer\cite{khan2014the}}
+	\label{fig:farmer}
+\end{figure}
+
+Su funcionamiento es similar a la cámara de aire libre. Se tiene un filamento de aluminio en el centro y una cubierta de grafito entre los cuales existe una diferencia de potencial que recolecta los iones producidos por la ionización del aire al paso de un haz de radiación ionizante. la carga colectada entre ambos electrodos se puede medir con un electrómetro y obtener una medida de dosis absorbida en consecuencia. La estructura irregular de esta  cámara hace que el campo eléctrico adentro sea inhomogeneo, por lo tanto no hay una forma absoluta de la exposición, para lo que se recurre a un factor de calibración obtenido con cámaras de aire libres.\\
+
+Para obtener medidas fiables con este tipo de cámara se deben realizar correcciones que tengan en cuenta factores ambientales que afecten el proceso de colección de carga. Para este propósito existe el protocolo TRS 398 que permite estimar factores de corrección a las medidas para obtener una medida final fiable.\\
+
+Este protocolo permite estimar la dosis absorbida en agua midiendo diversas cantidades ambientales con la calibrada. Para obtener una medida de dosis absorbida se debe tener una medida corregida por factores de influencia de la carga colectada $M_{Q}$, un factor de calibración $N_{D_{w},Q_{0}}$ que es proporcionado por un laboratorio de calibración para la cámara usada y relaciona la carga colectada en la cámara con la dosis absorbida en esta bajo un haz de calidad $Q_0$ usado en el laboratorio de calibración, y un factor $k_{Q,Q_{0}}$ que relaciona la calidad del haz de calibración con la calidad del haz del usuario. Con estas cantidades se calcula la dosis absorbida en agua en el haz de calidad Q como
+\begin{equation}
+D_{w,Q}=M_{Q}\cdot N_{D,w,Q_{0}}\cdot k_{Q,Q_{0}}.
+\end{equation}
+
+El factor $M_{Q}$ es la medida de carga colectada en la cámara obtenida con el electrómetro, corregida con factores asociados a  magnitudes de influencia que se alteran la medida de esta cantidad.\\
+
+El primer factor esta asociado a las condiciones ambientales de presión, temperatura y humedad y que alteran la densidad del aire al interior de la cámara, por lo que alteran su capacidad de ionización. El factor de corrección asociado a esta magnitud se calcula como 
+\begin{equation}
+	k_{TP}=\frac{273.2+T}{273.2+T_0}\frac{P_0}{P},
+\end{equation}
+donde $P0,T0$ son la presión y temperatura en las condiciones de referencia, generalmente 101.3 kPa y 20 °C, y $P,T$ son la presión y temperatura en la cavidad de la cámara. Si el factor de calibración proporcionado por el laboratorio viene corregido por humedad no es necesario realizar ninguna corrección adicional, si en cambio viene reportado en aire seco se recomienda aplicar el factor $k_{h}=0.997$.\\
+
+Por otro lado, también se tiene en cuenta el efecto de la diferencia en la medida que causa la polaridad de la cámara. Al no poseer un campo eléctrico uniforme, la cámara responde diferente dependiendo de en qué electrodo se recolecten las cargas. Para evitar este efecto la cámara se debería utilizar en la misma polarización con la que fue obtenido el factor de calibración en el laboratorio. En caso de usarse diferente o no conocerse este efecto se corrige aplicando el factor
+\begin{equation}
+	k_{p}=\frac{|M_{+}|+|M_{-}|}{2M},
+\end{equation}
+donde $M_{\pm}$ son las medidas de carga obtenidas con polaridad positiva y negativa, y $M$ es la carga medida en la polaridad que se esté utilizando.\\
+
+Análogamente, se corrige el efecto de recombinación de iones, en el cual lo electrones liberados en el aire pueden volver a combinarse con iones producidos en el mismo proceso, reduciendo la cantidad de carga colectada en el electrómetro que se produjo por ionización. Para este proceso existe el factor de corrección
+\begin{equation}
+	k_s=a_0+a_1\left(\frac{M_1}{M_2}\right)++a_2\left(\frac{M_1}{M_2}\right)^2,
+\end{equation}  
+donde $M_1,M_2$ son medidas de carga colectada a voltajes de operación de la cámara  $V_1,V_2$ medidas en las mismas condiciones de irradiación y $a_0,a_1,a_2$ son parámetros dependientes del cociente $V_1/V_2$ que pueden ser consultados en \cite{TPR398}.\\
+
+Finalmente, también existe un factor de corrección por el funcionamiento del electrómetro que se obtiene cuando se este se calibra independientemente de la cámara. De esta manera, la cantidad $M_Q=M_{elctrometro}\cdot \prod k_i$.\\
+
+El factor $N_{D,w,Q_{0}}$ es el factor de calibración proporcionado por el laboratorio de calibración que se obtiene midiendo con la cámara una dosis conocida mediante otros procedimientos de dosimetría absoluta bajo un haz de calidad estándar. Por lo general, este proceso para obtener factores de calibración se debe realizar periódicamente, aproximadamente cada 2 años.\\
+
+Finalmente,para estimar el factor $k_{Q,Q_{0}}$ se usa el $TPR_{20,10}$, que es la razón entre la dosis medida a 20 cm de profundidad en agua entre la dosis medida a 10 cm de profundidad en agua en condiciones de referencia, es decir a 100 cm de la fuente y en un campo de 10x10 cm. En la figura se muestra un esquema del montaje usado para esta medición.\\
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=0.7\linewidth]{images/TPR2010.png}
+ 	\caption{Montaje $TPR_{20,10} $ en condiciones estándar\cite{TPR398}}
+ 	\label{fig:TPR2010}
+ \end{figure}
+Una vez obtenido este factor $TPR_{20,10}$, el $k_{Q,Q_{0}}$ se encuentra tabulado dependiendo de este y del modelo de la cámara usado\cite{TPR398}.\\
+
+Usando este protocolo de manera correcta se obtienen mediadas precisas de dosis absorbida en agua útiles para realizar calibraciones de los equipos usados en radioterapia y asegurar la calidad de los tratamientos.\\
+
+
+Los aceleradores lineales usados en radioterapia traen incluida una cámara de ionización que permite determinar la cantidad de dosis entregada a un paciente después de un procedimiento. El sistema expresa esta dosis en unidades monitor (UM), de las cuales se reportan 100 UM cuando se entrega una dosis de 1Gy en un fantoma de agua a 100 cm de la fuente en un campo de 10x10 cm en el isocentro de la maquina.
+
 \subsection{Dosimetría con películas}
+Si bien con dispositivos como cámaras de ionización son precisos y útiles para medir dosis absorbidas, estas no son capaces de proporcionar un mapa de intensidad de dosis en alguna región, puesto que solo realizan mediadas puntuales. Sería inconveniente tener que medir dosis punto a punto para obtener un mapa de dosis, puesto que sería un proceso lento y suceptible a errores, y no proporcionaría una resolución en el mapa útil para propósitos en dosimetría general. \\
+
+Este tipo de mapas de dosis determinados experimentalmente se requieren, por ejemplo, cuando se quiere realizar una comprobación de distribuciones espaciales de dosis entregadas a un paciente en un procedimiento de radioterapia.\\
+
+Con el objetivo de poder obtener este tipo de información se ha usado la dosimetría con películas. Este tipo de dosimetría consiste en relacionar la apariencia de una película que cambia su color dependiendo de la dosis que absorba. De tal manera, se obtiene un mapa de dosis permanente de alta resolución de una manera sencilla y precisa.\\
+
+En sus inicios, la dosimetría con películas usaba laminas fotográficas, que mediante un proceso de deposición de plata producido por la interacción con la radiación y después de un complicado proceso de revelado producía una película con información de la distribución de la dosis absorbida en ella. Este proceso ha evolucionado de diversas maneras, hoy en día su principio activo de coloración ha cambio y se denominan películas radiocrómicas, cuyo uso será estudiado en este trabajo.\\
+
+ 
 \section{Películas radiocrómicas}
 Como fue mencionado anteriormente, la verificación de calidad de los tratamientos de radioterapia es de gran importancia para asegurar su efectividad. Es necesario comprobar que las distribuciones de dosis que se planean correspondan suficientemente con las distribuciones que recibe el paciente. Uno de los métodos más usados actualmente para realizar esta verificación sobre mapas de dosis en dos dimensiones es el uso de películas radiocrómicas.\\
 
@@ -439,7 +568,7 @@ Para medir de manera práctica la absorbancia de una película irradiada existen
 
 El escáner proporciona una medida de cuánta luz deja pasar la película en cierto intervalo del espectro. Por ejemplo, en un escáner de transmitancia común  se proporciona información de cuánta intensidad transmitida $I_{tr}$ atravesó la película una intensidad inicial $I_0$. La forma más común en la que se almacena esta información en las aplicaciones consideradas es mediante una matriz RGB(red, green, blue) de 16 bits por canal. \\
 
-Es decir, se almacena como 3 capas, cada una con información de una región del espectro analizado, el verde , el rojo o el azul, y cada pixel en cada capa adquiere un valor entre $0$ y $2^{16}-1$, que representa qué tanta intensidad de luz en el espectro fue medida en la posición del pixel. Concretamente, la información que proporciona la película resulta en tres matrices, una por cada color, que en cada entrada tiene un valor numérico que representa la cantidad de luz que se midió en la posición del pixel.\\
+Es decir, se almacena como 3 capas, cada una con información de una región del espectro analizado, el verde , el rojo o el azul, y cada pixel en cada capa adquiere un valor entre $0$ y $2^{16}-1$, que representa qué tanta intensidad de luz en el espectro fue medida en la posición del pixel. Concretamente, la información que proporciona la película resulta en tres matrices, una por cada color, que en cada entrada tiene un valor numérico que representa la cantidad de luz que se midió en la posición del pixel. Además, cada matriz RGB que reprensenta una imagen escaneada tiene una resolución expresada en ppi(pixels per inch), que especifica cuantos pixeles en la imagen adquirida hay en una pulgada del obejto escaneado en el mundo real.\\
 
 Con esta información es posible construir la \textit{transmitancia}$(T)$ en cada color de cada pixel, que se define como 
 \begin{equation}
@@ -599,7 +728,7 @@ De esta manera, para $DTA$ y $DD$ fijos, se está buscando en la distribución m
 Cada punto en la distribución de referencia pasa el test de comparación con la distribución medida si su $\Gamma(\vec{r}_c)<1$, lo que quiere decir que, bajo la definición de comparación de distribuciones, estas coinciden en un valor aceptable. Gráficamente, el significado de este test de ajuste entre distribuciones es representado en la figura \ref{fig:elipseGamma}, donde un punto en la distribución de referencia pasa el test si reside en la elipse  definida por la ecuación \eqref{eqn:gamma}.\\
 \begin{figure}
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Ellipse Gamma}
+	\includegraphics[width=0.5\linewidth]{images/gammaEllipse.png}
 	\caption{Significado geométrico del test gamma }
 	\label{fig:elipseGamma}
 \end{figure}

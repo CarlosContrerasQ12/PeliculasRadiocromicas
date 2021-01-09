@@ -1,4 +1,4 @@
-
+En esta sección se presentan resultados obtenidos para la calibración usada, así como la obtención y análisis de mapas de dosis obtenidos.
 \section{Calibración}
 Como fue mencionado anteriormente, se irradiaron películas con dosis que se registran en la tabla \ref{tab:DosisIrra}, con su correspondiente incertidumbre, medidas con la cámara de ionización.
 
@@ -7,80 +7,208 @@ Como fue mencionado anteriormente, se irradiaron películas con dosis que se reg
 	\begin{tabular}{|l|l|l|}
 		\hline
 		UM& Dosis(Gy)    & Incertidumbre($10^{-5}$) \\ \hline
-		21.6&0.201472 & 3.8           \\ \hline
-		54&0.504137 & 5.23          \\ \hline
-		108&1.00825  & 35            \\ \hline
-		216&2.01783  & 22            \\ \hline
-		432&4.037486 & 31            \\ \hline
-		648&6.0583   & 48            \\ \hline
-		864&8.08168  & 142           \\ \hline
-		1080&10.1056  & 140           \\ \hline
-		1296&12.132   & 0             \\ \hline
-		1620&15.168   & 0             \\ \hline
-		2160&20.229   & 0             \\ \hline
+		21.6&0.201472 & 3.8\\ \hline
+		54&0.504137 & 5.23 \\ \hline
+		108&1.00825  & 35\\ \hline
+		216&2.01783  & 22\\ \hline
+		432&4.037486 & 31 \\ \hline
+		648&6.0583   & 48\\ \hline
+		864&8.08168  & 142\\ \hline
+		1080&10.1056  & 140\\ \hline
+		1296&12.132   & 10\\ \hline
+		1620&15.168   & 10\\ \hline
+		2160&20.229   & 10\\ \hline
 	\end{tabular}
 	\caption{Dosis irradiadas}
 	\label{tab:DosisIrra}
 \end{table}
 
-Para relacionar determinados niveles de transmitancias medidas en una película con la dosis que produjo la coloración es necesario establecer una curva de calibración. En este caso se correlacionaron los promedios de transmitancia en regiones de interés de las tres películas irradiadas con la misma dosis con la dosis medida con la cámara de ionización que produjo dicha coloración.\\
-
-El efecto que más altera estas mediciones en este caso es la posición de la película en el escáner. Así, por ejemplo, en la figura \ref{fig:curvasDezplazadas} se evidencia como cambia la curva cuando se mide las mismas películas en diferentes posiciones.\\
-
-\begin{figure}
+Las películas resultantes después de la irradiación se muestran en la figura \ref{fig:peliculasIrradiacion}. Todas las películas fueron escaneadas en la misma sección del escaner para reducir efectos de posición en la transmitancia.\\
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Efecto posición en curvas}
-	
-	\caption{Efecto de la posición de escaneo en las curvas }
-	\label{fig:curvasDezplazadas}
+	\includegraphics[width=0.7\linewidth]{images/peliculasIrradiadas.png}
+	\caption{Películas EBT3 irradiadas con dosis entre 0 y 20 Gy }
+	\label{fig:peliculasIrradiacion}
 \end{figure}
 
-Aplicando la corrección de background, un filtro de mediana y eliminando el sesgo que el escáner tiene dependiendo de la posición, se obtiene la curva presentada en la figura \ref{fig:curvaFinal}.\\
+Para relacionar determinados niveles de transmitancias medidas en una película con la dosis que produjo la coloración es necesario establecer una curva de calibración. En este caso se correlacionaron los promedios de transmitancia en regiones de interés de las tres películas irradiadas con la misma dosis con la dosis medida con la cámara de ionización que produjo dicha coloración. Con estos valores se establece la curva de calibración que se muestra en la figura \ref{fig:curvaFinal20} con sus respectivos parámetros.\\
 
-\begin{figure}
+
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Curva sin sesgo}
+\includegraphics[width=\linewidth]{images/calibracionMulti0a20.png}
 	
-	\caption{Curva de calibración sin sesgo }
+	\caption{Curva de calibración con dosis de 0 a 20 Gy }
+	\label{fig:curvaFinal20}
+\end{figure}
+
+En la cual se usó una curva del tipo 
+\begin{equation}
+D=\frac{AT+D}{T-C}.
+\end{equation}\\
+
+Según el manual del fabricante, las películas EBT3 son aptas para un rango inferior a 10 Gy, por lo que se prefieren omitir los últimos tres puntos de dosis, puesto que la película está en la región de saturación en esta región.  Además, estos puntos no aportan información adicional a los propósitos del trabajo, puesto que los planes que serán examinados no conllevan dosis tan altas. De esta manera se obtiene la curva que se muestra en la figura \ref{fig:curvaFinal}\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{images/calibracionMulti.png}
+	\caption{Curva de calibración con dosis de 0 a 10 Gy }
 	\label{fig:curvaFinal}
 \end{figure}
 
-Según el manual del fabricante, las películas EBT3 son aptas para un rango inferior a 10 Gy, por lo que se prefieren omitir los últimos dos puntos de dosis, puesto que la película está en la región de saturación en esta región.  Además, estos puntos no aportan información adicional a los propósitos del trabajo, puesto que los planes que serán examinados no conllevan dosis tan altas.\\
+En esta se evidencia que las curvas ajustadas describen mejor los datos puesto que no se ha alcanzado la región de saturación, lo cual se demuestra con los mejores test de ajuste $\chi ^2$ calculados. También se evidencia que el canal que menos se ajusta y tiene un comportamiento más por fuera de lo esperado es el azul, consecuente con el hecho que en esta longitud de onda los cambios de coloración de la película son menores. Estas curvas son las que se usan a lo largo del trabajo para calcular mapas de dosis.\\
 
-En el caso donde se usan dosis inferiores a 10 Gy se realizó un ajuste de mínimos cuadrados con una curva de la forma
-\begin{equation}
-D=\frac{AT+D}{T-C},
-\end{equation}
-la cual se ajusta bien a los datos puesto que un test $\chi^2$ muestra que $p=0.02$. \\
+También se probaron más curvas sugeridas en la literatura, sin embargo, la que mejor se ajustó a los datos con las películas EBT3 en este rango de dosis fue la anteriormente mencionada. En la figura \ref{fig:CurvasAdicionales} se muestran otros dos ajustes con las respectivas formas de la función de ajuste y su bondad de ajuste.
 
-El programa también permite realizar ajustes con otro tipo de curvas dependiendo del rango de dosis trabajado.\\
+
+\begin{figure}[H]
+	\centering
+	\subfloat[Curva cubica]{\includegraphics[width=0.7\textwidth]{images/calibracionCubica.png}\label{fig:cubic}}
+	\hfill
+	\subfloat[Curva exponencial]{\includegraphics[width=0.7\textwidth]{images/curvaCalibracionMalaExponencial.png}\label{fig:expo}}
+	\caption{Curvas de calibración con otro tipo de funciones}
+	\label{fig:CurvasAdicionales}
+\end{figure}
+
+Acá la curva \ref{fig:cubic} se ajustó a una función cúbica, pero no se pudieron estimar las incertidumbres en los coeficientes por una razón desconocida. Similarmente, en la curva \ref{fig:expo} se realizó un ajuste a una función exponencial que resulto de menor calidad comparado con la función racional usada inicialmente. Se debe notar que en este caso las curvas relacionan las cantidades  de densidad óptica con dosis absorbida y no de transmitancia directamente.\\
+
+Finalmente, la única curva para realizar el  procedimiento de calibración multicanal fue la curva propuesta inicialmente, esto dado que las demás son susceptibles a errores numéricos que causan inestabilidad en el método de minimización usado.
 
 
 \section{Efectos de diversos parámetros}
- En la figura \ref{fig:filtros} se evidencia el efecto suavizador de diversos filtros en una imagen de prueba. \\
-\begin{figure}
+
+Para evaluar los efectos de diversos factores en la digitalización y posterior conversión de películas radicrómicas en mapas de dosis se estudiaron varios ejemplos. \\
+
+En primer lugar, se estudió el efecto de la posición en el área de escaneo en la transmitancia medida con el escáner. Para esto se examina el comportamiento de la transmitancia de una película sin irradiar a lo largo de un perfil horizontal y vertical en esta. Con este objetivo, la digitalización de la placa que se muestra en la figura \ref{fig:fondoCero} se transformó en un mapa de dosis al cual se le extrajeron los perfiles horizontales y verticales que se muestran en la figura \ref{fig:perfiles}.\\
+
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Filtros}
-	
-	\caption{Efecto de diversos filtros}
-	\label{fig:filtros}
+	\includegraphics[width=0.7\linewidth]{images/imagenFondoCero.png}
+	\caption{Curva de calibración con dosis de 0 a 10 Gy }
+	\label{fig:fondoCero}
 \end{figure}
 
-
-En la figura \ref{fig:efectoOrientacion} se evidencia la incidencia de este efecto en la  medición de algunas dosis cuando la película está orientada de forma paralela y perpendicular a la lampara del escáner. \\
-
-\begin{figure}
+\begin{figure}[ht] 
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Efecto orientación}
-	
-	\caption{Efecto de la orientación de la película respecto al escáner }
+	\begin{minipage}[b]{0.6\linewidth}
+		\centering
+		\includegraphics[width=.5\linewidth]{images/imagenPerfilMapaCeroHorizontal.png} 
+		\caption{Perfil horizontal} 
+		\label{fig:perhor}
+		\vspace{4ex}
+	\end{minipage}%%
+	\begin{minipage}[b]{0.6\linewidth}
+		\centering
+		\includegraphics[width=.5\linewidth]{images/imagenPerfilMapaCeroVertical.png} 
+		\caption{Perfil vertical} 
+		\vspace{4ex}
+	\end{minipage} 
+	\begin{minipage}[b]{0.6\linewidth}
+		\centering
+		\includegraphics[width=.5\linewidth]{images/perfilDosisCeroHorizontal.png} 
+		\caption{Perfil de dosis horizontal} 
+		\vspace{4ex}
+	\end{minipage}%% 
+	\begin{minipage}[b]{0.6\linewidth}
+		\centering
+		\includegraphics[width=.5\linewidth]{images/perfilDosisCeroVerticalEnCentro.png} 
+		\caption{Perfil de dosis vertical} 
+		\vspace{4ex}
+	\end{minipage} 
+\caption{Perfiles de dosis de película sin irradiar}
+\label{fig:perfiles} 
+\end{figure}
+
+En estos perfiles se evidencia un sesgo sistemático en la dosis predicha para la película en cada punto. Se esperaría que, salvo variaciones muy pequeñas, los perfiles de dosis siempre dieran valores cercanos a cero. Sin embargo se observan varios comportamientos defectuosos reportados en la literatura. Se evidencia que en los tres canales de color se sobre-estima la dosis cuando el punto de estimación está lejos del eje central del escáner, es decir, cerca de los bordes.\\
+
+También se evidencia que el canal azul proporciona medidas erradas de dosis por la poca sensibilidad que tiene la película en ese rango de dosis, lo que permite decir que no debe ser usado para otros objetivas más que la calibración multicanal.\\
+
+Otra propiedad que permite evidenciar estos perfiles es la gran cantidad de ruido que mide el escáner, lo cual se ve las grandes variaciones locales en los perfiles de dosis. Esto es consecuencia de varios factores, el principal de ellos son los pixeles defectuosos que el escáner pueda tener. Para identificar estos pixeles defectuosos se cubrió el área de escaneo que se estaba usando con abundante cartulina negra, obteniendo la imagen escaneada que se muestra en la figura \ref{fig:fondoNegro}. En detalle se observan los pixeles absorben luz cuando no deberían. \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/FondoNegro.png}
+	\caption{Pixeles defectuosos del escáner }
+	\label{fig:fondoNegro}
+\end{figure}
+
+Para corregir parte de este ruido en las posteriores tomas se escaneo cada imagen múltiples veces, lo que reduce la cantidad de pixeles defectuosos.\\
+
+Para continuar realizando pruebas en los métodos usados se analiza el cuadrado de 5 Gy de 10x10 cm que se irradió. La película resultante se muestra en la figura \ref{fig:cuadrado5Gy}. En este se muestran los puntos fiduciales que se usan para identificar el eje del campo.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/peliculaCuadrado.png}
+	\caption{Película irradiada con cuadrado de 5 Gy }
+	\label{fig:cuadrado5Gy}
+\end{figure}
+
+Este cuadrado sirve para identificar fácilmente las ventajas del método multicanal con respecto a la calibración mediante canales individuales. En la figura \ref{fig:MapaCuadrado} se muestra el mapa de dosis del cuadrado obtenido junto con la sepración que este método realiza de las partes de la transmitancia que son independientes de la dosis que se absorbió.\\
+\begin{figure}[H]
+	\centering
+	\subfloat[Mapa de dosis del cuadrado de 5 Gy]{\includegraphics[width=0.5\textwidth]{images/mapaCuadradoConMulticanal.png}\label{fig:MapaCuadradoMulti}}
+	\hfill
+	\subfloat[Defectos de la película obtenidos con el método multicanal]{\includegraphics[width=0.8\textwidth]{images/imperfeccionesPeliculaCuadrado.png}\label{fig:fondoCuadrado5Gy}}
+	\caption{Mapa de dosis obtenido con el método multicanal}
+	\label{fig:MapaCuadrado}
+\end{figure}
+
+En el mapa de defectos se encuentran tanto los puntos fiduciales, como las barras transportadoras propias del escáner. Estas componentes ya no son tenidas en cuenta en el calculo de dosis de cada punto. Esto resulta finalmente en un mapa de dosis más limpio, libre de una gran parte de irregularidades y efectos asociados a inhomogeneidades de la película.\\
+
+Podemos comparar los perfiles de dosis sobre una linea que pasa por centro de cuadrado obtenidos con canales individuales y usando el método multicanal. En la figura \ref{fig:perfilesMapaCuadrado} se muestran perfiles centrales obtenidos con cada método. Se observa cómo se reduce el rudio con el método multicanal, resultando en un medida fiable de la dosis obtenida en cada punto. 
+\begin{figure}[H]
+	\centering
+	\subfloat[Perfil de dosis central con método de un solo canal]{\includegraphics[width=0.7\textwidth]{images/perfilDosisCuadradoUnoSolo.png}\label{fig:perfilSolo}}
+	\hfill
+	\subfloat[Perfil de dosis central con método multicanal ]{\includegraphics[width=0.7\textwidth]{images/perfilDosisCuadradoMulticanal.png}\label{fig:perfilMultiple}}
+	\caption{Perfil central de dosis en película con cuadrado de 5 Gy}
+	\label{fig:perfilesMapaCuadrado}
+\end{figure}
+
+Otra manera de observar la superioridad del método multicanal sobre el método de un solo canal es observar el mismo perfil, que se muestra en la figura \ref{fig:perfilCero}, sobre la película sin irradiar como en la figura \ref{fig:perhor} pero ahora en el mapa calculado con la calibración multicanal. Aquí se evidencia también que este método es útil para corregir la sobreestimación debida a la cercanía al borde del escáner.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/perfilHorizontalDeDosisCeroMulticanal.png}
+	\caption{Perfil de dosis horizontal en película sin irradiar con método multicanal }
+	\label{fig:perfilCero}
+\end{figure}
+
+También se produjo la separación de las componentes independientes de dosis en la película sin irradiar, las cuales se muestran en la figura \ref{fig:irregularCero} 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/fondoIndependienteDosisPeliculaCero.png}
+	\caption{Irregularidades en película sin escanear obtenidas con método multicanal }
+	\label{fig:irregularCero}
+\end{figure}
+
+Por otro lado, también se investigó la diferencia en ruido al usar canales de color de 8 o 16 bits. En la figura  \ref{fig:8o16} se muestran perfiles centrales para el cuadrado de 5 Gy cuando la película se escanea en modo de 8 y 16 bits. Aquí se evidencia que usando 8 bits se presentan mayores diferencias entre las dosis calculadas en cada canal debido a la menor capacidad de diferenciar colores. Se encontró que, contrario a lo que se esperaba, usar 8 bits de profundidad por canal de color presenta más ruido en la determinación de la dosis que usar canales de 16 bits.\\
+\begin{figure}[H]
+	\centering
+	\subfloat[Perfil de dosis central con profundidad de 8 bits]{\includegraphics[width=0.7\textwidth]{images/perfilCuadradoMenosBit.png}\label{fig:perfil8}}
+	\hfill
+	\subfloat[Perfil de dosis central con profundidad de 16 bits ]{\includegraphics[width=0.7\textwidth]{images/perfilDosisCuadradoUnoSolo.png}\label{fig:perfil16}}
+	\caption{Perfil central de dosis en película con cuadrado de 5 Gy a 8 y 16 bits de profundidad de color}
+	\label{fig:8o16}
+\end{figure}
+
+Finalmente, se comprobó la dependencia de la transmitancia mediada en el escáner dependiendo de la orientación de la película con respecto a la lampara de escaneo, provocada por la polarización que ocurre en la medida. Este efecto se ve en las curvas de calibración presentadas en la figura \ref{fig:efectoOrientacion}, en las cuales se evidencia un desplazamiento en las transmitancias promedio cuando se rota la misma película 90 grados en la misma posición de escaneo.\\
+\begin{figure}[H]
+	\centering
+	\subfloat[Curva de calibración con películas sin rotar]{\includegraphics[width=0.7\textwidth]{images/calibracion0-20-sinRotar.png}\label{fig:sinRotar}}
+	\hfill
+	\subfloat[Curvas de calibración con películas rotadas 90 grados ]{\includegraphics[width=0.7\textwidth]{images/calibracion0-20-Rotadas.png}\label{fig:perfil16}}
+	\caption{Efecto de la orientación de escaneo sobre las transmitancias medidas}
 	\label{fig:efectoOrientacion}
 \end{figure}
+Este efecto no es significativo en las medidas tomadas siempre y cuando se procuren orientar las películas cada vez en la misma dirección con respecto a la lampara del escáner.\\
+
+No fue posible comprobar el efecto de otras variables como la temperatura y el tiempo post-exposición dadas las restricciones de tiempo y movilidad que se presentaron en el transcurso del trabajo, además de la poca capacidad de control que se tiene sobre estas variables en el transcurso del proceso.\\
 
 \section{Mapas de dosis}
 
 
-Como primer plan de tratamiento y a modo de prueba se irradió un plan de tratamiento piramidal, que produjo un patrón en la película que se observa en la figura \ref{fig:piramideEscaneada}.\\
+El plan piramidal de prueba produjo una película resultante que se ilustra en la figura \\
 \begin{figure}
 	\centering
 	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento}

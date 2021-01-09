@@ -41,6 +41,14 @@ F.~H. Attix, \emph{Introduction to Radiological Physics and Radiation
   [Online]. Available: \url{https://doi.org/10.1002/9783527617135}
 \BIBentrySTDinterwordspacing
 
+\bibitem{TPR398}
+\BIBentryALTinterwordspacing
+\emph{Absorbed Dose Determination in External Beam Radiotherapy}, ser.
+  Technical Reports Series.\hskip 1em plus 0.5em minus 0.4em\relax Vienna:
+  INTERNATIONAL ATOMIC ENERGY AGENCY, 2001, no. 398. [Online]. Available:
+  \url{https://www.iaea.org/publications/5954/absorbed-dose-determination-in-external-beam-radiotherapy}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Devic2016}
 \BIBentryALTinterwordspacing
 S.~Devic, N.~Tomic, and D.~Lewis, ``Reference radiochromic film dosimetry:
@@ -58,6 +66,18 @@ W.~Crijns, F.~Maes, U.~A. van~der Heide, and F.~V. den Heuvel, ``Calibrating
   page sized gafchromic {EBT}3 films,'' \emph{Medical Physics}, vol.~40, no.~1,
   p. 012102, Jan. 2013. [Online]. Available:
   \url{https://doi.org/10.1118/1.4771960}
+\BIBentrySTDinterwordspacing
+
+\bibitem{radioterapia}
+\BIBentryALTinterwordspacing
+``Imrt-vmat.'' [Online]. Available:
+  \url{http://www.radioterapiahm.com/new-page-3}
+\BIBentrySTDinterwordspacing
+
+\bibitem{cancer.net_2020}
+\BIBentryALTinterwordspacing
+``Qué es la radioterapia,'' Aug 2020. [Online]. Available:
+  \url{https://www.cancer.net/es/desplazarse-por-atenci%C3%B3n-del-c%C3%A1ncer/c%C3%B3mo-se-trata-el-c%C3%A1ncer/radioterapia/qu%C3%A9-es-la-radioterapia}
 \BIBentrySTDinterwordspacing
 
 \bibitem{McLaughlin1965}

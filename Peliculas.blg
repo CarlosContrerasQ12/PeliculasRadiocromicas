@@ -10,28 +10,28 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
-Repeated entry---line 116 of file references.bib
+Repeated entry---line 130 of file references.bib
  : @inproceedings{Williams2011
  :                            ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 227 of file references.bib
+I was expecting a `,' or a `}'---line 241 of file references.bib
  :  
  :  publisher={University of Wollongong}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "maya" isn't style-file defined
---line 230 of file references.bib
-I was expecting a `,' or a `}'---line 234 of file references.bib
+--line 244 of file references.bib
+I was expecting a `,' or a `}'---line 248 of file references.bib
  :  
  :  publisher={Universidad Nacional de Colombia}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 315 of file references.bib
+I was expecting a `,' or a `}'---line 329 of file references.bib
  :  
  :  url="http://www.gafchromic.com/documents/EBT3_Specifications.pdf",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 322 of file references.bib
+I was expecting a `,' or a `}'---line 336 of file references.bib
  :  
  :  url="http://www.gafchromic.com/documents/EBT2_Specifications.pdf",
 (Error may have been on previous line)
@@ -39,49 +39,50 @@ I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty author and editor in TPR398
 Warning--empty booktitle in Williams2011
 Warning--empty journal in mayers
 
 Done.
-You've used 32 entries,
+You've used 35 entries,
             4087 wiz_defined-function locations,
-            1056 strings with 14294 characters,
-and the built_in function-call counts, 26795 in all, are:
-= -- 2267
-> -- 678
-< -- 231
-+ -- 374
+            1074 strings with 14803 characters,
+and the built_in function-call counts, 27783 in all, are:
+= -- 2338
+> -- 681
+< -- 232
++ -- 377
 - -- 129
-* -- 1373
-:= -- 4100
-add.period$ -- 63
-call.type$ -- 32
-change.case$ -- 26
+* -- 1418
+:= -- 4270
+add.period$ -- 69
+call.type$ -- 35
+change.case$ -- 28
 chr.to.int$ -- 486
-cite$ -- 34
-duplicate$ -- 1869
-empty$ -- 1923
+cite$ -- 38
+duplicate$ -- 1955
+empty$ -- 2037
 format.name$ -- 147
-if$ -- 6180
+if$ -- 6403
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 329
-newline$ -- 165
+int.to.str$ -- 35
+missing$ -- 347
+newline$ -- 180
 num.names$ -- 32
-pop$ -- 676
+pop$ -- 734
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2065
+skip$ -- 2143
 stack$ -- 0
-substring$ -- 1240
-swap$ -- 1685
-text.length$ -- 69
+substring$ -- 1242
+swap$ -- 1732
+text.length$ -- 70
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 32
-warning$ -- 2
+type$ -- 35
+warning$ -- 3
 while$ -- 109
-width$ -- 34
-write$ -- 405
+width$ -- 37
+write$ -- 433
 (There were 5 error messages)

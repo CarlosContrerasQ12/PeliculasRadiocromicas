@@ -171,14 +171,25 @@ class PanelMapaDosis2(wx.Panel):
         y=np.linspace(0,self.parent.paginaActual.arrayIma.shape[0],self.parent.paginaActual.arrayIma.shape[0])
         arrnorm=self.parent.paginaActual.arrayIma[:,:,0]/self.normalizacion
         ima=ImagenMatplotlibLibre(self.parent)
-        self.axR=ima.figure.add_axes([0.25, .03, 0.50, 0.02])
+        self.axR=ima.figure.add_axes([0.25, .1, 0.50, 0.02])
+        self.axR2=ima.figure.add_axes([0.25, .15, 0.50, 0.02])
+        self.axR3=ima.figure.add_axes([0.25, .2, 0.50, 0.02])
         self.spor = Slider(self.axR, '%', 0, 100.0, valinit=50, valstep=1)
+        self.spor2 = Slider(self.axR2, '%', 0, 100.0, valinit=50, valstep=1)
+        self.spor3 = Slider(self.axR3, '%', 0, 100.0, valinit=50, valstep=1)
         def update(val):
             iv=self.spor.val
+            iv2=self.spor2.val
+            iv3=self.spor3.val
             ima.ax.clear()
             ima.ax.contour(x, y, arrnorm - iv/100.0, levels = [0],colors=['red'])
+            ima.ax.contour(x, y, arrnorm - iv2/100.0, levels = [0],colors=['blue'])
+            ima.ax.contour(x, y, arrnorm - iv3/100.0, levels = [0],colors=['green'])
+            
             ima.figure.canvas.draw_idle()
         self.spor.on_changed(update)  
+        self.spor2.on_changed(update)  
+        self.spor3.on_changed(update)  
         ima.Show()
         event.Skip()
 

@@ -41,7 +41,7 @@ for arr in arreglos:
 esa=arrfinal/2**16		
 plt.imshow(esa)
 plt.show()		
-tiff.imsave("imagenPruebaaaaaaaaaa020SEfuashdas.tif",arrfinal)	
+tiff.imsave("imagenFinalFinal.tif",arrfinal)	
 leido=tiff.imread("imagenPruebaaaaaaaaaa.tif")
 plt.imshow(leido/2**16	)
 plt.show()		
