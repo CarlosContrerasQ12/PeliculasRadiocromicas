@@ -1,7 +1,14 @@
 En esta sección se describe el procedimiento para obtener la curva de calibración que se usó, así como detalles técnicos del montaje experimental y los implementos que se requirieron. 
 \section{Procedimiento de irradiación}
-Los procedimientos de irradiación se realizaron con un acelerador True Bream de  Varian, operado a 6 $ MeV$ con filtro aplanador. Este acelerador fue calibrado con cámara de ionización para comprobar la fiabilidad de que la dosis entregada correspondiera con las unidades monitor requeridas.\\
+Los procedimientos de irradiación se realizaron con un acelerador True Bream de  Varian, operado a 6 $ MeV$ con filtro aplanador. Este acelerador fue calibrado con cámara de ionización para comprobar la fiabilidad de que la dosis entregada correspondiera con las unidades monitor requeridas. Una fotografía del montaje usado en el procedimiento se muestra en la figura \ref{fig:fotoMontaje}.\\
 
+\begin{figure}
+	\centering
+	% \missingfigure is from todonotes
+	\includegraphics[width=0.7\linewidth]{images/20200826_205559.jpg}
+	\caption{Montaje de calibración del acelerador}
+	\label{fig:fotoMontaje}
+\end{figure}
 Para obtener la curva se irradiaron fragmentos de películas EBT3 del mismo lote de aproximadamente 5 cm x 5 cm, cortados manualmente con un bisturí. El proceso de corte despega la lamina protectora de la película, por lo que se debe tener en cuenta no usar las regiones cercanas al corte en la obtención de medidas para la calibración, puesto que cambian las propiedades ópticas con respecto a la región lejana al corte. \\
 
 Por otro lado, toda manipulación de las películas se realizó con guantes de nitrilo para no dejar residuos que podrían tener cierto efecto en la medida de la transmitancia. \\
@@ -10,7 +17,7 @@ Para la irradiación se alineó, con la ayuda de luz de campo, la gratícula del
 \begin{figure}
 	\centering
 	% \missingfigure is from todonotes
-	\includegraphics[width=0.5\linewidth]{images/alineacionCampo.jpg}
+	\includegraphics[width=0.7\linewidth]{images/alineacionCampo.jpg}
 	\caption{Alineación de la película ajustada con el isocentro del acelerador}
 	\label{fig:MontajePelicula}
 \end{figure}
@@ -56,15 +63,17 @@ Finalmente, se calcularon los mapas de dosis obtenidos mediante las películas y
 \section{Escaneo y tratamiento}
 Para la fase de digitalización se usó un escáner ScanMaker 1000XL en modo de transmisión que tiene un área operativa de 30.48 cm x 40.64 cm, eligiendo el modo RGB con 16 bits por canal, desactivando los filtros y correcciones automáticas y usando una resolución de 100 ppi siguiendo las recomendaciones propuestas en \cite{Devic2016}. Con esta configuración, se obtienen imágenes a color en formato TIFF de alrededor de 10 MB de tamaño, dependiendo del tamaño del área escaneada. Esta imagen sin ningún tipo de compresión se puede traducir a una matriz de pixeles con valores entre $0$ y $2^{16}-1$ por cada canal de color que puede ser leída mediante diferentes paquetes de programación. En este caso se usa la librería de python tiffread para la lectura. \\
 
+
+
 Dependiendo de la aplicación buscada, podría ser necesaria una mayor resolución para identificar gradientes de dosis que ocurren en pequeñas escalas, como aquellos que se utilizan en procedimientos de radiocirugia. En este caso, se podría usar una resolución mayor, por ejemplo de 150 ppi, teniendo en cuenta que se debe realizar nuevamente una calibración, puesto que aumentar la resolución cambia significativamente los valores de transmitancia promedio en determinada área escaneada de una película. Esto se debe a que conforme aumenta la resolución, se hacen visibles más detalles en las películas, como partículas de polvo, rayones o anillos de Newton, si la resolución es suficientemente alta, que terminan afectando el color de la imagen en ciertas regiones. En general, no se recomienda usar resoluciones superiores a 200 ppi.\cite{Devic2016}\\
 
 Por otro lado, la elección de un menor número de bits por canal, por ejemplo de 8, si bien reduce la cantidad de ruido en la señal de cada canal, también reduce la capacidad de diferenciar dos colores diferentes debidos a la absorción de dosis diferentes. Esto es poco deseable para aplicaciones donde se requiera medir la dosis con una incertidumbre menor, o los gradientes no sean tan pronunciados. Dado esto, y las herramientas existentes para corregir el posible ruido, es común ahora usar siempre 16 bits por canal de color.\\
 
 Un aspecto importante a tener en cuenta al digitalizar una película es el efecto que tienen los defectos del escáner sobre los colores medidos en él. Existen diferentes características que deben ser tenidas en cuenta y corregidas al momento de realizar una medición de densidad óptica. La primera de ellas es la cantidad de pixeles dañados que tiene el escáner, o áreas donde su eficiencia de recolección esté proporcionando medidas no acordes a la cantidad de luz que se recolecta. Estos pixeles se pueden identificar tomando una imagen cuando la lampara del escáner está completamente opacada, en cuyo caso no se debería obtener medida alguna.  \\
 
-En la figura \ref{fig:pixelesDanados} se muestra una imagen del escáner cuando la lampara fue opacada con abundante cartulina negra. Aquellos pixeles con una medida de color diferente de cero son los que poseen problemas de medida y deben ser tratados de alguna manera. En este caso, se proporcionan dos maneras de corregir este efecto, la primera es identificando estos pixeles y para cada imagen tomada en la misma área, reemplazar el valor de transmitancia medido en la posición del pixel dañado por el promedio de los valores que lo rodean. La segunda forma es mediante la aplicación de algún filtro a las imágenes escaneadas, sin la necesidad de identificar uno a uno los pixeles dañados. Particularmente, el filtro de la mediana usado comúnmente en procesamiento de imágenes es útil para remover este tipo de pixeles dañados.\\ 
+En la figura \ref{fig:fondoNegro} se muestra una imagen del escáner cuando la lampara fue opacada con abundante cartulina negra. Aquellos pixeles con una medida de color diferente de cero son los que poseen problemas de medida y deben ser tratados de alguna manera. En este caso, se proporcionan dos maneras de corregir este efecto, la primera es identificando estos pixeles y para cada imagen tomada en la misma área, reemplazar el valor de transmitancia medido en la posición del pixel dañado por el promedio de los valores que lo rodean. La segunda forma es mediante la aplicación de algún filtro a las imágenes escaneadas, sin la necesidad de identificar uno a uno los pixeles dañados. Particularmente, el filtro de la mediana usado comúnmente en procesamiento de imágenes es útil para remover este tipo de pixeles dañados.\\ 
 
-Otra característica del escáner que afecta de gran manera las medidas es la posición donde se ubica la película en el momento de la lectura. En general, se esperaría que la transmitancia de la misma película medida en diferentes posiciones del escáner fuera similar, sin embargo, efectos ópticos de diversas clases modifican esta medida dependiendo de la posición, sobre todo en escáneres de cierta antigüedad como el que se está usando.\\
+Otra característica del escáner que afecta de gran manera las medidas es la posición donde se ubica la película en el momento de la lectura. En general, se esperaría que la transmitancia de la misma película medida en diferentes posiciones del escáner fuera similar, sin embargo, efectos ópticos de diversas clases modifican esta medida dependiendo de la posición, sobre todo en escáneres de cierta antigüedad como el que se está usando. Para reducir efectos de dependencia de posición, se uso siempre la parte central superior del escáner para digitalizar las imágenes.\\
 
 Los escáneres más modernos poseen un sesgo menos pronunciado, proporcionando una medida uniforme independiente de la posición del pixel escaneado. Sin embargo, para corregir de cierta manera este efecto, el programa también incluye la opción de restar el sesgo a cada medida a partir de una medida de una película sin irradiar. De esta manera, el cambio de coloración es ajustado con respecto a como varía la respuesta en función de la ubicación escaneada. \\
 

@@ -422,7 +422,10 @@ class MyFrame(wx.Frame):
         dicomEscan=pydicom.dcmread(dialComparar.rutaEscan)
         arrayPlan=dicomPlan.pixel_array
         arrayEscan=dicomEscan.pixel_array
+        print(np.max(arrayEscan))
+        print(np.max(arrayPlan))
         dicomPlan.IsocenterPosition=[int(arrayPlan.shape[0]/2),int(arrayPlan.shape[1]/2),0]
+        dicomEscan.IsocenterPosition=[int(arrayEscan.shape[0]/2),int(arrayEscan.shape[1]/2)+10,0]
         dmm=0
         if dicomPlan.PixelSpacing[0]>=dicomEscan.PixelSpacing[0]:
             reescaldo=np.array(dicomPlan.PixelSpacing)/np.array(dicomEscan.PixelSpacing)
@@ -481,12 +484,20 @@ class MyFrame(wx.Frame):
         self.paginaActual=self.paginas[-1]
         a1=figActual.gca()
         
+        print(np.max(arrayEscanAjus))
+        print(np.max(arrayPlanAjus))
+        
 
         arrayPlanAjus=arrayPlanAjus*dicomPlan.DoseGridScaling
         arrayEscanAjus=arrayEscanAjus*dicomEscan.DoseGridScaling
         
-        arrayPlanAjus=arrayPlanAjus/np.max(arrayPlanAjus)
-        arrayEscanAjus=arrayEscanAjus/np.max(arrayEscanAjus)
+        print(np.max(arrayEscanAjus))
+        print(np.max(arrayPlanAjus))
+        
+        hsd=np.max(arrayPlanAjus)/10
+        arrayPlanAjus=arrayPlanAjus/10
+        arrayEscanAjus=(arrayEscanAjus*1/np.max(arrayEscanAjus))*hsd*0.98
+
         
         self.arayActual=[arrayPlanAjus,arrayEscanAjus]
         self.paginas[-1].arrayIma=[arrayPlanAjus,arrayEscanAjus]

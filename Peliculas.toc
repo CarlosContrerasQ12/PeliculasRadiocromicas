@@ -26,8 +26,8 @@
 \contentsline {section}{\numberline {5.1}Calibración}{59}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Efectos de diversos parámetros}{64}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Mapas de dosis}{74}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Comparaciones $\Gamma $}{75}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{79}{chapter.6}%
-\contentsline {chapter}{Apéndices}{80}{section*.58}%
-\contentsline {chapter}{\numberline {A}Diagramas de flujo}{80}{appendix.1.Alph1}%
-\contentsline {chapter}{\numberline {B}Documentación del programa}{81}{appendix.1.Alph2}%
+\contentsline {section}{\numberline {5.4}Comparaciones $\Gamma $}{80}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{86}{chapter.6}%
+\contentsline {chapter}{Apéndices}{87}{section*.63}%
+\contentsline {chapter}{\numberline {A}Diagramas de flujo}{87}{appendix.1.Alph1}%
+\contentsline {chapter}{\numberline {B}Documentación del programa}{89}{appendix.1.Alph2}%

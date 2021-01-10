@@ -81,6 +81,9 @@ class PerfilDoble():
             
         xs=np.linspace(0,self.longes,ys1.shape[0])
         self.ax2.clear()
+        self.ax2.set_xlabel("Longitud(px)")
+        self.ax2.set_ylabel("Dosis(Gy)")
+        self.ax2.grid()
         
         self.ax2.plot(xs,ys1,'r')
         self.ax2.plot(xs,ys2,'g')
@@ -204,15 +207,29 @@ class PanelComparacionAPlan(wx.Panel):
         arrnorm=self.parent.paginaActual.arrayIma[0]/self.normalizacion
         arrnorm1=self.parent.paginaActual.arrayIma[1]/self.normalizacion
         ima=ImagenMatplotlibLibre(self.parent)
-        self.axR=ima.figure.add_axes([0.25, .03, 0.50, 0.02])
+        ima.ax.set_position(([0.25, 0.3, 0.5,0.5]))
+        self.axR=ima.figure.add_axes([0.25, 0.1, 0.50, 0.02])
+        self.axR2=ima.figure.add_axes([0.25, 0.15, 0.50, 0.02])
+        self.axR3=ima.figure.add_axes([0.25, 0.2, 0.50, 0.02])
         self.spor = Slider(self.axR, '%', 0, 100.0, valinit=50, valstep=1)
+        self.spor2 = Slider(self.axR2, '%', 0, 100.0, valinit=50, valstep=1)
+        self.spor3 = Slider(self.axR3, '%', 0, 100.0, valinit=50, valstep=1)
+
         def update(val):
             iv=self.spor.val
+            iv2=self.spor2.val
+            iv3=self.spor3.val
             ima.ax.clear()
             ima.ax.contour(x, y, arrnorm - iv/100.0, levels = [0],colors=['red'])
-            ima.ax.contour(x, y, arrnorm1 - iv/100.0, levels = [0],colors=['green'])
+            ima.ax.contour(x, y, arrnorm - iv2/100.0, levels = [0],colors=['green'])
+            ima.ax.contour(x, y, arrnorm - iv3/100.0, levels = [0],colors=['blue'])
+            ima.ax.contour(x, y, arrnorm1 - iv/100.0, levels = [0],colors=['red'], linestyles=['dashed'])
+            ima.ax.contour(x, y, arrnorm1 - iv2/100.0, levels = [0],colors=['green'], linestyles=['dashed'])
+            ima.ax.contour(x, y, arrnorm1 - iv3/100.0, levels = [0],colors=['blue'], linestyles=['dashed'])
             ima.figure.canvas.draw_idle()
         self.spor.on_changed(update)  
+        self.spor2.on_changed(update)  
+        self.spor3.on_changed(update)  
         ima.Show()
         event.Skip()
         event.Skip()

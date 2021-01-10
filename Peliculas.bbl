@@ -25,6 +25,12 @@
 E.~B. Podgorsak, \emph{Radiation physics for medical physicists}.\hskip 1em
   plus 0.5em minus 0.4em\relax Heidelberg New York: Springer, 2010.
 
+\bibitem{magne}
+\BIBentryALTinterwordspacing
+``El magnetrón y el horno microondas.'' [Online]. Available:
+  \url{https://www.fayerwayer.com/2011/05/el-magnetron-y-el-horno-microondas-viva-el-ingenio/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{karzmark1993medical}
 C.~J. Karzmark, \emph{Medical electron accelerators}.\hskip 1em plus 0.5em
   minus 0.4em\relax New York: McGraw-Hill, Inc., Health Professions Division,
@@ -66,6 +72,14 @@ W.~Crijns, F.~Maes, U.~A. van~der Heide, and F.~V. den Heuvel, ``Calibrating
   page sized gafchromic {EBT}3 films,'' \emph{Medical Physics}, vol.~40, no.~1,
   p. 012102, Jan. 2013. [Online]. Available:
   \url{https://doi.org/10.1118/1.4771960}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Micke2011}
+\BIBentryALTinterwordspacing
+A.~Micke, D.~F. Lewis, and X.~Yu, ``Multichannel film dosimetry with
+  nonuniformity correction,'' \emph{Medical Physics}, vol.~38, no.~5, pp.
+  2523--2534, May 2011. [Online]. Available:
+  \url{https://doi.org/10.1118/1.3576105}
 \BIBentrySTDinterwordspacing
 
 \bibitem{radioterapia}
@@ -169,14 +183,6 @@ Y.~Li, L.~Chen, J.~Zhu, and X.~Liu, ``The combination of the error correction
   methods of {GAFCHROMIC} {EBT}3 film,'' \emph{{PLOS} {ONE}}, vol.~12, no.~7,
   p. e0181958, Jul. 2017. [Online]. Available:
   \url{https://doi.org/10.1371/journal.pone.0181958}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Micke2011}
-\BIBentryALTinterwordspacing
-A.~Micke, D.~F. Lewis, and X.~Yu, ``Multichannel film dosimetry with
-  nonuniformity correction,'' \emph{Medical Physics}, vol.~38, no.~5, pp.
-  2523--2534, May 2011. [Online]. Available:
-  \url{https://doi.org/10.1118/1.3576105}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Winiecki2009}

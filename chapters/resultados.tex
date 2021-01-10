@@ -208,98 +208,147 @@ No fue posible comprobar el efecto de otras variables como la temperatura y el t
 \section{Mapas de dosis}
 
 
-El plan piramidal de prueba produjo una película resultante que se ilustra en la figura \\
-\begin{figure}
+El plan piramidal de prueba produjo una película resultante que se ilustra en la figura \ref{fig:piramideEscaneada}.\\
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento}
-	
-	\caption{Pelicula EBT3 irradiada con plan de piramide }
+	\includegraphics[width=0.7\linewidth]{images/peliculaPiramide.png}
+	\caption{Película EBT3 irradiada con plan de pirámide }
 	\label{fig:piramideEscaneada}
 \end{figure}
 
-En la figura \ref{fig:mapaPiramide} se muestra el mapa de dosis calculado con la digitalización anterior, junto al mapa de dosis que calculó el sistema de planeación en el mismo plano. Para alinear estos planes se usaron cuatro puntos fiduciales y un proceso de registro usando la librería SimpleITK de python.\\
+En la figura \ref{fig:mapaPiramide} se muestra el mapa de dosis calculado con la digitalización anterior, junto con la parte independiente de dosis que proporciona el método multicanal.\\
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada}
-	
-	\caption{Mapa de dosis calculado experimental y computacionalmente }
+	\subfloat[Mapa de dosis obtenido para el plan piramide]{\includegraphics[width=0.5\textwidth]{images/mapaDosisPiramidePelicula.png}\label{fig:mapaPiramideFInal}}
+	\hfill
+	\subfloat[Parte independiente de dosis para el plan piramide ]{\includegraphics[width=0.5\textwidth]{images/fondoIndependienteMapaPiramide.png}\label{fig:indepPiramide}}
+	\caption{Mapa de dosis escaneado para el plan pirámide}
 	\label{fig:mapaPiramide}
 \end{figure}
 
-Se pueden obtener diversas estadísticas para comparar estos planes, por ejemplo, en la figura \ref{fig:perfilesDosisPiramide} se muestran perfiles de dosis a diferentes niveles que muestran una concordancia entre las dosis calculadas de ambas maneras.\\
-\begin{figure}
+Se pueden usar diversas herramientas para comparar estos planes, por ejemplo, en la figura \ref{fig:perfilesDosisPiramide} se muestran perfiles de dosis a diferentes niveles que muestran una concordancia entre las dosis calculadas en ambos mapas. Esta concordancia es aproximada, presentando una ligera subestimación de la dosis planeada usando la película escaneada. Esto podría deberse a factores como el ruido en la imagen y las condiciones de escaneo. Sin embargo es evidente la concordancia espacial que se presenta en ambas.\\
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada}
+	\includegraphics[width=0.7\linewidth]{images/perfilCentralPiramide.png}
 	
-	\caption{Perfiles de dosis en diferentes planos }
+	\caption{Perfiles central de dosis para plan pirámide }
 	\label{fig:perfilesDosisPiramide}
 \end{figure}
-Igualmente, en la figura \ref{fig:histogramasDosisPiramide} se muestran comparaciones de los histogramas de dosis obtenidos.\\
-\begin{figure}
+Es útil comparar estos mapas normalizados con respecto a un valor. De esta manera, aunque se pierda información relativa a la dosis depositada en cada punto, es más efectiva para comprobar similitudes en las distribuciones espaciales de las dosis entregadas. Un perfil de dosis normalizado se muestra en la figura \ref{fig:perfilesDosisPiramideNorm}, en este caso se normaliza con respecto al máximo de dosis en cada mapa.\\
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada histograma}
+	\includegraphics[width=0.7\linewidth]{images/perfilPiramideNormalizado.png}
 	
-	\caption{Histogramas de dosis para plan pirámide }
-	\label{fig:histogramasDosisPiramide}
+	\caption{Perfiles central de dosis normalizado para plan pirámide }
+	\label{fig:perfilesDosisPiramideNorm}
 \end{figure}
 
-Finalmente, en la figura \ref{fig:isodosisPiramide}  se presentan curvas de isodosis de estos mapas.\\ 
-\begin{figure}
+Con este perfil se evidencia que el mapa producido con la película corresponde de buena manera con el mapa calculado con por el TPS.\\
+
+Por otro lado, en la figura \ref{fig:isodosisPiramide}  se presentan curvas de isodosis de estos mapas para tres porcentajes sobre el valor de normalización. En linea solida se muestran las isodosis calculadas sobre el mapa producido por el TPS, mientras que en lineas punteadas se muestran las isodosis con el mismo porcentaje de dosis pero calculadas con respecto al mapa obtenido con la película. En este caso, cada mapa está normalizado con respecto a la dosis máxima en cada uno. \\ 
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada isodosis}
-	
-	\caption{Curvas de isodosis para plan pirámide }
+	\includegraphics[width=0.7\linewidth]{images/isodosisPiramide2.png}
+	\caption{Curvas de isodosis para el plan pirámide calculadas sobre el TPS y la película escaneada  }
 	\label{fig:isodosisPiramide}
 \end{figure}
 
-Similarmente, se realiza un análisis comparativo del plan de tratamiento de mama 
-\begin{figure}
+Se evidencia que las formas de las isodosis concuerdan, aunque también se hace presente la gran cantidad de ruido en los mapas producidos con las películas, aún cuando se aplicaron filtros sobre estas para reducirlo. Esta cantidad de ruido es inesperado y podría deberse a a la calidad del escáner usado. \\
+
+Así mismo, se realiza un análisis comparativo del plan de tratamiento de mama, que produjo la película que se muestra en la figura \ref{fig:mamaEscaneada}.\\
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento mama}
-	
-	\caption{Plan de tratamiento de mama escaneado }
+	\includegraphics[width=0.7\linewidth]{images/peliculaMama.png}
+	\caption{Película EBT3 irradiada con plan de tratamiento de mama }
 	\label{fig:mamaEscaneada}
 \end{figure}
-\begin{figure}
+Usando el método multicanal se obtiene el mapa de dosis que se muestra en la figura \ref{fig:mapaMAma} , junto con la parte independiente de dosis de la película.
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Mapas de dosis mama}
-	
-	\caption{Mapa de dosis para plan de mama }
-	\label{fig:mapaMama}
+	\subfloat[Mapa de dosis obtenido para el plan de mama]{\includegraphics[width=0.5\textwidth]{images/mapaDosisMamaPelicula.png}\label{fig:mapaMAmaFInal}}
+	\hfill
+	\subfloat[Parte independiente de dosis para el plan de tratamiento de mama ]{\includegraphics[width=0.5\textwidth]{images/fondoIndependienteMama.png}\label{fig:indepMama}}
+	\caption{Mapa de dosis escaneado para el plan pirámide}
+	\label{fig:mapaMAma}
 \end{figure}
-\begin{figure}
+
+En la figura \ref{fig:mamaPerfil} se muestra un perfil de dosis normalizado horizontal que pasa por la parte central del plan para los mapas calculado por el TPS y obtenido con la película. Se evidencia la concordancia relativa entre ambos perfiles, aunque por la complejidad del plan se observa mayor dispersión con respecto al perfil obtenido en el plan pirámide.\\
+
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada isodosis}
-	
-	\caption{Curvas de isodosis para plan pirámide }
-	\label{fig:histogramaMama}
+	\includegraphics[width=0.7\linewidth]{images/perfilDosisMama.png}
+	\caption{Perfil en el plan de tratamiento de mama }
+	\label{fig:mamaPerfil}
 \end{figure}
-\begin{figure}
+
+Del mismo modo, en la figura \ref{fig:mamaIsodosis} se muestran tres curvas de isodosis comparadas en las producidas por el TPS y las obtenidas con la película. También se evidencia una concordancia entre estas, aunque un poco más distorsionadas por el ruido en la película.
+
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Plan de tratamiento piramide comparada isodosis}
-	
-	\caption{Curvas de isodosis para plan pirámide }
-	\label{fig:isodosisMama}
+	\includegraphics[width=0.7\linewidth]{images/curvasIsodosisMama.png}
+	\caption{Curvas de isodosis superpuestas para el plan de tratamiento de mama }
+	\label{fig:mamaIsodosis}
 \end{figure}
 
 \section{Comparaciones $\Gamma$}
 
-En el caso del plan pirámide, se obtiene la matriz $\Gamma$ mostrada en la figura \ref{fig:gammaPiramide}, así como el histograma de $\Gamma$ que evalúa la correspondencia general de los pixeles en ambas distribuciones.\\
-\begin{figure}
+Para testear la implementación del calculo de $\Gamma$ se compararon los planes que se muestran en la figura \ref{fig:barraAtravesa} con un análisis gamma de 1 mm y 1\%. Esto se realizo mediante el programa IBA y el implementado en el desarrollo propio con la liberia phymedphys de python.
+
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Gamma Piramide}
-	\caption{Análisis $\Gamma$ para plan piramide }
-	\label{fig:gammaPiramide}
+	\subfloat[Mapa piramidal con una barra del MLC puesta]{\includegraphics[width=0.5\textwidth]{images/piramideAtravesada}\label{fig:mapaPiramideAtrav}}
+	\hfill
+	\subfloat[Mapa piramidal sin la barra del MLC ]{\includegraphics[width=0.5\textwidth]{images/piramideTPS2.png}\label{fig:mapaPiramideA}}
+	\caption{Planes para testeo de implementación del cálculo $\Gamma$}
+	\label{fig:barraAtravesa}
 \end{figure}
 
-Finalmente, en el caso del plan de tratamiento se mama, se muestra el mismo análisis en la figura \ref{fig:gammaMama}
-\begin{figure}
+Las matrices gamma obtenidas con ambas implementaciones concuerdan y se muestran en la figura \ref{fig:barraAtravesaGamma}. El porcentaje de aprobación de pixeles es del 97\% calculado por ambos programas, lo que permite asegurar que la implementación es correcta. Además, se resalta que la matriz gamma identifica plenamente las regiones donde se presentan las diferencias importantes entre planes. 
+
+\begin{figure}[H]
 	\centering
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Gamma mama}
-	\caption{Análisis $\Gamma$ para plan de tratamiento de mama}
-	\label{fig:gammaMama}
+	\subfloat[Matriz $\Gamma$ obtenida con el programa IBA]{\includegraphics[width=0.5\textwidth]{images/gammaAtravesada.png}\label{fig:GammaIBA}}
+	\hfill
+	\subfloat[Matrix $\Gamma$ obtenida con la implentación phymedphys ]{\includegraphics[width=0.5\textwidth]{images/gammaAtravesada.png}\label{fig:GammaPropio}}
+	\caption{Matrices $\Gamma$ calculadas con dos implementaciones}
+	\label{fig:barraAtravesaGamma}
 \end{figure}
+
+Una vez comprobada la efectividad en el calculo de $\Gamma$, se procede a realizar el mismo análisis sobre los planes escaneados. En el caso del plan pirámide, se obtiene la matriz $\Gamma$ mostrada en la figura \ref{fig:matrixGAmmaPiramide}, y en la figura \ref{fig:histogramaGAmmaPiramide} se muestra el histograma de $\Gamma$ que evalúa la correspondencia general de los pixeles en ambas distribuciones.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{images/gammaPiramideCalor.png}
+	\caption{Matriz $\Gamma$ obtenida para el plan de tratamiento piramidal }
+	\label{fig:matrixGAmmaPiramide}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{images/histogramaGammaPiramide.png}
+	\caption{Histograma $\Gamma$ obtenida para el plan de tratamiento piramidal  }
+	\label{fig:histogramaGAmmaPiramide}
+\end{figure}
+
+Se evidencia una correspondencia del 97\% bajo un análisis de $\Gamma$ de 2mm y 2\% omitiendo los pixeles cuyo valor es menor a 5\% del máximo en cada plan. Esto permite concluir que el plan ejecutado corresponde en gran medida con el planeado en el TPS, aún teniendo en cuenta la gran cantidad de ruido  que tiene el mapa producido con la película. Esto es de esperar dada la simplicidad de este plan de prueba, en la que la simulación que realiza el sistema de planeación corresponde muy bien con las condiciones reales en las que se ejecuta la irradiación.\\
+
+Finalmente, en el caso del plan de tratamiento se mama, se muestra el mismo análisis $\Gamma$ bajo los mismos parámetros. En la figura \ref{fig:matrixGAmmaMAma} se encuentra la matriz $\Gamma$ calculada para este plan con respecto a la película escaneada. Y en la figura \ref{fig:histogramaGAmmaMama} se muestra el histograma de los valores de gamma en los pixeles. En este caso el porcentaje de aprobación es de 87\%, menor que el obtenido en el plan pirámide. Esto es de esperar por la mayor complejidad del plan, el ruido en la película, y la dificultad para superponer manualmete los mapas de dosis, lo que induce una desviación muy grande en el resultado final.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/gammaMama.png}
+	\caption{Matriz $\Gamma$ obtenida para el plan de tratamiento de mama }
+	\label{fig:matrixGAmmaMAma}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/histogramaDosisMama.png}
+	\caption{Histograma $\Gamma$ obtenida para el plan de tratamiento de mama  }
+	\label{fig:histogramaGAmmaMama}
+\end{figure}
+
+Estaba planeado realizar comparaciones para estos planes con mapas de fluencias producidos con dosimetría Portal con detectores de silicio, sin mebargo, esto no fue posible dadas las restricciones de tiempo.
+
 
 
 

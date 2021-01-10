@@ -7,7 +7,7 @@ from matplotlib.backends.backend_wxagg import NavigationToolbar2WxAgg as Navigat
 
 class ImagenMatplotlibLibre(wx.Dialog):
     def __init__(self, parent, id=-1, dpi=None, **kwargs):
-        wx.Dialog.__init__(self, parent, id=id, **kwargs)
+        wx.Dialog.__init__(self, parent, id=id, style= wx.DEFAULT_DIALOG_STYLE | wx.RESIZE_BORDER)
         self.figure = mpl.figure.Figure(dpi=dpi)
         self.ax=self.figure.gca()
         self.arr=''

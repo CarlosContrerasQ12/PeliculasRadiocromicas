@@ -151,6 +151,8 @@ class PanelMapaDosis2(wx.Panel):
     def histograma(self, event):  # wxGlade: MyDialog.<event_handler>
         ima=ImagenMatplotlibLibre(self.parent)
         ima.ax.hist(self.parent.paginaActual.arrayIma[:,:,0].flatten())
+        ima.ax.set_xlabel("Dosis(Gy)")
+        ima.ax.set_ylabel("Numero de pixeles")
         ima.Show()
     
         
@@ -171,9 +173,10 @@ class PanelMapaDosis2(wx.Panel):
         y=np.linspace(0,self.parent.paginaActual.arrayIma.shape[0],self.parent.paginaActual.arrayIma.shape[0])
         arrnorm=self.parent.paginaActual.arrayIma[:,:,0]/self.normalizacion
         ima=ImagenMatplotlibLibre(self.parent)
-        self.axR=ima.figure.add_axes([0.25, .1, 0.50, 0.02])
-        self.axR2=ima.figure.add_axes([0.25, .15, 0.50, 0.02])
-        self.axR3=ima.figure.add_axes([0.25, .2, 0.50, 0.02])
+        ima.ax.set_position(([0.25, 0.3, 0.5,0.5]))
+        self.axR=ima.figure.add_axes([0.25, 0.1, 0.50, 0.02])
+        self.axR2=ima.figure.add_axes([0.25, 0.15, 0.50, 0.02])
+        self.axR3=ima.figure.add_axes([0.25, 0.2, 0.50, 0.02])
         self.spor = Slider(self.axR, '%', 0, 100.0, valinit=50, valstep=1)
         self.spor2 = Slider(self.axR2, '%', 0, 100.0, valinit=50, valstep=1)
         self.spor3 = Slider(self.axR3, '%', 0, 100.0, valinit=50, valstep=1)

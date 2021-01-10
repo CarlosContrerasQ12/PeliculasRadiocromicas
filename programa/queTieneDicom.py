@@ -2,7 +2,7 @@ from pydicom import dcmread
 import pydicom
 import matplotlib.pyplot as plt
 ds = dcmread('piramide2.dcm')
-ds2 = dcmread('piramide.dcm')
+ds2 = dcmread('Mapa de dosis-cuadradol.dcm')
 print(ds)
 print(ds2)
 
