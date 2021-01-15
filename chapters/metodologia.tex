@@ -1,19 +1,17 @@
 En esta sección se describe el procedimiento para obtener la curva de calibración que se usó, así como detalles técnicos del montaje experimental y los implementos que se requirieron. 
 \section{Procedimiento de irradiación}
-Los procedimientos de irradiación se realizaron con un acelerador True Bream de  Varian, operado a 6 $ MeV$ con filtro aplanador. Este acelerador fue calibrado con cámara de ionización para comprobar la fiabilidad de que la dosis entregada correspondiera con las unidades monitor requeridas. Una fotografía del montaje usado en el procedimiento se muestra en la figura \ref{fig:fotoMontaje}.\\
+Los procedimientos de irradiación se realizaron con un acelerador True Bream de  Varian, operado a 6 $ MeV$ con filtro aplanador. Este acelerador fue calibrado con cámara de ionización siguiendo el protocolo TRS 398 para comprobar la fiabilidad de que la dosis entregada correspondiera con las unidades monitor requeridas. Una fotografía del montaje usado en el procedimiento se muestra en la figura \ref{fig:fotoMontaje}.\\
 
 \begin{figure}
 	\centering
 	% \missingfigure is from todonotes
-	\includegraphics[width=0.7\linewidth]{images/20200826_205559.jpg}
+	\includegraphics[width=0.7\linewidth]{images/TRS398Editado2.jpg}
 	\caption{Montaje de calibración del acelerador}
 	\label{fig:fotoMontaje}
 \end{figure}
-Para obtener la curva se irradiaron fragmentos de películas EBT3 del mismo lote de aproximadamente 5 cm x 5 cm, cortados manualmente con un bisturí. El proceso de corte despega la lamina protectora de la película, por lo que se debe tener en cuenta no usar las regiones cercanas al corte en la obtención de medidas para la calibración, puesto que cambian las propiedades ópticas con respecto a la región lejana al corte. \\
+Para obtener la curva se irradiaron fragmentos de películas EBT3 del mismo lote de aproximadamente 5 cm x 5 cm, cortados manualmente con un bisturí. El proceso de corte despega la lamina protectora de la película, por lo que se debe tener en cuenta no usar las regiones cercanas al corte en la obtención de medidas para la calibración, puesto que cambian las propiedades ópticas con respecto a la región lejana al corte. Por otro lado, toda manipulación de las películas se realizó con guantes de nitrilo para no dejar residuos que podrían tener cierto efecto en la medida de la transmitancia. \\
 
-Por otro lado, toda manipulación de las películas se realizó con guantes de nitrilo para no dejar residuos que podrían tener cierto efecto en la medida de la transmitancia. \\
-
-Para la irradiación se alineó, con la ayuda de luz de campo, la gratícula del acelerador, los láseres del cuarto de tratamiento, y el telémetro, cada trozo de película con el isocentro del acelerador. Cada película fue irradiada en el centro de un campo de 20 x 20 cm a 100 cm del foco para lograr uniformidad de campo en la región donde se encuentra la película. Además, se usaron 5 cm de agua sólida PTW/IBA encima de la película y 5 cm debajo de ella para tener en cuenta efectos de la retro dispersión de la radiación. En la figura  \ref{fig:MontajePelicula} se muestra el montaje usado para la irradiación.\\
+Para la irradiación se alineó, con la ayuda de luz de campo, la gratícula del acelerador, los láseres del cuarto de tratamiento, y el telémetro incorporado en el acelerador, cada trozo de película con el isocentro del acelerador. Cada película fue irradiada en el centro de un campo de 20 x 20 cm a 100 cm del foco para lograr uniformidad de campo en la región donde se encuentra la película. Además, se usaron 5 cm de agua sólida PTW/IBA encima de la película y 5 cm debajo de ella para tener en cuenta efectos de la retro dispersión de la radiación. En la figura  \ref{fig:MontajePelicula} se muestra el montaje usado para la irradiación en el caso de la película sin recortar.\\
 \begin{figure}
 	\centering
 	% \missingfigure is from todonotes
@@ -22,18 +20,19 @@ Para la irradiación se alineó, con la ayuda de luz de campo, la gratícula del
 	\label{fig:MontajePelicula}
 \end{figure}
 
-Con el objetivo de medir los cambios de coloración que se dan debido a la radiación, se planearon irradiar películas con dosis entre 0 y 20 Gy. Con el objetivo de comprobar que el cambio de color fuera unívocamente correspondiente a la dosis depositada, por cada dosis elegida se irradiaron tres películas, para luego comparar su cambio de coloración y determinar si se reproduce el mismo cambio en las tres.\\ 
+Con el objetivo de medir los cambios de coloración que se dan debido a la radiación, se planeó irradiar películas con dosis entre 0 y 20 Gy. Con el objetivo de comprobar que el cambio de color fuera unívocamente correspondiente a la dosis depositada, por cada dosis elegida se irradiaron tres películas, para luego comparar su cambio de coloración y determinar si se reproduce el mismo cambio en las tres.\\ 
 
 
 Para determinar experimentalmente las dosis que se irradiaron se usó un montaje con una cámara de ionización Farmer 30010 PTW Freiburg GmbH junto con un electrómetro, siguiendo el protocolo TRS398 descrito anteriormente. Así, por cada cantidad fija de unidades monitor que se programaron con la máquina, se realizó la medición de la dosis efectiva depositada a la misma profundidad de agua solida y distancia a la fuente que se usó en la irradiación de las películas. Esta medición se realizo diez veces para las primeras cuatro dosis, siete veces para la quinta dosis, cinco veces para las siguientes tres y finalmente tres veces para las últimas tres dosis. El montaje de lectura con el electrómetro se muestra en la figura \ref{fig:Montajeelectrometro}\\
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	% \missingfigure is from todonotes
-	\missingfigure[figwidth=\linewidth,figcolor=white]{Lectura de dosis}
+	\includegraphics[width=0.7\linewidth]{images/elctrometro.jpg}
 	
 	\caption{Montaje para determinación de dosis}
 	\label{fig:Montajeelectrometro}
 \end{figure}
+
 La cantidad de unidades monitor que se requieren entregar para lograr determinada dosis absorbida en el plano de la película se calcularon mediante el sistema de planeación Eclipse. Para esto se tomó un TAC del agua solida y la cámara de ionización y se reconstruyó la geometría bajo la cual fueron realizados los cálculos.\\
 
 Por otro lado, para realizar comparaciones entre mapas de dosis de tratamientos calculados con el sistema de planeación y los mapas de dosis obtenidos mediante la calibración  se irradiaron dos planes. En primer lugar, se irradió un plan pirámide, que en el plano de la película produce un mapa de dosis calculado por el sistema como se ilustra en la figura \ref{fig:TPSPiramide}\\
@@ -56,7 +55,7 @@ Posteriormente, se irradió un plan de tratamiento IMRT de cáncer de mama colap
 	\label{fig:TPSMama}
 \end{figure}
 
-Por otro lado, también se irradio un cuadrado con 5 Gy usando las laminas del MLC para formar un campo de 10 x 10 cm para realizar la comprobación más sencilla de la eficiencia del proceso de calibración.\\
+Por otro lado, también se irradio un cuadrado con 5 Gy usando las láminas del MLC para formar un campo de 10 x 10 cm para realizar la comprobación más sencilla de la eficiencia del proceso de calibración.\\
 
 Finalmente, se calcularon los mapas de dosis obtenidos mediante las películas y se compararon con los mapas calculados usando diversas herramientas, incluyendo el análisis $\Gamma$.
 
@@ -65,19 +64,11 @@ Para la fase de digitalización se usó un escáner ScanMaker 1000XL en modo de 
 
 
 
-Dependiendo de la aplicación buscada, podría ser necesaria una mayor resolución para identificar gradientes de dosis que ocurren en pequeñas escalas, como aquellos que se utilizan en procedimientos de radiocirugia. En este caso, se podría usar una resolución mayor, por ejemplo de 150 ppi, teniendo en cuenta que se debe realizar nuevamente una calibración, puesto que aumentar la resolución cambia significativamente los valores de transmitancia promedio en determinada área escaneada de una película. Esto se debe a que conforme aumenta la resolución, se hacen visibles más detalles en las películas, como partículas de polvo, rayones o anillos de Newton, si la resolución es suficientemente alta, que terminan afectando el color de la imagen en ciertas regiones. En general, no se recomienda usar resoluciones superiores a 200 ppi.\cite{Devic2016}\\
+En la figura \ref{fig:fondoNegro} se muestra una imagen del escáner cuando la lampara fue opacada con abundante cartulina negra. Para corregir estos pixeles se usó una combinación entre las técnicas de supresión de ruido con background y filtrado con filtros de Wiener y mediana. \\
 
-Por otro lado, la elección de un menor número de bits por canal, por ejemplo de 8, si bien reduce la cantidad de ruido en la señal de cada canal, también reduce la capacidad de diferenciar dos colores diferentes debidos a la absorción de dosis diferentes. Esto es poco deseable para aplicaciones donde se requiera medir la dosis con una incertidumbre menor, o los gradientes no sean tan pronunciados. Dado esto, y las herramientas existentes para corregir el posible ruido, es común ahora usar siempre 16 bits por canal de color.\\
+Para reducir efectos de dependencia de posición, se usó siempre la parte central superior del escáner para digitalizar las imágenes. De esta manera, el sesgo sería siempre el mismo y podría ser corregido con el método multicanal propuesto.\\
 
-Un aspecto importante a tener en cuenta al digitalizar una película es el efecto que tienen los defectos del escáner sobre los colores medidos en él. Existen diferentes características que deben ser tenidas en cuenta y corregidas al momento de realizar una medición de densidad óptica. La primera de ellas es la cantidad de pixeles dañados que tiene el escáner, o áreas donde su eficiencia de recolección esté proporcionando medidas no acordes a la cantidad de luz que se recolecta. Estos pixeles se pueden identificar tomando una imagen cuando la lampara del escáner está completamente opacada, en cuyo caso no se debería obtener medida alguna.  \\
-
-En la figura \ref{fig:fondoNegro} se muestra una imagen del escáner cuando la lampara fue opacada con abundante cartulina negra. Aquellos pixeles con una medida de color diferente de cero son los que poseen problemas de medida y deben ser tratados de alguna manera. En este caso, se proporcionan dos maneras de corregir este efecto, la primera es identificando estos pixeles y para cada imagen tomada en la misma área, reemplazar el valor de transmitancia medido en la posición del pixel dañado por el promedio de los valores que lo rodean. La segunda forma es mediante la aplicación de algún filtro a las imágenes escaneadas, sin la necesidad de identificar uno a uno los pixeles dañados. Particularmente, el filtro de la mediana usado comúnmente en procesamiento de imágenes es útil para remover este tipo de pixeles dañados.\\ 
-
-Otra característica del escáner que afecta de gran manera las medidas es la posición donde se ubica la película en el momento de la lectura. En general, se esperaría que la transmitancia de la misma película medida en diferentes posiciones del escáner fuera similar, sin embargo, efectos ópticos de diversas clases modifican esta medida dependiendo de la posición, sobre todo en escáneres de cierta antigüedad como el que se está usando. Para reducir efectos de dependencia de posición, se uso siempre la parte central superior del escáner para digitalizar las imágenes.\\
-
-Los escáneres más modernos poseen un sesgo menos pronunciado, proporcionando una medida uniforme independiente de la posición del pixel escaneado. Sin embargo, para corregir de cierta manera este efecto, el programa también incluye la opción de restar el sesgo a cada medida a partir de una medida de una película sin irradiar. De esta manera, el cambio de coloración es ajustado con respecto a como varía la respuesta en función de la ubicación escaneada. \\
-
-Otra manera de corregir esta falta de uniformidad es mediante el método de calibración multicanal expuesto anteriormente. En \cite{Micke2011} se reporta que este método para predecir dosis aporta en la separación de cambios de color debidos a defectos del escáner y cambios de color debidos a la irradiación propiamente. En la figura \ref{fig:Multicanal} se evidencia como el uso de este método puede usarse para separar la parte dependiente de la dosis del color de la parte que es dependiente de las heterogeneidades del escáner, en este caso se usa el ejemplo propuesto en \cite{Micke2011}. \\
+En \cite{Micke2011} se reporta que este método para predecir dosis aporta en la separación de cambios de color debidos a defectos del escáner y cambios de color debidos a la irradiación propiamente. En la figura \ref{fig:Multicanal} se evidencia como el uso de este método puede usarse para separar la parte dependiente de la dosis del color de la parte que es dependiente de las heterogeneidades del escáner, en este caso se usa el ejemplo propuesto en \cite{Micke2011}. \\
 
 \begin{figure}
 	\centering
@@ -87,17 +78,22 @@ Otra manera de corregir esta falta de uniformidad es mediante el método de cali
 	\label{fig:Multicanal}
 \end{figure}
 
-Finalmente, para corregir el ruido existente propio del escáner, así como minimizar el efecto de diferentes imperfecciones como rayones en el vidrio del escáner o la película misma, es posible usar otro tipo de filtros sobre la imagen digitalizada. El filtro recomendado en la literatura para estas circunstancias es el filtro de Wiener \cite{Devic2016}, el cual se implementó en el programa. \\
+Además, para corregir este efecto de mejor manera, el programa también incluye la opción de restar el sesgo a cada medida a partir de una medida de una película sin irradiar. De esta manera, el cambio de coloración es ajustado con respecto a como varía la respuesta en función de la ubicación escaneada. \\
 
-También es posible usar el filtro en el cual el valor de transmitancia en cada pixel se remplaza con el promedio de los valores que lo rodean, eliminando parcialmente ciertas inhomogeneidades que podrían presentarse.\\
+De la misma manera, se implementó el uso de filtros para corregir particularidades del escáner como pixeles dañados y rayones en la película o escáner. El filtro recomendado en la literatura para estas circunstancias es el filtro de Wiener \cite{Devic2016}, el cual se implementó en el programa. \\
 
-Una vez corregidas las heterogeneidades referentes al escáner, también se han de tener en cuenta las propiedades de la película que modifican el color de la luz medido. En primer lugar, se debe tener en cuenta que las películas no son completamente uniformes dado su proceso de fabricación y almacenado.\\
+También es posible usar el filtro en el cual el valor de transmitancia en cada pixel se remplaza con el promedio de los valores que lo rodean, eliminando parcialmente ciertas inhomogeneidades que podrían presentarse. Otro filtro posible es el filtro de mediana, que reemplaza en cada pixel su valor por el que más se repite a su alrededor en cierto intervalo. \\
 
-En este caso el fabricante del lote de películas EBT3 usado reporta que en el último control de calidad realizado las películas presentaban una homogeneidad superior al 95 \% sobre su superficie, es decir, la estructura física de la película podía variar 5\% en sus dimensiones en algunas secciones. Esto no implica directamente una desviación de más de 5\% en el color medido por esta inhomogeneidad, puesto que la capa activa permanece generalmente uniforme, pero si afecta de cierta manera relativamente sutil la medida. \\ 
+La eficiencia de estos filtros es dependiente de la calidad de la imagen obtenida, por lo que para cada digitalización se probaron diferentes combinaciones de estos, siendo los más eficientes, en la mayoría de los casos, el filtro de la mediana y el filtro de Wiener.\\
 
 Aunque la aplicación de filtros ayuda de cierta manera a reducir los efectos de las heterogeneidades de fabricación, estos no lo solucionan por completo, puesto que estas son de carácter no local. La mejor manera de incrementar la seguridad con respecto a este tipo de incertidumbre es realizando varias irradiaciones en  diferentes películas y comparando sus resultados.\\
 
-Por otro lado, también se debe considerar el efecto de la orientación de la película con respecto a la lampara de escáner. Como fue mencionado en la introducción, los polímeros generados por la reacción producida por la radiación tienen un efecto polarizador de la luz. Así, la intensidad leída varía según la orientación de estas cadenas de polímeros, viéndose reflejada en un cambio en la transmitancia obtenida en la imagen final.\\
+
+Por otro lado, el fabricante del lote de películas EBT3 usado reporta que en el último control de calidad realizado, las películas presentaban una homogeneidad superior al 95 \% sobre su superficie, es decir, la estructura física de la película podía variar 5\% en sus dimensiones en algunas secciones. Esto no implica directamente una desviación de más de 5\% en el color medido por esta inhomogeneidad, puesto que la capa activa permanece generalmente uniforme, pero si afecta de cierta manera relativamente sutil la medida. Este efecto también puede ser corregido mediante el método multicanal. \\ 
+
+
+
+Finalmente, para evitar cambios en la medida por efectos de la orientación de la película en el escáner, se escaneó siempre usando la orientación horizontal en la parte superior del escaner.\\
 
 
 

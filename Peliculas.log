@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  9 JAN 2021 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  14 JAN 2021 14:45
 entering extended mode
 **./Peliculas.tex
 (Peliculas.tex
@@ -998,7 +998,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<images/linalc.png, id=430, 641.39626pt x 460.72125pt>
+<images/linalc.png, id=429, 641.39626pt x 460.72125pt>
 File: images/linalc.png Graphic file (type png)
 <use images/linalc.png>
 Package pdftex.def Info: images/linalc.png  used on input line 27.
@@ -1043,7 +1043,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<images/magnetron.jpg, id=443, 451.6875pt x 340.27126pt>
+<images/magnetron.jpg, id=442, 451.6875pt x 340.27126pt>
 File: images/magnetron.jpg Graphic file (type jpg)
 <use images/magnetron.jpg>
 Package pdftex.def Info: images/magnetron.jpg  used on input line 48.
@@ -1053,7 +1053,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-<images/klystron.png, id=452, 508.90125pt x 400.49625pt>
+<images/klystron.png, id=451, 508.90125pt x 400.49625pt>
 File: images/klystron.png Graphic file (type png)
 <use images/klystron.png>
 Package pdftex.def Info: images/klystron.png  used on input line 57.
@@ -1105,7 +1105,7 @@ Package pdftex.def Info: images/distribucionAngular.png  used on input line 80.
 
 (pdftex.def)             Requested size: 272.99881pt x 231.42677pt.
 [11]
-<images/filtros.png, id=472, 367.3725pt x 502.87875pt>
+<images/filtros.png, id=474, 367.3725pt x 502.87875pt>
 File: images/filtros.png Graphic file (type png)
 <use images/filtros.png>
 Package pdftex.def Info: images/filtros.png  used on input line 88.
@@ -1172,17 +1172,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
-[15]
+
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
@@ -1192,87 +1192,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
-<images/rayleigh.png, id=503, 372.39125pt x 335.2525pt>
+<images/rayleigh.png, id=506, 372.39125pt x 335.2525pt>
 File: images/rayleigh.png Graphic file (type png)
 <use images/rayleigh.png>
-Package pdftex.def Info: images/rayleigh.png  used on input line 155.
+Package pdftex.def Info: images/rayleigh.png  used on input line 157.
 (pdftex.def)             Requested size: 272.99881pt x 245.78098pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--158
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-<images/compton.png, id=515, 584.1825pt x 367.3725pt>
+<images/compton.png, id=518, 584.1825pt x 367.3725pt>
 File: images/compton.png Graphic file (type png)
 <use images/compton.png>
-Package pdftex.def Info: images/compton.png  used on input line 164.
+Package pdftex.def Info: images/compton.png  used on input line 166.
 (pdftex.def)             Requested size: 272.99881pt x 171.6841pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--167
+Underfull \hbox (badness 10000) in paragraph at lines 163--169
 
  []
 
 [18 <./images/rayleigh.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
  []
 
 [19 <./images/compton.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 195--197
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 
  []
 
@@ -1281,130 +1281,140 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-<images/fotoelectrico.png, id=535, 693.59125pt x 516.93124pt>
-File: images/fotoelectrico.png Graphic file (type png)
-<use images/fotoelectrico.png>
-Package pdftex.def Info: images/fotoelectrico.png  used on input line 219.
-(pdftex.def)             Requested size: 272.99881pt x 203.47176pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--222
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 227--229
+<images/fotoelectrico.png, id=546, 693.59125pt x 516.93124pt>
+File: images/fotoelectrico.png Graphic file (type png)
+<use images/fotoelectrico.png>
+Package pdftex.def Info: images/fotoelectrico.png  used on input line 221.
+(pdftex.def)             Requested size: 272.99881pt x 203.47176pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--224
 
  []
 
 [21 <./images/fotoelectrico.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--237
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
-<images/produccionPares.png, id=553, 698.61pt x 318.18875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
+
+ []
+
+<images/produccionPares.png, id=555, 698.61pt x 318.18875pt>
 File: images/produccionPares.png Graphic file (type png)
 <use images/produccionPares.png>
-Package pdftex.def Info: images/produccionPares.png  used on input line 240.
+Package pdftex.def Info: images/produccionPares.png  used on input line 242.
 (pdftex.def)             Requested size: 272.99881pt x 124.34071pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--254
+[22 <./images/produccionPares.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
  []
 
-[22 <./images/produccionPares.png>]
-<images/importanciaRelativa.png, id=566, 619.31375pt x 395.4775pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
+
+ []
+
+<images/importanciaRelativa.png, id=568, 619.31375pt x 395.4775pt>
 File: images/importanciaRelativa.png Graphic file (type png)
 <use images/importanciaRelativa.png>
-Package pdftex.def Info: images/importanciaRelativa.png  used on input line 270
+Package pdftex.def Info: images/importanciaRelativa.png  used on input line 272
 .
 (pdftex.def)             Requested size: 272.99881pt x 174.3365pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 [23 <./images/importanciaRelativa.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--288
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--290
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
+Underfull \hbox (badness 10000) in paragraph at lines 322--324
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--325
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--337
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 341--343
+Underfull \hbox (badness 10000) in paragraph at lines 343--345
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--346
+Underfull \hbox (badness 10000) in paragraph at lines 346--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--352
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--358
+Underfull \hbox (badness 10000) in paragraph at lines 358--360
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 361--363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--367
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 368--370
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+Underfull \hbox (badness 10000) in paragraph at lines 370--372
 
  []
 
@@ -1414,22 +1424,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 381--382
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 392--394
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--401
+Underfull \hbox (badness 10000) in paragraph at lines 394--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
@@ -1439,23 +1449,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 406--407
  []
 
 [29]
-<images/freeAirChamber.png, id=622, 594.22pt x 417.56pt>
-File: images/freeAirChamber.png Graphic file (type png)
-<use images/freeAirChamber.png>
-Package pdftex.def Info: images/freeAirChamber.png  used on input line 411.
-(pdftex.def)             Requested size: 272.99881pt x 191.84418pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 408--414
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
 
  []
 
+<images/freeAirChamber.png, id=626, 594.22pt x 417.56pt>
+File: images/freeAirChamber.png Graphic file (type png)
+<use images/freeAirChamber.png>
+Package pdftex.def Info: images/freeAirChamber.png  used on input line 413.
+(pdftex.def)             Requested size: 272.99881pt x 191.84418pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 410--416
 
  []
 
 [30 <./images/freeAirChamber.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
+Underfull \hbox (badness 10000) in paragraph at lines 421--423
 
  []
 
@@ -1464,43 +1473,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
-<images/camaraIoni.png, id=633, 725.71124pt x 298.11375pt>
-File: images/camaraIoni.png Graphic file (type png)
-<use images/camaraIoni.png>
-Package pdftex.def Info: images/camaraIoni.png  used on input line 428.
-(pdftex.def)             Requested size: 272.99881pt x 112.14719pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
+<images/camaraIoni.png, id=636, 725.71124pt x 298.11375pt>
+File: images/camaraIoni.png Graphic file (type png)
+<use images/camaraIoni.png>
+Package pdftex.def Info: images/camaraIoni.png  used on input line 430.
+(pdftex.def)             Requested size: 272.99881pt x 112.14719pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
 [31 <./images/camaraIoni.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 442--443
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--449
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 449--451
 
  []
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 453--455
+Underfull \hbox (badness 10000) in paragraph at lines 455--457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--461
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 462--463
+Underfull \hbox (badness 10000) in paragraph at lines 461--463
 
  []
 
@@ -1509,28 +1518,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 464--465
 
  []
 
-<images/TPR2010.png, id=650, 545.03625pt x 556.0775pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
+
+ []
+
+<images/TPR2010.png, id=654, 545.03625pt x 556.0775pt>
 File: images/TPR2010.png Graphic file (type png)
 <use images/TPR2010.png>
-Package pdftex.def Info: images/TPR2010.png  used on input line 469.
+Package pdftex.def Info: images/TPR2010.png  used on input line 471.
 (pdftex.def)             Requested size: 272.99881pt x 278.5302pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--472
+Underfull \hbox (badness 10000) in paragraph at lines 468--474
 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 473--474
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 475--476
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--482
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
 
  []
 
@@ -1550,16 +1559,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 487--488
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--492
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
-[35]
+
 Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
-
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
@@ -1579,83 +1588,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--504
+
+ []
+
 [36]
-<images/modelos.png, id=681, 780.9175pt x 595.22375pt>
+<images/modelos.png, id=685, 780.9175pt x 595.22375pt>
 File: images/modelos.png Graphic file (type png)
 <use images/modelos.png>
-Package pdftex.def Info: images/modelos.png  used on input line 532.
+Package pdftex.def Info: images/modelos.png  used on input line 534.
 (pdftex.def)             Requested size: 390.0pt x 297.25693pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--535
+Underfull \hbox (badness 10000) in paragraph at lines 531--537
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 537--538
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
 
  []
 
-<images/diacetileno.png, id=691, 645.41125pt x 280.04625pt>
+<images/diacetileno.png, id=695, 645.41125pt x 280.04625pt>
 File: images/diacetileno.png Graphic file (type png)
 <use images/diacetileno.png>
-Package pdftex.def Info: images/diacetileno.png  used on input line 541.
+Package pdftex.def Info: images/diacetileno.png  used on input line 543.
 (pdftex.def)             Requested size: 195.0pt x 84.60847pt.
-<images/reaccion.png, id=694, 677.53125pt x 442.65375pt>
+<images/reaccion.png, id=698, 677.53125pt x 442.65375pt>
 File: images/reaccion.png Graphic file (type png)
 <use images/reaccion.png>
-Package pdftex.def Info: images/reaccion.png  used on input line 543.
+Package pdftex.def Info: images/reaccion.png  used on input line 545.
 (pdftex.def)             Requested size: 195.0pt x 127.40042pt.
 [38 <./images/modelos.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 547--548
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 549--550
 
  []
 
-<images/absorbancia.png, id=709, 742.775pt x 555.07375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
+
+ []
+
+<images/absorbancia.png, id=713, 742.775pt x 555.07375pt>
 File: images/absorbancia.png Graphic file (type png)
 <use images/absorbancia.png>
-Package pdftex.def Info: images/absorbancia.png  used on input line 554.
+Package pdftex.def Info: images/absorbancia.png  used on input line 556.
 (pdftex.def)             Requested size: 272.99881pt x 204.01044pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--557
+Underfull \hbox (badness 10000) in paragraph at lines 553--559
 
  []
 
 [39 <./images/diacetileno.png> <./images/reaccion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
 
  []
 
-<images/escaner.png, id=725, 864.22874pt x 536.0025pt>
+<images/escaner.png, id=729, 864.22874pt x 536.0025pt>
 File: images/escaner.png Graphic file (type png)
 <use images/escaner.png>
-Package pdftex.def Info: images/escaner.png  used on input line 564.
+Package pdftex.def Info: images/escaner.png  used on input line 566.
 (pdftex.def)             Requested size: 272.99881pt x 169.31604pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 561--567
+Underfull \hbox (badness 10000) in paragraph at lines 563--569
 
  []
 
 [40 <./images/absorbancia.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 571--572
 
  []
 
-[41 <./images/escaner.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 580--581
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--574
 
  []
 
-
+[41 <./images/escaner.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 582--583
 
  []
@@ -1685,77 +1694,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 592--593
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--595
+
+ []
+
 [42]
-<images/fondoblancoLandscape-1.png, id=751, 1496.59125pt x 1200.485pt>
+Underfull \hbox (badness 10000) in paragraph at lines 597--598
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 599--600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 603--604
+
+ []
+
+[43]
+<images/fondoblancoLandscape-1.png, id=761, 1496.59125pt x 1200.485pt>
 File: images/fondoblancoLandscape-1.png Graphic file (type png)
 <use images/fondoblancoLandscape-1.png>
 Package pdftex.def Info: images/fondoblancoLandscape-1.png  used on input line 
-596.
-(pdftex.def)             Requested size: 195.0pt x 156.41656pt.
-<images/calibracionSimpleLandscape.png, id=752, 718.3638pt x 576.2328pt>
+607.
+(pdftex.def)             Requested size: 272.99881pt x 218.9722pt.
+<images/calibracionSimpleLandscape.png, id=762, 718.3638pt x 576.2328pt>
 File: images/calibracionSimpleLandscape.png Graphic file (type png)
 <use images/calibracionSimpleLandscape.png>
 Package pdftex.def Info: images/calibracionSimpleLandscape.png  used on input l
-ine 598.
-(pdftex.def)             Requested size: 195.0pt x 156.41144pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 602--603
+ine 609.
+(pdftex.def)             Requested size: 272.99881pt x 218.98831pt.
+ [44]
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
 
  []
 
-<images/respses.png, id=754, 808.01875pt x 538.01pt>
+[45 <./images/fondoblancoLandscape-1.png> <./images/calibracionSimpleLandscape.
+png>]
+<images/respses.png, id=776, 808.01875pt x 538.01pt>
 File: images/respses.png Graphic file (type png)
 <use images/respses.png>
-Package pdftex.def Info: images/respses.png  used on input line 606.
+Package pdftex.def Info: images/respses.png  used on input line 617.
 (pdftex.def)             Requested size: 195.0pt x 129.83104pt.
-[43 <./images/fondoblancoLandscape-1.png> <./images/calibracionSimpleLandscape.
-png>]
-Underfull \hbox (badness 10000) in paragraph at lines 618--620
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--631
 
  []
 
-<images/curva1.png, id=766, 400.49625pt x 283.0575pt>
+<images/curva1.png, id=780, 400.49625pt x 283.0575pt>
 File: images/curva1.png Graphic file (type png)
 <use images/curva1.png>
-Package pdftex.def Info: images/curva1.png  used on input line 625.
+Package pdftex.def Info: images/curva1.png  used on input line 636.
 (pdftex.def)             Requested size: 195.0pt x 137.8226pt.
-<images/curva2.png, id=769, 390.45876pt x 283.0575pt>
+<images/curva2.png, id=783, 390.45876pt x 283.0575pt>
 File: images/curva2.png Graphic file (type png)
 <use images/curva2.png>
-Package pdftex.def Info: images/curva2.png  used on input line 627.
+Package pdftex.def Info: images/curva2.png  used on input line 638.
 (pdftex.def)             Requested size: 195.0pt x 141.35994pt.
-[44 <./images/respses.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 632--633
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 635--636
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 639--640
-
- []
-
-
+[46 <./images/respses.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 643--644
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--648
+Underfull \hbox (badness 10000) in paragraph at lines 646--647
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--653
+Underfull \hbox (badness 10000) in paragraph at lines 650--651
 
  []
 
-[45 <./images/curva1.png> <./images/curva2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 657--658
+
+Underfull \hbox (badness 10000) in paragraph at lines 654--655
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
 
  []
 
@@ -1764,23 +1789,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 663--664
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
-
- []
-
-
+[47 <./images/curva1.png> <./images/curva2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 668--669
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 670--671
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 672--673
 
  []
 
@@ -1789,178 +1799,212 @@ Underfull \hbox (badness 10000) in paragraph at lines 674--675
 
  []
 
-[46]
-<images/efectoLateral.png, id=805, 640.3925pt x 507.8975pt>
-File: images/efectoLateral.png Graphic file (type png)
-<use images/efectoLateral.png>
-Package pdftex.def Info: images/efectoLateral.png  used on input line 678.
-(pdftex.def)             Requested size: 350.99762pt x 278.3835pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--688
+Underfull \hbox (badness 10000) in paragraph at lines 677--678
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 690--691
+Underfull \hbox (badness 10000) in paragraph at lines 679--680
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--693
-
- []
-
-[47 <./images/efectoLateral.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 714.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Gamma' on input line 714.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 714.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 715--716
+Underfull \hbox (badness 10000) in paragraph at lines 681--682
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--718
+Underfull \hbox (badness 10000) in paragraph at lines 683--684
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
 
  []
 
 [48]
-Underfull \hbox (badness 10000) in paragraph at lines 723--725
+<images/efectoLateral.png, id=819, 640.3925pt x 507.8975pt>
+File: images/efectoLateral.png Graphic file (type png)
+<use images/efectoLateral.png>
+Package pdftex.def Info: images/efectoLateral.png  used on input line 689.
+(pdftex.def)             Requested size: 234.00238pt x 185.58641pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 697--699
 
  []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 701--702
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
+
+ []
+
+[49 <./images/efectoLateral.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 725.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Gamma' on input line 725.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 725.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 726--727
 
  []
 
-<images/gammaEllipse.png, id=831, 739.76375pt x 446.66875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 728--729
+
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 734--736
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
+
+ []
+
+<images/gammaEllipse.png, id=845, 739.76375pt x 446.66875pt>
 File: images/gammaEllipse.png Graphic file (type png)
 <use images/gammaEllipse.png>
-Package pdftex.def Info: images/gammaEllipse.png  used on input line 731.
+Package pdftex.def Info: images/gammaEllipse.png  used on input line 742.
 (pdftex.def)             Requested size: 195.0pt x 117.73961pt.
-) [49] [50 <./images/gammaEllipse.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--745
+
+ []
+
+[51]) [52 <./images/gammaEllipse.png>]
 Cap\'{\i }tulo 4.
 (chapters/metodologia.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<images/20200826_205559.jpg, id=843, 4047.12pt x 3035.34pt>
-File: images/20200826_205559.jpg Graphic file (type jpg)
-<use images/20200826_205559.jpg>
-Package pdftex.def Info: images/20200826_205559.jpg  used on input line 8.
-(pdftex.def)             Requested size: 272.99881pt x 204.71451pt.
+<images/TRS398Editado2.jpg, id=858, 1108.14pt x 831.105pt>
+File: images/TRS398Editado2.jpg Graphic file (type jpg)
+<use images/TRS398Editado2.jpg>
+Package pdftex.def Info: images/TRS398Editado2.jpg  used on input line 8.
+(pdftex.def)             Requested size: 272.99881pt x 204.74483pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-
- []
-
-<images/alineacionCampo.jpg, id=845, 4047.12pt x 3035.34pt>
+<images/alineacionCampo.jpg, id=860, 4047.12pt x 3035.34pt>
 File: images/alineacionCampo.jpg Graphic file (type jpg)
 <use images/alineacionCampo.jpg>
-Package pdftex.def Info: images/alineacionCampo.jpg  used on input line 20.
+Package pdftex.def Info: images/alineacionCampo.jpg  used on input line 18.
 (pdftex.def)             Requested size: 272.99881pt x 204.71451pt.
-[51
+[53
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 32.
+<images/elctrometro.jpg, id=866, 1108.14pt x 831.105pt>
+File: images/elctrometro.jpg Graphic file (type jpg)
+<use images/elctrometro.jpg>
+Package pdftex.def Info: images/elctrometro.jpg  used on input line 30.
+(pdftex.def)             Requested size: 272.99881pt x 204.74483pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--38
-
- []
-
-[52 <./images/20200826_205559.jpg>] [53 <./images/alineacionCampo.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 26--34
 
  []
 
-<images/piramideTPS.png, id=861, 462.528pt x 346.896pt>
+[54 <./images/TRS398Editado2.jpg>] [55 <./images/alineacionCampo.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+<images/piramideTPS.png, id=876, 462.528pt x 346.896pt>
 File: images/piramideTPS.png Graphic file (type png)
 <use images/piramideTPS.png>
-Package pdftex.def Info: images/piramideTPS.png  used on input line 44.
+Package pdftex.def Info: images/piramideTPS.png  used on input line 43.
 (pdftex.def)             Requested size: 272.99881pt x 204.75684pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-<images/mamaTPS.png, id=863, 462.528pt x 346.896pt>
+<images/mamaTPS.png, id=878, 462.528pt x 346.896pt>
 File: images/mamaTPS.png Graphic file (type png)
 <use images/mamaTPS.png>
-Package pdftex.def Info: images/mamaTPS.png  used on input line 54.
+Package pdftex.def Info: images/mamaTPS.png  used on input line 53.
 (pdftex.def)             Requested size: 272.99881pt x 204.75684pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-[54 <./images/piramideTPS.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-
- []
-
-[55 <./images/mamaTPS.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+[56 <./images/elctrometro.jpg>] [57 <./images/piramideTPS.png> <./images/mamaTP
+S.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-
- []
-
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 76--77
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
-
- []
-
-<images/imagenMicke.png, id=884, 825.0825pt x 446.66875pt>
+<images/imagenMicke.png, id=894, 825.0825pt x 446.66875pt>
 File: images/imagenMicke.png Graphic file (type png)
 <use images/imagenMicke.png>
-Package pdftex.def Info: images/imagenMicke.png  used on input line 84.
+Package pdftex.def Info: images/imagenMicke.png  used on input line 75.
 (pdftex.def)             Requested size: 272.99881pt x 147.78963pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
@@ -1969,34 +2013,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
-
- []
-
-[57]
+[59 <./images/imagenMicke.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-) [58 <./images/imagenMicke.png>]
+) [60]
 Cap\'{\i }tulo 5.
 (chapters/resultados.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 5.
 
-<images/peliculasIrradiadas.png, id=900, 638.385pt x 474.77374pt>
+<images/peliculasIrradiadas.png, id=914, 638.385pt x 474.77374pt>
 File: images/peliculasIrradiadas.png Graphic file (type png)
 <use images/peliculasIrradiadas.png>
 Package pdftex.def Info: images/peliculasIrradiadas.png  used on input line 29.
@@ -2007,7 +2040,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--32
 
  []
 
-[59
+[61
 
 ]
 Overfull \hbox (4.10841pt too wide) in paragraph at lines 34--35
@@ -2020,8 +2053,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-[60 <./images/peliculasIrradiadas.png>]
-<images/calibracionMulti0a20.png, id=912, 745.1037pt x 406.8801pt>
+[62 <./images/peliculasIrradiadas.png>]
+<images/calibracionMulti0a20.png, id=926, 745.1037pt x 406.8801pt>
 File: images/calibracionMulti0a20.png Graphic file (type png)
 <use images/calibracionMulti0a20.png>
 Package pdftex.def Info: images/calibracionMulti0a20.png  used on input line 39
@@ -2037,412 +2070,419 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-<images/calibracionMulti.png, id=914, 655.4889pt x 377.2494pt>
+<images/calibracionMulti.png, id=928, 655.4889pt x 377.2494pt>
 File: images/calibracionMulti.png Graphic file (type png)
 <use images/calibracionMulti.png>
 Package pdftex.def Info: images/calibracionMulti.png  used on input line 54.
 (pdftex.def)             Requested size: 390.0pt x 224.45753pt.
-[61 <./images/calibracionMulti0a20.png>]
+[63 <./images/calibracionMulti0a20.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-<images/calibracionCubica.png, id=922, 562.9833pt x 323.0469pt>
+<images/calibracionCubica.png, id=936, 562.9833pt x 323.0469pt>
 File: images/calibracionCubica.png Graphic file (type png)
 <use images/calibracionCubica.png>
 Package pdftex.def Info: images/calibracionCubica.png  used on input line 66.
 (pdftex.def)             Requested size: 272.99881pt x 156.65291pt.
-<images/curvaCalibracionMalaExponencial.png, id=923, 690.9012pt x 356.2911pt>
+<images/curvaCalibracionMalaExponencial.png, id=937, 690.9012pt x 356.2911pt>
 File: images/curvaCalibracionMalaExponencial.png Graphic file (type png)
 <use images/curvaCalibracionMalaExponencial.png>
 Package pdftex.def Info: images/curvaCalibracionMalaExponencial.png  used on in
 put line 68.
 (pdftex.def)             Requested size: 272.99881pt x 140.78508pt.
-[62 <./images/calibracionMulti.png>]
+[64 <./images/calibracionMulti.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-
+[65 <./images/calibracionCubica.png> <./images/curvaCalibracionMalaExponencial.
+png>]
 Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-[63 <./images/calibracionCubica.png> <./images/curvaCalibracionMalaExponencial.
-png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-<images/imagenFondoCero.png, id=941, 686.565pt x 541.02126pt>
+<images/imagenFondoCero.png, id=956, 686.565pt x 541.02126pt>
 File: images/imagenFondoCero.png Graphic file (type png)
 <use images/imagenFondoCero.png>
 Package pdftex.def Info: images/imagenFondoCero.png  used on input line 86.
 (pdftex.def)             Requested size: 272.99881pt x 215.12509pt.
-<images/imagenPerfilMapaCeroHorizontal.png, id=942, 669.50125pt x 532.99126pt>
+<images/imagenPerfilMapaCeroHorizontal.png, id=957, 669.50125pt x 532.99126pt>
 File: images/imagenPerfilMapaCeroHorizontal.png Graphic file (type png)
 <use images/imagenPerfilMapaCeroHorizontal.png>
 Package pdftex.def Info: images/imagenPerfilMapaCeroHorizontal.png  used on inp
-ut line 95.
-(pdftex.def)             Requested size: 117.00119pt x 93.14474pt.
-<images/imagenPerfilMapaCeroVertical.png, id=943, 693.59125pt x 533.995pt>
+ut line 93.
+(pdftex.def)             Requested size: 175.49881pt x 139.71304pt.
+<images/imagenPerfilMapaCeroVertical.png, id=958, 693.59125pt x 533.995pt>
 File: images/imagenPerfilMapaCeroVertical.png Graphic file (type png)
 <use images/imagenPerfilMapaCeroVertical.png>
 Package pdftex.def Info: images/imagenPerfilMapaCeroVertical.png  used on input
- line 102.
-(pdftex.def)             Requested size: 117.00119pt x 90.07721pt.
-<images/perfilDosisCeroHorizontal.png, id=944, 462.528pt x 302.0886pt>
+ line 95.
+(pdftex.def)             Requested size: 175.49881pt x 135.11174pt.
+<images/perfilDosisCeroHorizontal.png, id=959, 462.528pt x 302.0886pt>
 File: images/perfilDosisCeroHorizontal.png Graphic file (type png)
 <use images/perfilDosisCeroHorizontal.png>
 Package pdftex.def Info: images/perfilDosisCeroHorizontal.png  used on input li
-ne 108.
-(pdftex.def)             Requested size: 117.00119pt x 76.4162pt.
-<images/perfilDosisCeroVerticalEnCentro.png, id=945, 462.528pt x 302.0886pt>
+ne 97.
+(pdftex.def)             Requested size: 175.49881pt x 114.6243pt.
+<images/perfilDosisCeroVerticalEnCentro.png, id=960, 462.528pt x 302.0886pt>
 File: images/perfilDosisCeroVerticalEnCentro.png Graphic file (type png)
 <use images/perfilDosisCeroVerticalEnCentro.png>
 Package pdftex.def Info: images/perfilDosisCeroVerticalEnCentro.png  used on in
-put line 114.
-(pdftex.def)             Requested size: 117.00119pt x 76.4162pt.
-
-Overfull \hbox (78.00476pt too wide) in paragraph at lines 93--118
- [][][] 
- []
-
-
-Overfull \hbox (78.00476pt too wide) in paragraph at lines 93--118
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+put line 98.
+(pdftex.def)             Requested size: 175.49881pt x 114.6243pt.
+[66 <./images/imagenFondoCero.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-[64 <./images/imagenFondoCero.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
-
- []
-
-<images/FondoNegro.png, id=953, 730.6497pt x 580.3281pt>
-File: images/FondoNegro.png Graphic file (type png)
-<use images/FondoNegro.png>
-Package pdftex.def Info: images/FondoNegro.png  used on input line 130.
-(pdftex.def)             Requested size: 272.99881pt x 216.8344pt.
-[65 <./images/imagenPerfilMapaCeroHorizontal.png> <./images/imagenPerfilMapaCer
+[67 <./images/imagenPerfilMapaCeroHorizontal.png> <./images/imagenPerfilMapaCer
 oVertical.png> <./images/perfilDosisCeroHorizontal.png> <./images/perfilDosisCe
 roVerticalEnCentro.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-<images/peliculaCuadrado.png, id=963, 671.50874pt x 543.02875pt>
+<images/fonRuido.png, id=979, 386.44376pt x 487.8225pt>
+File: images/fonRuido.png Graphic file (type png)
+<use images/fonRuido.png>
+Package pdftex.def Info: images/fonRuido.png  used on input line 113.
+(pdftex.def)             Requested size: 272.99881pt x 344.6146pt.
+[68]
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+<images/peliculaCuadrado.png, id=985, 671.50874pt x 543.02875pt>
 File: images/peliculaCuadrado.png Graphic file (type png)
 <use images/peliculaCuadrado.png>
-Package pdftex.def Info: images/peliculaCuadrado.png  used on input line 141.
+Package pdftex.def Info: images/peliculaCuadrado.png  used on input line 124.
 (pdftex.def)             Requested size: 272.99881pt x 220.76231pt.
-[66 <./images/FondoNegro.png>]
-<images/mapaCuadradoConMulticanal.png, id=970, 669.50125pt x 532.99126pt>
+[69 <./images/fonRuido.png>]
+<images/mapaCuadradoConMulticanal.png, id=992, 669.50125pt x 532.99126pt>
 File: images/mapaCuadradoConMulticanal.png Graphic file (type png)
 <use images/mapaCuadradoConMulticanal.png>
 Package pdftex.def Info: images/mapaCuadradoConMulticanal.png  used on input li
-ne 149.
+ne 132.
 (pdftex.def)             Requested size: 195.0pt x 155.23853pt.
-<images/imperfeccionesPeliculaCuadrado.png, id=971, 462.528pt x 302.0886pt>
-File: images/imperfeccionesPeliculaCuadrado.png Graphic file (type png)
-<use images/imperfeccionesPeliculaCuadrado.png>
-Package pdftex.def Info: images/imperfeccionesPeliculaCuadrado.png  used on inp
-ut line 151.
-(pdftex.def)             Requested size: 312.00119pt x 203.78575pt.
+<images/fondoCuadradoConLabel.png, id=993, 642.4pt x 419.5675pt>
+File: images/fondoCuadradoConLabel.png Graphic file (type png)
+<use images/fondoCuadradoConLabel.png>
+Package pdftex.def Info: images/fondoCuadradoConLabel.png  used on input line 1
+34.
+(pdftex.def)             Requested size: 312.00119pt x 203.77808pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--154
-
- []
-
-[67 <./images/peliculaCuadrado.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
+Underfull \hbox (badness 10000) in paragraph at lines 129--137
 
  []
 
-<images/perfilDosisCuadradoUnoSolo.png, id=978, 462.528pt x 302.0886pt>
+[70 <./images/peliculaCuadrado.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+<images/perfilDosisCuadradoUnoSolo.png, id=1001, 462.528pt x 302.0886pt>
 File: images/perfilDosisCuadradoUnoSolo.png Graphic file (type png)
 <use images/perfilDosisCuadradoUnoSolo.png>
 Package pdftex.def Info: images/perfilDosisCuadradoUnoSolo.png  used on input l
-ine 161.
+ine 144.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
-<images/perfilDosisCuadradoMulticanal.png, id=979, 462.528pt x 302.0886pt>
+<images/perfilDosisCuadradoMulticanal.png, id=1002, 462.528pt x 302.0886pt>
 File: images/perfilDosisCuadradoMulticanal.png Graphic file (type png)
 <use images/perfilDosisCuadradoMulticanal.png>
 Package pdftex.def Info: images/perfilDosisCuadradoMulticanal.png  used on inpu
-t line 163.
+t line 146.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
-[68 <./images/mapaCuadradoConMulticanal.png> <./images/imperfeccionesPeliculaCu
-adrado.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+[71 <./images/mapaCuadradoConMulticanal.png> <./images/fondoCuadradoConLabel.pn
+g>]
+
+LaTeX Warning: Reference `fig:perhor' on page 72 undefined on input line 151.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
-[69 <./images/perfilDosisCuadradoUnoSolo.png> <./images/perfilDosisCuadradoMult
+[72 <./images/perfilDosisCuadradoUnoSolo.png> <./images/perfilDosisCuadradoMult
 icanal.png>]
-<images/perfilHorizontalDeDosisCeroMulticanal.png, id=998, 462.528pt x 302.0886
-pt>
+<images/perfilHorizontalDeDosisCeroMulticanal.png, id=1020, 462.528pt x 302.088
+6pt>
 File: images/perfilHorizontalDeDosisCeroMulticanal.png Graphic file (type png)
 <use images/perfilHorizontalDeDosisCeroMulticanal.png>
 Package pdftex.def Info: images/perfilHorizontalDeDosisCeroMulticanal.png  used
- on input line 172.
+ on input line 155.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
-<images/fondoIndependienteDosisPeliculaCero.png, id=1000, 462.528pt x 302.0886p
+<images/fondoIndependienteDosisPeliculaCero.png, id=1022, 462.528pt x 302.0886p
 t>
 File: images/fondoIndependienteDosisPeliculaCero.png Graphic file (type png)
 <use images/fondoIndependienteDosisPeliculaCero.png>
 Package pdftex.def Info: images/fondoIndependienteDosisPeliculaCero.png  used o
-n input line 180.
+n input line 163.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
- [70 <./images/perfilHorizontalDeDosisCeroMulticanal.png>]
-<images/perfilCuadradoMenosBit.png, id=1008, 462.528pt x 302.0886pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--166
+
+ []
+
+[73 <./images/perfilHorizontalDeDosisCeroMulticanal.png>]
+<images/perfilCuadradoMenosBit.png, id=1029, 462.528pt x 302.0886pt>
 File: images/perfilCuadradoMenosBit.png Graphic file (type png)
 <use images/perfilCuadradoMenosBit.png>
 Package pdftex.def Info: images/perfilCuadradoMenosBit.png  used on input line 
-188.
+171.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
 File: images/perfilDosisCuadradoUnoSolo.png Graphic file (type png)
 <use images/perfilDosisCuadradoUnoSolo.png>
 Package pdftex.def Info: images/perfilDosisCuadradoUnoSolo.png  used on input l
-ine 190.
+ine 173.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--193
+Underfull \hbox (badness 10000) in paragraph at lines 168--176
 
  []
 
-[71 <./images/fondoIndependienteDosisPeliculaCero.png>]
-<images/calibracion0-20-sinRotar.png, id=1015, 583.9416pt x 346.1733pt>
+[74 <./images/fondoIndependienteDosisPeliculaCero.png>]
+<images/calibracion0-20-sinRotar.png, id=1036, 583.9416pt x 346.1733pt>
 File: images/calibracion0-20-sinRotar.png Graphic file (type png)
 <use images/calibracion0-20-sinRotar.png>
 Package pdftex.def Info: images/calibracion0-20-sinRotar.png  used on input lin
-e 198.
+e 181.
 (pdftex.def)             Requested size: 272.99881pt x 161.83519pt.
-<images/calibracion0-20-Rotadas.png, id=1016, 620.0766pt x 383.031pt>
+<images/calibracion0-20-Rotadas.png, id=1037, 620.0766pt x 383.031pt>
 File: images/calibracion0-20-Rotadas.png Graphic file (type png)
 <use images/calibracion0-20-Rotadas.png>
 Package pdftex.def Info: images/calibracion0-20-Rotadas.png  used on input line
- 200.
+ 183.
 (pdftex.def)             Requested size: 272.99881pt x 168.63351pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--203
+Underfull \hbox (badness 10000) in paragraph at lines 178--186
 
  []
 
-[72 <./images/perfilCuadradoMenosBit.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+[75 <./images/perfilCuadradoMenosBit.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
-[73 <./images/calibracion0-20-sinRotar.png> <./images/calibracion0-20-Rotadas.p
+[76 <./images/calibracion0-20-sinRotar.png> <./images/calibracion0-20-Rotadas.p
 ng>]
-<images/peliculaPiramide.png, id=1033, 719.0865pt x 578.16pt>
+<images/peliculaPiramide.png, id=1055, 719.0865pt x 578.16pt>
 File: images/peliculaPiramide.png Graphic file (type png)
 <use images/peliculaPiramide.png>
-Package pdftex.def Info: images/peliculaPiramide.png  used on input line 214.
+Package pdftex.def Info: images/peliculaPiramide.png  used on input line 197.
 (pdftex.def)             Requested size: 272.99881pt x 219.50017pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--217
+Underfull \hbox (badness 10000) in paragraph at lines 194--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
-<images/mapaDosisPiramidePelicula.png, id=1035, 500.87125pt x 474.77374pt>
+<images/mapaDosisPiramidePelicula.png, id=1057, 500.87125pt x 474.77374pt>
 File: images/mapaDosisPiramidePelicula.png Graphic file (type png)
 <use images/mapaDosisPiramidePelicula.png>
 Package pdftex.def Info: images/mapaDosisPiramidePelicula.png  used on input li
-ne 223.
+ne 206.
 (pdftex.def)             Requested size: 195.0pt x 184.84225pt.
-<images/fondoIndependienteMapaPiramide.png, id=1036, 340.27126pt x 322.20375pt>
+<images/fondoIndependienteMapaPiramide.png, id=1058, 340.27126pt x 322.20375pt>
 
 File: images/fondoIndependienteMapaPiramide.png Graphic file (type png)
 <use images/fondoIndependienteMapaPiramide.png>
 Package pdftex.def Info: images/fondoIndependienteMapaPiramide.png  used on inp
-ut line 225.
+ut line 208.
 (pdftex.def)             Requested size: 195.0pt x 184.64624pt.
-[74 <./images/peliculaPiramide.png>]
-<images/perfilCentralPiramide.png, id=1043, 462.528pt x 302.0886pt>
+[77 <./images/peliculaPiramide.png>]
+<images/perfilCentralPiramide.png, id=1065, 462.528pt x 302.0886pt>
 File: images/perfilCentralPiramide.png Graphic file (type png)
 <use images/perfilCentralPiramide.png>
 Package pdftex.def Info: images/perfilCentralPiramide.png  used on input line 2
-33.
+16.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--237
+Underfull \hbox (badness 10000) in paragraph at lines 213--220
 
  []
 
-[75 <./images/mapaDosisPiramidePelicula.png> <./images/fondoIndependienteMapaPi
+[78 <./images/mapaDosisPiramidePelicula.png> <./images/fondoIndependienteMapaPi
 ramide.png>]
-<images/perfilPiramideNormalizado.png, id=1053, 462.528pt x 302.0886pt>
+<images/perfilPiramideNormalizado.png, id=1075, 462.528pt x 302.0886pt>
 File: images/perfilPiramideNormalizado.png Graphic file (type png)
 <use images/perfilPiramideNormalizado.png>
 Package pdftex.def Info: images/perfilPiramideNormalizado.png  used on input li
-ne 241.
+ne 224.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--245
+Underfull \hbox (badness 10000) in paragraph at lines 221--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
-[76 <./images/perfilCentralPiramide.png> <./images/perfilPiramideNormalizado.pn
+[79 <./images/perfilCentralPiramide.png> <./images/perfilPiramideNormalizado.pn
 g>]
-<images/isodosisPiramide2.png, id=1062, 597.23125pt x 462.72874pt>
+<images/isodosisPiramide2.png, id=1083, 597.23125pt x 462.72874pt>
 File: images/isodosisPiramide2.png Graphic file (type png)
 <use images/isodosisPiramide2.png>
-Package pdftex.def Info: images/isodosisPiramide2.png  used on input line 252.
+Package pdftex.def Info: images/isodosisPiramide2.png  used on input line 235.
 (pdftex.def)             Requested size: 272.99881pt x 211.51628pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--255
+Underfull \hbox (badness 10000) in paragraph at lines 232--238
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
-<images/peliculaMama.png, id=1064, 724.8681pt x 580.3281pt>
+<images/peliculaMama.png, id=1085, 724.8681pt x 580.3281pt>
 File: images/peliculaMama.png Graphic file (type png)
 <use images/peliculaMama.png>
-Package pdftex.def Info: images/peliculaMama.png  used on input line 262.
+Package pdftex.def Info: images/peliculaMama.png  used on input line 245.
 (pdftex.def)             Requested size: 272.99881pt x 218.56114pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--265
+Underfull \hbox (badness 10000) in paragraph at lines 242--248
 
  []
 
-[77 <./images/isodosisPiramide2.png>]
-<images/mapaDosisMamaPelicula.png, id=1071, 583.17876pt x 472.76625pt>
+[80 <./images/isodosisPiramide2.png>]
+<images/mapaDosisMamaPelicula.png, id=1092, 583.17876pt x 472.76625pt>
 File: images/mapaDosisMamaPelicula.png Graphic file (type png)
 <use images/mapaDosisMamaPelicula.png>
 Package pdftex.def Info: images/mapaDosisMamaPelicula.png  used on input line 2
-69.
+52.
 (pdftex.def)             Requested size: 195.0pt x 158.07649pt.
-<images/fondoIndependienteMama.png, id=1072, 403.5075pt x 325.215pt>
+<images/fondoIndependienteMama.png, id=1093, 403.5075pt x 325.215pt>
 File: images/fondoIndependienteMama.png Graphic file (type png)
 <use images/fondoIndependienteMama.png>
 Package pdftex.def Info: images/fondoIndependienteMama.png  used on input line 
-271.
+254.
 (pdftex.def)             Requested size: 195.0pt x 157.16338pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+ [81 <./images/peliculaMama.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
-[78 <./images/peliculaMama.png> <./images/mapaDosisMamaPelicula.png> <./images/
-fondoIndependienteMama.png>]
-<images/perfilDosisMama.png, id=1083, 462.528pt x 302.0886pt>
+<images/perfilDosisMama.png, id=1100, 462.528pt x 302.0886pt>
 File: images/perfilDosisMama.png Graphic file (type png)
 <use images/perfilDosisMama.png>
-Package pdftex.def Info: images/perfilDosisMama.png  used on input line 280.
+Package pdftex.def Info: images/perfilDosisMama.png  used on input line 263.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
-<images/curvasIsodosisMama.png, id=1085, 576.1525pt x 452.69125pt>
+[82 <./images/mapaDosisMamaPelicula.png> <./images/fondoIndependienteMama.png>]
+<images/curvasIsodosisMama.png, id=1111, 576.1525pt x 452.69125pt>
 File: images/curvasIsodosisMama.png Graphic file (type png)
 <use images/curvasIsodosisMama.png>
-Package pdftex.def Info: images/curvasIsodosisMama.png  used on input line 289.
+Package pdftex.def Info: images/curvasIsodosisMama.png  used on input line 272.
 
 (pdftex.def)             Requested size: 272.99881pt x 214.5056pt.
- [79 <./images/perfilDosisMama.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 294.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Gamma' on input line 294.
+(hyperref)                removing `math shift' on input line 277.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 294.
+(hyperref)                removing `\Gamma' on input line 277.
 
-<images/piramideAtravesada.png, id=1092, 371.3875pt x 371.3875pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 277.
+
+[83 <./images/perfilDosisMama.png> <./images/curvasIsodosisMama.png>]
+<images/piramideAtravesada.png, id=1120, 371.3875pt x 371.3875pt>
 File: images/piramideAtravesada.png Graphic file (type png)
 <use images/piramideAtravesada.png>
-Package pdftex.def Info: images/piramideAtravesada.png  used on input line 300.
+Package pdftex.def Info: images/piramideAtravesada.png  used on input line 283.
 
 (pdftex.def)             Requested size: 195.0pt x 195.00401pt.
-<images/piramideTPS2.png, id=1093, 303.1325pt x 304.13625pt>
+<images/piramideTPS2.png, id=1121, 303.1325pt x 304.13625pt>
 File: images/piramideTPS2.png Graphic file (type png)
 <use images/piramideTPS2.png>
-Package pdftex.def Info: images/piramideTPS2.png  used on input line 302.
+Package pdftex.def Info: images/piramideTPS2.png  used on input line 285.
 (pdftex.def)             Requested size: 195.0pt x 195.64893pt.
-[80 <./images/curvasIsodosisMama.png>]
-<images/gammaAtravesada.png, id=1100, 374.39874pt x 372.39125pt>
+<images/gammaAtravesada.png, id=1123, 374.39874pt x 372.39125pt>
 File: images/gammaAtravesada.png Graphic file (type png)
 <use images/gammaAtravesada.png>
-Package pdftex.def Info: images/gammaAtravesada.png  used on input line 311.
+Package pdftex.def Info: images/gammaAtravesada.png  used on input line 294.
 (pdftex.def)             Requested size: 195.0pt x 193.95708pt.
 File: images/gammaAtravesada.png Graphic file (type png)
 <use images/gammaAtravesada.png>
-Package pdftex.def Info: images/gammaAtravesada.png  used on input line 313.
+Package pdftex.def Info: images/gammaAtravesada.png  used on input line 296.
 (pdftex.def)             Requested size: 195.0pt x 193.95708pt.
- [81 <./images/piramideAtravesada.png> <./images/piramideTPS2.png>]
+ [84 <./images/piramideAtravesada.png> <./images/piramideTPS2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+
+ []
+
+<images/gammaPiramideCalor.png, id=1136, 462.528pt x 302.0886pt>
+File: images/gammaPiramideCalor.png Graphic file (type png)
+<use images/gammaPiramideCalor.png>
+Package pdftex.def Info: images/gammaPiramideCalor.png  used on input line 305.
+
+(pdftex.def)             Requested size: 350.99762pt x 229.25783pt.
+<images/histogramaGammaPiramide.png, id=1137, 462.528pt x 302.0886pt>
+File: images/histogramaGammaPiramide.png Graphic file (type png)
+<use images/histogramaGammaPiramide.png>
+Package pdftex.def Info: images/histogramaGammaPiramide.png  used on input line
+ 311.
+(pdftex.def)             Requested size: 350.99762pt x 229.25783pt.
+[85 <./images/gammaAtravesada.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 316--317
+
+ []
+
+[86 <./images/gammaPiramideCalor.png> <./images/histogramaGammaPiramide.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
-<images/gammaPiramideCalor.png, id=1111, 462.528pt x 302.0886pt>
-File: images/gammaPiramideCalor.png Graphic file (type png)
-<use images/gammaPiramideCalor.png>
-Package pdftex.def Info: images/gammaPiramideCalor.png  used on input line 322.
-
-(pdftex.def)             Requested size: 350.99762pt x 229.25783pt.
-<images/histogramaGammaPiramide.png, id=1112, 462.528pt x 302.0886pt>
-File: images/histogramaGammaPiramide.png Graphic file (type png)
-<use images/histogramaGammaPiramide.png>
-Package pdftex.def Info: images/histogramaGammaPiramide.png  used on input line
- 328.
-(pdftex.def)             Requested size: 350.99762pt x 229.25783pt.
-[82 <./images/gammaAtravesada.png>]
+<images/gammaMama.png, id=1153, 462.528pt x 302.0886pt>
+File: images/gammaMama.png Graphic file (type png)
+<use images/gammaMama.png>
+Package pdftex.def Info: images/gammaMama.png  used on input line 322.
+(pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
+<images/histogramaDosisMama.png, id=1154, 462.528pt x 302.0886pt>
+File: images/histogramaDosisMama.png Graphic file (type png)
+<use images/histogramaDosisMama.png>
+Package pdftex.def Info: images/histogramaDosisMama.png  used on input line 328
+.
+(pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
+[87 <./images/gammaMama.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 333--334
 
  []
 
-[83 <./images/gammaPiramideCalor.png> <./images/histogramaGammaPiramide.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
-<images/gammaMama.png, id=1129, 462.528pt x 302.0886pt>
-File: images/gammaMama.png Graphic file (type png)
-<use images/gammaMama.png>
-Package pdftex.def Info: images/gammaMama.png  used on input line 339.
-(pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
-<images/histogramaDosisMama.png, id=1130, 462.528pt x 302.0886pt>
-File: images/histogramaDosisMama.png Graphic file (type png)
-<use images/histogramaDosisMama.png>
-Package pdftex.def Info: images/histogramaDosisMama.png  used on input line 345
-.
-(pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
-[84 <./images/gammaMama.png>]) [85 <./images/histogramaDosisMama.png>]
+) [88 <./images/histogramaDosisMama.png>]
 Cap\'{\i }tulo 6.
 (chapters/conclusiones.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
@@ -2459,12 +2499,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--126
 
  []
 
-[86
+[89
 
 ]
 Ap\'{e}ndice A.
 (chapters/diagramasFlujo.tex
-<images/daigramaFlujo.png, id=1146, 804.00375pt x 322.20375pt>
+<images/daigramaFlujo.png, id=1171, 804.00375pt x 322.20375pt>
 File: images/daigramaFlujo.png Graphic file (type png)
 <use images/daigramaFlujo.png>
 Package pdftex.def Info: images/daigramaFlujo.png  used on input line 4.
@@ -2474,7 +2514,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--7
 
  []
 
-<images/daigramaMapaDosis2.png, id=1148, 834.11626pt x 302.12875pt>
+<images/daigramaMapaDosis2.png, id=1173, 834.11626pt x 302.12875pt>
 File: images/daigramaMapaDosis2.png Graphic file (type png)
 <use images/daigramaMapaDosis2.png>
 Package pdftex.def Info: images/daigramaMapaDosis2.png  used on input line 11.
@@ -2484,20 +2524,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--14
 
  []
 
-[87
+[90
 
 
  <./images/daigramaFlujo.png>]
-<images/diagramaComparacion.png, id=1155, 573.14125pt x 272.01625pt>
+<images/diagramaComparacion.png, id=1180, 573.14125pt x 272.01625pt>
 File: images/diagramaComparacion.png Graphic file (type png)
 <use images/diagramaComparacion.png>
 Package pdftex.def Info: images/diagramaComparacion.png  used on input line 18.
 
 (pdftex.def)             Requested size: 390.0pt x 185.09726pt.
-) [88 <./images/daigramaMapaDosis2.png> <./images/diagramaComparacion.png>]
+) [91 <./images/daigramaMapaDosis2.png> <./images/diagramaComparacion.png>]
 Ap\'{e}ndice B.
 (chapters/docuPrograma.tex
-<images/imagenesDocumentacion/ventanaPrincipal.png, id=1164, 1370.11874pt x 742
+<images/imagenesDocumentacion/ventanaPrincipal.png, id=1188, 1370.11874pt x 742
 .775pt>
 File: images/imagenesDocumentacion/ventanaPrincipal.png Graphic file (type png)
 
@@ -2515,7 +2555,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-<images/imagenesDocumentacion/menuCalibracion.png, id=1166, 905.3825pt x 445.66
+<images/imagenesDocumentacion/menuCalibracion.png, id=1190, 905.3825pt x 445.66
 5pt>
 File: images/imagenesDocumentacion/menuCalibracion.png Graphic file (type png)
 <use images/imagenesDocumentacion/menuCalibracion.png>
@@ -2527,10 +2567,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--17
 
  []
 
-[89
+[92
 
  <./images/imagenesDocumentacion/ventanaPrincipal.png>]
-<images/imagenesDocumentacion/menuEleccionDosis.png, id=1173, 1370.11874pt x 74
+<images/imagenesDocumentacion/menuEleccionDosis.png, id=1197, 1370.11874pt x 74
 2.775pt>
 File: images/imagenesDocumentacion/menuEleccionDosis.png Graphic file (type png
 )
@@ -2543,7 +2583,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-[90 <./images/imagenesDocumentacion/menuCalibracion.png> <./images/imagenesDocu
+[93 <./images/imagenesDocumentacion/menuCalibracion.png> <./images/imagenesDocu
 mentacion/menuEleccionDosis.png>]
 File: images/imagenesDocumentacion/menuEleccionDosis.png Graphic file (type png
 )
@@ -2556,7 +2596,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--34
 
  []
 
-<images/imagenesDocumentacion/ventanaMapaDosis.png, id=1182, 1371.1225pt x 740.
+<images/imagenesDocumentacion/ventanaMapaDosis.png, id=1206, 1371.1225pt x 740.
 7675pt>
 File: images/imagenesDocumentacion/ventanaMapaDosis.png Graphic file (type png)
 
@@ -2569,12 +2609,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--42
 
  []
 
-[91]
+[94]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<images/imagenesDocumentacion/ventanaMapaDosis2.png, id=1188, 1371.1225pt x 739
+<images/imagenesDocumentacion/ventanaMapaDosis2.png, id=1213, 1371.1225pt x 739
 .76375pt>
 File: images/imagenesDocumentacion/ventanaMapaDosis2.png Graphic file (type png
 )
@@ -2582,9 +2622,9 @@ File: images/imagenesDocumentacion/ventanaMapaDosis2.png Graphic file (type png
 Package pdftex.def Info: images/imagenesDocumentacion/ventanaMapaDosis2.png  us
 ed on input line 48.
 (pdftex.def)             Requested size: 272.99881pt x 147.28413pt.
-[92 <./images/imagenesDocumentacion/ventanaMapaDosis.png> <./images/imagenesDoc
+[95 <./images/imagenesDocumentacion/ventanaMapaDosis.png> <./images/imagenesDoc
 umentacion/ventanaMapaDosis2.png>]
-<images/imagenesDocumentacion/menuComparacionAplan.png, id=1196, 492.84125pt x 
+<images/imagenesDocumentacion/menuComparacionAplan.png, id=1221, 492.84125pt x 
 473.77pt>
 File: images/imagenesDocumentacion/menuComparacionAplan.png Graphic file (type 
 png)
@@ -2592,7 +2632,7 @@ png)
 Package pdftex.def Info: images/imagenesDocumentacion/menuComparacionAplan.png 
  used on input line 57.
 (pdftex.def)             Requested size: 272.99881pt x 262.44666pt.
-<images/imagenesDocumentacion/ventanaComparacioAPlan.png, id=1198, 1371.1225pt 
+<images/imagenesDocumentacion/ventanaComparacioAPlan.png, id=1223, 1371.1225pt 
 x 742.775pt>
 File: images/imagenesDocumentacion/ventanaComparacioAPlan.png Graphic file (typ
 e png)
@@ -2600,8 +2640,8 @@ e png)
 Package pdftex.def Info: images/imagenesDocumentacion/ventanaComparacioAPlan.pn
 g  used on input line 66.
 (pdftex.def)             Requested size: 272.99881pt x 147.88367pt.
- [93 <./images/imagenesDocumentacion/menuComparacionAplan.png>]) (Peliculas.bbl
- [94 <./images/imagenesDocumentacion/ventanaComparacioAPlan.png>]
+ [96 <./images/imagenesDocumentacion/menuComparacionAplan.png>]) (Peliculas.bbl
+ [97 <./images/imagenesDocumentacion/ventanaComparacioAPlan.png>]
 Underfull \hbox (badness 7151) in paragraph at lines 30--33
 []\OT1/cmr/m/n/12 ``El mag-netron y el horno mi-cro-on-das.''
  []
@@ -2622,21 +2662,27 @@ Underfull \hbox (badness 3148) in paragraph at lines 52--57
 \OT1/cmr/m/n/12 NAL ATO-MIC ENERGY AGENCY, 2001, no.
  []
 
-[95
+[98
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
 []$\OT1/cmr/m/n/12 https : / / www . cancer . net / es / desplazarse-[]por-[]at
 enci % C3 % B3n-[]del-[]c %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--96
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
 \OT1/cmr/m/n/12 C3 % A1ncer / c % C3 % B3mo-[]se-[]trata-[]el-[]c % C3 % A1ncer
  / radioterapia /
  []
 
-[96] [97] [98]) [99]
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
+\OT1/cmr/m/n/12 s . ucm . es / CDTEAM / articulos % 20pdf / PDF % 20PUBLICACIO
+NES %
+ []
+
+[99] [100] [101]) [102]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
  (Peliculas.aux
@@ -2651,18 +2697,21 @@ Package rerunfilecheck Info: File `Peliculas.out' has not changed.
 (rerunfilecheck)             Checksum: 868413E7A2B8E270D7CC243EDC7F0656;2089.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
- 21166 strings out of 480897
- 398336 string characters out of 2904517
- 642371 words of memory out of 3000000
- 36177 multiletter control sequences out of 15000+200000
+ 21098 strings out of 480897
+ 396590 string characters out of 2904517
+ 642351 words of memory out of 3000000
+ 36099 multiletter control sequences out of 15000+200000
  544642 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,18n,89p,1117b,793s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,18n,89p,1118b,681s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/carlos/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm120
 0.pk></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10
@@ -2673,13 +2722,14 @@ fb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pf
 b></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb
 ></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 </home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></
-home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></ho
-me/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></ho
-me/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></hom
-e/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Peliculas.pdf (108 pages, 15212490 bytes).
+home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></ho
+me/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home
+/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home
+/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/
+carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Peliculas.pdf (111 pages, 13048091 bytes).
 PDF statistics:
- 1399 PDF objects out of 1440 (max. 8388607)
- 327 named destinations out of 1000 (max. 500000)
- 749 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1432 PDF objects out of 1440 (max. 8388607)
+ 336 named destinations out of 1000 (max. 500000)
+ 754 words of extra memory for PDF output out of 10000 (max. 10000000)
 

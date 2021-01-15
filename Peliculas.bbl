@@ -82,16 +82,24 @@ A.~Micke, D.~F. Lewis, and X.~Yu, ``Multichannel film dosimetry with
   \url{https://doi.org/10.1118/1.3576105}
 \BIBentrySTDinterwordspacing
 
+\bibitem{cancer.net_2020}
+\BIBentryALTinterwordspacing
+``Qué es la radioterapia,'' Aug 2020. [Online]. Available:
+  \url{https://www.cancer.net/es/desplazarse-por-atenci%C3%B3n-del-c%C3%A1ncer/c%C3%B3mo-se-trata-el-c%C3%A1ncer/radioterapia/qu%C3%A9-es-la-radioterapia}
+\BIBentrySTDinterwordspacing
+
 \bibitem{radioterapia}
 \BIBentryALTinterwordspacing
 ``Imrt-vmat.'' [Online]. Available:
   \url{http://www.radioterapiahm.com/new-page-3}
 \BIBentrySTDinterwordspacing
 
-\bibitem{cancer.net_2020}
+\bibitem{hadronterapia}
 \BIBentryALTinterwordspacing
-``Qué es la radioterapia,'' Aug 2020. [Online]. Available:
-  \url{https://www.cancer.net/es/desplazarse-por-atenci%C3%B3n-del-c%C3%A1ncer/c%C3%B3mo-se-trata-el-c%C3%A1ncer/radioterapia/qu%C3%A9-es-la-radioterapia}
+\emph{Hadronterapia}.\hskip 1em plus 0.5em minus 0.4em\relax Grupo de Física
+  Nuclear, Dpto. Física Atómica, Molecular y Nuclear, UCM, Jul. 2008.
+  [Online]. Available:
+  \url{http://nuclear.fis.ucm.es/CDTEAM/articulos%20pdf/PDF%20PUBLICACIONES%20IMAGEN%20MEDICA/HADRONTERAPIA-herranz-2008.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{McLaughlin1965}

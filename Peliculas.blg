@@ -10,28 +10,28 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
-Repeated entry---line 131 of file references.bib
+Repeated entry---line 141 of file references.bib
  : @inproceedings{Williams2011
  :                            ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 242 of file references.bib
+I was expecting a `,' or a `}'---line 252 of file references.bib
  :  
  :  publisher={University of Wollongong}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "maya" isn't style-file defined
---line 245 of file references.bib
-I was expecting a `,' or a `}'---line 249 of file references.bib
+--line 255 of file references.bib
+I was expecting a `,' or a `}'---line 259 of file references.bib
  :  
  :  publisher={Universidad Nacional de Colombia}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 330 of file references.bib
+I was expecting a `,' or a `}'---line 340 of file references.bib
  :  
  :  url="http://www.gafchromic.com/documents/EBT3_Specifications.pdf",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 337 of file references.bib
+I was expecting a `,' or a `}'---line 347 of file references.bib
  :  
  :  url="http://www.gafchromic.com/documents/EBT2_Specifications.pdf",
 (Error may have been on previous line)
@@ -44,45 +44,45 @@ Warning--empty booktitle in Williams2011
 Warning--empty journal in mayers
 
 Done.
-You've used 36 entries,
+You've used 37 entries,
             4087 wiz_defined-function locations,
-            1078 strings with 14939 characters,
-and the built_in function-call counts, 28058 in all, are:
-= -- 2354
-> -- 682
+            1084 strings with 15337 characters,
+and the built_in function-call counts, 28387 in all, are:
+= -- 2375
+> -- 683
 < -- 232
-+ -- 378
++ -- 379
 - -- 129
-* -- 1427
-:= -- 4314
-add.period$ -- 71
-call.type$ -- 36
+* -- 1441
+:= -- 4369
+add.period$ -- 73
+call.type$ -- 37
 change.case$ -- 29
 chr.to.int$ -- 486
-cite$ -- 39
-duplicate$ -- 1982
-empty$ -- 2070
+cite$ -- 40
+duplicate$ -- 2011
+empty$ -- 2114
 format.name$ -- 147
-if$ -- 6464
+if$ -- 6541
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 353
-newline$ -- 185
+int.to.str$ -- 37
+missing$ -- 359
+newline$ -- 190
 num.names$ -- 32
-pop$ -- 758
+pop$ -- 778
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2163
+skip$ -- 2189
 stack$ -- 0
 substring$ -- 1243
-swap$ -- 1743
+swap$ -- 1757
 text.length$ -- 70
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 36
+type$ -- 37
 warning$ -- 3
 while$ -- 109
-width$ -- 38
-write$ -- 441
+width$ -- 39
+write$ -- 450
 (There were 5 error messages)

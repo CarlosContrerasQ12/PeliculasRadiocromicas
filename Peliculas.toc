@@ -15,19 +15,19 @@
 \contentsline {section}{\numberline {3.3}Medidas de radiación ionizante}{25}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Principios de dosimetría}{28}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Equilibrio de partículas cargadas}{28}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Cámaras de ionización}{29}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.2}Cámaras de ionización}{30}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}Dosimetría con películas}{35}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Películas radiocrómicas}{35}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Análisis $\Gamma $}{48}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Metodología}{51}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Procedimiento de irradiación}{51}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Escaneo y tratamiento}{55}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Resultados y análisis}{59}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Calibración}{59}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Efectos de diversos parámetros}{64}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Mapas de dosis}{74}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Comparaciones $\Gamma $}{80}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{86}{chapter.6}%
-\contentsline {chapter}{Apéndices}{87}{section*.63}%
-\contentsline {chapter}{\numberline {A}Diagramas de flujo}{87}{appendix.1.Alph1}%
-\contentsline {chapter}{\numberline {B}Documentación del programa}{89}{appendix.1.Alph2}%
+\contentsline {section}{\numberline {3.5}Películas radiocrómicas}{36}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Análisis $\Gamma $}{50}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Metodología}{53}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Procedimiento de irradiación}{53}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Escaneo y tratamiento}{58}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Resultados y análisis}{61}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Calibración}{61}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Efectos de diversos parámetros}{66}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Mapas de dosis}{77}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Comparaciones $\Gamma $}{84}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{89}{chapter.6}%
+\contentsline {chapter}{Apéndices}{90}{section*.63}%
+\contentsline {chapter}{\numberline {A}Diagramas de flujo}{90}{appendix.1.Alph1}%
+\contentsline {chapter}{\numberline {B}Documentación del programa}{92}{appendix.1.Alph2}%
