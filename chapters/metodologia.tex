@@ -93,7 +93,31 @@ Por otro lado, el fabricante del lote de películas EBT3 usado reporta que en el
 
 
 
-Finalmente, para evitar cambios en la medida por efectos de la orientación de la película en el escáner, se escaneó siempre usando la orientación horizontal en la parte superior del escaner.\\
+Finalmente, para evitar cambios en la medida por efectos de la orientación de la película en el escáner, se escaneó siempre usando la orientación horizontal en la parte superior del escáner.\\
+
+\section{Programa para el análisis de películas}
+
+Para ejecutar el análisis de películas radiocrómicas irradiadas usando diversas técnicas mencionadas anteriormente, como métodos de calibración y corrección, y de manera efectiva se implementó un programa en el lenguaje de programación Python. \\
+
+Este programa permite usar diversas herramientas para el análisis de estas películas, las cuales se pueden dividir en cuatro categorías generales.\\
+
+El primer conjunto de herramientas permite generar curvas de calibración a partir de imágenes digitalizadas de películas irradiadas con una dosis conocida. Esta sección permite elegir el tipo de curva usada, así como la elección de los canales a usar. Para elegir la transmitancias promedio el programa permite seleccionar ROIs, áreas en las cuales se promedia el valor de los tres canales de color. También permite promediar los colores de múltiples películas irradiadas con la misma dosis para mejorar la calidad de la medida. El resultado de la función de la calibración persiste como un archivo en formato .calibr, el cual contiene toda la información que se usó para generar la curva.\\
+
+El segundo conjunto de herramientas permite generar mapas de dosis a partir de una película escaneada y un archivo de calibración, además de proporcionar algunas herramientas para analizar estos mapas. Se incluyen funciones como reducir el tamaño del área de interés, elegir y remover puntos fiduciales en la sección de la película, mostrar mapas de isodosis y perfiles e histogramas de dosis, así como elegir la normalización sobre la que se calcularon. El mapa final se guarda en  un archivo en formato DICOM.\\
+
+El tercer conjunto de herramientas permite realizar comparaciones plan-película con análisis $\Gamma$ a partir de dos archivos en formato DICOM, uno correspondiente al plan calculado por el TPS y otro generado en el paso anterior con la información de la película. En este conjunto se incluyen herramientas como la superposición de mapas de isodosis y perfiles de dosis, así como visualizaciones propias del análisis $\Gamma$, como la matriz y el histograma $\Gamma$, además del porcentaje de aprobación del test.\\
+
+Por último, en la cuarta categoría se encuentran herramientas auxiliares para facilitar el uso del programa. Entre estas se incluyen la elección de los filtros usados, la elección de las propiedades del escáner , herramientas para apilar y reflejar imágenes, entre otras.\\
+
+Una descripción más detallada del programa puede encontrarse en los apéndices A y B.
+
+
+
+
+
+  
+
+
 
 
 

@@ -22,12 +22,13 @@
 \contentsline {chapter}{\numberline {4}Metodología}{53}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Procedimiento de irradiación}{53}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Escaneo y tratamiento}{58}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Resultados y análisis}{61}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Calibración}{61}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Efectos de diversos parámetros}{66}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Mapas de dosis}{77}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Comparaciones $\Gamma $}{84}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{89}{chapter.6}%
-\contentsline {chapter}{Apéndices}{90}{section*.63}%
-\contentsline {chapter}{\numberline {A}Diagramas de flujo}{90}{appendix.1.Alph1}%
-\contentsline {chapter}{\numberline {B}Documentación del programa}{92}{appendix.1.Alph2}%
+\contentsline {section}{\numberline {4.3}Programa para el análisis de películas}{60}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Resultados y análisis}{62}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Calibración}{62}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Efectos de diversos parámetros}{67}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Mapas de dosis}{78}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Comparaciones $\Gamma $}{85}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Conclusiones}{90}{chapter.6}%
+\contentsline {chapter}{Apéndices}{91}{section*.63}%
+\contentsline {chapter}{\numberline {A}Diagramas de flujo}{91}{appendix.1.Alph1}%
+\contentsline {chapter}{\numberline {B}Documentación del programa}{93}{appendix.1.Alph2}%
