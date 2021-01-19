@@ -41,11 +41,8 @@ F.~Khan, \emph{The physics of radiation therapy}.\hskip 1em plus 0.5em minus
   0.4em\relax Philadelphia: Lippincott Williams \& Wilkins, 2014.
 
 \bibitem{Attix1986}
-\BIBentryALTinterwordspacing
 F.~H. Attix, \emph{Introduction to Radiological Physics and Radiation
   Dosimetry}.\hskip 1em plus 0.5em minus 0.4em\relax Wiley, Nov. 1986.
-  [Online]. Available: \url{https://doi.org/10.1002/9783527617135}
-\BIBentrySTDinterwordspacing
 
 \bibitem{TPR398}
 \BIBentryALTinterwordspacing
@@ -88,11 +85,40 @@ A.~Micke, D.~F. Lewis, and X.~Yu, ``Multichannel film dosimetry with
   \url{https://www.cancer.net/es/desplazarse-por-atenci%C3%B3n-del-c%C3%A1ncer/c%C3%B3mo-se-trata-el-c%C3%A1ncer/radioterapia/qu%C3%A9-es-la-radioterapia}
 \BIBentrySTDinterwordspacing
 
+\bibitem{magne2}
+\BIBentryALTinterwordspacing
+``Qué es la radioterapia,'' Aug 2020. [Online]. Available:
+  \url{https://comofunciona.co.com/el-magnetron/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Burman2002}
+\BIBentryALTinterwordspacing
+C.~M. Burman, M.~A. Hunt, C.-S. Chui, T.~J. Losasso, G.~S. Mageras, M.~J.
+  Zelefsky, Z.~Fuks, S.~A. Leibel, and C.~C. Ling, ``Three-dimensional and
+  conformal treatment planning,'' in \emph{Oncologic Imaging}.\hskip 1em plus
+  0.5em minus 0.4em\relax Elsevier, 2002, pp. 81--91. [Online]. Available:
+  \url{https://doi.org/10.1016/b0-72-167494-1/50009-8}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Klein2009}
+\BIBentryALTinterwordspacing
+E.~E. Klein, J.~Hanley, J.~Bayouth, F.-F. Yin, W.~Simon, S.~Dresser, C.~Serago,
+  F.~Aguirre, L.~Ma, B.~Arjomandy, C.~Liu, C.~Sandin, and T.~Holmes, ``Task
+  group 142 report: Quality assurance of medical acceleratorsa),''
+  \emph{Medical Physics}, vol.~36, no. 9Part1, pp. 4197--4212, Aug. 2009.
+  [Online]. Available: \url{https://doi.org/10.1118/1.3190392}
+\BIBentrySTDinterwordspacing
+
 \bibitem{radioterapia}
 \BIBentryALTinterwordspacing
 ``Imrt-vmat.'' [Online]. Available:
   \url{http://www.radioterapiahm.com/new-page-3}
 \BIBentrySTDinterwordspacing
+
+\bibitem{symonds2019walter}
+P.~Symonds, \emph{Walter and Miller's textbook of radiotherapy : radiation
+  physics, therapy and oncology}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Amsterdam: Elsevier, 2019.
 
 \bibitem{hadronterapia}
 \BIBentryALTinterwordspacing
@@ -102,12 +128,21 @@ A.~Micke, D.~F. Lewis, and X.~Yu, ``Multichannel film dosimetry with
   \url{http://nuclear.fis.ucm.es/CDTEAM/articulos%20pdf/PDF%20PUBLICACIONES%20IMAGEN%20MEDICA/HADRONTERAPIA-herranz-2008.pdf}
 \BIBentrySTDinterwordspacing
 
-\bibitem{McLaughlin1965}
+\bibitem{Quan2012}
 \BIBentryALTinterwordspacing
-W.~L. McLaughlin and L.~Chalkley, ``Measurement of radiation dose distributions
-  with photochromic materials,'' \emph{Radiology}, vol.~84, no.~1, pp.
-  124--125, Jan. 1965. [Online]. Available:
-  \url{https://doi.org/10.1148/84.1.124}
+E.~M. Quan, X.~Li, Y.~Li, X.~Wang, R.~J. Kudchadker, J.~L. Johnson, D.~A.
+  Kuban, A.~K. Lee, and X.~Zhang, ``A comprehensive comparison of {IMRT} and
+  {VMAT} plan quality for prostate cancer treatment,'' \emph{International
+  Journal of Radiation Oncology{\ast}Biology{\ast}Physics}, vol.~83, no.~4, pp.
+  1169--1178, Jul. 2012. [Online]. Available:
+  \url{https://doi.org/10.1016/j.ijrobp.2011.09.015}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Weinberg1995}
+\BIBentryALTinterwordspacing
+S.~Weinberg, \emph{The Quantum Theory of Fields}.\hskip 1em plus 0.5em minus
+  0.4em\relax Cambridge University Press, Jun. 1995. [Online]. Available:
+  \url{https://doi.org/10.1017/cbo9781139644167}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Williams2011}
@@ -116,6 +151,14 @@ M.~Williams, P.~Metcalfe, A.~Rosenfeld, T.~Kron, F.~d'Errico, and
   M.~Moscovitch, ``Radiochromic film dosimetry and its applications in
   radiotherapy.''\hskip 1em plus 0.5em minus 0.4em\relax {AIP}, 2011. [Online].
   Available: \url{https://doi.org/10.1063/1.3576160}
+\BIBentrySTDinterwordspacing
+
+\bibitem{McLaughlin1965}
+\BIBentryALTinterwordspacing
+W.~L. McLaughlin and L.~Chalkley, ``Measurement of radiation dose distributions
+  with photochromic materials,'' \emph{Radiology}, vol.~84, no.~1, pp.
+  124--125, Jan. 1965. [Online]. Available:
+  \url{https://doi.org/10.1148/84.1.124}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Beni2017}
@@ -191,6 +234,14 @@ Y.~Li, L.~Chen, J.~Zhu, and X.~Liu, ``The combination of the error correction
   methods of {GAFCHROMIC} {EBT}3 film,'' \emph{{PLOS} {ONE}}, vol.~12, no.~7,
   p. e0181958, Jul. 2017. [Online]. Available:
   \url{https://doi.org/10.1371/journal.pone.0181958}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Benesty2008}
+\BIBentryALTinterwordspacing
+J.~Benesty, Y.~Huang, and J.~Chen, ``Wiener and adaptive filters,'' in
+  \emph{Springer Handbook of Speech Processing}.\hskip 1em plus 0.5em minus
+  0.4em\relax Springer Berlin Heidelberg, 2008, pp. 103--120. [Online].
+  Available: \url{https://doi.org/10.1007/978-3-540-49127-9_6}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Winiecki2009}

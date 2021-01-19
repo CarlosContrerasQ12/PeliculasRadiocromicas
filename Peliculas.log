@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  18 JAN 2021 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  18 JAN 2021 23:35
 entering extended mode
 **./Peliculas.tex
 (Peliculas.tex
@@ -844,7 +844,7 @@ loading the todonotes package. on input line 68.
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 73.
-(pdftex.def)             Requested size: 234.00238pt x 70.20105pt.
+(pdftex.def)             Requested size: 195.0pt x 58.50087pt.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
@@ -855,7 +855,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Overfull \hbox (64.56296pt too wide) in paragraph at lines 73--73
+ [][] 
+ []
+
+[1
 
 {/home/carlos/.miktex/texmfs/data/pdftex/config/pdftex.map} <./images/logo.png>
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has
@@ -933,11 +938,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
 [1
 
 ]) [2]
@@ -998,7 +998,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<images/linalc.png, id=434, 641.39626pt x 460.72125pt>
+<images/linalc.png, id=435, 641.39626pt x 460.72125pt>
 File: images/linalc.png Graphic file (type png)
 <use images/linalc.png>
 Package pdftex.def Info: images/linalc.png  used on input line 27.
@@ -1043,22 +1043,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<images/magnetron.jpg, id=447, 451.6875pt x 340.27126pt>
-File: images/magnetron.jpg Graphic file (type jpg)
-<use images/magnetron.jpg>
-Package pdftex.def Info: images/magnetron.jpg  used on input line 48.
-(pdftex.def)             Requested size: 272.99881pt x 205.67003pt.
+<images/magnetron2.png, id=451, 668.4975pt x 525.965pt>
+File: images/magnetron2.png Graphic file (type png)
+<use images/magnetron2.png>
+Package pdftex.def Info: images/magnetron2.png  used on input line 48.
+(pdftex.def)             Requested size: 272.99881pt x 214.79633pt.
 [8]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-<images/klystron.png, id=456, 508.90125pt x 400.49625pt>
+<images/klystron.png, id=462, 508.90125pt x 400.49625pt>
 File: images/klystron.png Graphic file (type png)
 <use images/klystron.png>
 Package pdftex.def Info: images/klystron.png  used on input line 57.
 (pdftex.def)             Requested size: 272.99881pt x 214.85309pt.
-[9 <./images/magnetron.jpg>]
+[9 <./images/magnetron2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
@@ -1098,14 +1098,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-<images/distribucionAngular.png, id=471, 395.4775pt x 335.2525pt>
+<images/distribucionAngular.png, id=478, 395.4775pt x 335.2525pt>
 File: images/distribucionAngular.png Graphic file (type png)
 <use images/distribucionAngular.png>
 Package pdftex.def Info: images/distribucionAngular.png  used on input line 80.
 
 (pdftex.def)             Requested size: 272.99881pt x 231.42677pt.
 [11]
-<images/filtros.png, id=479, 367.3725pt x 502.87875pt>
+<images/filtros.png, id=486, 367.3725pt x 502.87875pt>
 File: images/filtros.png Graphic file (type png)
 <use images/filtros.png>
 Package pdftex.def Info: images/filtros.png  used on input line 88.
@@ -1143,12 +1143,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
 Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
- []
-
-
-Overfull \hbox (9.36113pt too wide) in paragraph at lines 109--110
-\OT1/cmr/m/n/12 Al-gu-nos efec-tos se-cun-da-rios co-mu-nes pue-den ser la fa-t
-i-ga o pro-ble-mas cutaneos,
  []
 
 
@@ -1226,7 +1220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
-<images/rayleigh.png, id=511, 372.39125pt x 335.2525pt>
+<images/rayleigh.png, id=530, 372.39125pt x 335.2525pt>
 File: images/rayleigh.png Graphic file (type png)
 <use images/rayleigh.png>
 Package pdftex.def Info: images/rayleigh.png  used on input line 157.
@@ -1241,7 +1235,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-<images/compton.png, id=523, 584.1825pt x 367.3725pt>
+<images/compton.png, id=542, 584.1825pt x 367.3725pt>
 File: images/compton.png Graphic file (type png)
 <use images/compton.png>
 Package pdftex.def Info: images/compton.png  used on input line 166.
@@ -1287,7 +1281,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--217
  []
 
 [20]
-<images/fotoelectrico.png, id=551, 693.59125pt x 516.93124pt>
+<images/fotoelectrico.png, id=572, 693.59125pt x 516.93124pt>
 File: images/fotoelectrico.png Graphic file (type png)
 <use images/fotoelectrico.png>
 Package pdftex.def Info: images/fotoelectrico.png  used on input line 221.
@@ -1312,7 +1306,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--239
 
  []
 
-<images/produccionPares.png, id=560, 698.61pt x 318.18875pt>
+<images/produccionPares.png, id=582, 698.61pt x 318.18875pt>
 File: images/produccionPares.png Graphic file (type png)
 <use images/produccionPares.png>
 Package pdftex.def Info: images/produccionPares.png  used on input line 242.
@@ -1327,7 +1321,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--267
 
  []
 
-<images/importanciaRelativa.png, id=573, 619.31375pt x 395.4775pt>
+<images/importanciaRelativa.png, id=595, 619.31375pt x 395.4775pt>
 File: images/importanciaRelativa.png Graphic file (type png)
 <use images/importanciaRelativa.png>
 Package pdftex.def Info: images/importanciaRelativa.png  used on input line 272
@@ -1453,7 +1447,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 408--409
 
  []
 
-<images/freeAirChamber.png, id=631, 594.22pt x 417.56pt>
+<images/freeAirChamber.png, id=657, 594.22pt x 417.56pt>
 File: images/freeAirChamber.png Graphic file (type png)
 <use images/freeAirChamber.png>
 Package pdftex.def Info: images/freeAirChamber.png  used on input line 413.
@@ -1478,7 +1472,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
-<images/camaraIoni.png, id=641, 725.71124pt x 298.11375pt>
+<images/camaraIoni.png, id=667, 725.71124pt x 298.11375pt>
 File: images/camaraIoni.png Graphic file (type png)
 <use images/camaraIoni.png>
 Package pdftex.def Info: images/camaraIoni.png  used on input line 430.
@@ -1523,7 +1517,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 466--467
 
  []
 
-<images/TPR2010.png, id=659, 545.03625pt x 556.0775pt>
+<images/TPR2010.png, id=685, 545.03625pt x 556.0775pt>
 File: images/TPR2010.png Graphic file (type png)
 <use images/TPR2010.png>
 Package pdftex.def Info: images/TPR2010.png  used on input line 471.
@@ -1594,7 +1588,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 503--504
  []
 
 [36]
-<images/modelos.png, id=690, 780.9175pt x 595.22375pt>
+<images/modelos.png, id=718, 780.9175pt x 595.22375pt>
 File: images/modelos.png Graphic file (type png)
 <use images/modelos.png>
 Package pdftex.def Info: images/modelos.png  used on input line 534.
@@ -1609,12 +1603,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 539--540
 
  []
 
-<images/diacetileno.png, id=700, 645.41125pt x 280.04625pt>
+<images/diacetileno.png, id=728, 645.41125pt x 280.04625pt>
 File: images/diacetileno.png Graphic file (type png)
 <use images/diacetileno.png>
 Package pdftex.def Info: images/diacetileno.png  used on input line 543.
 (pdftex.def)             Requested size: 195.0pt x 84.60847pt.
-<images/reaccion.png, id=703, 677.53125pt x 442.65375pt>
+<images/reaccion.png, id=731, 677.53125pt x 442.65375pt>
 File: images/reaccion.png Graphic file (type png)
 <use images/reaccion.png>
 Package pdftex.def Info: images/reaccion.png  used on input line 545.
@@ -1629,7 +1623,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 551--552
 
  []
 
-<images/absorbancia.png, id=718, 742.775pt x 555.07375pt>
+<images/absorbancia.png, id=746, 742.775pt x 555.07375pt>
 File: images/absorbancia.png Graphic file (type png)
 <use images/absorbancia.png>
 Package pdftex.def Info: images/absorbancia.png  used on input line 556.
@@ -1644,7 +1638,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 561--562
 
  []
 
-<images/escaner.png, id=734, 864.22874pt x 536.0025pt>
+<images/escaner.png, id=762, 864.22874pt x 536.0025pt>
 File: images/escaner.png Graphic file (type png)
 <use images/escaner.png>
 Package pdftex.def Info: images/escaner.png  used on input line 566.
@@ -1720,13 +1714,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 603--604
  []
 
 [43]
-<images/fondoblancoLandscape-1.png, id=766, 1496.59125pt x 1200.485pt>
+<images/fondoblancoLandscape-1.png, id=794, 1496.59125pt x 1200.485pt>
 File: images/fondoblancoLandscape-1.png Graphic file (type png)
 <use images/fondoblancoLandscape-1.png>
 Package pdftex.def Info: images/fondoblancoLandscape-1.png  used on input line 
 607.
 (pdftex.def)             Requested size: 272.99881pt x 218.9722pt.
-<images/calibracionSimpleLandscape.png, id=767, 718.3638pt x 576.2328pt>
+<images/calibracionSimpleLandscape.png, id=795, 718.3638pt x 576.2328pt>
 File: images/calibracionSimpleLandscape.png Graphic file (type png)
 <use images/calibracionSimpleLandscape.png>
 Package pdftex.def Info: images/calibracionSimpleLandscape.png  used on input l
@@ -1739,7 +1733,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 613--614
 
 [45 <./images/fondoblancoLandscape-1.png> <./images/calibracionSimpleLandscape.
 png>]
-<images/respses.png, id=781, 808.01875pt x 538.01pt>
+<images/respses.png, id=809, 808.01875pt x 538.01pt>
 File: images/respses.png Graphic file (type png)
 <use images/respses.png>
 Package pdftex.def Info: images/respses.png  used on input line 617.
@@ -1749,12 +1743,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 629--631
 
  []
 
-<images/curva1.png, id=785, 400.49625pt x 283.0575pt>
+<images/curva1.png, id=813, 400.49625pt x 283.0575pt>
 File: images/curva1.png Graphic file (type png)
 <use images/curva1.png>
 Package pdftex.def Info: images/curva1.png  used on input line 636.
 (pdftex.def)             Requested size: 195.0pt x 137.8226pt.
-<images/curva2.png, id=788, 390.45876pt x 283.0575pt>
+<images/curva2.png, id=816, 390.45876pt x 283.0575pt>
 File: images/curva2.png Graphic file (type png)
 <use images/curva2.png>
 Package pdftex.def Info: images/curva2.png  used on input line 638.
@@ -1825,11 +1819,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 685--686
  []
 
 [48]
-<images/efectoLateral.png, id=824, 640.3925pt x 507.8975pt>
+<images/efectoLateral.png, id=854, 640.3925pt x 507.8975pt>
 File: images/efectoLateral.png Graphic file (type png)
 <use images/efectoLateral.png>
 Package pdftex.def Info: images/efectoLateral.png  used on input line 689.
-(pdftex.def)             Requested size: 234.00238pt x 185.58641pt.
+(pdftex.def)             Requested size: 312.00119pt x 247.45372pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 697--699
 
@@ -1878,7 +1872,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 737--738
 
  []
 
-<images/gammaEllipse.png, id=850, 739.76375pt x 446.66875pt>
+<images/gammaEllipse.png, id=881, 739.76375pt x 446.66875pt>
 File: images/gammaEllipse.png Graphic file (type png)
 <use images/gammaEllipse.png>
 Package pdftex.def Info: images/gammaEllipse.png  used on input line 742.
@@ -1895,7 +1889,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<images/TRS398Editado2.jpg, id=863, 1108.14pt x 831.105pt>
+<images/TRS398Editado2.jpg, id=894, 1108.14pt x 831.105pt>
 File: images/TRS398Editado2.jpg Graphic file (type jpg)
 <use images/TRS398Editado2.jpg>
 Package pdftex.def Info: images/TRS398Editado2.jpg  used on input line 8.
@@ -1905,7 +1899,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-<images/alineacionCampo.jpg, id=865, 4047.12pt x 3035.34pt>
+<images/alineacionCampo.jpg, id=896, 4047.12pt x 3035.34pt>
 File: images/alineacionCampo.jpg Graphic file (type jpg)
 <use images/alineacionCampo.jpg>
 Package pdftex.def Info: images/alineacionCampo.jpg  used on input line 18.
@@ -1917,7 +1911,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-<images/elctrometro.jpg, id=871, 1108.14pt x 831.105pt>
+<images/elctrometro.jpg, id=902, 1108.14pt x 831.105pt>
 File: images/elctrometro.jpg Graphic file (type jpg)
 <use images/elctrometro.jpg>
 Package pdftex.def Info: images/elctrometro.jpg  used on input line 30.
@@ -1937,7 +1931,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-<images/piramideTPS.png, id=881, 462.528pt x 346.896pt>
+<images/piramideTPS.png, id=913, 462.528pt x 346.896pt>
 File: images/piramideTPS.png Graphic file (type png)
 <use images/piramideTPS.png>
 Package pdftex.def Info: images/piramideTPS.png  used on input line 43.
@@ -1947,7 +1941,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-<images/mamaTPS.png, id=883, 462.528pt x 346.896pt>
+<images/mamaTPS.png, id=915, 462.528pt x 346.896pt>
 File: images/mamaTPS.png Graphic file (type png)
 <use images/mamaTPS.png>
 Package pdftex.def Info: images/mamaTPS.png  used on input line 53.
@@ -1978,7 +1972,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-<images/imagenMicke.png, id=899, 825.0825pt x 446.66875pt>
+<images/imagenMicke.png, id=933, 825.0825pt x 446.66875pt>
 File: images/imagenMicke.png Graphic file (type png)
 <use images/imagenMicke.png>
 Package pdftex.def Info: images/imagenMicke.png  used on input line 75.
@@ -2008,12 +2002,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-
+[59 <./images/imagenMicke.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-[59 <./images/imagenMicke.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
@@ -2059,7 +2053,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 5.
 
-<images/peliculasIrradiadas.png, id=923, 638.385pt x 474.77374pt>
+<images/peliculasIrradiadas.png, id=957, 638.385pt x 474.77374pt>
 File: images/peliculasIrradiadas.png Graphic file (type png)
 <use images/peliculasIrradiadas.png>
 Package pdftex.def Info: images/peliculasIrradiadas.png  used on input line 29.
@@ -2084,7 +2078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
  []
 
 [63 <./images/peliculasIrradiadas.png>]
-<images/calibracionMulti0a20.png, id=935, 745.1037pt x 406.8801pt>
+<images/calibracionMulti0a20.png, id=969, 745.1037pt x 406.8801pt>
 File: images/calibracionMulti0a20.png Graphic file (type png)
 <use images/calibracionMulti0a20.png>
 Package pdftex.def Info: images/calibracionMulti0a20.png  used on input line 39
@@ -2100,7 +2094,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-<images/calibracionMulti.png, id=937, 655.4889pt x 377.2494pt>
+<images/calibracionMulti.png, id=971, 655.4889pt x 377.2494pt>
 File: images/calibracionMulti.png Graphic file (type png)
 <use images/calibracionMulti.png>
 Package pdftex.def Info: images/calibracionMulti.png  used on input line 54.
@@ -2110,12 +2104,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-<images/calibracionCubica.png, id=946, 562.9833pt x 323.0469pt>
+<images/calibracionCubica.png, id=980, 562.9833pt x 323.0469pt>
 File: images/calibracionCubica.png Graphic file (type png)
 <use images/calibracionCubica.png>
 Package pdftex.def Info: images/calibracionCubica.png  used on input line 66.
 (pdftex.def)             Requested size: 272.99881pt x 156.65291pt.
-<images/curvaCalibracionMalaExponencial.png, id=947, 690.9012pt x 356.2911pt>
+<images/curvaCalibracionMalaExponencial.png, id=981, 690.9012pt x 356.2911pt>
 File: images/curvaCalibracionMalaExponencial.png Graphic file (type png)
 <use images/curvaCalibracionMalaExponencial.png>
 Package pdftex.def Info: images/curvaCalibracionMalaExponencial.png  used on in
@@ -2137,30 +2131,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-<images/imagenFondoCero.png, id=965, 686.565pt x 541.02126pt>
+<images/imagenFondoCero.png, id=999, 686.565pt x 541.02126pt>
 File: images/imagenFondoCero.png Graphic file (type png)
 <use images/imagenFondoCero.png>
 Package pdftex.def Info: images/imagenFondoCero.png  used on input line 86.
 (pdftex.def)             Requested size: 272.99881pt x 215.12509pt.
-<images/imagenPerfilMapaCeroHorizontal.png, id=966, 669.50125pt x 532.99126pt>
+<images/imagenPerfilMapaCeroHorizontal.png, id=1000, 669.50125pt x 532.99126pt>
+
 File: images/imagenPerfilMapaCeroHorizontal.png Graphic file (type png)
 <use images/imagenPerfilMapaCeroHorizontal.png>
 Package pdftex.def Info: images/imagenPerfilMapaCeroHorizontal.png  used on inp
 ut line 93.
 (pdftex.def)             Requested size: 175.49881pt x 139.71304pt.
-<images/imagenPerfilMapaCeroVertical.png, id=967, 693.59125pt x 533.995pt>
+<images/imagenPerfilMapaCeroVertical.png, id=1001, 693.59125pt x 533.995pt>
 File: images/imagenPerfilMapaCeroVertical.png Graphic file (type png)
 <use images/imagenPerfilMapaCeroVertical.png>
 Package pdftex.def Info: images/imagenPerfilMapaCeroVertical.png  used on input
  line 95.
 (pdftex.def)             Requested size: 175.49881pt x 135.11174pt.
-<images/perfilDosisCeroHorizontal.png, id=968, 462.528pt x 302.0886pt>
+<images/perfilDosisCeroHorizontal.png, id=1002, 462.528pt x 302.0886pt>
 File: images/perfilDosisCeroHorizontal.png Graphic file (type png)
 <use images/perfilDosisCeroHorizontal.png>
 Package pdftex.def Info: images/perfilDosisCeroHorizontal.png  used on input li
 ne 97.
 (pdftex.def)             Requested size: 175.49881pt x 114.6243pt.
-<images/perfilDosisCeroVerticalEnCentro.png, id=969, 462.528pt x 302.0886pt>
+<images/perfilDosisCeroVerticalEnCentro.png, id=1003, 462.528pt x 302.0886pt>
 File: images/perfilDosisCeroVerticalEnCentro.png Graphic file (type png)
 <use images/perfilDosisCeroVerticalEnCentro.png>
 Package pdftex.def Info: images/perfilDosisCeroVerticalEnCentro.png  used on in
@@ -2183,7 +2178,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-<images/fonRuido.png, id=988, 386.44376pt x 487.8225pt>
+<images/fonRuido.png, id=1022, 386.44376pt x 487.8225pt>
 File: images/fonRuido.png Graphic file (type png)
 <use images/fonRuido.png>
 Package pdftex.def Info: images/fonRuido.png  used on input line 113.
@@ -2198,19 +2193,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-<images/peliculaCuadrado.png, id=994, 671.50874pt x 543.02875pt>
+<images/peliculaCuadrado.png, id=1028, 671.50874pt x 543.02875pt>
 File: images/peliculaCuadrado.png Graphic file (type png)
 <use images/peliculaCuadrado.png>
 Package pdftex.def Info: images/peliculaCuadrado.png  used on input line 124.
 (pdftex.def)             Requested size: 272.99881pt x 220.76231pt.
 [70 <./images/fonRuido.png>]
-<images/mapaCuadradoConMulticanal.png, id=1002, 669.50125pt x 532.99126pt>
+<images/mapaCuadradoConMulticanal.png, id=1036, 669.50125pt x 532.99126pt>
 File: images/mapaCuadradoConMulticanal.png Graphic file (type png)
 <use images/mapaCuadradoConMulticanal.png>
 Package pdftex.def Info: images/mapaCuadradoConMulticanal.png  used on input li
 ne 132.
 (pdftex.def)             Requested size: 195.0pt x 155.23853pt.
-<images/fondoCuadradoConLabel.png, id=1003, 642.4pt x 419.5675pt>
+<images/fondoCuadradoConLabel.png, id=1037, 642.4pt x 419.5675pt>
 File: images/fondoCuadradoConLabel.png Graphic file (type png)
 <use images/fondoCuadradoConLabel.png>
 Package pdftex.def Info: images/fondoCuadradoConLabel.png  used on input line 1
@@ -2226,13 +2221,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-<images/perfilDosisCuadradoUnoSolo.png, id=1010, 462.528pt x 302.0886pt>
+<images/perfilDosisCuadradoUnoSolo.png, id=1044, 462.528pt x 302.0886pt>
 File: images/perfilDosisCuadradoUnoSolo.png Graphic file (type png)
 <use images/perfilDosisCuadradoUnoSolo.png>
 Package pdftex.def Info: images/perfilDosisCuadradoUnoSolo.png  used on input l
 ine 144.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
-<images/perfilDosisCuadradoMulticanal.png, id=1011, 462.528pt x 302.0886pt>
+<images/perfilDosisCuadradoMulticanal.png, id=1045, 462.528pt x 302.0886pt>
 File: images/perfilDosisCuadradoMulticanal.png Graphic file (type png)
 <use images/perfilDosisCuadradoMulticanal.png>
 Package pdftex.def Info: images/perfilDosisCuadradoMulticanal.png  used on inpu
@@ -2240,24 +2235,20 @@ t line 146.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
 [72 <./images/mapaCuadradoConMulticanal.png> <./images/fondoCuadradoConLabel.pn
 g>]
-
-LaTeX Warning: Reference `fig:perhor' on page 73 undefined on input line 151.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
 [73 <./images/perfilDosisCuadradoUnoSolo.png> <./images/perfilDosisCuadradoMult
 icanal.png>]
-<images/perfilHorizontalDeDosisCeroMulticanal.png, id=1029, 462.528pt x 302.088
+<images/perfilHorizontalDeDosisCeroMulticanal.png, id=1064, 462.528pt x 302.088
 6pt>
 File: images/perfilHorizontalDeDosisCeroMulticanal.png Graphic file (type png)
 <use images/perfilHorizontalDeDosisCeroMulticanal.png>
 Package pdftex.def Info: images/perfilHorizontalDeDosisCeroMulticanal.png  used
  on input line 155.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
-<images/fondoIndependienteDosisPeliculaCero.png, id=1031, 462.528pt x 302.0886p
+<images/fondoIndependienteDosisPeliculaCero.png, id=1066, 462.528pt x 302.0886p
 t>
 File: images/fondoIndependienteDosisPeliculaCero.png Graphic file (type png)
 <use images/fondoIndependienteDosisPeliculaCero.png>
@@ -2270,7 +2261,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--166
  []
 
 [74 <./images/perfilHorizontalDeDosisCeroMulticanal.png>]
-<images/perfilCuadradoMenosBit.png, id=1038, 462.528pt x 302.0886pt>
+<images/perfilCuadradoMenosBit.png, id=1073, 462.528pt x 302.0886pt>
 File: images/perfilCuadradoMenosBit.png Graphic file (type png)
 <use images/perfilCuadradoMenosBit.png>
 Package pdftex.def Info: images/perfilCuadradoMenosBit.png  used on input line 
@@ -2287,13 +2278,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--176
  []
 
 [75 <./images/fondoIndependienteDosisPeliculaCero.png>]
-<images/calibracion0-20-sinRotar.png, id=1045, 583.9416pt x 346.1733pt>
+<images/calibracion0-20-sinRotar.png, id=1080, 583.9416pt x 346.1733pt>
 File: images/calibracion0-20-sinRotar.png Graphic file (type png)
 <use images/calibracion0-20-sinRotar.png>
 Package pdftex.def Info: images/calibracion0-20-sinRotar.png  used on input lin
 e 181.
 (pdftex.def)             Requested size: 272.99881pt x 161.83519pt.
-<images/calibracion0-20-Rotadas.png, id=1046, 620.0766pt x 383.031pt>
+<images/calibracion0-20-Rotadas.png, id=1081, 620.0766pt x 383.031pt>
 File: images/calibracion0-20-Rotadas.png Graphic file (type png)
 <use images/calibracion0-20-Rotadas.png>
 Package pdftex.def Info: images/calibracion0-20-Rotadas.png  used on input line
@@ -2316,7 +2307,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
 [77 <./images/calibracion0-20-sinRotar.png> <./images/calibracion0-20-Rotadas.p
 ng>]
-<images/peliculaPiramide.png, id=1064, 719.0865pt x 578.16pt>
+<images/peliculaPiramide.png, id=1099, 719.0865pt x 578.16pt>
 File: images/peliculaPiramide.png Graphic file (type png)
 <use images/peliculaPiramide.png>
 Package pdftex.def Info: images/peliculaPiramide.png  used on input line 197.
@@ -2331,13 +2322,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
-<images/mapaDosisPiramidePelicula.png, id=1066, 500.87125pt x 474.77374pt>
+<images/mapaDosisPiramidePelicula.png, id=1101, 500.87125pt x 474.77374pt>
 File: images/mapaDosisPiramidePelicula.png Graphic file (type png)
 <use images/mapaDosisPiramidePelicula.png>
 Package pdftex.def Info: images/mapaDosisPiramidePelicula.png  used on input li
 ne 206.
 (pdftex.def)             Requested size: 195.0pt x 184.84225pt.
-<images/fondoIndependienteMapaPiramide.png, id=1067, 340.27126pt x 322.20375pt>
+<images/fondoIndependienteMapaPiramide.png, id=1102, 340.27126pt x 322.20375pt>
 
 File: images/fondoIndependienteMapaPiramide.png Graphic file (type png)
 <use images/fondoIndependienteMapaPiramide.png>
@@ -2345,7 +2336,7 @@ Package pdftex.def Info: images/fondoIndependienteMapaPiramide.png  used on inp
 ut line 208.
 (pdftex.def)             Requested size: 195.0pt x 184.64624pt.
 [78 <./images/peliculaPiramide.png>]
-<images/perfilCentralPiramide.png, id=1074, 462.528pt x 302.0886pt>
+<images/perfilCentralPiramide.png, id=1109, 462.528pt x 302.0886pt>
 File: images/perfilCentralPiramide.png Graphic file (type png)
 <use images/perfilCentralPiramide.png>
 Package pdftex.def Info: images/perfilCentralPiramide.png  used on input line 2
@@ -2358,7 +2349,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--220
 
 [79 <./images/mapaDosisPiramidePelicula.png> <./images/fondoIndependienteMapaPi
 ramide.png>]
-<images/perfilPiramideNormalizado.png, id=1084, 462.528pt x 302.0886pt>
+<images/perfilPiramideNormalizado.png, id=1119, 462.528pt x 302.0886pt>
 File: images/perfilPiramideNormalizado.png Graphic file (type png)
 <use images/perfilPiramideNormalizado.png>
 Package pdftex.def Info: images/perfilPiramideNormalizado.png  used on input li
@@ -2376,7 +2367,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
 [80 <./images/perfilCentralPiramide.png> <./images/perfilPiramideNormalizado.pn
 g>]
-<images/isodosisPiramide2.png, id=1092, 597.23125pt x 462.72874pt>
+<images/isodosisPiramide2.png, id=1127, 597.23125pt x 462.72874pt>
 File: images/isodosisPiramide2.png Graphic file (type png)
 <use images/isodosisPiramide2.png>
 Package pdftex.def Info: images/isodosisPiramide2.png  used on input line 235.
@@ -2391,7 +2382,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
-<images/peliculaMama.png, id=1094, 724.8681pt x 580.3281pt>
+<images/peliculaMama.png, id=1129, 724.8681pt x 580.3281pt>
 File: images/peliculaMama.png Graphic file (type png)
 <use images/peliculaMama.png>
 Package pdftex.def Info: images/peliculaMama.png  used on input line 245.
@@ -2402,13 +2393,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--248
  []
 
 [81 <./images/isodosisPiramide2.png>]
-<images/mapaDosisMamaPelicula.png, id=1101, 583.17876pt x 472.76625pt>
+<images/mapaDosisMamaPelicula.png, id=1136, 583.17876pt x 472.76625pt>
 File: images/mapaDosisMamaPelicula.png Graphic file (type png)
 <use images/mapaDosisMamaPelicula.png>
 Package pdftex.def Info: images/mapaDosisMamaPelicula.png  used on input line 2
 52.
 (pdftex.def)             Requested size: 195.0pt x 158.07649pt.
-<images/fondoIndependienteMama.png, id=1102, 403.5075pt x 325.215pt>
+<images/fondoIndependienteMama.png, id=1137, 403.5075pt x 325.215pt>
 File: images/fondoIndependienteMama.png Graphic file (type png)
 <use images/fondoIndependienteMama.png>
 Package pdftex.def Info: images/fondoIndependienteMama.png  used on input line 
@@ -2419,13 +2410,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
-<images/perfilDosisMama.png, id=1110, 462.528pt x 302.0886pt>
+<images/perfilDosisMama.png, id=1145, 462.528pt x 302.0886pt>
 File: images/perfilDosisMama.png Graphic file (type png)
 <use images/perfilDosisMama.png>
 Package pdftex.def Info: images/perfilDosisMama.png  used on input line 263.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
 [83 <./images/mapaDosisMamaPelicula.png> <./images/fondoIndependienteMama.png>]
-<images/curvasIsodosisMama.png, id=1120, 576.1525pt x 452.69125pt>
+<images/curvasIsodosisMama.png, id=1155, 576.1525pt x 452.69125pt>
 File: images/curvasIsodosisMama.png Graphic file (type png)
 <use images/curvasIsodosisMama.png>
 Package pdftex.def Info: images/curvasIsodosisMama.png  used on input line 272.
@@ -2444,18 +2435,18 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 277.
 
 [84 <./images/perfilDosisMama.png> <./images/curvasIsodosisMama.png>]
-<images/piramideAtravesada.png, id=1129, 371.3875pt x 371.3875pt>
+<images/piramideAtravesada.png, id=1164, 371.3875pt x 371.3875pt>
 File: images/piramideAtravesada.png Graphic file (type png)
 <use images/piramideAtravesada.png>
 Package pdftex.def Info: images/piramideAtravesada.png  used on input line 283.
 
 (pdftex.def)             Requested size: 195.0pt x 195.00401pt.
-<images/piramideTPS2.png, id=1130, 303.1325pt x 304.13625pt>
+<images/piramideTPS2.png, id=1165, 303.1325pt x 304.13625pt>
 File: images/piramideTPS2.png Graphic file (type png)
 <use images/piramideTPS2.png>
 Package pdftex.def Info: images/piramideTPS2.png  used on input line 285.
 (pdftex.def)             Requested size: 195.0pt x 195.64893pt.
-<images/gammaAtravesada.png, id=1132, 374.39874pt x 372.39125pt>
+<images/gammaAtravesada.png, id=1167, 374.39874pt x 372.39125pt>
 File: images/gammaAtravesada.png Graphic file (type png)
 <use images/gammaAtravesada.png>
 Package pdftex.def Info: images/gammaAtravesada.png  used on input line 294.
@@ -2469,13 +2460,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
-<images/gammaPiramideCalor.png, id=1145, 462.528pt x 302.0886pt>
+<images/gammaPiramideCalor.png, id=1179, 462.528pt x 302.0886pt>
 File: images/gammaPiramideCalor.png Graphic file (type png)
 <use images/gammaPiramideCalor.png>
 Package pdftex.def Info: images/gammaPiramideCalor.png  used on input line 305.
 
 (pdftex.def)             Requested size: 350.99762pt x 229.25783pt.
-<images/histogramaGammaPiramide.png, id=1146, 462.528pt x 302.0886pt>
+<images/histogramaGammaPiramide.png, id=1180, 462.528pt x 302.0886pt>
 File: images/histogramaGammaPiramide.png Graphic file (type png)
 <use images/histogramaGammaPiramide.png>
 Package pdftex.def Info: images/histogramaGammaPiramide.png  used on input line
@@ -2491,12 +2482,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
-<images/gammaMama.png, id=1162, 462.528pt x 302.0886pt>
+<images/gammaMama.png, id=1196, 462.528pt x 302.0886pt>
 File: images/gammaMama.png Graphic file (type png)
 <use images/gammaMama.png>
 Package pdftex.def Info: images/gammaMama.png  used on input line 322.
 (pdftex.def)             Requested size: 272.99881pt x 178.30908pt.
-<images/histogramaDosisMama.png, id=1163, 462.528pt x 302.0886pt>
+<images/histogramaDosisMama.png, id=1197, 462.528pt x 302.0886pt>
 File: images/histogramaDosisMama.png Graphic file (type png)
 <use images/histogramaDosisMama.png>
 Package pdftex.def Info: images/histogramaDosisMama.png  used on input line 328
@@ -2534,7 +2525,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--126
 ]
 Ap\'{e}ndice A.
 (chapters/diagramasFlujo.tex
-<images/daigramaFlujo.png, id=1180, 804.00375pt x 322.20375pt>
+<images/daigramaFlujo.png, id=1214, 804.00375pt x 322.20375pt>
 File: images/daigramaFlujo.png Graphic file (type png)
 <use images/daigramaFlujo.png>
 Package pdftex.def Info: images/daigramaFlujo.png  used on input line 4.
@@ -2544,7 +2535,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--7
 
  []
 
-<images/daigramaMapaDosis2.png, id=1182, 834.11626pt x 302.12875pt>
+<images/daigramaMapaDosis2.png, id=1216, 834.11626pt x 302.12875pt>
 File: images/daigramaMapaDosis2.png Graphic file (type png)
 <use images/daigramaMapaDosis2.png>
 Package pdftex.def Info: images/daigramaMapaDosis2.png  used on input line 11.
@@ -2558,7 +2549,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--14
 
 
  <./images/daigramaFlujo.png>]
-<images/diagramaComparacion.png, id=1189, 573.14125pt x 272.01625pt>
+<images/diagramaComparacion.png, id=1223, 573.14125pt x 272.01625pt>
 File: images/diagramaComparacion.png Graphic file (type png)
 <use images/diagramaComparacion.png>
 Package pdftex.def Info: images/diagramaComparacion.png  used on input line 18.
@@ -2567,7 +2558,7 @@ Package pdftex.def Info: images/diagramaComparacion.png  used on input line 18.
 ) [92 <./images/daigramaMapaDosis2.png> <./images/diagramaComparacion.png>]
 Ap\'{e}ndice B.
 (chapters/docuPrograma.tex
-<images/imagenesDocumentacion/ventanaPrincipal.png, id=1197, 1370.11874pt x 742
+<images/imagenesDocumentacion/ventanaPrincipal.png, id=1231, 1370.11874pt x 742
 .775pt>
 File: images/imagenesDocumentacion/ventanaPrincipal.png Graphic file (type png)
 
@@ -2585,7 +2576,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-<images/imagenesDocumentacion/menuCalibracion.png, id=1199, 905.3825pt x 445.66
+<images/imagenesDocumentacion/menuCalibracion.png, id=1233, 905.3825pt x 445.66
 5pt>
 File: images/imagenesDocumentacion/menuCalibracion.png Graphic file (type png)
 <use images/imagenesDocumentacion/menuCalibracion.png>
@@ -2600,7 +2591,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--17
 [93
 
  <./images/imagenesDocumentacion/ventanaPrincipal.png>]
-<images/imagenesDocumentacion/menuEleccionDosis.png, id=1206, 1370.11874pt x 74
+<images/imagenesDocumentacion/menuEleccionDosis.png, id=1240, 1370.11874pt x 74
 2.775pt>
 File: images/imagenesDocumentacion/menuEleccionDosis.png Graphic file (type png
 )
@@ -2626,7 +2617,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--34
 
  []
 
-<images/imagenesDocumentacion/ventanaMapaDosis.png, id=1216, 1371.1225pt x 740.
+<images/imagenesDocumentacion/ventanaMapaDosis.png, id=1250, 1371.1225pt x 740.
 7675pt>
 File: images/imagenesDocumentacion/ventanaMapaDosis.png Graphic file (type png)
 
@@ -2644,7 +2635,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<images/imagenesDocumentacion/ventanaMapaDosis2.png, id=1222, 1371.1225pt x 739
+<images/imagenesDocumentacion/ventanaMapaDosis2.png, id=1256, 1371.1225pt x 739
 .76375pt>
 File: images/imagenesDocumentacion/ventanaMapaDosis2.png Graphic file (type png
 )
@@ -2654,7 +2645,7 @@ ed on input line 48.
 (pdftex.def)             Requested size: 272.99881pt x 147.28413pt.
 [96 <./images/imagenesDocumentacion/ventanaMapaDosis.png> <./images/imagenesDoc
 umentacion/ventanaMapaDosis2.png>]
-<images/imagenesDocumentacion/menuComparacionAplan.png, id=1230, 492.84125pt x 
+<images/imagenesDocumentacion/menuComparacionAplan.png, id=1264, 492.84125pt x 
 473.77pt>
 File: images/imagenesDocumentacion/menuComparacionAplan.png Graphic file (type 
 png)
@@ -2662,7 +2653,7 @@ png)
 Package pdftex.def Info: images/imagenesDocumentacion/menuComparacionAplan.png 
  used on input line 57.
 (pdftex.def)             Requested size: 272.99881pt x 262.44666pt.
-<images/imagenesDocumentacion/ventanaComparacioAPlan.png, id=1232, 1371.1225pt 
+<images/imagenesDocumentacion/ventanaComparacioAPlan.png, id=1266, 1371.1225pt 
 x 742.775pt>
 File: images/imagenesDocumentacion/ventanaComparacioAPlan.png Graphic file (typ
 e png)
@@ -2683,36 +2674,1529 @@ Underfull \hbox (badness 6141) in paragraph at lines 30--33
  []
 
 
-Underfull \hbox (badness 4036) in paragraph at lines 52--57
+Underfull \hbox (badness 4036) in paragraph at lines 49--54
 \OT1/cmr/m/n/12 Tech-ni-cal Re-ports Se-ries. Vien-na: IN-TER-NA-TIO-
  []
 
 
-Underfull \hbox (badness 3148) in paragraph at lines 52--57
+Underfull \hbox (badness 3148) in paragraph at lines 49--54
 \OT1/cmr/m/n/12 NAL ATO-MIC ENERGY AGENCY, 2001, no.
  []
 
 [99
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
 []$\OT1/cmr/m/n/12 https : / / www . cancer . net / es / desplazarse-[]por-[]at
 enci % C3 % B3n-[]del-[]c %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
 \OT1/cmr/m/n/12 C3 % A1ncer / c % C3 % B3mo-[]se-[]trata-[]el-[]c % C3 % A1ncer
  / radioterapia /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--104
+Underfull \hbox (badness 10000) in paragraph at lines 125--130
 \OT1/cmr/m/n/12 s . ucm . es / CDTEAM / articulos % 20pdf / PDF % 20PUBLICACIO
 NES %
  []
 
-[100] [101] [102]) [103]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.136 ...ation Oncology{\ast}Biology{\ast}Physics}
+                                                  , vol.~83, no.~4, pp.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...Journal of Radiation Oncology{\ast }
+                                                  Biology{\ast }Physics
+l.136 ...ation Oncology{\ast}Biology{\ast}Physics}
+                                                  , vol.~83, no.~4, pp.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.136 ...ation Oncology{\ast}Biology{\ast}Physics}
+                                                  , vol.~83, no.~4, pp.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: Command $ invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+\Url@FormatString ...ndafter \UrlLeft \Url@String 
+                                                  \UrlRight \m@th $
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+\Hy@endcolorlink ->\endgroup 
+                             
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+Things are pretty mixed up, but I think the worst is over.
+
+! Extra \endgroup.
+\hyper@linkurl ...ce@end \close@pdflink \endgroup 
+                                                  
+l.138 ...s://doi.org/10.1016/j.ijrobp.2011.09.015}
+                                                  
+Things are pretty mixed up, but I think the worst is over.
+
+! Undefined control sequence.
+l.139 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[100]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 \bibitem{Weinberg1995}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 141
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.141 \bibitem{Weinberg1995}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.141 \bibitem{Weinberg1995}
+                            
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.142 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.146 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (11.23833pt too wide) in paragraph at lines 143--147
+\OT1/cmr/m/n/12 Jun. 1995. [On-li-ne]. Avai-la-ble: []$\OT1/cmtt/m/n/12 https :
+ / / doi . org / 10 . 1017 / cbo9781139644167$[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 \bibitem{Williams2011}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 148
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.148 \bibitem{Williams2011}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.148 \bibitem{Williams2011}
+                            
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.149 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.154 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 \bibitem{McLaughlin1965}
+                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 156
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.156 \bibitem{McLaughlin1965}
+                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.156 \bibitem{McLaughlin1965}
+                              
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.157 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.162 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164 \bibitem{Beni2017}
+                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 164
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.164 \bibitem{Beni2017}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.164 \bibitem{Beni2017}
+                        
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.165 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.170 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 \bibitem{LenMarroqun2018}
+                               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 172
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.172 \bibitem{LenMarroqun2018}
+                               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.172 \bibitem{LenMarroqun2018}
+                               
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.173 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.180 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \bibitem{Rink2008}
+                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 182
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.182 \bibitem{Rink2008}
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.182 \bibitem{Rink2008}
+                        
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.183 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.189 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \bibitem{NiroomandRad1998}
+                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 191
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.191 \bibitem{NiroomandRad1998}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.191 \bibitem{NiroomandRad1998}
+                                
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.192 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.199 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.201 \bibitem{Chemiski2010}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 201
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.201 \bibitem{Chemiski2010}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.201 \bibitem{Chemiski2010}
+                            
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.202 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.208 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.210 \bibitem{mayers}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 210
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.210 \bibitem{mayers}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.210 \bibitem{mayers}
+                      
+I'm forgetting what you said and using zero instead.
+
+[101]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.214 \bibitem{Yu2006}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 214
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.214 \bibitem{Yu2006}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.214 \bibitem{Yu2006}
+                      
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.215 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.220 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \bibitem{Devic2005}
+                         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 222
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.222 \bibitem{Devic2005}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.222 \bibitem{Devic2005}
+                         
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.223 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.229 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.231 \bibitem{Li2017}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 231
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.231 \bibitem{Li2017}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.231 \bibitem{Li2017}
+                      
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.232 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.237 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (10.79744pt too wide) in paragraph at lines 233--238
+\OT1/cmr/m/n/12 e0181958, Jul. 2017. [On-li-ne]. Avai-la-ble: []$\OT1/cmtt/m/n/
+12 https : / / doi . org / 10 . 1371 / journal .
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 \bibitem{Benesty2008}
+                           
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 239
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.239 \bibitem{Benesty2008}
+                           
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.239 \bibitem{Benesty2008}
+                           
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.240 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.245 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.247 \bibitem{Winiecki2009}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 247
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.247 \bibitem{Winiecki2009}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.247 \bibitem{Winiecki2009}
+                            
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.252 \bibitem{Li2011}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 252
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.252 \bibitem{Li2011}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.252 \bibitem{Li2011}
+                      
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.258 \bibitem{Howard2020}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 258
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.258 \bibitem{Howard2020}
+                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.258 \bibitem{Howard2020}
+                          
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.259 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.264 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 \bibitem{Shimohigashi2015}
+                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 266
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.266 \bibitem{Shimohigashi2015}
+                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.266 \bibitem{Shimohigashi2015}
+                                
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.267 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.273 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (1.85806pt too wide) in paragraph at lines 268--274
+[]\OT1/cmr/m/n/12 Y. Shi-mohi-gashi, F. Ara-ki, M. Ma-ru-ya-ma, Y. Na-ka-gu-chi
+, S. Ku-waha-ra, N. Na-
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.275 \bibitem{maya}
+                    
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 275
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.275 \bibitem{maya}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.275 \bibitem{maya}
+                    
+I'm forgetting what you said and using zero instead.
+
+[102]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 \bibitem{Yoo2006}
+                       
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 279
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.279 \bibitem{Yoo2006}
+                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.279 \bibitem{Yoo2006}
+                       
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.280 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.286 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.288 \bibitem{Casolaro2019}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 288
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.288 \bibitem{Casolaro2019}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.288 \bibitem{Casolaro2019}
+                            
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.289 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.294 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.296 \bibitem{Girard2012}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 296
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.296 \bibitem{Girard2012}
+                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.296 \bibitem{Girard2012}
+                          
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.297 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.302 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.304 \bibitem{Desroches2010}
+                             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 304
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.304 \bibitem{Desroches2010}
+                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.304 \bibitem{Desroches2010}
+                             
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.305 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.311 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 \bibitem{manualEBT3}
+                          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 313
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.313 \bibitem{manualEBT3}
+                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.313 \bibitem{manualEBT3}
+                          
+I'm forgetting what you said and using zero instead.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.316 \bibitem{Lewis2014}
+                         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 316
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.316 \bibitem{Lewis2014}
+                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.316 \bibitem{Lewis2014}
+                         
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.317 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.322 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.324 \bibitem{Poppinga2014}
+                            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 324
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.324 \bibitem{Poppinga2014}
+                            
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.324 \bibitem{Poppinga2014}
+                            
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.325 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.331 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.333 \bibitem{Bucciolini2003}
+                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 333
+[][]
+ []
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.333 \bibitem{Bucciolini2003}
+                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.333 \bibitem{Bucciolini2003}
+                              
+I'm forgetting what you said and using zero instead.
+
+! Undefined control sequence.
+l.334 \BIBentryALTinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.338 \BIBentrySTDinterwordspacing
+                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{thebibliography}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.340 \end{thebibliography}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.340 \end{thebibliography}
+                           
+Things are pretty mixed up, but I think the worst is over.
+
+) [103]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
  (Peliculas.aux
@@ -2723,17 +4207,8 @@ LaTeX Info: Redefining \% on input line 26.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
-
-
-Package rerunfilecheck Warning: File `Peliculas.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Peliculas.out':
-(rerunfilecheck)             Before: CC8441CC43A29CC121FF8CF07028B3A2;2156
-(rerunfilecheck)             After:  4A768F3372D0092D697805F1D4233F2A;2180.
-
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Info: File `Peliculas.out' has not changed.
+(rerunfilecheck)             Checksum: 4A768F3372D0092D697805F1D4233F2A;2180.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2741,13 +4216,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
- 21101 strings out of 480897
- 396622 string characters out of 2904517
- 642351 words of memory out of 3000000
- 36100 multiletter control sequences out of 15000+200000
- 544642 words of font info for 72 fonts, out of 3000000 for 9000
+ 21121 strings out of 480897
+ 396890 string characters out of 2904517
+ 642638 words of memory out of 3000000
+ 36111 multiletter control sequences out of 15000+200000
+ 544811 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,18n,89p,1118b,681s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,18n,89p,1168b,681s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/carlos/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm120
 0.pk></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10
@@ -2762,10 +4237,11 @@ home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></ho
 me/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home
 /carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home
 /carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/
-carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Peliculas.pdf (112 pages, 13051312 bytes).
+carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></home/
+carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Peliculas.pdf (112 pages, 13198453 bytes).
 PDF statistics:
- 1442 PDF objects out of 1728 (max. 8388607)
- 338 named destinations out of 1000 (max. 500000)
+ 1490 PDF objects out of 1728 (max. 8388607)
+ 346 named destinations out of 1000 (max. 500000)
  762 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,24 +4,24 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Acelerador lineal típico usado en radioterapia \cite {podgorsak}\relax }}{7}{figure.caption.4}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Magnetrón\cite {magne}\relax }}{9}{figure.caption.5}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Klystron\cite {karzmark1993medical}\relax }}{10}{figure.caption.6}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribución angular de rayos X producidos por la colisión con un objetivo\cite {khan2014the}\relax }}{12}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Acelerador lineal típico usado en radioterapia \cite {podgorsak}.\relax }}{7}{figure.caption.4}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Magnetrón\cite {magne2}.\relax }}{9}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Klystron\cite {karzmark1993medical}.\relax }}{10}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribución angular de rayos X producidos por la colisión con un objetivo\cite {khan2014the}.\relax }}{12}{figure.caption.7}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Sistema de filtrado y colimado de rayos X\cite {khan2014the}\relax }}{13}{figure.caption.8}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Dispersión elástica\cite {khan2014the}\relax }}{18}{figure.caption.9}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Dispersión no elástica- Efecto Compton \cite {khan2014the}\relax }}{19}{figure.caption.10}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Efecto fotoeléctrico \cite {khan2014the}\relax }}{21}{figure.caption.11}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Producción de pares \cite {khan2014the}\relax }}{22}{figure.caption.12}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Importancia relativa de los tres principales tipos de interacción de fotones con la materia \cite {Attix1986}\relax }}{23}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Cámara de ionización libre de aire\cite {khan2014the}\relax }}{30}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Cámara de ionización libre de aire\cite {khan2014the}.\relax }}{30}{figure.caption.14}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Cámara de ionización farmer\cite {khan2014the}\relax }}{31}{figure.caption.15}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Montaje $TPR_{20,10} $ en condiciones estándar\cite {TPR398}\relax }}{34}{figure.caption.16}%
 \contentsline {figure}{\numberline {3.14}{\ignorespaces Estructuras de películas radiocrómicas de diferentes modelos. Tomada de \cite {Devic2016}\relax }}{38}{figure.caption.18}%
 \contentsline {figure}{\numberline {3.15}{\ignorespaces Polimerización de diacetilenos\relax }}{39}{figure.caption.19}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Monomeros de diacetileno\cite {Beni2017}}}}{39}{subfigure.15.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reacción de polimerización\cite {Williams2011}}}}{39}{subfigure.15.2}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Espectro de absorción de película EBT3. Tomada de \cite {Devic2016}\relax }}{40}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Espectro de absorción de película EBT3\cite {Devic2016}.\relax }}{40}{figure.caption.20}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces Esquema de funcionamiento de escáner. Tomada de \cite {Devic2016}\relax }}{41}{figure.caption.21}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Película EBT2 antes y después de irradiación\relax }}{45}{figure.caption.22}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Película EBT2 sin irradiar}}}{45}{subfigure.18.1}%
@@ -30,28 +30,28 @@
 \contentsline {figure}{\numberline {3.20}{\ignorespaces Curvas de calibración y respuesta\relax }}{47}{figure.caption.24}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Curva de respuesta\cite {Devic2016}}}}{47}{subfigure.20.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Curva de calibración\cite {Devic2016}}}}{47}{subfigure.20.2}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Ilustración del efecto de escaneo lateral para el canal rojo \cite {Crijns2013}\relax }}{49}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Ilustración del efecto de escaneo lateral para el canal rojo \cite {Crijns2013}.\relax }}{49}{figure.caption.25}%
 \contentsline {figure}{\numberline {3.22}{\ignorespaces Significado geométrico del test gamma \relax }}{52}{figure.caption.26}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Montaje de calibración del acelerador\relax }}{54}{figure.caption.27}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Alineación de la película ajustada con el isocentro del acelerador\relax }}{55}{figure.caption.28}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Montaje para determinación de dosis\relax }}{56}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Mapa de dosis calculado por el sistema de planeación en el plano de la película para el plan pirámide\relax }}{57}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Mapa de dosis calculado por el sistema de planeación en el plano de la película para el plan de tratamiento de mama\relax }}{57}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Separación de parte dependiente de dosis\cite {Micke2011}\relax }}{59}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Mapa de dosis calculado por el sistema de planeación en el plano de la película para el plan pirámide.\relax }}{57}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Mapa de dosis calculado por el sistema de planeación en el plano de la película para el plan de tratamiento de mama.\relax }}{57}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Separación de parte dependiente de dosis\cite {Micke2011}.\relax }}{59}{figure.caption.32}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Películas EBT3 irradiadas con dosis entre 0 y 20 Gy \relax }}{63}{figure.caption.34}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Curva de calibración con dosis de 0 a 20 Gy \relax }}{64}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Curva de calibración con dosis de 0 a 10 Gy \relax }}{65}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Películas EBT3 irradiadas con dosis entre 0 y 20 Gy. \relax }}{63}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Curva de calibración con dosis de 0 a 20 Gy. \relax }}{64}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Curva de calibración con dosis de 0 a 10 Gy. \relax }}{65}{figure.caption.36}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Curvas de calibración con otro tipo de funciones\relax }}{66}{figure.caption.37}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Curva cubica}}}{66}{subfigure.4.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Curva exponencial}}}{66}{subfigure.4.2}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Película EBT3 sin irradiar \relax }}{67}{figure.caption.38}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Perfiles de dosis de película sin irradiar\relax }}{68}{figure.caption.39}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Perfil horizontal}}}{68}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Perfil vertical}}}{68}{subfigure.6.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Perfil horizontal de dosis}}}{68}{subfigure.6.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Perfil vertical de dosis}}}{68}{subfigure.6.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Película EBT3 sin irradiar. \relax }}{67}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Perfiles de dosis de película sin irradiar.\relax }}{68}{figure.caption.39}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Perfil horizontal.}}}{68}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Perfil vertical.}}}{68}{subfigure.6.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Perfil horizontal de dosis.}}}{68}{subfigure.6.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Perfil vertical de dosis.}}}{68}{subfigure.6.4}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Pixeles defectuosos del escáner \relax }}{70}{figure.caption.40}%
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Película irradiada con cuadrado de 5 Gy \relax }}{71}{figure.caption.41}%
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Mapa de dosis obtenido con el método multicanal\relax }}{72}{figure.caption.42}%
@@ -73,13 +73,13 @@
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mapa de dosis obtenido para el plan pirámide}}}{79}{subfigure.16.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Parte independiente de dosis para el plan pirámide }}}{79}{subfigure.16.2}%
 \contentsline {figure}{\numberline {5.17}{\ignorespaces Perfiles central de dosis para plan pirámide \relax }}{80}{figure.caption.50}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Perfiles central de dosis normalizado para plan pirámide \relax }}{80}{figure.caption.51}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Curvas de isodosis para el plan pirámide calculadas sobre el TPS y la película escaneada \relax }}{81}{figure.caption.52}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Película EBT3 irradiada con plan de tratamiento de mama \relax }}{82}{figure.caption.53}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Mapa de dosis escaneado para el plan de tratamiento de mama\relax }}{83}{figure.caption.54}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mapa de dosis obtenido para el plan de mama}}}{83}{subfigure.21.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Parte independiente de dosis para el plan de tratamiento de mama }}}{83}{subfigure.21.2}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Perfil en el plan de tratamiento de mama \relax }}{84}{figure.caption.55}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Perfiles central de dosis normalizado para plan pirámide. \relax }}{80}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Curvas de isodosis para el plan pirámide calculadas sobre el TPS y la película escaneada. \relax }}{81}{figure.caption.52}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Película EBT3 irradiada con plan de tratamiento de mama. \relax }}{82}{figure.caption.53}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Mapa de dosis escaneado para el plan de tratamiento de mama.\relax }}{83}{figure.caption.54}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mapa de dosis obtenido para el plan de mama.}}}{83}{subfigure.21.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Parte independiente de dosis para el plan de tratamiento de mama. }}}{83}{subfigure.21.2}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Perfil en el plan de tratamiento de mama. \relax }}{84}{figure.caption.55}%
 \contentsline {figure}{\numberline {5.23}{\ignorespaces Curvas de isodosis superpuestas para el plan de tratamiento de mama \relax }}{84}{figure.caption.56}%
 \contentsline {figure}{\numberline {5.24}{\ignorespaces Planes para testeo de implementación del cálculo $\Gamma $\relax }}{85}{figure.caption.57}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mapa piramidal con una lámina del MLC puesta}}}{85}{subfigure.24.1}%
