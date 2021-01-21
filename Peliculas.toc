@@ -2,33 +2,31 @@
 \babel@toc {english}{}
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Objetivos}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Objetivo General}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Objetivos Específicos}{3}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Marco Teórico}{4}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Aceleradores lineales y radioterapia}{6}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Linac}{6}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Procedimientos en radioterapia}{14}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Interacción radiación y partículas cargadas con materia}{16}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Interacción de fotones con materia}{16}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Interacción de partículas cargadas}{24}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Medidas de radiación ionizante}{25}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Principios de dosimetría}{28}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Equilibrio de partículas cargadas}{28}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Cámaras de ionización}{30}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Dosimetría con películas}{35}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Películas radiocrómicas}{36}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Análisis $\Gamma $}{50}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Metodología}{53}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Procedimiento de irradiación}{53}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Escaneo y tratamiento}{58}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Programa para el análisis de películas}{60}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Resultados y análisis}{62}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Calibración}{62}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Efectos de diversos parámetros}{67}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Mapas de dosis}{78}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Comparaciones $\Gamma $}{85}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Conclusiones}{90}{chapter.6}%
-\contentsline {chapter}{Apéndices}{91}{section*.63}%
-\contentsline {chapter}{\numberline {A}Diagramas de flujo}{91}{appendix.1.Alph1}%
-\contentsline {chapter}{\numberline {B}Documentación del programa}{93}{appendix.1.Alph2}%
+\contentsline {chapter}{\numberline {2}Marco Teórico}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Aceleradores lineales y radioterapia}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Linac}{6}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Procedimientos en radioterapia}{14}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Interacción radiación y partículas cargadas con materia}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Interacción de fotones con materia}{16}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Interacción de partículas cargadas}{24}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Interacción de neutrones}{26}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Medidas de radiación ionizante}{28}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Principios de dosimetría}{31}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Equilibrio de partículas cargadas}{31}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Cámaras de ionización}{32}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Dosimetría con películas}{38}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Películas radiocrómicas}{38}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Análisis $\Gamma $}{53}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Metodología}{56}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Procedimiento de irradiación}{56}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Escaneo y tratamiento}{61}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Programa para el análisis de películas}{63}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Resultados y análisis}{65}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Calibración}{65}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Efectos de diversos parámetros}{70}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Mapas de dosis}{81}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Comparaciones $\Gamma $}{88}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusiones}{93}{chapter.5}%
+\contentsline {chapter}{Apéndices}{94}{section*.64}%
+\contentsline {chapter}{\numberline {A}Diagramas de flujo}{94}{appendix.1.Alph1}%
+\contentsline {chapter}{\numberline {B}Documentación del programa}{96}{appendix.1.Alph2}%

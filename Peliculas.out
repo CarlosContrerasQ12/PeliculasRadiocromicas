@@ -1,31 +1,29 @@
 \BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Objetivos}{}% 2
-\BOOKMARK [1][-]{section.2.1}{Objetivo General}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{Objetivos Espec\355ficos}{chapter.2}% 4
-\BOOKMARK [0][-]{chapter.3}{Marco Te\363rico}{}% 5
-\BOOKMARK [1][-]{section.3.1}{Aceleradores lineales y radioterapia}{chapter.3}% 6
-\BOOKMARK [2][-]{subsection.3.1.1}{Linac}{section.3.1}% 7
-\BOOKMARK [2][-]{subsection.3.1.2}{Procedimientos en radioterapia}{section.3.1}% 8
-\BOOKMARK [1][-]{section.3.2}{Interacci\363n radiaci\363n y part\355culas cargadas con materia}{chapter.3}% 9
-\BOOKMARK [2][-]{subsection.3.2.1}{Interacci\363n de fotones con materia}{section.3.2}% 10
-\BOOKMARK [2][-]{subsection.3.2.2}{Interacci\363n de part\355culas cargadas}{section.3.2}% 11
-\BOOKMARK [1][-]{section.3.3}{Medidas de radiaci\363n ionizante}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.4}{Principios de dosimetr\355a}{chapter.3}% 13
-\BOOKMARK [2][-]{subsection.3.4.1}{Equilibrio de part\355culas cargadas}{section.3.4}% 14
-\BOOKMARK [2][-]{subsection.3.4.2}{C\341maras de ionizaci\363n}{section.3.4}% 15
-\BOOKMARK [2][-]{subsection.3.4.3}{Dosimetr\355a con pel\355culas}{section.3.4}% 16
-\BOOKMARK [1][-]{section.3.5}{Pel\355culas radiocr\363micas}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.6}{An\341lisis }{chapter.3}% 18
-\BOOKMARK [0][-]{chapter.4}{Metodolog\355a}{}% 19
-\BOOKMARK [1][-]{section.4.1}{Procedimiento de irradiaci\363n}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.2}{Escaneo y tratamiento}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.3}{Programa para el an\341lisis de pel\355culas}{chapter.4}% 22
-\BOOKMARK [0][-]{chapter.5}{Resultados y an\341lisis}{}% 23
-\BOOKMARK [1][-]{section.5.1}{Calibraci\363n}{chapter.5}% 24
-\BOOKMARK [1][-]{section.5.2}{Efectos de diversos par\341metros}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.3}{Mapas de dosis}{chapter.5}% 26
-\BOOKMARK [1][-]{section.5.4}{Comparaciones }{chapter.5}% 27
-\BOOKMARK [0][-]{chapter.6}{Conclusiones}{}% 28
-\BOOKMARK [0][-]{section*.63}{Ap\351ndices}{}% 29
-\BOOKMARK [0][-]{appendix.1.Alph1}{Diagramas de flujo}{}% 30
-\BOOKMARK [0][-]{appendix.1.Alph2}{Documentaci\363n del programa}{}% 31
+\BOOKMARK [0][-]{chapter.2}{Marco Te\363rico}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Aceleradores lineales y radioterapia}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Linac}{section.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.1.2}{Procedimientos en radioterapia}{section.2.1}% 5
+\BOOKMARK [1][-]{section.2.2}{Interacci\363n radiaci\363n y part\355culas cargadas con materia}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.1}{Interacci\363n de fotones con materia}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.2}{Interacci\363n de part\355culas cargadas}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.3}{Interacci\363n de neutrones}{section.2.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Medidas de radiaci\363n ionizante}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{Principios de dosimetr\355a}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.4.1}{Equilibrio de part\355culas cargadas}{section.2.4}% 12
+\BOOKMARK [2][-]{subsection.2.4.2}{C\341maras de ionizaci\363n}{section.2.4}% 13
+\BOOKMARK [2][-]{subsection.2.4.3}{Dosimetr\355a con pel\355culas}{section.2.4}% 14
+\BOOKMARK [1][-]{section.2.5}{Pel\355culas radiocr\363micas}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.6}{An\341lisis }{chapter.2}% 16
+\BOOKMARK [0][-]{chapter.3}{Metodolog\355a}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Procedimiento de irradiaci\363n}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Escaneo y tratamiento}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Programa para el an\341lisis de pel\355culas}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Resultados y an\341lisis}{}% 21
+\BOOKMARK [1][-]{section.4.1}{Calibraci\363n}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{Efectos de diversos par\341metros}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{Mapas de dosis}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.4}{Comparaciones }{chapter.4}% 25
+\BOOKMARK [0][-]{chapter.5}{Conclusiones}{}% 26
+\BOOKMARK [0][-]{section*.64}{Ap\351ndices}{}% 27
+\BOOKMARK [0][-]{appendix.1.Alph1}{Diagramas de flujo}{}% 28
+\BOOKMARK [0][-]{appendix.1.Alph2}{Documentaci\363n del programa}{}% 29

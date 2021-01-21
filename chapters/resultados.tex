@@ -6,20 +6,20 @@ Como fue mencionado anteriormente, se irradiaron películas con dosis que se reg
 	\centering
 	\begin{tabular}{|l|l|l|}
 		\hline
-		UM& Dosis(Gy)    & Incertidumbre($10^{-5}$) \\ \hline
-		21.6&0.201472 & 3.8\\ \hline
-		54&0.504137 & 5.23 \\ \hline
-		108&1.00825  & 35\\ \hline
-		216&2.01783  & 22\\ \hline
-		432&4.037486 & 31 \\ \hline
+		UM& Dosis(Gy)    & Incertidumbre($10^{-5}$ Gy) \\ \hline
+		21.6&0.20147 & 3.8\\ \hline
+		54&0.50414 & 5.2 \\ \hline
+		108&1.0082  & 35\\ \hline
+		216&2.0178  & 22\\ \hline
+		432&4.0375 & 31 \\ \hline
 		648&6.0583   & 48\\ \hline
-		864&8.08168  & 142\\ \hline
-		1080&10.1056  & 140\\ \hline
+		864&8.0817  & 142\\ \hline
+		1080&10.106  & 140\\ \hline
 		1296&12.132   & 10\\ \hline
 		1620&15.168   & 10\\ \hline
 		2160&20.229   & 10\\ \hline
 	\end{tabular}
-	\caption{Dosis irradiadas}
+	\caption{Dosis irradiadas.}
 	\label{tab:DosisIrra}
 \end{table}
 
@@ -36,7 +36,7 @@ Para relacionar determinados niveles de transmitancias medidas en una película 
 
 \begin{figure}[H]
 	\centering
-\includegraphics[width=\linewidth]{images/calibracionMulti0a20.png}
+\includegraphics[width=\linewidth]{images/calibracionMulti0a20_2.png}
 	
 	\caption{Curva de calibración con dosis de 0 a 20 Gy. }
 	\label{fig:curvaFinal20}
@@ -51,7 +51,7 @@ Según el manual del fabricante, las películas EBT3 son aptas para un rango inf
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{images/calibracionMulti.png}
+	\includegraphics[width=\linewidth]{images/calibracionMulti_2.png}
 	\caption{Curva de calibración con dosis de 0 a 10 Gy. }
 	\label{fig:curvaFinal}
 \end{figure}
@@ -63,10 +63,10 @@ También se probaron más curvas sugeridas en la literatura, sin embargo, la que
 
 \begin{figure}[H]
 	\centering
-	\subfloat[Curva cubica]{\includegraphics[width=0.7\textwidth]{images/calibracionCubica.png}\label{fig:cubic}}
+	\subfloat[Curva cubica]{\includegraphics[width=0.7\textwidth]{images/calibracionCubica_2.png}\label{fig:cubic}}
 	\hfill
-	\subfloat[Curva exponencial]{\includegraphics[width=0.7\textwidth]{images/curvaCalibracionMalaExponencial.png}\label{fig:expo}}
-	\caption{Curvas de calibración con otro tipo de funciones}
+	\subfloat[Curva exponencial]{\includegraphics[width=0.7\textwidth]{images/curvaCalibracionMalaExponencial_2.png}\label{fig:expo}}
+	\caption{Curvas de calibración con otro tipo de funciones.}
 	\label{fig:CurvasAdicionales}
 \end{figure}
 
@@ -122,7 +122,7 @@ Para continuar realizando pruebas en los métodos usados, se analiza el cuadrado
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/peliculaCuadrado.png}
-	\caption{Película irradiada con cuadrado de 5 Gy }
+	\caption{Película irradiada con cuadrado de 5 Gy. }
 	\label{fig:cuadrado5Gy}
 \end{figure}
 
@@ -132,7 +132,7 @@ Este cuadrado sirve para identificar fácilmente las ventajas del método multic
 	\subfloat[Mapa de dosis del cuadrado de 5 Gy]{\includegraphics[width=0.5\textwidth]{images/mapaCuadradoConMulticanal.png}\label{fig:MapaCuadradoMulti}}
 	\hfill
 	\subfloat[Defectos de la película obtenidos con el método multicanal]{\includegraphics[width=0.8\textwidth]{images/fondoCuadradoConLabel.png}\label{fig:fondoCuadrado5Gy}}
-	\caption{Mapa de dosis obtenido con el método multicanal}
+	\caption{Mapa de dosis obtenido con el método multicanal.}
 	\label{fig:MapaCuadrado}
 \end{figure}
 
@@ -144,7 +144,7 @@ Es posible comparar los perfiles de dosis sobre una línea que pasa por el centr
 	\subfloat[Perfil de dosis central con método de un solo canal]{\includegraphics[width=0.7\textwidth]{images/perfilDosisCuadradoUnoSolo.png}\label{fig:perfilSolo}}
 	\hfill
 	\subfloat[Perfil de dosis central con método multicanal ]{\includegraphics[width=0.7\textwidth]{images/perfilDosisCuadradoMulticanal.png}\label{fig:perfilMultiple}}
-	\caption{Perfil central de dosis en película con cuadrado de 5 Gy}
+	\caption{Perfil central de dosis en película con cuadrado de 5 Gy.}
 	\label{fig:perfilesMapaCuadrado}
 \end{figure}
 
@@ -153,7 +153,7 @@ Otra manera de observar la superioridad del método multicanal sobre el método 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/perfilHorizontalDeDosisCeroMulticanal.png}
-	\caption{Perfil de dosis horizontal en película sin irradiar con método multicanal }
+	\caption{Perfil de dosis horizontal en película sin irradiar con método multicanal. }
 	\label{fig:perfilCero}
 \end{figure}
 
@@ -161,7 +161,7 @@ También, se produjo la separación de las componentes independientes de dosis e
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/fondoIndependienteDosisPeliculaCero.png}
-	\caption{Irregularidades en película sin escanear obtenidas con método multicanal }
+	\caption{Irregularidades en película sin escanear obtenidas con método multicanal. }
 	\label{fig:irregularCero}
 \end{figure}
 
@@ -171,17 +171,17 @@ Por otro lado, también se investigó la diferencia en ruido al usar canales de 
 	\subfloat[Perfil de dosis central con profundidad de 8 bits]{\includegraphics[width=0.7\textwidth]{images/perfilCuadradoMenosBit.png}\label{fig:perfil8}}
 	\hfill
 	\subfloat[Perfil de dosis central con profundidad de 16 bits ]{\includegraphics[width=0.7\textwidth]{images/perfilDosisCuadradoUnoSolo.png}\label{fig:perfil16}}
-	\caption{Perfil central de dosis en película con cuadrado de 5 Gy a 8 y 16 bits de profundidad de color}
+	\caption{Perfil central de dosis en película con cuadrado de 5 Gy a 8 y 16 bits de profundidad de color.}
 	\label{fig:8o16}
 \end{figure}
 
 Finalmente, se comprobó la dependencia de la transmitancia medida en el escáner dependiendo de la orientación de la película con respecto a la lámpara de escaneo, provocada por la polarización que ocurre en la medida. Este efecto se ve en las curvas de calibración presentadas en la figura \ref{fig:efectoOrientacion}, en las cuales se evidencia un desplazamiento en las transmitancias promedio cuando se rota la misma película 90 grados en la misma posición de escaneo.\\
 \begin{figure}[H]
 	\centering
-	\subfloat[Curva de calibración con películas sin rotar]{\includegraphics[width=0.7\textwidth]{images/calibracion0-20-sinRotar.png}\label{fig:sinRotar}}
+	\subfloat[Curva de calibración con películas sin rotar]{\includegraphics[width=0.7\textwidth]{images/calibracion0-20-sinRotar_2.png}\label{fig:sinRotar}}
 	\hfill
-	\subfloat[Curvas de calibración con películas rotadas 90 grados ]{\includegraphics[width=0.7\textwidth]{images/calibracion0-20-Rotadas.png}\label{fig:perfil16}}
-	\caption{Efecto de la orientación de escaneo sobre las transmitancias medidas}
+	\subfloat[Curvas de calibración con películas rotadas 90 grados ]{\includegraphics[width=0.7\textwidth]{images/calibracion0-20-Rotadas_2.png}\label{fig:rotadas}}
+	\caption{Efecto de la orientación de escaneo sobre las transmitancias medidas.}
 	\label{fig:efectoOrientacion}
 \end{figure}
 Este efecto no es significativo en las medidas tomadas siempre y cuando se procuren orientar las películas cada vez en la misma dirección con respecto a la lámpara del escáner.\\
@@ -195,7 +195,7 @@ El plan piramidal de prueba produjo una película resultante que se ilustra en l
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/peliculaPiramide.png}
-	\caption{Película EBT3 irradiada con plan de pirámide }
+	\caption{Película EBT3 irradiada con plan de pirámide. }
 	\label{fig:piramideEscaneada}
 \end{figure}
 
@@ -206,7 +206,7 @@ En la figura \ref{fig:mapaPiramide} se muestra el mapa de dosis calculado con la
 	\subfloat[Mapa de dosis obtenido para el plan pirámide]{\includegraphics[width=0.5\textwidth]{images/mapaDosisPiramidePelicula.png}\label{fig:mapaPiramideFInal}}
 	\hfill
 	\subfloat[Parte independiente de dosis para el plan pirámide ]{\includegraphics[width=0.5\textwidth]{images/fondoIndependienteMapaPiramide.png}\label{fig:indepPiramide}}
-	\caption{Mapa de dosis escaneado para el plan pirámide}
+	\caption{Mapa de dosis escaneado para el plan pirámide.}
 	\label{fig:mapaPiramide}
 \end{figure}
 
@@ -215,7 +215,7 @@ Se pueden usar diversas herramientas para comparar estos planes, por ejemplo, en
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/perfilCentralPiramide.png}
 	
-	\caption{Perfiles central de dosis para plan pirámide }
+	\caption{Perfiles central de dosis para plan pirámide. }
 	\label{fig:perfilesDosisPiramide}
 \end{figure}
 Es útil comparar estos mapas normalizados con respecto a un valor. De esta manera, aunque se pierda información relativa a la dosis depositada en cada punto, es más efectiva para comprobar similitudes en las distribuciones espaciales de las dosis entregadas. Un perfil de dosis normalizado se muestra en la figura \ref{fig:perfilesDosisPiramideNorm}, en este caso se normaliza con respecto al máximo de dosis en cada mapa.\\
@@ -270,7 +270,7 @@ Del mismo modo, en la figura \ref{fig:mamaIsodosis} se muestran tres curvas de i
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/curvasIsodosisMama.png}
-	\caption{Curvas de isodosis superpuestas para el plan de tratamiento de mama }
+	\caption{Curvas de isodosis superpuestas para el plan de tratamiento de mama. }
 	\label{fig:mamaIsodosis}
 \end{figure}
 
@@ -283,7 +283,7 @@ Para comprobar la implementación del cálculo de $\Gamma$, se compararon los pl
 	\subfloat[Mapa piramidal con una lámina del MLC puesta]{\includegraphics[width=0.5\textwidth]{images/piramideAtravesada}\label{fig:mapaPiramideAtrav}}
 	\hfill
 	\subfloat[Mapa piramidal sin la lámina del MLC ]{\includegraphics[width=0.5\textwidth]{images/piramideTPS2.png}\label{fig:mapaPiramideA}}
-	\caption{Planes para testeo de implementación del cálculo $\Gamma$}
+	\caption{Planes para testeo de implementación del cálculo $\Gamma$.}
 	\label{fig:barraAtravesa}
 \end{figure}
 
@@ -294,7 +294,7 @@ Las matrices gamma obtenidas con ambas implementaciones concuerdan y se muestran
 	\subfloat[Matriz $\Gamma$ obtenida con el programa IBA]{\includegraphics[width=0.5\textwidth]{images/gammaAtravesada.png}\label{fig:GammaIBA}}
 	\hfill
 	\subfloat[Matriz $\Gamma$ obtenida con la implentación phymedphys ]{\includegraphics[width=0.5\textwidth]{images/gammaAtravesada.png}\label{fig:GammaPropio}}
-	\caption{Matrices $\Gamma$ calculadas con dos implementaciones}
+	\caption{Matrices $\Gamma$ calculadas con dos implementaciones.}
 	\label{fig:barraAtravesaGamma}
 \end{figure}
 
@@ -303,13 +303,13 @@ Una vez comprobada la efectividad en el cálculo de $\Gamma$, se procede a reali
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{images/gammaPiramideCalor.png}
-	\caption{Matriz $\Gamma$ obtenida para el plan de tratamiento piramidal }
+	\caption{Matriz $\Gamma$ obtenida para el plan de tratamiento piramidal. }
 	\label{fig:matrixGAmmaPiramide}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{images/histogramaGammaPiramide.png}
-	\caption{Histograma $\Gamma$ obtenida para el plan de tratamiento piramidal  }
+	\caption{Histograma $\Gamma$ obtenida para el plan de tratamiento piramidal.  }
 	\label{fig:histogramaGAmmaPiramide}
 \end{figure}
 
@@ -320,13 +320,13 @@ Finalmente, en el caso del plan de tratamiento de mama, se muestra el mismo aná
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/gammaMama.png}
-	\caption{Matriz $\Gamma$ obtenida para el plan de tratamiento de mama }
+	\caption{Matriz $\Gamma$ obtenida para el plan de tratamiento de mama. }
 	\label{fig:matrixGAmmaMAma}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/histogramaDosisMama.png}
-	\caption{Histograma $\Gamma$ obtenida para el plan de tratamiento de mama  }
+	\caption{Histograma $\Gamma$ obtenida para el plan de tratamiento de mama.  }
 	\label{fig:histogramaGAmmaMama}
 \end{figure}
 

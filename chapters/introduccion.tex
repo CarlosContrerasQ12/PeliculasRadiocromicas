@@ -4,4 +4,24 @@ Aplicar una cantidad demasiado grande de radiación en tejido sano trae consecue
 
 La aplicación de radiación ionizante para eliminar tejido enfermo es muy efectiva para destruirlo. Sin embargo, son grandes los requerimientos técnicos que se necesitan para asegurar que la radiación se concentre en su mayoría en el tejido enfermo y no en el tejido sano. La complejidad de los tratamientos ha aumentado mucho en diversos ámbitos, por lo que se hace aún más necesario establecer un control sobre el plan de irradiación que se está ejecutando. Una de las maneras más usadas para ejercer este control de calidad es mediante el uso de películas radiocrómicas que, bajo un efectivo protocolo de medida, permiten obtener de manera experimental las distribuciones e intensidades de planes de tratamiento con radiación de múltiples tipos. Son una alternativa que permite obtener mayor resolución en la determinación de distribuciones de dosis, en comparación con métodos como la dosimetría PORTAL con paneles de silicio, y que además presenta composición equivalente al tejido humano, y es sencilla de utilizar para realizar comprobaciones de buena ejecución de tratamientos. \\
 
-Por lo anterior, es necesario desarrollar buenas metodologías y herramientas que permitan usar estas películas de manera adecuada. Existen diversas clases de software comercial que realizan esta tarea, pero en general son costosos y no se dispone de uno de ellos en muchos casos. En consecuencia, el objetivo principal de este trabajo es desarrollar un sistema que permita el uso de este tipo de películas en el Centro de Control de Cáncer, asociado a la Clínica del Country en la ciudad de Bogotá, para fines de verificación dosimétrica. 
+Por lo anterior, es necesario desarrollar buenas metodologías y herramientas que permitan usar estas películas de manera adecuada. Existen diversas clases de software comercial que realizan esta tarea, pero en general son costosos y no se dispone de uno de ellos en muchos casos. En consecuencia, los objetivos que se propone este trabajo son: \\
+
+\textbf{Objetivo general}\\
+
+
+Implementar y calibrar un sistema de medición dosimétrica a partir de películas radiocrómicas.\\
+
+\textbf{Objetivos específicos}\\
+
+%Objetivos específicos del trabajo. Empiezan con un verbo en infinitivo.
+
+\begin{itemize}
+	\item Entender los conceptos físicos detrás de las mediciones dosimétricas realizadas en radioterapia.
+	\item Entender el funcionamiento de películas radiocrómicas EBT3 como detectores de radiación.
+	\item Calibrar películas EBT3 para su uso en verificación dosimétrica.
+	\item Desarrollar un software que permita el análisis de la información obtenida de las placas sobre la distribución de dosis a la que fue sometida.
+	\item Estudiar las condiciones prácticas que podrían alterar las medidas en las películas. 
+	\item Comparar  las  distribuciones  de  dosis  obtenidas  con  las  películas  radiocrómicas con las distribuciones producidas por el sistema de planeación usado en el Centro de Control de Cáncer.
+\end{itemize}
+
+El orden del presente documento es el siguiente; En el capítulo \ref{chp:teorico} se proporciona el marco teórico necesario para el desarrollo del proyecto, en el capitulo \ref{chp:metodologia} se presenta una descripción de los detalles bajo los cuales se realiza el proceso de irradiación, escaneo y análisis de las películas radiocrómicas, en el capitulo \ref{chp:resultados} se muestran los principales resultados obtenidos con el programa diseñado, en el capitulo \ref{chp:conclusiones} se presentan la conclusiones del presente trabajo, y finalmente, en los apéndices \ref{app:apendiceA} y \ref{app:apendiceB} se describe el funcionamiento del programa implementado.

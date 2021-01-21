@@ -63,18 +63,33 @@
 	\vspace{1.5cm}
 	{\includegraphics[width = 0.5\textwidth]{logo.png}}	
 }
-\author{Carlos Daniel Contreras Quiroz\\[1cm]{\small Director: Carlos \'Avila, Profesor Titular , Departamento de Física, Universidad de los Andes}\\[1cm]{\small Coodirectora: Juliana Sandoval}\\[1cm]{\small Coodirector: Jaider Vasquez}}
+\author{Carlos Daniel Contreras Quiroz\\[1cm]{\small Director: Carlos \'Avila, Profesor Titular , Departamento de Física, Universidad de los Andes}\\[1cm]{\small Coodirectora: Juliana Sandoval, Física Médica, Centro de  Control de Cáncer}\\[1cm]{\small Coodirector: Jaider Vasquez, Físico Médico, Centro de  Control de Cáncer}}
 
 \begin{document}
 
-\pagenumbering{Roman}
+
 
 \maketitle
 
 %\begin{dedication}
 %{\LARGE\calligra A mi familia}
 %\end{dedication}
+\newpage
+\thispagestyle{empty}
+{\LARGE Firma del Director}\hrulefill
+\vspace{1.5cm}
 
+{\LARGE Firma de la Coodirectora}\hrulefill
+\vspace{1.5cm}
+
+{\LARGE Firma del Coodirector}\hrulefill
+\vspace{1.5cm}
+
+
+{\LARGE Firma del Estudiante}\hrulefill
+\vspace{1.5cm}
+
+\pagenumbering{Roman}
 \begin{abstract}
 
 En este trabajo de grado se desarrolla un sistema para facilitar el uso de películas radiocrómicas para dosimetría en aplicaciones de radioterapia. Se proporciona un adecuado marco teórico que sustenta la necesidad de su uso, así como las particularidades técnicas que se requieren para obtener resultados satisfactorios con este método dosimétrico. De la misma manera, se examinan 3 casos de estudio específicos con películas EBT3 que ejemplifican sus características y funcionamiento. Particularmente, se examinan dos casos de prueba, un plan cuadrado y un plan piramidal, y posteriormente un caso de la práctica real de tratamiento de cáncer de mama. Finalmente, se realiza aseguración de calidad sobre estos casos mediante un análisis con índice $\Gamma$.   
@@ -108,8 +123,6 @@ Finalmente, agradezco a mi mamá y papá por su constante apoyo durante toda mi 
 \pagenumbering{arabic}
 \input{chapters/introduccion}
 
-\chapter{Objetivos}\label{chp:objetivos}
-\input{chapters/objetivos}
 
 \chapter{Marco Teórico}\label{chp:teorico}
 \input{chapters/teorico}
@@ -121,17 +134,17 @@ Finalmente, agradezco a mi mamá y papá por su constante apoyo durante toda mi 
 \input{chapters/resultados}
 
 
-\chapter{Conclusiones}
+\chapter{Conclusiones}\label{chp:conclusiones}
 \input{chapters/conclusiones}
 
 \begin{appendices}
-	\chapter{Diagramas de flujo}
+	\chapter{Diagramas de flujo}\label{app:apendiceA}
 	\input{chapters/diagramasFlujo}
-	\chapter{Documentación del programa}
+	\chapter{Documentación del programa}\label{app:apendiceB}
 	\input{chapters/docuPrograma}
 \end{appendices}
-\nocite{*}
+
 \bibliography{references}
-\bibliographystyle{IEEEtran}
+\bibliographystyle{ieeetr}
 
 \end{document}

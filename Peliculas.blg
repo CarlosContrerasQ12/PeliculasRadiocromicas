@@ -2,87 +2,70 @@ This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Peliculas.aux
 Reallocating 'name_of_file' (item size: 1) to 11 items.
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-The style file: IEEEtran.bst
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
 Database file #1: references.bib
-Repeated entry---line 213 of file references.bib
+Repeated entry---line 224 of file references.bib
  : @inproceedings{Williams2011
  :                            ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 324 of file references.bib
- :  
- :  publisher={University of Wollongong}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--entry type for "maya" isn't style-file defined
---line 327 of file references.bib
-I was expecting a `,' or a `}'---line 331 of file references.bib
- :  
- :  publisher={Universidad Nacional de Colombia}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 411 of file references.bib
- :  
- :  url="http://www.gafchromic.com/documents/EBT3_Specifications.pdf",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 418 of file references.bib
- :  
- :  url="http://www.gafchromic.com/documents/EBT2_Specifications.pdf",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
--- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
--- http://www.michaelshell.org/tex/ieeetran/bibtex/
--- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty author in magne2
+Warning--empty year in magne2
 Warning--empty author and editor in TPR398
+Warning--empty journal in manualEBT2
+Warning--empty year in manualEBT2
+Warning--empty author in cancer.net_2020
+Warning--empty year in cancer.net_2020
+Warning--empty author in radioterapia
+Warning--empty year in radioterapia
 Warning--empty booktitle in Williams2011
 Warning--empty journal in mayers
-
-Done.
-You've used 44 entries,
-            4087 wiz_defined-function locations,
-            1129 strings with 16899 characters,
-and the built_in function-call counts, 34088 in all, are:
-= -- 2798
-> -- 866
-< -- 274
-+ -- 478
-- -- 165
-* -- 1724
-:= -- 5189
-add.period$ -- 89
-call.type$ -- 44
-change.case$ -- 34
-chr.to.int$ -- 588
-cite$ -- 47
-duplicate$ -- 2401
-empty$ -- 2586
-format.name$ -- 187
-if$ -- 7873
+Warning--empty year in mayers
+Warning--empty author in magne
+Warning--empty year in magne
+Warning--empty journal in maya
+Warning--empty year in maya
+Warning--empty journal in manualEBT3
+Warning--empty year in manualEBT3
+You've used 45 entries,
+            1876 wiz_defined-function locations,
+            768 strings with 12283 characters,
+and the built_in function-call counts, 12810 in all, are:
+= -- 1265
+> -- 557
+< -- 0
++ -- 206
+- -- 161
+* -- 972
+:= -- 1773
+add.period$ -- 56
+call.type$ -- 45
+change.case$ -- 37
+chr.to.int$ -- 0
+cite$ -- 63
+duplicate$ -- 651
+empty$ -- 1116
+format.name$ -- 161
+if$ -- 3085
 int.to.chr$ -- 0
-int.to.str$ -- 44
-missing$ -- 436
-newline$ -- 221
-num.names$ -- 38
-pop$ -- 982
+int.to.str$ -- 45
+missing$ -- 50
+newline$ -- 153
+num.names$ -- 39
+pop$ -- 140
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 2
-skip$ -- 2617
+quote$ -- 0
+skip$ -- 486
 stack$ -- 0
-substring$ -- 1486
-swap$ -- 2086
-text.length$ -- 78
+substring$ -- 848
+swap$ -- 300
+text.length$ -- 0
 text.prefix$ -- 0
-top$ -- 5
-type$ -- 44
-warning$ -- 3
-while$ -- 131
-width$ -- 46
-write$ -- 525
-(There were 5 error messages)
+top$ -- 0
+type$ -- 0
+warning$ -- 18
+while$ -- 110
+width$ -- 47
+write$ -- 425
+(There was 1 error message)

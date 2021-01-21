@@ -86,7 +86,7 @@ Para tener control sobre la calidad geométrica del haz, es necesario implementa
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth, height=10cm]{images/filtros.png}
-	\caption{Sistema de filtrado y colimado de rayos X\cite{khan2014the}}
+	\caption{Sistema de filtrado y colimado de rayos X\cite{khan2014the}.}
 	\label{fig:filtrosRayosX}
 \end{figure}
 En aplicaciones modernas se incluye un último colimador denominado MLC (Multileaf Collimator) que consiste en múltiples láminas móviles de plomo que permite moldear la forma del campo final de radiación para ajustarse a geometrías convenientes en el tratamiento\cite{Burman2002}.\\
@@ -155,7 +155,7 @@ Los procesos de dispersión se dan cuando un fotón incidente con cierta energí
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/rayleigh.png}
-	\caption{Dispersión elástica\cite{khan2014the}}
+	\caption{Dispersión elástica\cite{khan2014the}.}
 	\label{fig:rayleigh}
 \end{figure}
 En este caso, el átomo se mueve solo lo suficiente para conservar el momento lineal. Por lo tanto, la contribución a la energía depositada por este proceso es despreciable. La contribución de este proceso al coeficiente másico de atenuación es despreciable a energías superiores a $10 keV$, que es mucho menor al rango de energía usado en radioterapia, por lo que no será tenido en cuenta.  \\
@@ -164,7 +164,7 @@ Por otro lado, el segundo tipo de dispersión es el denominado \textit{efecto Co
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/compton.png}
-	\caption{Dispersión no elástica- Efecto Compton \cite{khan2014the}}
+	\caption{Dispersión no elástica- Efecto Compton \cite{khan2014the}.}
 	\label{fig:compton}
 \end{figure}
 En este proceso, el electrón es desligado del átomo y obtiene cierto momento en dirección $\theta$ con respecto a la dirección del fotón incidente. De la misma manera, el fotón es dispersado un ángulo $\phi$. \\
@@ -219,7 +219,7 @@ Además del electrón liberado de la ligadura con el átomo, otros efectos secun
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/fotoelectrico.png}
-	\caption{Efecto fotoeléctrico \cite{khan2014the}}
+	\caption{Efecto fotoeléctrico \cite{khan2014the}.}
 	\label{fig:fotoelectrico}
 \end{figure}
 
@@ -240,7 +240,7 @@ donde $T^{+}$ es la energía del positrón y $T^{-}$ es la energía del electró
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/produccionPares.png}
-	\caption{Producción de pares \cite{khan2014the}}
+	\caption{Producción de pares \cite{khan2014the}.}
 	\label{fig:Pares}
 \end{figure}
 
@@ -270,7 +270,7 @@ En la figura \ref{fig:importanciaRelativa} se muestra la importancia relativa de
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/importanciaRelativa.png}
-	\caption{Importancia relativa de los tres principales tipos de interacción de fotones con la materia \cite{Attix1986}}
+	\caption{Importancia relativa de los tres principales tipos de interacción de fotones con la materia \cite{Attix1986}.}
 	\label{fig:importanciaRelativa}
 \end{figure}
 
@@ -299,8 +299,51 @@ donde $\tau=T/m_0c^2$ y
 
 Y finalmente, en el caso de partículas ligeras el término radiativo del poder de frenado puede ser aproximado por \cite{Attix1986}
 \begin{equation}\left(\frac{d T}{\rho d x}\right)_{r}=\sigma_{0} \frac{N_{A} Z^{2}}{A}\left(T+m_{0} c^{2}\right) \bar{B},\end{equation}
-donde $\sigma_0=\frac{1}{137}(e^2/m_0c^2)^2$ y $\bar{B}$ es una función que varía lentamente con $Z$ y $T-$.
+donde $\sigma_0=\frac{1}{137}(e^2/m_0c^2)^2$ y $\bar{B}$ es una función que varía lentamente con $Z$ y $T-$.\\
 
+En la figura \ref{fig:stoppingPower} se muestran los poderes de frenado radiativo(línea delgada) y de colisión(línea gruesa) dependiendo de la energía cinética para electrones en un rango de 0 a 100 MeV en agua,aluminio y plomo.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{images/stoppingPowerElectrons.png}
+	\caption{Poderes de frenado radiativo y de colisión de electrones en agua, aluminio y plomo\cite{podgorsak}.}
+	\label{fig:stoppingPower}
+\end{figure}
+\subsection{Interacción de neutrones}
+Los neutrones, en virtud de su neutralidad eléctrica, ionizan la materia de forma indirecta y depositan energía en ella a través de dos procesos, la interacción directa con partículas cargadas masivas, usualmente protones, y a través de interacciones de Coulomb de estas partículas masivas con los átomos del material. En su recorrido, los neutrones pueden sufrir dispersión elástica e ineslástica, así como generar reacciones nucleares.\\
+
+Dada su ausencia de carga, los neutrones no sufren interacciones de Coulomb directas con los núcleos del material, sin embargo, en una colisión directa puede existir interacción con el potencial atractivo de corto alcance del núcleo. Los siguientes son los procesos más importantes en los que se da esta interacción.\\
+
+\textbf{Dispersión elástica}\\
+
+En este proceso, el neutrón colisiona directamente con un núcleo de masa $M$, que cambia su dirección en un ángulo $\phi$ respecto a la dirección original del neutrón. Así, se transmite una energía dada por \cite{podgorsak}
+\begin{equation}
+	\Delta E_{k}=(E_{k})_i\frac{4m_{n}M}{(m_n+M)^2}\cos^2(\phi),
+\end{equation}
+donde $(E_k)_i$ es la energía inicial del neutrón y $m_n$ su masa.\\
+
+Por lo tanto, si el núcleo liviano, como en el caso de átomos de hidrógeno, el neutrón transferirá en promedio la mitad de su energía cinética en el proceso. Por otro lado, si el núcleo es pesado, se transfiere en promedio una cantidad mucho menor de esta energía, siendo un $2\%$ en el caso de una colisión directa con un núcleo de plomo.\\
+
+\textbf{Dispersión inelástica}\\
+
+En la dispersión inelástica, el neutrón es absorbido por un núcleo y re-emitido posteriormente como un neutrón de menor energía en una dirección diferente a la inicial. El núcleo habrá absorbido parte de la energía que será emitida luego en forma de radiación $\gamma$.\\
+
+\textbf{Captura de neutrones}\\
+
+En este proceso, un neutrón es absorbido por un núcleo, liberando un protón o rayos $\gamma$. En particular, dos de estos procesos son importantes en la interacción con tejido orgánico, los cuales son la transformación de núcleos de nitrógeno en núcleos de carbono, y la conversión de hidrógeno en deuterio. \\
+
+\textbf{Espalación}\\
+
+La espalación es un proceso en el cual un objetivo se fragmenta en múltiples pedazos como resultado de una colisión. En el caso de los núcleos, estos se desintegran en la colisión con neutrones, teniendo como resultado partículas $\alpha$ u otros nucleones. Por ejemplo, se tiene el proceso
+\begin{equation}
+	^{16}_8O + n\rightarrow 3\alpha+2p+3n,
+\end{equation}
+en donde un núcleo de oxígeno se desintegra en 3 partículas $\alpha$, 2 protones y 3 neutrones. La mayor parte de la energía liberada es transportada por los fragmentos pesados resultantes, siendo depositada en posteriores procesos en las cercanías del lugar de colisión.\\ 
+
+\textbf{Fisión nuclear inducida}\\
+
+En los procesos de fisión, neutrones con cierta energía impactan con núcleos pesados($Z\geq 92$), generando un proceso de fragmentación en núcleos más livianos, obteniendo además más neutrones libres. Estos neutrones generados pueden activar más de estos procesos, produciendo una reacción en cadena, la cual tiene como resultado la liberación de energía en el medio y múltiples especies de núcleos. 
+   
 \section{Medidas de radiación ionizante}
 Teniendo en cuenta que la radiación ionizante es particularmente peligrosa en tejidos biológicos cuando no se tiene suficiente control sobre ella, es necesario desarrollar un sistema de medida que permita describir cuantitativamente los efectos en los que un haz con cierta energía interactúa con la materia que atraviesa.\\
 
@@ -428,7 +471,7 @@ En la práctica, en centros médicos comunes se deben usar otro tipo de cámaras
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/camaraIoni.png}
-	\caption{Cámara de ionización farmer\cite{khan2014the}}
+	\caption{Cámara de ionización farmer\cite{khan2014the}.}
 	\label{fig:farmer}
 \end{figure}
 
@@ -469,7 +512,7 @@ Finalmente, para estimar el factor $k_{Q,Q_{0}}$ se usa el $TPR_{20,10}$, que es
  \begin{figure}[H]
  	\centering
  	\includegraphics[width=0.7\linewidth]{images/TPR2010.png}
- 	\caption{Montaje $TPR_{20,10} $ en condiciones estándar\cite{TPR398}}
+ 	\caption{Montaje $TPR_{20,10} $ en condiciones estándar\cite{TPR398}.}
  	\label{fig:TPR2010}
  \end{figure}
 Una vez obtenido este factor $TPR_{20,10}$, el $k_{Q,Q_{0}}$ se encuentra tabulado dependiendo de este y del modelo de la cámara usado\cite{TPR398}.\\
@@ -532,7 +575,7 @@ En general, los modelos difieren en la estructura y composición de la película
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{images/modelos.png}
-	\caption{Estructuras de películas radiocrómicas de diferentes modelos. Tomada de \cite{Devic2016}}
+	\caption{Estructuras de películas radiocrómicas de diferentes modelos\cite{Devic2016}.}
 	\label{fig:Estructuras}
 \end{figure}
 
@@ -543,7 +586,7 @@ La capa activa está compuesta generalmente de cristales de poliacetilenos\cite{
 	\subfloat[Monomeros de diacetileno\cite{Beni2017}]{\includegraphics[width=0.5\textwidth]{images/diacetileno.png}\label{fig:diacetileno}}
 	\hfill
 	\subfloat[Reacción de polimerización\cite{Williams2011}]{\includegraphics[width=0.5\textwidth]{images/reaccion.png}\label{fig:reaccion}}
-	\caption{Polimerización de diacetilenos}
+	\caption{Polimerización de diacetilenos.}
 \end{figure}
 
 El mayor cambio en coloración se produce casi instantáneamente después de la irradiación, sin embargo, la reacción puede tomar mucho más tiempo en completarse, estableciendo un tiempo de aproximadamente 24 horas para culminar este proceso \cite{Williams2011}. La velocidad de la reacción también depende de las condiciones de humedad\cite{LenMarroqun2018}, temperatura \cite{Rink2008} y exposición previa a las que está sometida la película\cite{NiroomandRad1998}. Por otro lado, estos cambios en la absorbancia de la película han sido mitigados en gran medida mediante aditivos en el componente activo, por lo que hoy en día, con las modernas películas EBT3, las variaciones por estos factores resultan controlables siguiendo un protocolo sencillo de reproducibilidad. \\
@@ -564,7 +607,7 @@ Para medir de manera práctica la absorbancia de una película irradiada existen
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/escaner.png}
-	\caption{Esquema de funcionamiento de escáner. Tomada de \cite{Devic2016}}
+	\caption{Esquema de funcionamiento de escáner\cite{Devic2016}.}
 	\label{fig:escaner}
 \end{figure}
 
@@ -607,7 +650,7 @@ Para obtener información de dosis a partir de la transmitancia medida en una pe
 	\subfloat[Película EBT2 sin irradiar]{\includegraphics[width=0.7\textwidth]{images/fondoblancoLandscape-1.png}\label{fig:EbtSin}}
 	\hfill
 	\subfloat[Película EBT2 irradiada]{\includegraphics[width=0.7\textwidth]{images/calibracionSimpleLandscape.png}\label{fig:EbtCali}}
-	\caption{Película EBT2 antes y después de irradiación}
+	\caption{Película EBT2 antes y después de irradiación.}
 \end{figure}
 
 Promediando el valor de las transmitancias en cada canal de color en una región de interes(ROI) en cada una de las franjas, es posible obtener una función de respuesta de la película como la que se muestra en la figura \ref{fig:curvaRespuesta}. En esta imagen, se evidencia que los canales de color en donde se presentan los mayores cambios son el rojo y el verde, por lo que son los más usados para obtener calibraciones.\\
@@ -615,7 +658,7 @@ Promediando el valor de las transmitancias en cada canal de color en una región
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\linewidth]{images/respses.png}
-	\caption{Curva de respuesta de película EBT2\cite{manualEBT2}}
+	\caption{Curva de respuesta de película EBT2\cite{manualEBT2}.}
 	\label{fig:curvaRespuesta}
 \end{figure}
 
@@ -636,7 +679,7 @@ De esta manera, se construye una relación entre las transmitancias netas o las 
 	\subfloat[Curva de respuesta\cite{Devic2016}]{\includegraphics[width=0.5\textwidth]{images/curva1.png}\label{fig:resp}}
 	\hfill
 	\subfloat[Curva de calibración\cite{Devic2016}]{\includegraphics[width=0.5\textwidth]{images/curva2.png}\label{fig:caliv}}
-	\caption{Curvas de calibración y respuesta}
+	\caption{Curvas de calibración y respuesta.}
 	\label{fig:Curvas}
 \end{figure}
 
@@ -740,7 +783,7 @@ Cada punto en la distribución de referencia pasa el test de comparación con la
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\linewidth]{images/gammaEllipse.png}
-	\caption{Significado geométrico del test gamma }
+	\caption{Significado geométrico del test gamma\cite{Cappuci}. }
 	\label{fig:elipseGamma}
 \end{figure}
 

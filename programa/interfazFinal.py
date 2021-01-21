@@ -311,9 +311,9 @@ class MyFrame(wx.Frame):
             fG=datosCalib["funcionesRGB"][1]
             fB=datosCalib["funcionesRGB"][2]
             pOptimos=datosCalib["Parametros"]
-            grafica.ax.errorbar(dosis,netODR,yerr=varODR,color='r',fmt='o',markersize=2)
-            grafica.ax.errorbar(dosis,netODG,yerr=varODG,color='g',fmt='o',markersize=2)
-            grafica.ax.errorbar(dosis,netODB,yerr=varODB,color='b',fmt='o',markersize=2)
+            grafica.ax.errorbar(dosis,netODR,yerr=varODR,color='r',fmt='o',markersize=5)
+            grafica.ax.errorbar(dosis,netODG,yerr=varODG,color='g',fmt='o',markersize=5)
+            grafica.ax.errorbar(dosis,netODB,yerr=varODB,color='b',fmt='o',markersize=5)
             xasR=np.linspace(netODR[0],netODR[-1]-0.005,100)
             xasG=np.linspace(netODG[0],netODG[-1]-0.005,100)
             xasB=np.linspace(netODB[0],netODB[-1]-0.005,100)
