@@ -1,0 +1,14 @@
+\babel@toc {spanish}{}
+\beamer@sectionintoc {1}{Introducción}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Películas radiocrómicas}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Objetivos}{8}{0}{1}
+\beamer@sectionintoc {2}{Metodología}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Adquisición de imágenes}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Características del programa}{15}{0}{2}
+\beamer@sectionintoc {3}{Resultados}{16}{0}{3}
+\beamer@subsectionintoc {3}{1}{Calibración}{17}{0}{3}
+\beamer@subsectionintoc {3}{2}{Efectos de otros parámetros}{18}{0}{3}
+\beamer@subsectionintoc {3}{3}{Mapas de dosis}{21}{0}{3}
+\beamer@subsectionintoc {3}{4}{Comparaciones a plan}{22}{0}{3}
+\beamer@sectionintoc {4}{Conclusiones}{23}{0}{4}
+\beamer@sectionintoc {5}{Bibliografía}{24}{0}{5}

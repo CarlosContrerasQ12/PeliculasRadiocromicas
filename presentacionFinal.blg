@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: presentacionFinal.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: references.bib
+Repeated entry---line 224 of file references.bib
+ : @inproceedings{Williams2011
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--empty booktitle in Williams2011
+Warning--empty author in radioterapia
+Warning--empty year in radioterapia
+Warning--empty author in magne
+Warning--empty year in magne
+Warning--empty author in cancer.net_2020
+Warning--empty year in cancer.net_2020
+Warning--empty author in magne2
+Warning--empty year in magne2
+Warning--empty author and editor in TPR398
+Warning--empty journal in mayers
+Warning--empty year in mayers
+Warning--empty journal in maya
+Warning--empty year in maya
+Warning--empty journal in manualEBT3
+Warning--empty year in manualEBT3
+Warning--empty journal in manualEBT2
+Warning--empty year in manualEBT2
+You've used 45 entries,
+            1876 wiz_defined-function locations,
+            768 strings with 12299 characters,
+and the built_in function-call counts, 12810 in all, are:
+= -- 1265
+> -- 557
+< -- 0
++ -- 206
+- -- 161
+* -- 972
+:= -- 1773
+add.period$ -- 56
+call.type$ -- 45
+change.case$ -- 37
+chr.to.int$ -- 0
+cite$ -- 63
+duplicate$ -- 651
+empty$ -- 1116
+format.name$ -- 161
+if$ -- 3085
+int.to.chr$ -- 0
+int.to.str$ -- 45
+missing$ -- 50
+newline$ -- 153
+num.names$ -- 39
+pop$ -- 140
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 486
+stack$ -- 0
+substring$ -- 848
+swap$ -- 300
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 18
+while$ -- 110
+width$ -- 47
+write$ -- 425
+(There was 1 error message)
