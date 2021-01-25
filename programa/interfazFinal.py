@@ -79,7 +79,7 @@ class ImagenCuadernoMatplotlib(wx.Panel):
         self.canvas = FigureCanvas(self, -1, self.figure)
         self.Text = wx.StaticText( self, wx.ID_ANY, u"  Available Channels  ", wx.DefaultPosition, wx.DefaultSize, 0 )
         self.Text.Wrap( -1 )
-        mouseMoveID = self.canvas.mpl_connect('motion_notify_event',self.onMotion)
+        #mouseMoveID = self.canvas.mpl_connect('motion_notify_event',self.onMotion)
         self.identificador=0
         self.tipo=''
         self.rutaImagen=''
@@ -101,10 +101,12 @@ class ImagenCuadernoMatplotlib(wx.Panel):
         except:
             x = ""
             y = ""
-        if np.mean(self.arrayIma)<0.0001:    
+        if np.mean(self.arrayIma)<0.0001:   
+
             self.Text.SetLabelText("%s , %s " % (x,y))
         else:
             if x!='' and y!='':
+
                 self.Text.SetLabelText(str(x)+' , '+str(y)+' , '+str(self.arrayIma[int(y),int(x)]))   
 
 
@@ -127,7 +129,7 @@ class MyFrame(wx.Frame):
         
         
         self.arbolArchivos = wx.TreeCtrl(self, wx.ID_ANY,style=wx.TR_LINES_AT_ROOT)
-        self.panelVariable = wx.Panel(self, wx.ID_ANY)
+        self.panelesVariables = [wx.Panel(self, wx.ID_ANY)]
         self.calibraciones=[]
         self.mapasDeDosis=[]
         self.comparacionesAPlan=[]
@@ -195,7 +197,7 @@ class MyFrame(wx.Frame):
         self.sizer_2 = wx.BoxSizer(wx.VERTICAL)
         sizer_1.Add(self.notebookImagenes, 2, wx.EXPAND, 0)
         self.sizer_2.Add(self.arbolArchivos, 1, wx.EXPAND, 0)
-        self.sizerPanel=self.sizer_2.Add(self.panelVariable, 1, wx.EXPAND, 0)
+        self.sizerPanel=self.sizer_2.Add(self.panelesVariables[0], 1, wx.EXPAND, 0)
         sizer_1.Add(self.sizer_2, 1, wx.EXPAND, 0)
         self.SetSizer(sizer_1)
         
@@ -263,15 +265,15 @@ class MyFrame(wx.Frame):
             dosisReal=leerDosis(dialogoCalibracion.nombreArchivoDos)
             
             
-            self.panelVariable=PanelSeleccionDosis(self,dosis=dosisReal,canal=dialogoCalibracion.tipoCanal,curva=dialogoCalibracion.tipoCurva)
-            calibracionActual.panelDosis=self.panelVariable
+            panelVariable=PanelSeleccionDosis(self,dosis=dosisReal,canal=dialogoCalibracion.tipoCanal,curva=dialogoCalibracion.tipoCurva)
+            calibracionActual.panelDosis=panelVariable
             calibracionActual.fondoCero=self.araySinIrra
             calibracionActual.fondoNegro=self.araySinLuz
             self.calibraciones.append(calibracionActual)
-            self.sizer_2.Remove(1)
-            self.sizer_2.Add(self.panelVariable, 1, wx.EXPAND, 0)
-            
-            
+            self.panelesVariables[-1].Hide()
+            self.panelesVariables.append(panelVariable)
+            self.sizerPanel=self.sizer_2.Add(self.panelesVariables[-1], 1, wx.EXPAND, 0)
+            self.panelesVariables[-1].Show()
             self.Layout()
         event.Skip()
 
@@ -406,9 +408,11 @@ class MyFrame(wx.Frame):
         
 
         
-        self.sizer_2.Remove(1)
-        self.panelVariable=PanelMapaDosis1(self,dialMapa.rutaCalibracion)
-        self.sizer_2.Add(self.panelVariable, 1, wx.EXPAND, 0)
+        panelVariable=PanelMapaDosis1(self,dialMapa.rutaCalibracion)
+        self.panelesVariables[-1].Hide()
+        self.panelesVariables.append(panelVariable)
+        self.sizerPanel=self.sizer_2.Add(self.panelesVariables[-1], 1, wx.EXPAND, 0)
+        self.panelesVariables[-1].Show()
         self.Layout()
         event.Skip()
 
@@ -518,9 +522,11 @@ class MyFrame(wx.Frame):
         self.alp.on_changed(update) 
         
 
-        self.panelVariable=PanelComparacionAPlan(self,int(dialComparar.tole),int(dialComparar.dist),int(dialComparar.thres),float(dmm))
-        self.sizer_2.Remove(1)
-        self.sizer_2.Add(self.panelVariable, 1, wx.EXPAND, 0)
+        panelVariable=PanelComparacionAPlan(self,int(dialComparar.tole),int(dialComparar.dist),int(dialComparar.thres),float(dmm))
+        self.panelesVariables[-1].Hide()
+        self.panelesVariables.append(panelVariable)
+        self.sizerPanel=self.sizer_2.Add(self.panelesVariables[-1], 1, wx.EXPAND, 0)
+        self.panelesVariables[-1].Show()
         self.Layout()
         event.Skip()
 
@@ -542,6 +548,7 @@ class MyFrame(wx.Frame):
     def cambioPagina(self,event):
         print('cambioPagina')
         pestana=self.notebookImagenes.GetCurrentPage()
+        """
         if pestana.tipo=='cali':
             for cals in self.calibraciones:
                 for fisa in cals.panelesMatplot:
@@ -550,14 +557,10 @@ class MyFrame(wx.Frame):
                         self.araySinIrra=cals.fondoCero
                         self.araySinLuz=cals.fondoNegro
                         self.paginaActual=fisa
-                        self.panelVariable=cals.panelDosis
+                        #self.panelVariable=cals.panelDosis
                         print(self.panelVariable.R)
                         break
-        
-                      
-        self.sizer_2.Remove(1)
-        self.sizer_2.Add(self.panelVariable, 1, wx.EXPAND, 0)
-        self.Layout()
+        """
                         
         event.Skip()
 

@@ -11,6 +11,7 @@ from matplotlib.widgets import Slider
 import numpy as np
 import pymedphys
 import matplotlib as mpl
+import sys
 # begin wxGlade: dependencies
 # end wxGlade
 
@@ -108,6 +109,7 @@ class PanelComparacionAPlan(wx.Panel):
         self.button_4 = wx.Button(self, wx.ID_ANY, "Curva de isodosis")
         self.button_5 = wx.Button(self, wx.ID_ANY, "Guardar comparacion")
         self.button_6 = wx.Button(self, wx.ID_ANY, "Seleccionar ROI")
+        self.button_7 = wx.Button(self, wx.ID_ANY, "Ajustar imagenes")
         
         self.normalizacion=np.max(self.parent.paginaActual.arrayIma[0])
         self.gamma=0
@@ -134,6 +136,7 @@ class PanelComparacionAPlan(wx.Panel):
         self.Bind(wx.EVT_BUTTON, self.generar_isodosis, self.button_4)
         self.Bind(wx.EVT_BUTTON, self.guardar_comparacion, self.button_5)
         self.Bind(wx.EVT_BUTTON, self.seleccionarROI, self.button_6)
+        self.Bind(wx.EVT_BUTTON, self.ajustar_imagenes, self.button_7)
         # end wxGlade
 
     def __set_properties(self):
@@ -148,6 +151,7 @@ class PanelComparacionAPlan(wx.Panel):
         sizer_2.Add(label_1, 0, wx.ALIGN_CENTER_VERTICAL, 0)
         sizer_2.Add(self.text_ctrl_1, 1, wx.ALIGN_CENTER_VERTICAL, 0)
         sizer_1.Add(sizer_2, 1, wx.EXPAND, 0)
+        sizer_1.Add(self.button_7, 1, wx.EXPAND, 0)
         sizer_1.Add(self.button_6, 1, wx.EXPAND, 0)
         sizer_1.Add(self.button_1, 1, wx.EXPAND, 0)
         sizer_1.Add(self.button_2, 1, wx.EXPAND, 0)
@@ -253,6 +257,54 @@ class PanelComparacionAPlan(wx.Panel):
     def guardar_comparacion(self, event):  # wxGlade: MyDialog.<event_handler>
         print("Event handler 'guardar_comparacion' not implemented!")
         event.Skip()
+    def ajustar_imagenes(self, event):
+        self.evenMPL=self.parent.paginaActual.figure.canvas.mpl_connect('key_press_event',self.mover)
+        event.Skip()
+        
+    def mover(self,event2):
+        non = lambda s: s if s<0 else None
+        mom = lambda s: max(0,s)
+
+        if event2.key=='up':
+            print(event2.key)
+            ox, oy = 0, -1
+            shift_lena = np.zeros_like(self.parent.arayActual[0])
+            shift_lena[mom(oy):non(oy), mom(ox):non(ox)] = self.parent.arayActual[0][mom(-oy):non(-oy), mom(-ox):non(-ox)]
+            self.parent.arayActual[0]=shift_lena
+
+            
+        elif event2.key=='down':  
+            print(event2.key)
+            ox, oy = 0, 1
+            shift_lena = np.zeros_like(self.parent.arayActual[0])
+            shift_lena[mom(oy):non(oy), mom(ox):non(ox)] = self.parent.arayActual[0][mom(-oy):non(-oy), mom(-ox):non(-ox)]
+            self.parent.arayActual[0]=shift_lena
+
+
+        elif event2.key=='right':
+            print(event2.key)
+            ox, oy = 1, 0
+            shift_lena = np.zeros_like(self.parent.arayActual[0])
+            shift_lena[mom(oy):non(oy), mom(ox):non(ox)] = self.parent.arayActual[0][mom(-oy):non(-oy), mom(-ox):non(-ox)]
+            self.parent.arayActual[0]=shift_lena
+
+
+        elif event2.key=='left':  
+            print(event2.key)
+            ox, oy = -1, 0
+            shift_lena = np.zeros_like(self.parent.arayActual[0])
+            shift_lena[mom(oy):non(oy), mom(ox):non(ox)] = self.parent.arayActual[0][mom(-oy):non(-oy), mom(-ox):non(-ox)]
+            self.parent.arayActual[0]=shift_lena
+
+
+        elif event2.key=='enter':     
+            self.parent.paginaActual.figure.canvas.mpl_disconnect(self.evenMPL)
+           
+            
+        self.parent.paginaActual.axA.clear()
+        self.parent.paginaActual.axA.imshow((1.0-self.parent.alpha)*self.parent.arayActual[0]+self.parent.alpha*self.parent.arayActual[1],cmap=mpl.cm.gray)
+        self.parent.paginaActual.figure.canvas.draw()
+        self.parent.paginaActual.figure.canvas.flush_events()  
 
 # end of class MyDialog
 

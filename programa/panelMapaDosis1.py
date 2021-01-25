@@ -271,9 +271,11 @@ class PanelMapaDosis1(wx.Panel):
         
         a1.imshow(mapaDosis[:,:,0],cmap=mpl.cm.gray)
         self.parent.arbolArchivos.AppendItem(rez,"Mapa de dosis")
-        self.parent.panelVariable=PanelMapaDosis2(self.parent,self.centro)
-        self.parent.sizer_2.Remove(1)
-        self.parent.sizer_2.Add(self.parent.panelVariable, 1, wx.EXPAND, 0)
+        panelVariable=PanelMapaDosis2(self.parent,self.centro)
+        self.parent.panelesVariables[-1].Hide()
+        self.parent.panelesVariables.append(panelVariable)
+        self.parent.sizerPanel=self.parent.sizer_2.Add(self.parent.panelesVariables[-1], 1, wx.EXPAND, 0)
+        self.parent.panelesVariables[-1].Show()
         self.parent.Layout()
         event.Skip()
 
