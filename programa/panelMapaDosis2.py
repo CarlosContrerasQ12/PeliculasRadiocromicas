@@ -32,7 +32,9 @@ class Perfil():
         self.mapeoR=mapIntesidadR
         self.mapeoG=mapIntesidadG
         self.mapeoB=mapIntesidadB
-        k=self.fig.ginput(2)
+        self.clicksX=[]
+        self.clicksY=[]
+        k=self.gin2()
         self.x1=k[0][0]
         self.y1=k[0][1]
         self.x2=k[1][0]
@@ -104,6 +106,36 @@ class Perfil():
         self.fig.canvas.flush_events()
         self.fig2.canvas.draw()
         self.fig2.canvas.flush_events()
+        
+    def click1(self,event):
+        self.clicksX.append(event.xdata)
+        self.clicksY.append(event.ydata)
+        if len(self.clicksX)>=1:
+            self.fig.canvas.stop_event_loop()
+               
+           
+    def gin1(self):
+        self.fig.canvas.mpl_connect('button_press_event', self.click1)
+        self.fig.canvas.start_event_loop()
+        rx,ry=self.clicksX,self.clicksY
+        self.clicksX=[]
+        self.clicksY=[]
+        return list(zip(rx,ry))
+        
+    def click2(self,event):
+        self.clicksX.append(event.xdata)
+        self.clicksY.append(event.ydata)
+        if len(self.clicksX)>=2:
+            self.fig.canvas.stop_event_loop()
+               
+           
+    def gin2(self):
+        self.fig.canvas.mpl_connect('button_press_event', self.click2)
+        self.fig.canvas.start_event_loop()
+        rx,ry=self.clicksX,self.clicksY
+        self.clicksX=[]
+        self.clicksY=[]
+        return list(zip(rx,ry))
 
 
 class PanelMapaDosis2(wx.Panel):
@@ -206,7 +238,7 @@ class PanelMapaDosis2(wx.Panel):
         elif dial.resultado=='valorFijo':
             self.normalizacion=dial.valor
         elif dial.resultado=='select':
-            k=self.parent.paginaActual.figure.ginput(1)
+            k=self.parent.paginaActual.gin1()
             xp=int(k[0][0])
             yp=int(k[0][1])
             self.normalizacion=np.mean(self.parent.paginaActual.arrayIma[yp-2:yp+2,xp-2:xp+2,0])   

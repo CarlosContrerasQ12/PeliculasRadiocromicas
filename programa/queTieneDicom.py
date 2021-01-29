@@ -3,7 +3,7 @@ import pydicom
 import matplotlib.pyplot as plt
 ds = dcmread('piramide2.dcm')
 ds2 = dcmread('Mapa de dosis-cuadradol.dcm')
-print(ds)
+print(str(ds))
 print(ds2)
 
 plt.axis('off')

@@ -127,7 +127,7 @@ class PanelSeleccionDosis(wx.Panel):
         
 
     def nuevaRoi(self, event):  # wxGlade: MyDialog.<event_handler>
-        k=self.parent.paginaActual.figure.ginput(2)
+        k=self.parent.paginaActual.rectangleGin2()
         x1=k[0][0]
         y1=k[0][1]
         x2=k[1][0]

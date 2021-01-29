@@ -8,6 +8,7 @@ import numpy as np
 import wx
 import wx.lib.agw.aui as aui
 import wx.lib.mixins.inspection as wit
+from matplotlib.widgets import RectangleSelector
 
 from dialogoCalibracionAlternativo import DialogoCalibracion
 from dialogoSeleccionDosis import *
@@ -21,10 +22,14 @@ from panelMapaDosis1 import *
 from dialogoComparacionPlan import *
 from panelComparacionAPlan import *
 from imagenMatplotlibLibre import *
+from apiladorImagenes import *
+from invertirImagenes import *
+from dialogoConfiguracion import *
 
 import matplotlib as mpl
 from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg as FigureCanvas
 from matplotlib.backends.backend_wxagg import NavigationToolbar2WxAgg as NavigationToolbar
+from pydicom import dcmread
 
 import tifffile as tiff
 from skimage.transform import rescale
@@ -69,6 +74,19 @@ class ComparacionAPlan():
     def __init__(self,imagenEscan,imagenCalculada):
         self.imScan=imagenEscan
         self.imCalc=imagenCalculada
+
+class PanelInformacion(wx.Panel):
+    def __init__(self, *args, **kwds):
+        self.parent=args[0]
+        self.info=args[1]
+        super(PanelInformacion, self).__init__(self.parent)
+        self.text_ctrl_1 = wx.TextCtrl(self, wx.ID_ANY, "",style=wx.TE_MULTILINE | wx.TE_READONLY)
+        self.text_ctrl_1.write(str(self.info))
+        sizer_1 = wx.BoxSizer(wx.VERTICAL)
+        sizer_1.Add(self.text_ctrl_1, 1, wx.EXPAND, 0)
+        self.SetSizer(sizer_1)
+        sizer_1.Fit(self)
+        self.Layout()
         
         
 class ImagenCuadernoMatplotlib(wx.Panel):
@@ -84,6 +102,10 @@ class ImagenCuadernoMatplotlib(wx.Panel):
         self.tipo=''
         self.rutaImagen=''
         self.arrayIma=np.zeros(5)
+        self.panel=None
+        
+        self.clicksX=[]
+        self.clicksY=[]
         
         sizer = wx.BoxSizer(wx.VERTICAL)
         sizer.Add(self.canvas, 1, wx.EXPAND)
@@ -108,18 +130,76 @@ class ImagenCuadernoMatplotlib(wx.Panel):
             if x!='' and y!='':
 
                 self.Text.SetLabelText(str(x)+' , '+str(y)+' , '+str(self.arrayIma[int(y),int(x)]))   
+                
+    def line_select_callback(self,eclick, erelease):
 
+        x1, y1 = eclick.xdata, eclick.ydata
+        x2, y2 = erelease.xdata, erelease.ydata
+        print(x1,x2)
+        self.clicksX.append(x1)
+        self.clicksX.append(x2)
+        self.clicksY.append(y1)
+        self.clicksY.append(y2)
+        self.figure.canvas.stop_event_loop() 
+
+                
+    def rectangleGin2(self):
+        
+        toggle_selector = RectangleSelector(self.axA, self.line_select_callback,
+                                       drawtype="box", useblit=True,
+                                       button=[1, 3],  # disable middle button
+                                       minspanx=5, minspany=5,
+                                       spancoords='pixels',
+                                       interactive=True)    
+        toggle_selector.set_active(True)   
+        self.figure.canvas.start_event_loop()
+        rx,ry=self.clicksX,self.clicksY
+        self.clicksX=[]
+        self.clicksY=[]
+        return list(zip(rx,ry))    
+
+    def click1(self,event):
+        self.clicksX.append(event.xdata)
+        self.clicksY.append(event.ydata)
+        if len(self.clicksX)>=1:
+            self.figure.canvas.stop_event_loop()
+               
+           
+    def gin1(self):
+        self.figure.canvas.mpl_connect('button_press_event', self.click1)
+        self.figure.canvas.start_event_loop()
+        rx,ry=self.clicksX,self.clicksY
+        self.clicksX=[]
+        self.clicksY=[]
+        return list(zip(rx,ry))
+        
+    def click2(self,event):
+        self.clicksX.append(event.xdata)
+        self.clicksY.append(event.ydata)
+        if len(self.clicksX)>=2:
+            self.figure.canvas.stop_event_loop()
+               
+           
+    def gin2(self):
+        self.figure.canvas.mpl_connect('button_press_event', self.click2)
+        self.figure.canvas.start_event_loop()
+        rx,ry=self.clicksX,self.clicksY
+        self.clicksX=[]
+        self.clicksY=[]
+        return list(zip(rx,ry))
 
 class MyFrame(wx.Frame):
     def __init__(self, *args, **kwds):
         # begin wxGlade: MyFrame.__init__
         kwds["style"] = kwds.get("style", 0) | wx.DEFAULT_FRAME_STYLE
         wx.Frame.__init__(self, *args, **kwds)
+        self.panelesVariables = [PanelInformacion(self,"\n \n \n \n \n \n \n \n Bienvenido a FilmQADog \n \n \n \nCarlos Daniel Contreras Quiroz \n \n Universidad de los Andes \n  \nCentro de Control de Cáncer")]
         self.SetSize((1366, 741))
         self.notebookImagenes = aui.AuiNotebook(self, wx.ID_ANY)
         
         self.paginas=[]
         self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
+        self.paginas[-1].panel=self.panelesVariables[0]
         self.paginaActual=self.paginas[0]
         self.arayActual=[]
         self.araySinIrra=[]
@@ -129,7 +209,7 @@ class MyFrame(wx.Frame):
         
         
         self.arbolArchivos = wx.TreeCtrl(self, wx.ID_ANY,style=wx.TR_LINES_AT_ROOT)
-        self.panelesVariables = [wx.Panel(self, wx.ID_ANY)]
+        
         self.calibraciones=[]
         self.mapasDeDosis=[]
         self.comparacionesAPlan=[]
@@ -138,8 +218,6 @@ class MyFrame(wx.Frame):
         # Menu Bar
         self.frame_menubar = wx.MenuBar()
         wxglade_tmp_menu = wx.Menu()
-        item = wxglade_tmp_menu.Append(wx.ID_ANY, "Guardar...", "")
-        self.Bind(wx.EVT_MENU, self.guardar, id=item.GetId())
         item = wxglade_tmp_menu.Append(wx.ID_ANY, "Abrir...", "")
         self.Bind(wx.EVT_MENU, self.abrir, id=item.GetId())
         item = wxglade_tmp_menu.Append(wx.ID_ANY, "Cerrar", "")
@@ -156,13 +234,11 @@ class MyFrame(wx.Frame):
         self.Bind(wx.EVT_MENU, self.compararMapas, id=item.GetId())
         self.frame_menubar.Append(wxglade_tmp_menu, "Mapas de dosis")
         wxglade_tmp_menu = wx.Menu()
-        item = wxglade_tmp_menu.Append(wx.ID_ANY, "Promediador", "")
-        self.Bind(wx.EVT_MENU, self.promediarImagenes, id=item.GetId())
+        item = wxglade_tmp_menu.Append(wx.ID_ANY, "Invertir", "")
+        self.Bind(wx.EVT_MENU, self.invertirImagenes, id=item.GetId())
         item = wxglade_tmp_menu.Append(wx.ID_ANY, "Apilar", "")
         self.Bind(wx.EVT_MENU, self.apilarImagenes, id=item.GetId())
-        item = wxglade_tmp_menu.Append(wx.ID_ANY, "Filtrar", "")
-        self.Bind(wx.EVT_MENU, self.filtrarImagenes, id=item.GetId())
-        item = wxglade_tmp_menu.Append(wx.ID_ANY, "Configuracion", "")
+        item = wxglade_tmp_menu.Append(wx.ID_ANY, "Configuración", "")
         self.Bind(wx.EVT_MENU, self.cambiarConfiguracion, id=item.GetId())
         self.frame_menubar.Append(wxglade_tmp_menu, "Herramientas")
         self.SetMenuBar(self.frame_menubar)
@@ -237,6 +313,20 @@ class MyFrame(wx.Frame):
             
             calibracionActual=Calibracion([],[],[])
             rez=self.arbolArchivos.AppendItem(self.raiz,"Calibracion "+str(len(self.calibraciones)+1))
+            dosisReal=leerDosis(dialogoCalibracion.nombreArchivoDos)
+            
+            
+            panelVariable=PanelSeleccionDosis(self,dosis=dosisReal,canal=dialogoCalibracion.tipoCanal,curva=dialogoCalibracion.tipoCurva)
+            calibracionActual.panelDosis=panelVariable
+            calibracionActual.fondoCero=self.araySinIrra
+            calibracionActual.fondoNegro=self.araySinLuz
+            
+            self.panelesVariables[-1].Hide()
+            self.panelesVariables.append(panelVariable)
+            self.sizerPanel=self.sizer_2.Add(self.panelesVariables[-1], 1, wx.EXPAND, 0)
+            self.panelesVariables[-1].Show()
+            self.Layout()
+            
             for nombreImagen in dialogoCalibracion.nombreArchivos:    
                 self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
                 self.notebookImagenes.AddPage(self.paginas[-1], "Calibracion "+str(len(self.calibraciones)+1))
@@ -244,6 +334,7 @@ class MyFrame(wx.Frame):
                 self.paginas[-1].identificador=self.numeroPags
                 self.paginas[-1].tipo='cali'
                 self.paginas[-1].rutaImagen=nombreImagen
+                self.paginas[-1].panel=panelVariable
                 nuem=self.notebookImagenes.GetPageCount()-1
                 self.notebookImagenes.SetSelection(nuem)
                 figActual=self.paginas[-1].figure
@@ -261,20 +352,8 @@ class MyFrame(wx.Frame):
                 calibracionActual.nombresArchivos.append(nombreImagen)
                 self.arbolArchivos.AppendItem(rez,"Imagen "+str(len(calibracionActual.nombresArchivos)))
                 
-                
-            dosisReal=leerDosis(dialogoCalibracion.nombreArchivoDos)
-            
-            
-            panelVariable=PanelSeleccionDosis(self,dosis=dosisReal,canal=dialogoCalibracion.tipoCanal,curva=dialogoCalibracion.tipoCurva)
-            calibracionActual.panelDosis=panelVariable
-            calibracionActual.fondoCero=self.araySinIrra
-            calibracionActual.fondoNegro=self.araySinLuz
             self.calibraciones.append(calibracionActual)
-            self.panelesVariables[-1].Hide()
-            self.panelesVariables.append(panelVariable)
-            self.sizerPanel=self.sizer_2.Add(self.panelesVariables[-1], 1, wx.EXPAND, 0)
-            self.panelesVariables[-1].Show()
-            self.Layout()
+
         event.Skip()
 
     def abrir(self, event):  # wxGlade: MyFrame.<event_handler>
@@ -335,15 +414,63 @@ class MyFrame(wx.Frame):
             grafica.figure.subplots_adjust(right=0.75)
             
             grafica.Show() 
+        elif sufix=='dcm':
+            ar=dcmread(nombreAr)
+            imag=ar.pixel_array
+            self.arayActual=imag
+            self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
+            self.notebookImagenes.AddPage(self.paginas[-1], "Archivo DICOM")
+            self.numeroPags=self.numeroPags+1
+            self.paginas[-1].identificador=self.numeroPags
+            self.paginas[-1].tipo='dcm'
+            self.paginas[-1].panel=PanelInformacion(self,ar)
+
+            self.panelesVariables[-1].Hide()
+            self.panelesVariables.append(self.paginas[-1].panel)
+            self.sizerPanel=self.sizer_2.Add(self.panelesVariables[-1], 1, wx.EXPAND, 0)
+            self.panelesVariables[-1].Show()
+            self.Layout()
+            self.paginas[-1].arrayIma=self.arayActual
+            nuem=self.notebookImagenes.GetPageCount()-1
+            self.notebookImagenes.SetSelection(nuem)
+            figActual=self.paginas[-1].figure
+            self.paginaActual=self.paginas[-1]
+            a1=figActual.gca()
+            
+            escalado=(self.arayActual/2**self.configuracion["BitCanal"])*255
+            a1.imshow(escalado.astype(int),cmap=mpl.cm.gray)
+            
+        elif sufix=='tif':
+            imag=tiff.imread(nombreAr)
+            self.arayActual=imag
+            self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
+            self.notebookImagenes.AddPage(self.paginas[-1], "Archivo Tiff")
+            self.numeroPags=self.numeroPags+1
+            self.paginas[-1].identificador=self.numeroPags
+            self.paginas[-1].tipo='tiff'
+            self.paginas[-1].panel=PanelInformacion(self,"Imagen")
+
+            self.panelesVariables[-1].Hide()
+            self.panelesVariables.append(self.paginas[-1].panel)
+            self.sizerPanel=self.sizer_2.Add(self.panelesVariables[-1], 1, wx.EXPAND, 0)
+            self.panelesVariables[-1].Show()
+            self.Layout()
+            self.paginas[-1].arrayIma=self.arayActual
+            nuem=self.notebookImagenes.GetPageCount()-1
+            self.notebookImagenes.SetSelection(nuem)
+            figActual=self.paginas[-1].figure
+            self.paginaActual=self.paginas[-1]
+            a1=figActual.gca()
+            
+            escalado=(self.arayActual/2**self.configuracion["BitCanal"])*255
+            a1.imshow(escalado.astype(int),cmap=mpl.cm.gray)
+            
         event.Skip()
 
     def cerrar(self, event):  # wxGlade: MyFrame.<event_handler>
         print("Event handler 'cerrar' not implemented!")
         event.Skip()
 
-    def guardar(self, event):  # wxGlade: MyFrame.<event_handler>
-        print("Event handler 'calibrar' not implemented!")
-        event.Skip()
 
     def mapaNuevo(self, event):  # wxGlade: MyFrame.<event_handler>
         dialMapa=DialogoMapaDosis(self)
@@ -391,29 +518,34 @@ class MyFrame(wx.Frame):
                 self.araySinIrra=filtrar_imagen(self.araySinIrra,self.configuracion["Filtros"])
             
         self.arayActual=image
+        print(self.arayActual.shape)
         self.paginas.append(ImagenCuadernoMatplotlib(self.notebookImagenes))
         self.notebookImagenes.AddPage(self.paginas[-1], "Mapa de dosis "+str(len(self.mapasDeDosis)+1))
         self.numeroPags=self.numeroPags+1
         self.paginas[-1].identificador=self.numeroPags
         self.paginas[-1].tipo='md1'
         self.paginas[-1].rutaImagen=dialMapa.rutaImagen
-        nuem=self.notebookImagenes.GetPageCount()-1
-        self.notebookImagenes.SetSelection(nuem)
-        figActual=self.paginas[-1].figure
-        self.paginaActual=self.paginas[-1]
-        a1=figActual.gca()
         self.paginas[-1].arrayIma=self.arayActual
-        escalado=(self.arayActual/2**self.configuracion["BitCanal"])*255
-        a1.imshow(escalado.astype(int))
-        
-
         
         panelVariable=PanelMapaDosis1(self,dialMapa.rutaCalibracion)
         self.panelesVariables[-1].Hide()
         self.panelesVariables.append(panelVariable)
+        self.paginas[-1].panel=panelVariable
         self.sizerPanel=self.sizer_2.Add(self.panelesVariables[-1], 1, wx.EXPAND, 0)
         self.panelesVariables[-1].Show()
         self.Layout()
+        
+        nuem=self.notebookImagenes.GetPageCount()-1
+        self.notebookImagenes.SetSelection(nuem)
+        
+        figActual=self.paginas[-1].figure
+        self.paginaActual=self.paginas[-1]
+        a1=figActual.gca()
+        
+        print(self.arayActual.shape)
+        escalado=(self.arayActual/2**self.configuracion["BitCanal"])*255
+        a1.imshow(escalado.astype(int))
+       
         event.Skip()
 
     def compararMapas(self, event): 
@@ -482,6 +614,13 @@ class MyFrame(wx.Frame):
         self.paginas[-1].identificador=self.numeroPags
         self.paginas[-1].tipo='compa'
         self.paginaActual=self.paginas[-1]
+        panelVariable=PanelComparacionAPlan(self,int(dialComparar.tole),int(dialComparar.dist),int(dialComparar.thres),float(dmm))
+        self.panelesVariables[-1].Hide()
+        self.panelesVariables.append(panelVariable)
+        self.paginas[-1].panel=panelVariable
+        self.sizerPanel=self.sizer_2.Add(self.panelesVariables[-1], 1, wx.EXPAND, 0)
+        self.panelesVariables[-1].Show()
+        self.Layout()
         nuem=self.notebookImagenes.GetPageCount()-1
         self.notebookImagenes.SetSelection(nuem)
         figActual=self.paginas[-1].figure
@@ -522,33 +661,32 @@ class MyFrame(wx.Frame):
         self.alp.on_changed(update) 
         
 
-        panelVariable=PanelComparacionAPlan(self,int(dialComparar.tole),int(dialComparar.dist),int(dialComparar.thres),float(dmm))
-        self.panelesVariables[-1].Hide()
-        self.panelesVariables.append(panelVariable)
-        self.sizerPanel=self.sizer_2.Add(self.panelesVariables[-1], 1, wx.EXPAND, 0)
-        self.panelesVariables[-1].Show()
-        self.Layout()
-        event.Skip()
 
-    def promediarImagenes(self, event):  # wxGlade: MyFrame.<event_handler>
-        print("Event handler 'promediarImagenes' not implemented!")
         event.Skip()
 
     def apilarImagenes(self, event):  # wxGlade: MyFrame.<event_handler>
-        print("Event handler 'apilarImagenes' not implemented!")
+        dial=wx.FileDialog(self,name="Seleccione archivos",style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST | wx.FD_MULTIPLE)
+        if dial.ShowModal()==wx.ID_OK:
+            archivos=dial.GetPaths()
+            fdlg = wx.FileDialog(self, "Guardar imagen",wildcard="calibraciones (*.calibr)|*.calibr", style=wx.FD_SAVE)
+            if fdlg.ShowModal() == wx.ID_OK:
+                apilar_imagenes(archivos,fdlg.GetPath())
         event.Skip()
 
-    def filtrarImagenes(self, event):  # wxGlade: MyFrame.<event_handler>
-        print("Event handler 'filtrarImagenes' not implemented!")
+    def invertirImagenes(self, event):  # wxGlade: MyFrame.<event_handler>
+        dial=wx.FileDialog(self,name="Seleccione archivos",style=wx.FD_OPEN | wx.FD_FILE_MUST_EXIST | wx.FD_MULTIPLE)
+        if dial.ShowModal()==wx.ID_OK:
+            archivos=dial.GetPaths()
+            invertir_imagenes(archivos)
         event.Skip()
 
     def cambiarConfiguracion(self, event):  # wxGlade: MyFrame.<event_handler>
-        print("Event handler 'cambiarConfiguracion' not implemented!")
+        dial=DialogoConfiguracion(self)
+        dial.Show()
         event.Skip()
     def cambioPagina(self,event):
-        print('cambioPagina')
         pestana=self.notebookImagenes.GetCurrentPage()
-        """
+        
         if pestana.tipo=='cali':
             for cals in self.calibraciones:
                 for fisa in cals.panelesMatplot:
@@ -557,10 +695,15 @@ class MyFrame(wx.Frame):
                         self.araySinIrra=cals.fondoCero
                         self.araySinLuz=cals.fondoNegro
                         self.paginaActual=fisa
-                        #self.panelVariable=cals.panelDosis
-                        print(self.panelVariable.R)
+                        for pa in self.panelesVariables:
+                            pa.Hide()
+                        pestana.panel.Show()
                         break
-        """
+        else:
+            self.arayActual=pestana.arrayIma
+            for pa in self.panelesVariables:
+                pa.Hide()
+            pestana.panel.Show()
                         
         event.Skip()
 

@@ -2,12 +2,16 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{mathrsfs} 
 \usepackage{outlines}
 \usetheme{Goettingen}
+\usepackage{caption}
+\captionsetup{font=scriptsize,labelfont=scriptsize}
 %\usepackage{subfig,graphicx,showframe}
 \setbeamertemplate{bibliography item}[text]
 \DeclareMathOperator{\re}{Re}
@@ -118,22 +122,25 @@ Para usarlas es necesario establecer un protocolo que correlacione cambios de co
 \begin{frame}{Montaje de irradiación}
 \begin{figure}[htp]% [H] is so declass\'e!
 	\centering
-	\begin{minipage}{0.45\textwidth}
+	\begin{minipage}{0.4\textwidth}
 		\includegraphics[width=\textwidth]{images/elctrometro.jpg}
+		\caption{Agua sólida con cámara de ionización}
 	\end{minipage}\hfill
-	\begin{minipage}{0.45\textwidth}
+	\begin{minipage}{0.4\textwidth}
 		\includegraphics[width=\textwidth]{images/TRS398Editado2.jpg}
+		\caption{Montaje de calibración de máquina}
 	\end{minipage}\par
 	\vskip\floatsep% normal separation between figures
-	\includegraphics[width=0.45\textwidth]{images/20200826_215214.jpg}
+	\includegraphics[width=0.4\textwidth]{images/20200826_215214.jpg}
+	\caption{Película EBT2 en agua sólida}
 \end{figure}
 \end{frame}
 
 \begin{frame}{Películas irradiadas}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{images/peliculasIrradiadas.png}
-	\caption{Películas irradiadas con dosis de 0 a 20 Gy}
+	\includegraphics[width=0.7\linewidth]{images/peliculasIrradiadas_2.png}
+	\caption{Películas irradiadas con dosis de 0 a 20 Gy con fotónes de 6 MeV}
 \end{figure}
 
 \end{frame}
@@ -151,17 +158,21 @@ Para usarlas es necesario establecer un protocolo que correlacione cambios de co
 	\centering
 	\begin{minipage}{0.45\textwidth}
 		\includegraphics[width=\textwidth]{images/piramideTPS.png}
+		\caption{Mapa piramidal calculado en TPS}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 		\includegraphics[width=\textwidth]{images/mamaTPS.png}
+		\caption{Mapa de tratamiento de mama calculado en TPS}
 	\end{minipage}\par
-	\begin{minipage}{0.45\textwidth}
+	\begin{minipage}{0.4\textwidth}
 	\includegraphics[width=\textwidth]{images/peliculaPiramide.png}
+	\caption{Película irradiada con tratamiento piramidal}
 \end{minipage}\hfill
-\begin{minipage}{0.45\textwidth}
+\begin{minipage}{0.4\textwidth}
 	\includegraphics[width=\textwidth]{images/peliculaMama.png}
+	\caption{Película irradiada con tratamiento de mama}
 \end{minipage}
-\caption{Mapas de dosis irradiados}
+
 \end{figure}
 \end{frame}
 
@@ -171,7 +182,7 @@ Se digitalizaron las imágenes con un escáner  ScanMaker1000XL en modo transmis
 
 Se usó una resolución de 100 ppi con 16-bits por canal de color.\\~\\
 
-Se probaron varios filtros sobre las imágenes, entre ellos el filtro de Wiener, el filtro de mediana y el filtro de promediado.\\~\\
+Se probaron varios filtros sobre las imágenes, entre ellos el filtro de Wiener, el filtro de mediana y el filtro de promediado\cite{Benesty2008}.\\~\\
 \end{frame}
 
 \subsection{Características del programa}
@@ -228,28 +239,36 @@ Para realizar el análisis de manera eficiente se desarrollo un programa en Pyth
 \end{frame}
 
 \begin{frame}{Método multicanal}
+\begin{equation*}
+\min_{t}\sum_{i,j=R,G,B}(D_i-D_j)^2.
+\end{equation*}
+
 \begin{figure}[htp]% [H] is so declass\'e!
 	\centering
-	\begin{minipage}{0.45\textwidth}
+	\begin{minipage}{0.4\textwidth}
 		\includegraphics[width=\textwidth]{images/mapaCuadradoConMulticanal.png}
+		\caption{Mapa cuadrado con separación multicanal}
 	\end{minipage}\hfill
 	\begin{minipage}{0.6\textwidth}
 		\includegraphics[width=\textwidth]{images/fondoCuadradoConLabel.png}
+		\caption{Parte independiente de dosis}
 	\end{minipage}
-	\caption{Mapa cuadrado con separación multicanal}
+	
 \end{figure}
 \end{frame}
 
 \begin{frame}{Método multicanal}
 \begin{figure}[htp]% [H] is so declass\'e!
 	\centering
-	\begin{minipage}{0.6\textwidth}
+	\begin{minipage}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{images/perfilDosisCuadradoUnoSolo.png}
+		\caption{Perfile central con tres canales individuales}
 	\end{minipage}\hfill
-	\begin{minipage}{0.6\textwidth}
+	\begin{minipage}{0.5\textwidth}
 		\includegraphics[width=\textwidth]{images/perfilDosisCuadradoMulticanal.png}
+		\caption{Perfil central con método multicanal}
 	\end{minipage}
-	\caption{Perfiles de dosis para cuadrado de 5 Gy}
+	
 \end{figure}
 \end{frame}
 
@@ -258,19 +277,22 @@ Para realizar el análisis de manera eficiente se desarrollo un programa en Pyth
 \begin{frame}{Mapas de dosis}
 \begin{figure}[htp]% [H] is so declass\'e!
 	\centering
-	\begin{minipage}{0.45\textwidth}
+	\begin{minipage}{0.4\textwidth}
 		\includegraphics[width=\textwidth]{images/perfilPiramideNormalizado.png}
+		\caption{Perfil central mapa pirámide}
 	\end{minipage}\hfill
-	\begin{minipage}{0.45\textwidth}
+	\begin{minipage}{0.4\textwidth}
 		\includegraphics[width=\textwidth]{images/isodosisPiramide2.png}
+		\caption{Curvas isodosis mapa pirámide}
 	\end{minipage}\par
-	\begin{minipage}{0.45\textwidth}
+	\begin{minipage}{0.4\textwidth}
 		\includegraphics[width=\textwidth]{images/perfilDosisMama.png}
+		\caption{Perfil mapa de tratamiento de mama}
 	\end{minipage}\hfill
-	\begin{minipage}{0.45\textwidth}
+	\begin{minipage}{0.4\textwidth}
 		\includegraphics[width=\textwidth]{images/curvasIsodosisMama.png}
+		\caption{Curvas de isodosis mapa de tratamiento de mama}
 	\end{minipage}
-	\caption{Análisis de mapas de dosis}
 \end{figure}
 \end{frame}
 
@@ -281,17 +303,20 @@ Para realizar el análisis de manera eficiente se desarrollo un programa en Pyth
 	\centering
 	\begin{minipage}{0.45\textwidth}
 		\includegraphics[width=\textwidth]{images/gammaPiramideCalor.png}
+		\caption{Matriz $\Gamma$ mapa piramidal}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 		\includegraphics[width=\textwidth]{images/histogramaGammaPiramide.png}
+		\caption{Histograma $\Gamma$ mapa piramidal}
 	\end{minipage}\par
 	\begin{minipage}{0.45\textwidth}
 		\includegraphics[width=\textwidth]{images/gammaMama.png}
+		\caption{Matriz $\Gamma$ mapa tratamiento de mama}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 		\includegraphics[width=\textwidth]{images/histogramaDosisMama.png}
+		\caption{Histograma $\Gamma$ tratamiento de mama}
 	\end{minipage}
-	\caption{Comparaciones $\Gamma$}
 \end{figure}
 \end{frame}
 
@@ -305,6 +330,10 @@ Para realizar el análisis de manera eficiente se desarrollo un programa en Pyth
 	\end{itemize}
 \end{frame}
 
+\begin{frame}{Agradecimientos}
+Finalmente, agradezco al Centro de Control de Cáncer por permitir y apoyar este proyecto en su desarrollo.
+\end{frame}
+
 
 
 
@@ -314,6 +343,26 @@ Para realizar el análisis de manera eficiente se desarrollo un programa en Pyth
 \nocite{*}
 \bibliographystyle{ieeetr}
 \bibliography{references}
+\end{frame}
+
+\begin{frame}{Análisis $\Gamma$}
+\begin{equation*}
+\Gamma(\vec{r}_c,\vec{r}_m)=\sqrt{\frac{|\vec{r}_c-\vec{r}_m|^2}{DTA^2}+\frac{|D(\vec{r}_c)-D(\vec{r}_m)|^2}{DD^2\cdot D(\vec{r}_c)^2}},
+\end{equation*}
+Donde $\vec{r}_c,\vec{r}_m$ son las posiciones de los pixeles en los mapas, y $D(\vec{r}_c),D(\vec{r}_m)$ sus dosis correspondientes.\\~\\
+
+DTA es la distancia a la que se busca la concordancia y DD es la diferencia de dosis permitida.
+
+
+\end{frame}
+
+\begin{frame}{Filtro de Wiener}
+Convolución de la imagen con un kernel de la forma
+\begin{equation*}
+	G(u,v)=\frac{P_s(u,v)}{P_s(u,v)+\sigma_n^2},
+\end{equation*}
+donde $P_s(u,v)$ es la transformada de Fourier de la función de autocorrelación
+
 \end{frame}
 
 

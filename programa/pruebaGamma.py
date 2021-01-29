@@ -48,7 +48,7 @@ ejes2=(x2,y2)
 dd=1
 mm=1
 
-	
+    
 
 
 gamma_options = {

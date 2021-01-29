@@ -11,4 +11,4 @@
 \beamer@subsectionintoc {3}{3}{Mapas de dosis}{21}{0}{3}
 \beamer@subsectionintoc {3}{4}{Comparaciones a plan}{22}{0}{3}
 \beamer@sectionintoc {4}{Conclusiones}{23}{0}{4}
-\beamer@sectionintoc {5}{Bibliografía}{24}{0}{5}
+\beamer@sectionintoc {5}{Bibliografía}{25}{0}{5}

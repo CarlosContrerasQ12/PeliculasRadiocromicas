@@ -102,32 +102,32 @@ class PanelMapaDosis1(wx.Panel):
         # end wxGlade
         
     def elegirN(self,event):
-        k=self.parent.paginaActual.figure.ginput(1)
+        k=self.parent.paginaActual.gin1()
         self.puntoN=[int(k[0][0]),int(k[0][1])]
         self.text_ctrl_N.SetValue(str(self.puntoN[0])+';'+str(self.puntoN[1]))
         event.Skip()
         
     def elegirW(self,event):
-        k=self.parent.paginaActual.figure.ginput(1)
+        k=self.parent.paginaActual.gin1()
         self.puntoW=[int(k[0][0]),int(k[0][1])]
         self.text_ctrl_W.SetValue(str(self.puntoW[0])+';'+str(self.puntoW[1]))
         event.Skip()
         
     def elegirE(self,event):
-        k=self.parent.paginaActual.figure.ginput(1)
+        k=self.parent.paginaActual.gin1()
         self.puntoE=[int(k[0][0]),int(k[0][1])]
         self.text_ctrl_E.SetValue(str(self.puntoE[0])+';'+str(self.puntoE[1]))
         event.Skip()
         
     def elegirS(self,event):
-        k=self.parent.paginaActual.figure.ginput(1)
+        k=self.parent.paginaActual.gin1()
         self.puntoS=[int(k[0][0]),int(k[0][1])]
         self.text_ctrl_S.SetValue(str(self.puntoS[0])+';'+str(self.puntoS[1]))
         event.Skip()
         
         
     def removerMarca(self, event):  # wxGlade: MyDialog.<event_handler>
-        k=self.parent.paginaActual.figure.ginput(1)
+        k=self.parent.paginaActual.gin1()
         y=int(k[0][0])
         x=int(k[0][1])
         
@@ -155,7 +155,7 @@ class PanelMapaDosis1(wx.Panel):
         event.Skip()
 
     def seleccionarROI(self, event):  # wxGlade: MyDialog.<event_handler>
-        k=self.parent.paginaActual.figure.ginput(2)
+        k=self.parent.paginaActual.gin2()
         x1=k[0][0]
         y1=k[0][1]
         x2=k[1][0]
@@ -262,8 +262,7 @@ class PanelMapaDosis1(wx.Panel):
         self.parent.numeroPags=self.parent.numeroPags+1
         self.parent.paginas[-1].identificador=self.parent.numeroPags
         self.parent.paginas[-1].tipo='md2'
-        nuem=self.parent.notebookImagenes.GetPageCount()-1
-        self.parent.notebookImagenes.SetSelection(nuem)
+
         figActual=self.parent.paginas[-1].figure
         self.parent.paginaActual=self.parent.paginas[-1]
         a1=figActual.gca()
@@ -274,9 +273,12 @@ class PanelMapaDosis1(wx.Panel):
         panelVariable=PanelMapaDosis2(self.parent,self.centro)
         self.parent.panelesVariables[-1].Hide()
         self.parent.panelesVariables.append(panelVariable)
+        self.parent.paginas[-1].panel=panelVariable
         self.parent.sizerPanel=self.parent.sizer_2.Add(self.parent.panelesVariables[-1], 1, wx.EXPAND, 0)
         self.parent.panelesVariables[-1].Show()
         self.parent.Layout()
+        nuem=self.parent.notebookImagenes.GetPageCount()-1
+        self.parent.notebookImagenes.SetSelection(nuem)
         event.Skip()
 
 # end of class MyDialog

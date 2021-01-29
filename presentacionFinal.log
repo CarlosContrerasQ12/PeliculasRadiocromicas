@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  22 JAN 2021 11:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.4.27)  27 JAN 2021 10:58
 entering extended mode
 **./presentacionFinal.tex
 (presentacionFinal.tex
@@ -719,10 +719,31 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ty
 \beamer@sidebarwidth=\dimen278
 \beamer@headheight=\dimen279
-))
+)) (/home/carlos/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/home/carlos/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen280
+\captionmargin@=\dimen281
+\captionwidth=\dimen282
+\caption@tempdima=\dimen283
+\caption@indent=\dimen284
+\caption@parindent=\dimen285
+\caption@hangindent=\dimen286
+Package caption Info: beamer document class detected.
+)
+\c@caption@flags=\count313
+\c@continuedfloat=\count314
+Package caption Info: beamer document class.
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+)
 (/home/carlos/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count313
+\l__kernel_color_stack_int=\count315
 \l__pdf_internal_box=\box73
 ) (presentacionFinal.aux
 LaTeX Info: Redefining \. on input line 24.
@@ -730,22 +751,22 @@ LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `presentacionFinal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -783,24 +804,32 @@ LaTeX Font Info:    ... okay on input line 15.
 
 (/home/carlos/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count314
-\scratchdimen=\dimen280
+\scratchcounter=\count316
+\scratchdimen=\dimen287
 \scratchbox=\box74
-\nofMPsegments=\count315
-\nofMParguments=\count316
+\nofMPsegments=\count317
+\nofMParguments=\count318
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count317
-\MPscratchDim=\dimen281
-\MPnumerator=\count318
-\makeMPintoPDFobject=\count319
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen288
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
 \everyMPtoPDFconversion=\toks48
 ) (/home/carlos/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+(/home/carlos/.miktex/texmfs/install/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-) ABD: EveryShipout initializing macros
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+)
+ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box75
-Package hyperref Info: Link coloring OFF on input line 15.
+Package hyperref Info: Link coloring OFF on input line 19.
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -812,67 +841,67 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count320
+\c@section@level=\count322
 )
-LaTeX Info: Redefining \ref on input line 15.
-LaTeX Info: Redefining \pageref on input line 15.
-LaTeX Info: Redefining \nameref on input line 15.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
  (presentacionFinal.out) (presentacionFinal.out)
 \@outlinefile=\write5
 \openout5 = `presentacionFinal.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 15.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 19.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 15.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 19.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 15.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 15.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 15.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 15.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 19.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 15.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 15.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 15.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 19.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 15.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 15.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 15.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 19.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 15.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 15.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 19.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 15.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 19.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 15.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 15.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 15.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 15.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 15.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 15.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 15.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 19.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 19.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
-5.
+9.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 1
-5.
+9.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 15.
+ut line 19.
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/translator/translator-basic-dict
 ionary-English.dict
@@ -898,12 +927,14 @@ Dictionary: translator-numbers-dictionary, Language: English
 ctionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
  (presentacionFinal.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 16.
+(hyperref)                setting the option has no effect on input line 20.
 
 [1
 
@@ -919,7 +950,7 @@ LaTeX Info: Redefining \% on input line 1.
 <images/paciente.png, id=200, 832.10875pt x 555.07375pt>
 File: images/paciente.png Graphic file (type png)
 <use images/paciente.png>
-Package pdftex.def Info: images/paciente.png  used on input line 53.
+Package pdftex.def Info: images/paciente.png  used on input line 57.
 (pdftex.def)             Requested size: 195.18513pt x 130.19672pt.
  [4
 
@@ -928,28 +959,28 @@ Package pdftex.def Info: images/paciente.png  used on input line 53.
 File: images/fondoblancoLandscape-1.png Graphic file (type png)
 <use images/fondoblancoLandscape-1.png>
 Package pdftex.def Info: images/fondoblancoLandscape-1.png  used on input line 
-73.
+77.
 (pdftex.def)             Requested size: 125.47585pt x 100.63855pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
 
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
 
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 73
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 77
 .
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 73.
+ut line 77.
 
 (/home/carlos/.miktex/texmfs/install/tex/latex/sansmathaccent/ot1mathkerncmss.f
 d
@@ -959,18 +990,14 @@ thkerncmss.
 <images/reaccion.png, id=247, 677.53125pt x 442.65375pt>
 File: images/reaccion.png Graphic file (type png)
 <use images/reaccion.png>
-Package pdftex.def Info: images/reaccion.png  used on input line 73.
+Package pdftex.def Info: images/reaccion.png  used on input line 77.
 (pdftex.def)             Requested size: 125.47585pt x 81.97746pt.
 <images/estructuraEBT.png, id=250, 505.89pt x 245.91875pt>
 File: images/estructuraEBT.png Graphic file (type png)
 <use images/estructuraEBT.png>
-Package pdftex.def Info: images/estructuraEBT.png  used on input line 73.
+Package pdftex.def Info: images/estructuraEBT.png  used on input line 77.
 (pdftex.def)             Requested size: 125.47585pt x 60.99547pt.
-
-Overfull \vbox (21.04971pt too high) detected at line 73
- []
-
-[5
+ [5
 
  <./images/fondoblancoLandscape-1.png> <./images/reaccion.png> <./images/estruc
 turaEBT.png>] [6
@@ -982,63 +1009,67 @@ turaEBT.png>] [6
 ] [9
 
 ]
-<images/elctrometro.jpg, id=451, 1108.14pt x 831.105pt>
+<images/elctrometro.jpg, id=453, 1108.14pt x 831.105pt>
 File: images/elctrometro.jpg Graphic file (type jpg)
 <use images/elctrometro.jpg>
-Package pdftex.def Info: images/elctrometro.jpg  used on input line 130.
-(pdftex.def)             Requested size: 125.47585pt x 94.09766pt.
-<images/TRS398Editado2.jpg, id=452, 1108.14pt x 831.105pt>
+Package pdftex.def Info: images/elctrometro.jpg  used on input line 137.
+(pdftex.def)             Requested size: 111.53314pt x 83.648pt.
+<images/TRS398Editado2.jpg, id=454, 1108.14pt x 831.105pt>
 File: images/TRS398Editado2.jpg Graphic file (type jpg)
 <use images/TRS398Editado2.jpg>
-Package pdftex.def Info: images/TRS398Editado2.jpg  used on input line 130.
-(pdftex.def)             Requested size: 125.47585pt x 94.09766pt.
-<images/20200826_215214.jpg, id=453, 4047.12pt x 3035.34pt>
+Package pdftex.def Info: images/TRS398Editado2.jpg  used on input line 137.
+(pdftex.def)             Requested size: 111.53314pt x 83.648pt.
+<images/20200826_215214.jpg, id=455, 4047.12pt x 3035.34pt>
 File: images/20200826_215214.jpg Graphic file (type jpg)
 <use images/20200826_215214.jpg>
-Package pdftex.def Info: images/20200826_215214.jpg  used on input line 130.
-(pdftex.def)             Requested size: 125.47585pt x 94.06677pt.
+Package pdftex.def Info: images/20200826_215214.jpg  used on input line 137.
+(pdftex.def)             Requested size: 111.53314pt x 83.64578pt.
  [10
 
  <./images/elctrometro.jpg> <./images/TRS398Editado2.jpg> <./images/20200826_21
 5214.jpg>]
-<images/peliculasIrradiadas.png, id=494, 638.385pt x 474.77374pt>
-File: images/peliculasIrradiadas.png Graphic file (type png)
-<use images/peliculasIrradiadas.png>
-Package pdftex.def Info: images/peliculasIrradiadas.png  used on input line 139
-.
+<images/peliculasIrradiadas_2.png, id=496, 638.385pt x 474.77374pt>
+File: images/peliculasIrradiadas_2.png Graphic file (type png)
+<use images/peliculasIrradiadas_2.png>
+Package pdftex.def Info: images/peliculasIrradiadas_2.png  used on input line 1
+46.
 (pdftex.def)             Requested size: 195.18513pt x 145.15714pt.
  [11
 
- <./images/peliculasIrradiadas.png>]
-<images/peliculaCuadrado.png, id=535, 671.50874pt x 543.02875pt>
+ <./images/peliculasIrradiadas_2.png>]
+<images/peliculaCuadrado.png, id=537, 671.50874pt x 543.02875pt>
 File: images/peliculaCuadrado.png Graphic file (type png)
 <use images/peliculaCuadrado.png>
-Package pdftex.def Info: images/peliculaCuadrado.png  used on input line 147.
+Package pdftex.def Info: images/peliculaCuadrado.png  used on input line 154.
 (pdftex.def)             Requested size: 195.18513pt x 157.83888pt.
  [12
 
  <./images/peliculaCuadrado.png>]
-<images/piramideTPS.png, id=576, 462.528pt x 346.896pt>
+<images/piramideTPS.png, id=578, 462.528pt x 346.896pt>
 File: images/piramideTPS.png Graphic file (type png)
 <use images/piramideTPS.png>
-Package pdftex.def Info: images/piramideTPS.png  used on input line 166.
+Package pdftex.def Info: images/piramideTPS.png  used on input line 177.
 (pdftex.def)             Requested size: 125.47585pt x 94.1025pt.
-<images/mamaTPS.png, id=577, 462.528pt x 346.896pt>
+<images/mamaTPS.png, id=579, 462.528pt x 346.896pt>
 File: images/mamaTPS.png Graphic file (type png)
 <use images/mamaTPS.png>
-Package pdftex.def Info: images/mamaTPS.png  used on input line 166.
+Package pdftex.def Info: images/mamaTPS.png  used on input line 177.
 (pdftex.def)             Requested size: 125.47585pt x 94.1025pt.
-<images/peliculaPiramide.png, id=578, 719.0865pt x 578.16pt>
+<images/peliculaPiramide.png, id=580, 719.0865pt x 578.16pt>
 File: images/peliculaPiramide.png Graphic file (type png)
 <use images/peliculaPiramide.png>
-Package pdftex.def Info: images/peliculaPiramide.png  used on input line 166.
-(pdftex.def)             Requested size: 125.47585pt x 100.87956pt.
-<images/peliculaMama.png, id=579, 724.8681pt x 580.3281pt>
+Package pdftex.def Info: images/peliculaPiramide.png  used on input line 177.
+(pdftex.def)             Requested size: 111.53314pt x 89.67563pt.
+<images/peliculaMama.png, id=581, 724.8681pt x 580.3281pt>
 File: images/peliculaMama.png Graphic file (type png)
 <use images/peliculaMama.png>
-Package pdftex.def Info: images/peliculaMama.png  used on input line 166.
-(pdftex.def)             Requested size: 125.47585pt x 100.45204pt.
- [13
+Package pdftex.def Info: images/peliculaMama.png  used on input line 177.
+(pdftex.def)             Requested size: 111.53314pt x 89.28578pt.
+
+Overfull \vbox (10.82713pt too high) detected at line 177
+ []
+
+[13
 
  <./images/piramideTPS.png> <./images/mamaTPS.png> <./images/peliculaPiramide.p
 ng> <./images/peliculaMama.png>] [14
@@ -1048,140 +1079,136 @@ ng> <./images/peliculaMama.png>] [14
 ] [16
 
 ]
-<images/calibracionMulti_2.png, id=738, 601.2864pt x 362.0727pt>
+<images/calibracionMulti_2.png, id=742, 601.2864pt x 362.0727pt>
 File: images/calibracionMulti_2.png Graphic file (type png)
 <use images/calibracionMulti_2.png>
-Package pdftex.def Info: images/calibracionMulti_2.png  used on input line 207.
+Package pdftex.def Info: images/calibracionMulti_2.png  used on input line 218.
 
 (pdftex.def)             Requested size: 195.18513pt x 117.52858pt.
  [17
 
  <./images/calibracionMulti_2.png>]
-<images/imagenPerfilMapaCeroHorizontal.png, id=778, 669.50125pt x 532.99126pt>
+<images/imagenPerfilMapaCeroHorizontal.png, id=782, 669.50125pt x 532.99126pt>
 File: images/imagenPerfilMapaCeroHorizontal.png Graphic file (type png)
 <use images/imagenPerfilMapaCeroHorizontal.png>
 Package pdftex.def Info: images/imagenPerfilMapaCeroHorizontal.png  used on inp
-ut line 228.
+ut line 239.
 (pdftex.def)             Requested size: 125.47585pt x 99.88681pt.
-<images/imagenPerfilMapaCeroVertical.png, id=779, 693.59125pt x 533.995pt>
+<images/imagenPerfilMapaCeroVertical.png, id=783, 693.59125pt x 533.995pt>
 File: images/imagenPerfilMapaCeroVertical.png Graphic file (type png)
 <use images/imagenPerfilMapaCeroVertical.png>
 Package pdftex.def Info: images/imagenPerfilMapaCeroVertical.png  used on input
- line 228.
+ line 239.
 (pdftex.def)             Requested size: 125.47585pt x 96.60384pt.
-<images/perfilDosisCeroHorizontal.png, id=780, 462.528pt x 302.0886pt>
+<images/perfilDosisCeroHorizontal.png, id=784, 462.528pt x 302.0886pt>
 File: images/perfilDosisCeroHorizontal.png Graphic file (type png)
 <use images/perfilDosisCeroHorizontal.png>
 Package pdftex.def Info: images/perfilDosisCeroHorizontal.png  used on input li
-ne 228.
+ne 239.
 (pdftex.def)             Requested size: 125.47585pt x 81.94759pt.
-<images/perfilDosisCeroVerticalEnCentro.png, id=781, 462.528pt x 302.0886pt>
+<images/perfilDosisCeroVerticalEnCentro.png, id=785, 462.528pt x 302.0886pt>
 File: images/perfilDosisCeroVerticalEnCentro.png Graphic file (type png)
 <use images/perfilDosisCeroVerticalEnCentro.png>
 Package pdftex.def Info: images/perfilDosisCeroVerticalEnCentro.png  used on in
-put line 228.
+put line 239.
 (pdftex.def)             Requested size: 125.47585pt x 81.94759pt.
  [18
 
  <./images/imagenPerfilMapaCeroHorizontal.png> <./images/imagenPerfilMapaCeroVe
 rtical.png> <./images/perfilDosisCeroHorizontal.png> <./images/perfilDosisCeroV
 erticalEnCentro.png>]
-<images/mapaCuadradoConMulticanal.png, id=826, 669.50125pt x 532.99126pt>
+<images/mapaCuadradoConMulticanal.png, id=830, 669.50125pt x 532.99126pt>
 File: images/mapaCuadradoConMulticanal.png Graphic file (type png)
 <use images/mapaCuadradoConMulticanal.png>
 Package pdftex.def Info: images/mapaCuadradoConMulticanal.png  used on input li
-ne 241.
-(pdftex.def)             Requested size: 125.47585pt x 99.88681pt.
-<images/fondoCuadradoConLabel.png, id=827, 642.4pt x 419.5675pt>
+ne 258.
+(pdftex.def)             Requested size: 111.53314pt x 88.78557pt.
+<images/fondoCuadradoConLabel.png, id=831, 642.4pt x 419.5675pt>
 File: images/fondoCuadradoConLabel.png Graphic file (type png)
 <use images/fondoCuadradoConLabel.png>
 Package pdftex.def Info: images/fondoCuadradoConLabel.png  used on input line 2
-41.
+58.
 (pdftex.def)             Requested size: 167.30397pt x 109.27063pt.
-
-Overfull \vbox (8.9398pt too high) detected at line 241
- []
-
-[19
+ [19
 
  <./images/mapaCuadradoConMulticanal.png> <./images/fondoCuadradoConLabel.png>]
-<images/perfilDosisCuadradoUnoSolo.png, id=869, 462.528pt x 302.0886pt>
+<images/perfilDosisCuadradoUnoSolo.png, id=879, 462.528pt x 302.0886pt>
 File: images/perfilDosisCuadradoUnoSolo.png Graphic file (type png)
 <use images/perfilDosisCuadradoUnoSolo.png>
 Package pdftex.def Info: images/perfilDosisCuadradoUnoSolo.png  used on input l
-ine 254.
-(pdftex.def)             Requested size: 167.30397pt x 109.27267pt.
-<images/perfilDosisCuadradoMulticanal.png, id=870, 462.528pt x 302.0886pt>
+ine 273.
+(pdftex.def)             Requested size: 139.41856pt x 91.05595pt.
+<images/perfilDosisCuadradoMulticanal.png, id=880, 462.528pt x 302.0886pt>
 File: images/perfilDosisCuadradoMulticanal.png Graphic file (type png)
 <use images/perfilDosisCuadradoMulticanal.png>
 Package pdftex.def Info: images/perfilDosisCuadradoMulticanal.png  used on inpu
-t line 254.
-(pdftex.def)             Requested size: 167.30397pt x 109.27267pt.
-
-Overfull \vbox (18.32771pt too high) detected at line 254
- []
-
-[20
+t line 273.
+(pdftex.def)             Requested size: 139.41856pt x 91.05595pt.
+ [20
 
  <./images/perfilDosisCuadradoUnoSolo.png> <./images/perfilDosisCuadradoMultica
 nal.png>]
-<images/perfilPiramideNormalizado.png, id=911, 462.528pt x 302.0886pt>
+<images/perfilPiramideNormalizado.png, id=921, 462.528pt x 302.0886pt>
 File: images/perfilPiramideNormalizado.png Graphic file (type png)
 <use images/perfilPiramideNormalizado.png>
 Package pdftex.def Info: images/perfilPiramideNormalizado.png  used on input li
-ne 275.
-(pdftex.def)             Requested size: 125.47585pt x 81.94759pt.
-<images/isodosisPiramide2.png, id=912, 597.23125pt x 462.72874pt>
+ne 297.
+(pdftex.def)             Requested size: 111.53314pt x 72.84384pt.
+<images/isodosisPiramide2.png, id=922, 597.23125pt x 462.72874pt>
 File: images/isodosisPiramide2.png Graphic file (type png)
 <use images/isodosisPiramide2.png>
-Package pdftex.def Info: images/isodosisPiramide2.png  used on input line 275.
-(pdftex.def)             Requested size: 125.47585pt x 97.2112pt.
-<images/perfilDosisMama.png, id=913, 462.528pt x 302.0886pt>
+Package pdftex.def Info: images/isodosisPiramide2.png  used on input line 297.
+(pdftex.def)             Requested size: 111.53314pt x 86.40839pt.
+<images/perfilDosisMama.png, id=923, 462.528pt x 302.0886pt>
 File: images/perfilDosisMama.png Graphic file (type png)
 <use images/perfilDosisMama.png>
-Package pdftex.def Info: images/perfilDosisMama.png  used on input line 275.
-(pdftex.def)             Requested size: 125.47585pt x 81.94759pt.
-<images/curvasIsodosisMama.png, id=914, 576.1525pt x 452.69125pt>
+Package pdftex.def Info: images/perfilDosisMama.png  used on input line 297.
+(pdftex.def)             Requested size: 111.53314pt x 72.84384pt.
+<images/curvasIsodosisMama.png, id=924, 576.1525pt x 452.69125pt>
 File: images/curvasIsodosisMama.png Graphic file (type png)
 <use images/curvasIsodosisMama.png>
-Package pdftex.def Info: images/curvasIsodosisMama.png  used on input line 275.
+Package pdftex.def Info: images/curvasIsodosisMama.png  used on input line 297.
 
-(pdftex.def)             Requested size: 125.47585pt x 98.58388pt.
- [21
+(pdftex.def)             Requested size: 111.53314pt x 87.62859pt.
+
+Overfull \vbox (1.08598pt too high) detected at line 297
+ []
+
+[21
 
  <./images/perfilPiramideNormalizado.png> <./images/isodosisPiramide2.png> <./i
 mages/perfilDosisMama.png> <./images/curvasIsodosisMama.png>]
-<images/gammaPiramideCalor.png, id=957, 462.528pt x 302.0886pt>
+<images/gammaPiramideCalor.png, id=967, 462.528pt x 302.0886pt>
 File: images/gammaPiramideCalor.png Graphic file (type png)
 <use images/gammaPiramideCalor.png>
-Package pdftex.def Info: images/gammaPiramideCalor.png  used on input line 296.
+Package pdftex.def Info: images/gammaPiramideCalor.png  used on input line 321.
 
 (pdftex.def)             Requested size: 125.47585pt x 81.94759pt.
-<images/histogramaGammaPiramide.png, id=958, 462.528pt x 302.0886pt>
+<images/histogramaGammaPiramide.png, id=968, 462.528pt x 302.0886pt>
 File: images/histogramaGammaPiramide.png Graphic file (type png)
 <use images/histogramaGammaPiramide.png>
 Package pdftex.def Info: images/histogramaGammaPiramide.png  used on input line
- 296.
+ 321.
 (pdftex.def)             Requested size: 125.47585pt x 81.94759pt.
-<images/gammaMama.png, id=959, 462.528pt x 302.0886pt>
+<images/gammaMama.png, id=969, 462.528pt x 302.0886pt>
 File: images/gammaMama.png Graphic file (type png)
 <use images/gammaMama.png>
-Package pdftex.def Info: images/gammaMama.png  used on input line 296.
+Package pdftex.def Info: images/gammaMama.png  used on input line 321.
 (pdftex.def)             Requested size: 125.47585pt x 81.94759pt.
-<images/histogramaDosisMama.png, id=960, 462.528pt x 302.0886pt>
+<images/histogramaDosisMama.png, id=970, 462.528pt x 302.0886pt>
 File: images/histogramaDosisMama.png Graphic file (type png)
 <use images/histogramaDosisMama.png>
-Package pdftex.def Info: images/histogramaDosisMama.png  used on input line 296
+Package pdftex.def Info: images/histogramaDosisMama.png  used on input line 321
 .
 (pdftex.def)             Requested size: 125.47585pt x 81.94759pt.
-
-[22
+ [22
 
  <./images/gammaPiramideCalor.png> <./images/histogramaGammaPiramide.png> <./im
 ages/gammaMama.png> <./images/histogramaDosisMama.png>] [23
 
-]
-(presentacionFinal.bbl
+] [24
+
+] (presentacionFinal.bbl
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
 10.
 
@@ -1193,10 +1220,7 @@ Overfull \hbox (67.76833pt too wide) in paragraph at lines 30--32
 enio/$[]\OT1/cmss/m/n/12 .  
  []
 
-) [24
-
-] [25
-
+) [25
 
 ] [26
 
@@ -1234,11 +1258,11 @@ enio/$[]\OT1/cmss/m/n/12 .
 ] [37
 
 
+] [38
+
+
 ]
-[38
-
-
-] [39
+[39
 
 
 ] [40
@@ -1246,6 +1270,13 @@ enio/$[]\OT1/cmss/m/n/12 .
 
 ] [41
 
+
+] [42
+
+
+] [43
+
+] [44
 
 ]
 \tf@nav=\write6
@@ -1257,37 +1288,42 @@ enio/$[]\OT1/cmss/m/n/12 .
 \tf@snm=\write8
 \openout8 = `presentacionFinal.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 370.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 370.
  (presentacionFinal.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 370.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 370.
 Package rerunfilecheck Info: File `presentacionFinal.out' has not changed.
 (rerunfilecheck)             Checksum: 6AB1CF6BF4D458A6636405762046D708;819.
  ) 
 Here is how much of TeX's memory you used:
- 19701 strings out of 480897
- 377031 string characters out of 2904517
- 647807 words of memory out of 3000000
- 34927 multiletter control sequences out of 15000+200000
- 542572 words of font info for 62 fonts, out of 3000000 for 9000
+ 20835 strings out of 480897
+ 397734 string characters out of 2904517
+ 666659 words of memory out of 3000000
+ 36042 multiletter control sequences out of 15000+200000
+ 547168 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,16n,67p,813b,569s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/carlos/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcss120
-0.pk></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10
-.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12
-.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss17
-.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.
-pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12
-.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12
-.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/m
-sam10.pfb>
-Output written on presentacionFinal.pdf (41 pages, 8241252 bytes).
+0.pk></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10
+.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12
+.pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.
+pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss12.
+pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss17.
+pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss8.p
+fb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi12.
+pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssi8.
+pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.
+pfb></home/carlos/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/ms
+am10.pfb>
+Output written on presentacionFinal.pdf (44 pages, 8315543 bytes).
 PDF statistics:
- 1864 PDF objects out of 2073 (max. 8388607)
- 141 named destinations out of 1000 (max. 500000)
+ 2009 PDF objects out of 2073 (max. 8388607)
+ 147 named destinations out of 1000 (max. 500000)
  303 words of extra memory for PDF output out of 10000 (max. 10000000)
 
